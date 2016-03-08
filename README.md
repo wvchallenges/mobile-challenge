@@ -33,7 +33,7 @@ Your Wave contact will supply you with a business ID and a Wave API token before
 1. The list of products should be fetched and shown to the user in a list view when the app is launched.
 1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
 
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. We simply want to the list of products on launch.
+You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
 
 Your app is allowed to render nothing if there is no internet connection when it loads.
 
