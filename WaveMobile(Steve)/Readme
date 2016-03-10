@@ -1,0 +1,1 @@
+In this application, I used AsyncTaskLoader and LoaderCallback to fetch data asynchronously. So when internet doesn't work, it shows empty messege. When data is fetched from server, then it will appear it on listview.
