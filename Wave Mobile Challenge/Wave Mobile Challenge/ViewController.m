@@ -82,6 +82,7 @@
 - (void)loadProducts
 {
 	// show the 'please wait' dialog
+    self.labelPleaseWaitMessage.text = @"Loading Products...";
 	self.viewPleaseWait.hidden = NO;
 	self.viewPleaseWait.layer.borderColor = [[UIColor blackColor] CGColor];
 	self.viewPleaseWait.layer.cornerRadius = 10.0;
@@ -148,7 +149,12 @@
 		ret = [[ProductTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"gregCell"];
 	}
 	
-	if(self.arrProducts.count == 1 && ret.labelDesc.text.length == 0) {
+    NSDictionary *product = self.arrProducts[indexPath.row];
+    ret.labelName.text = product[@"name"];
+    ret.labelDesc.text = product[@"description"];
+    ret.labelAmount.text = @"";
+    
+    if(self.arrProducts.count == 1 && ret.labelDesc.text.length == 0) {
 		// let's display an error message
 		ret.buttonRetry.hidden = NO;
 
@@ -160,10 +166,6 @@
 		// let's display a real product
 		ret.buttonRetry.hidden = YES;
 
-		NSDictionary *product = self.arrProducts[indexPath.row];
-		ret.labelName.text = product[@"name"];
-		ret.labelDesc.text = product[@"description"];
-		
 		double dblPrice = [product[@"price"] doubleValue];
 		ret.labelAmount.text = [NSString stringWithFormat:@"$%.2f", dblPrice];
 	}
