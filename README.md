@@ -1,47 +1,33 @@
-# Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
+* 1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
 
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
+Done!  I wrote the app in Objective C because I have about 10 years of experience
+with it and wanted to get this done quickly. I added a nice little animated background for a little flare, plus rounded corners
+on the UITableView and UIButtons.  The product list is downloaded on a background thread so the UI remains responsive.  There's a 
+little "Please Wait" dialog that comes and goes during the downloading, and notice that UI stuff is done on the main thread like it 
+should be.
 
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
+The data is retained in an NSArray in its original form: an array of NSDictionary objects. For optimization, I would probably have an 
+array of just what is needed in memory.  I would probably add a feature that lets the user sort by name, dollar amount, etc. I would
+probably show the dollar amount in various currencies, too and use a Forex site to get the latest currency exchange rates.
 
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
+I should add some error checking if the data is invalid or corrupt.
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
+* 1. The list of products should be fetched and shown to the user in a list view when the app is launched.
 
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
+Done!  Everything starts at viewDidLoad but if there's an error, a fake product is put into the array which reveals a "Retry" button
+so the user can try again.  
 
-## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
+* 1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+Done.  I realize the dollar value is in Decimal format according to the documentation, but I used Double values.  I thought
+the app would like nicer with a detailed description, so I added that too.  
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
+* You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
 
-### What your web-based application must do:
+Ok.
 
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
+* Your app is allowed to render nothing if there is no internet connection when it loads.
 
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
+Well, it adds a fake product with a description of the error and makes a Retry button visible
 
-Your app is allowed to render nothing if there is no internet connection when it loads.
-
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
-
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
-
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
