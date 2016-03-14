@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WaveMobile(Steve)</string>
+    <string name="emptyListMsg">No product information available. The network is not available to fetch product data.</string>
+    <string name="refresh_button">Refresh</string>
+</resources>
