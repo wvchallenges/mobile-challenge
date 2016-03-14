@@ -27,7 +27,7 @@ You'll be using the public Wave API in this challenge. You can find the document
 
 Your Wave contact will supply you with a business ID and a Wave API token before you begin.
 
-### What your web-based application must do:
+### What your application must do:
 
 1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
 1. The list of products should be fetched and shown to the user in a list view when the app is launched.
