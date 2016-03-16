@@ -26,7 +26,7 @@ $ ionic serve
 ```
 if receive an `'Access-Control-Allow-Origin'` error in Chrome, this [Chrome extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) could disable the web security temporarily for development.
 
-To test the project on emulator or on iphone devices, run the following command to create a iOS build:
+To test the project on emulator or on iphone devices, run the following command to create an iOS build:
 ```bash
 $ ionic build
 ```
