@@ -4,7 +4,7 @@ This mobile app project is a submission as part of the application for the Mobil
 ## Implementation
 Angular.js is used as the project's framework since it provides good isolation among model(as angular services), view(as angular templates), and controllers(as angular controllers).
 
-The project is structured in a way that the files are organized by feature instead of by function type; in particular, the implementations of each feature are encapsulated into their own corresponding folder. For example, in our project, the required 'products list' feature is implemented in the `app/products` folder, which includes the model/view/controller of that feature. There are serveral advantages of such archtecture:
+The project is structured in a way that the files are organized by feature instead of by function type; in particular, the implementations of each feature are encapsulated into their own corresponding folder. For example, in our project, the required 'products list' feature is implemented in the `app/products` folder, which includes the model/view/controller of that feature. There are serveral advantages of such architecture:
 
 1. The app is scalable. Newly added feature will be implemented in its own folder and the existing structure will not be affected.
 2. Such architecture makes it easier for collaboration. If multiple developers are working on different features of the app, they will only need to focus on the code that are encapsulated in their own folder.
