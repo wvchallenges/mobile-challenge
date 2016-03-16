@@ -15,7 +15,7 @@ angular.module("wvChallenge.products", [
   /**
    * Products view main controller
    */
-  .controller("ProductsController", ["$scope", "ProductsModel", "PtrService", function($scope, ProductsModel, PtrService){
+  .controller("ProductsController", ["$scope", "$rootScope", "ProductsModel", "PtrService", function($scope, $rootScope, ProductsModel, PtrService){
     var prodCtrl = this;
 
     /* status setup */
@@ -85,7 +85,12 @@ angular.module("wvChallenge.products", [
     }
 
     /* online/offline watcher */
-    $scope.$watch("online", function(newVal, oldVal){
+    $scope.$watch(
+      function(){
+        return $rootScope.online;
+      },
+      function(newVal, oldVal){
+        console.log("online status change: "+oldVal+"->"+newVal);
         prodCtrl.online = newVal; // update online status
 
         if(!newVal){  // offline, show error message
@@ -94,5 +99,6 @@ angular.module("wvChallenge.products", [
           PtrService.triggerPtr("products-ptr-content");
         }
     });
+
   }])
 ;

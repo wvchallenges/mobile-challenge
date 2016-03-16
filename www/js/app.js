@@ -24,21 +24,21 @@ angular.module('wvChallenge', [
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-
-    // Add online/offline listener
-    $rootScope.online = navigator.onLine;
-    $window.addEventListener("offline", function() {
-      $rootScope.$apply(function() {
-        $rootScope.online = false;
-      });
-    }, false);
-
-    $window.addEventListener("online", function() {
-      $rootScope.$apply(function() {
-        $rootScope.online = true;
-      });
-    }, false);
   });
+
+  // Add online/offline listener
+  $rootScope.online = navigator.onLine;
+  $window.addEventListener("offline", function() {
+    $rootScope.$apply(function() {
+      $rootScope.online = false;
+    });
+  }, false);
+
+  $window.addEventListener("online", function() {
+    $rootScope.$apply(function() {
+      $rootScope.online = true;
+    });
+  }, false);
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
