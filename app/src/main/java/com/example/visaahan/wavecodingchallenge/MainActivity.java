@@ -1,5 +1,7 @@
 package com.example.visaahan.wavecodingchallenge;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -48,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             try {
+                TextView header = new TextView(this);
+                header.setTypeface(Typeface.create("sans-serif-light", Typeface.BOLD_ITALIC));
+                header.setTextSize(17);
+                header.setTextColor(Color.BLUE);
+                header.setText("Wave Business Items: ");
+                ll.addView(header);
+
                 JSONArray jsonArr = new JSONArray(input);
                 int length = jsonArr.length();
 
@@ -56,7 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     String name = jsonObj.getString("name");
                     Double price = jsonObj.getDouble("price");
                     TextView tv = new TextView(this);
-                    tv.setText(name + " $" + String.format("%.2f", price));
+                    tv.setTypeface(Typeface.create("sans-serif-light", Typeface.NORMAL));
+                    tv.setTextSize(15);
+                    tv.setTextColor(Color.BLUE);
+                    tv.setText("Item: " + name + "  Price: $" + String.format("%.2f", price));
                     ll.addView(tv);
                 }
             }catch (JSONException e) {
