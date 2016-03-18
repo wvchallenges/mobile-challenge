@@ -1,0 +1,12 @@
+How to setup The Wave Challenge App:
+Use Cocoapods in your terminal and run pip install 
+If you do not have cocoa pods
+https://cocoapods.org/
+Install the dependencies and then
+open the xcworkspace <--- This is important
+Build and Run with an iOS device <--- important
+The reason for running with a device, the simulator is breaking my code, my storyboard code anyways.
+
+However it works just fine on my device.
+The implementation uses MVVM (model view view model) cleanly separates the layers of the application and make's parts of the app easy to update, its a simple app, I would add more to it that is CRUD features however I don't have a spec for that, so I would likely box myself in if I was to continue. I also wanted to add animations and such but due to time contraints on my end I didn't have enough time to.
+ 
