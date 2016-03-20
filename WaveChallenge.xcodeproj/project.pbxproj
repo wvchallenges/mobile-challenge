@@ -7,153 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C57ABB629096F787A58610 /* libPods-WaveChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C11823C83C77DA98ED88DFAD /* libPods-WaveChallenge.a */; };
-		EE273D541C988FAA00823582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE273D531C988FAA00823582 /* main.m */; };
-		EE273D571C988FAA00823582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE273D561C988FAA00823582 /* AppDelegate.m */; };
-		EE273D5A1C988FAA00823582 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE273D591C988FAA00823582 /* ViewController.m */; };
-		EE273D5D1C988FAA00823582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE273D5B1C988FAA00823582 /* Main.storyboard */; };
-		EE273D5F1C988FAA00823582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE273D5E1C988FAA00823582 /* Assets.xcassets */; };
-		EE273D621C988FAA00823582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE273D601C988FAA00823582 /* LaunchScreen.storyboard */; };
-		EE7F0FFC1C98AD540054F1C0 /* ViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F0FFB1C98AD540054F1C0 /* ViewControllerViewModel.m */; };
-		EE7F0FFF1C98AD680054F1C0 /* ProductCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F0FFE1C98AD680054F1C0 /* ProductCellViewModel.m */; };
-		EE7F10021C98AFC70054F1C0 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F10011C98AFC70054F1C0 /* NetworkManager.m */; };
-		EE7F10051C98B6680054F1C0 /* BusinessProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F10041C98B6680054F1C0 /* BusinessProductModel.m */; };
-		EE7F100B1C98BA7E0054F1C0 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F100A1C98BA7E0054F1C0 /* AccountModel.m */; };
-		EE8A8BD41C9938C5006EC15C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8A8BD31C9938C5006EC15C /* ProductCell.m */; };
+		B39EE57822588A2A9961A3F0 /* libPods-WaveChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72760894C2204A762CA17A72 /* libPods-WaveChallenge.a */; };
+		EE5509BF1C9CD091006931DA /* ProductViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509BE1C9CD091006931DA /* ProductViewControllerViewModel.m */; };
+		EE5509C21C9CD6A1006931DA /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509C11C9CD6A1006931DA /* ProductTableViewCell.m */; };
+		EE5509C51C9CD722006931DA /* ProductTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509C41C9CD722006931DA /* ProductTableCellViewModel.m */; };
+		EE5509C91C9CEC85006931DA /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509C81C9CEC85006931DA /* NetworkingManager.m */; };
+		EE5509CC1C9D0F1F006931DA /* BusinessProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509CB1C9D0F1F006931DA /* BusinessProductModel.m */; };
+		EE5509CF1C9D0FD3006931DA /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5509CE1C9D0FD3006931DA /* AccountModel.m */; };
+		EE8A8BE31C9CCD71006EC15C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8A8BE21C9CCD71006EC15C /* main.m */; };
+		EE8A8BE61C9CCD71006EC15C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8A8BE51C9CCD71006EC15C /* AppDelegate.m */; };
+		EE8A8BE91C9CCD71006EC15C /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8A8BE81C9CCD71006EC15C /* ProductViewController.m */; };
+		EE8A8BEC1C9CCD71006EC15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8A8BEA1C9CCD71006EC15C /* Main.storyboard */; };
+		EE8A8BEE1C9CCD71006EC15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8A8BED1C9CCD71006EC15C /* Assets.xcassets */; };
+		EE8A8BF11C9CCD71006EC15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8A8BEF1C9CCD71006EC15C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22A0B32C109A868155E89DB3 /* Pods-WaveChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		3A9C45B13F1F6339E8BF7997 /* Pods-WaveChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		C11823C83C77DA98ED88DFAD /* libPods-WaveChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaveChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE273D4F1C988FAA00823582 /* WaveChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE273D531C988FAA00823582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EE273D551C988FAA00823582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EE273D561C988FAA00823582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EE273D581C988FAA00823582 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE273D591C988FAA00823582 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EE273D5C1C988FAA00823582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE273D5E1C988FAA00823582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE273D611C988FAA00823582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EE273D631C988FAA00823582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE7F0FFA1C98AD540054F1C0 /* ViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerViewModel.h; sourceTree = "<group>"; };
-		EE7F0FFB1C98AD540054F1C0 /* ViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerViewModel.m; sourceTree = "<group>"; };
-		EE7F0FFD1C98AD680054F1C0 /* ProductCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCellViewModel.h; sourceTree = "<group>"; };
-		EE7F0FFE1C98AD680054F1C0 /* ProductCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCellViewModel.m; sourceTree = "<group>"; };
-		EE7F10001C98AFC70054F1C0 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		EE7F10011C98AFC70054F1C0 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		EE7F10031C98B6680054F1C0 /* BusinessProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessProductModel.h; sourceTree = "<group>"; };
-		EE7F10041C98B6680054F1C0 /* BusinessProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessProductModel.m; sourceTree = "<group>"; };
-		EE7F10091C98BA7E0054F1C0 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountModel.h; path = ../AccountModel.h; sourceTree = "<group>"; };
-		EE7F100A1C98BA7E0054F1C0 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountModel.m; path = ../AccountModel.m; sourceTree = "<group>"; };
-		EE8A8BD21C9938C5006EC15C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
-		EE8A8BD31C9938C5006EC15C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		72760894C2204A762CA17A72 /* libPods-WaveChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaveChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7662DB05CE8FBA215D603179 /* Pods-WaveChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E1FC365A78345026B1A583D8 /* Pods-WaveChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		EE5509BD1C9CD091006931DA /* ProductViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewControllerViewModel.h; sourceTree = "<group>"; };
+		EE5509BE1C9CD091006931DA /* ProductViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewControllerViewModel.m; sourceTree = "<group>"; };
+		EE5509C01C9CD6A1006931DA /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		EE5509C11C9CD6A1006931DA /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		EE5509C31C9CD722006931DA /* ProductTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableCellViewModel.h; sourceTree = "<group>"; };
+		EE5509C41C9CD722006931DA /* ProductTableCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableCellViewModel.m; sourceTree = "<group>"; };
+		EE5509C71C9CEC85006931DA /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
+		EE5509C81C9CEC85006931DA /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
+		EE5509CA1C9D0F1F006931DA /* BusinessProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessProductModel.h; sourceTree = "<group>"; };
+		EE5509CB1C9D0F1F006931DA /* BusinessProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessProductModel.m; sourceTree = "<group>"; };
+		EE5509CD1C9D0FD3006931DA /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		EE5509CE1C9D0FD3006931DA /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		EE8A8BDE1C9CCD71006EC15C /* WaveChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8A8BE21C9CCD71006EC15C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE8A8BE41C9CCD71006EC15C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE8A8BE51C9CCD71006EC15C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE8A8BE71C9CCD71006EC15C /* ProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		EE8A8BE81C9CCD71006EC15C /* ProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		EE8A8BEB1C9CCD71006EC15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE8A8BED1C9CCD71006EC15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE8A8BF01C9CCD71006EC15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE8A8BF21C9CCD71006EC15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EE273D4C1C988FAA00823582 /* Frameworks */ = {
+		EE8A8BDB1C9CCD71006EC15C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C57ABB629096F787A58610 /* libPods-WaveChallenge.a in Frameworks */,
+				B39EE57822588A2A9961A3F0 /* libPods-WaveChallenge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02C6D1CAEC21989D97617E86 /* Frameworks */ = {
+		18D8DE026010561E25EDDA4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C11823C83C77DA98ED88DFAD /* libPods-WaveChallenge.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1558E6A5EB7F23F67E335075 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				22A0B32C109A868155E89DB3 /* Pods-WaveChallenge.debug.xcconfig */,
-				3A9C45B13F1F6339E8BF7997 /* Pods-WaveChallenge.release.xcconfig */,
+				7662DB05CE8FBA215D603179 /* Pods-WaveChallenge.debug.xcconfig */,
+				E1FC365A78345026B1A583D8 /* Pods-WaveChallenge.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EE273D461C988FAA00823582 = {
+		CF3BC73508851B488B2D20E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE273D511C988FAA00823582 /* WaveChallenge */,
-				EE273D501C988FAA00823582 /* Products */,
-				1558E6A5EB7F23F67E335075 /* Pods */,
-				02C6D1CAEC21989D97617E86 /* Frameworks */,
+				72760894C2204A762CA17A72 /* libPods-WaveChallenge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5509C61C9CEC78006931DA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EE5509C71C9CEC85006931DA /* NetworkingManager.h */,
+				EE5509C81C9CEC85006931DA /* NetworkingManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		EE8A8BD51C9CCD71006EC15C = {
+			isa = PBXGroup;
+			children = (
+				EE8A8BE01C9CCD71006EC15C /* WaveChallenge */,
+				EE8A8BDF1C9CCD71006EC15C /* Products */,
+				18D8DE026010561E25EDDA4E /* Pods */,
+				CF3BC73508851B488B2D20E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		EE273D501C988FAA00823582 /* Products */ = {
+		EE8A8BDF1C9CCD71006EC15C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE273D4F1C988FAA00823582 /* WaveChallenge.app */,
+				EE8A8BDE1C9CCD71006EC15C /* WaveChallenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE273D511C988FAA00823582 /* WaveChallenge */ = {
+		EE8A8BE01C9CCD71006EC15C /* WaveChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				EE273D551C988FAA00823582 /* AppDelegate.h */,
-				EE273D561C988FAA00823582 /* AppDelegate.m */,
-				EE273D581C988FAA00823582 /* ViewController.h */,
-				EE273D591C988FAA00823582 /* ViewController.m */,
-				EE7F0FFA1C98AD540054F1C0 /* ViewControllerViewModel.h */,
-				EE7F0FFB1C98AD540054F1C0 /* ViewControllerViewModel.m */,
-				EE7F0FFD1C98AD680054F1C0 /* ProductCellViewModel.h */,
-				EE7F0FFE1C98AD680054F1C0 /* ProductCellViewModel.m */,
-				EE7F10001C98AFC70054F1C0 /* NetworkManager.h */,
-				EE7F10011C98AFC70054F1C0 /* NetworkManager.m */,
-				EE8A8BD21C9938C5006EC15C /* ProductCell.h */,
-				EE8A8BD31C9938C5006EC15C /* ProductCell.m */,
-				EE7F100C1C98BABC0054F1C0 /* Model */,
-				EE273D5B1C988FAA00823582 /* Main.storyboard */,
-				EE273D5E1C988FAA00823582 /* Assets.xcassets */,
-				EE273D601C988FAA00823582 /* LaunchScreen.storyboard */,
-				EE273D631C988FAA00823582 /* Info.plist */,
-				EE273D521C988FAA00823582 /* Supporting Files */,
+				EE5509C61C9CEC78006931DA /* Networking */,
+				EE8A8BFA1C9CCFD7006EC15C /* View */,
+				EE8A8BF91C9CCFCA006EC15C /* ViewModels */,
+				EE8A8BF81C9CCFB8006EC15C /* Models */,
+				EE8A8BE41C9CCD71006EC15C /* AppDelegate.h */,
+				EE8A8BE51C9CCD71006EC15C /* AppDelegate.m */,
+				EE8A8BEA1C9CCD71006EC15C /* Main.storyboard */,
+				EE8A8BED1C9CCD71006EC15C /* Assets.xcassets */,
+				EE8A8BEF1C9CCD71006EC15C /* LaunchScreen.storyboard */,
+				EE8A8BF21C9CCD71006EC15C /* Info.plist */,
+				EE8A8BE11C9CCD71006EC15C /* Supporting Files */,
 			);
 			path = WaveChallenge;
 			sourceTree = "<group>";
 		};
-		EE273D521C988FAA00823582 /* Supporting Files */ = {
+		EE8A8BE11C9CCD71006EC15C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE273D531C988FAA00823582 /* main.m */,
+				EE8A8BE21C9CCD71006EC15C /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EE7F100C1C98BABC0054F1C0 /* Model */ = {
+		EE8A8BF81C9CCFB8006EC15C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EE7F10031C98B6680054F1C0 /* BusinessProductModel.h */,
-				EE7F10041C98B6680054F1C0 /* BusinessProductModel.m */,
-				EE7F10091C98BA7E0054F1C0 /* AccountModel.h */,
-				EE7F100A1C98BA7E0054F1C0 /* AccountModel.m */,
+				EE5509CA1C9D0F1F006931DA /* BusinessProductModel.h */,
+				EE5509CB1C9D0F1F006931DA /* BusinessProductModel.m */,
+				EE5509CD1C9D0FD3006931DA /* AccountModel.h */,
+				EE5509CE1C9D0FD3006931DA /* AccountModel.m */,
 			);
-			name = Model;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EE8A8BF91C9CCFCA006EC15C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE5509BD1C9CD091006931DA /* ProductViewControllerViewModel.h */,
+				EE5509BE1C9CD091006931DA /* ProductViewControllerViewModel.m */,
+				EE5509C31C9CD722006931DA /* ProductTableCellViewModel.h */,
+				EE5509C41C9CD722006931DA /* ProductTableCellViewModel.m */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE8A8BFA1C9CCFD7006EC15C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE8A8BE71C9CCD71006EC15C /* ProductViewController.h */,
+				EE8A8BE81C9CCD71006EC15C /* ProductViewController.m */,
+				EE5509C01C9CD6A1006931DA /* ProductTableViewCell.h */,
+				EE5509C11C9CD6A1006931DA /* ProductTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE273D4E1C988FAA00823582 /* WaveChallenge */ = {
+		EE8A8BDD1C9CCD71006EC15C /* WaveChallenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE273D661C988FAA00823582 /* Build configuration list for PBXNativeTarget "WaveChallenge" */;
+			buildConfigurationList = EE8A8BF51C9CCD71006EC15C /* Build configuration list for PBXNativeTarget "WaveChallenge" */;
 			buildPhases = (
-				4E0E0381AD9592B65C0AD5AE /* Check Pods Manifest.lock */,
-				EE273D4B1C988FAA00823582 /* Sources */,
-				EE273D4C1C988FAA00823582 /* Frameworks */,
-				EE273D4D1C988FAA00823582 /* Resources */,
-				BDFDD0AC5B6698BFF3FE9B7C /* Embed Pods Frameworks */,
-				E23F7C14B0E3B254005AD0F2 /* Copy Pods Resources */,
+				5679D57C76A89E89C9FCD288 /* Check Pods Manifest.lock */,
+				EE8A8BDA1C9CCD71006EC15C /* Sources */,
+				EE8A8BDB1C9CCD71006EC15C /* Frameworks */,
+				EE8A8BDC1C9CCD71006EC15C /* Resources */,
+				8A25BD1FE8115E7033756B3B /* Embed Pods Frameworks */,
+				0BBED7C24C71727A52085AA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,24 +185,24 @@
 			);
 			name = WaveChallenge;
 			productName = WaveChallenge;
-			productReference = EE273D4F1C988FAA00823582 /* WaveChallenge.app */;
+			productReference = EE8A8BDE1C9CCD71006EC15C /* WaveChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EE273D471C988FAA00823582 /* Project object */ = {
+		EE8A8BD61C9CCD71006EC15C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MC;
 				TargetAttributes = {
-					EE273D4E1C988FAA00823582 = {
+					EE8A8BDD1C9CCD71006EC15C = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = EE273D4A1C988FAA00823582 /* Build configuration list for PBXProject "WaveChallenge" */;
+			buildConfigurationList = EE8A8BD91C9CCD71006EC15C /* Build configuration list for PBXProject "WaveChallenge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -186,61 +210,31 @@
 				en,
 				Base,
 			);
-			mainGroup = EE273D461C988FAA00823582;
-			productRefGroup = EE273D501C988FAA00823582 /* Products */;
+			mainGroup = EE8A8BD51C9CCD71006EC15C;
+			productRefGroup = EE8A8BDF1C9CCD71006EC15C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE273D4E1C988FAA00823582 /* WaveChallenge */,
+				EE8A8BDD1C9CCD71006EC15C /* WaveChallenge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EE273D4D1C988FAA00823582 /* Resources */ = {
+		EE8A8BDC1C9CCD71006EC15C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE273D621C988FAA00823582 /* LaunchScreen.storyboard in Resources */,
-				EE273D5F1C988FAA00823582 /* Assets.xcassets in Resources */,
-				EE273D5D1C988FAA00823582 /* Main.storyboard in Resources */,
+				EE8A8BF11C9CCD71006EC15C /* LaunchScreen.storyboard in Resources */,
+				EE8A8BEE1C9CCD71006EC15C /* Assets.xcassets in Resources */,
+				EE8A8BEC1C9CCD71006EC15C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E0E0381AD9592B65C0AD5AE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BDFDD0AC5B6698BFF3FE9B7C /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E23F7C14B0E3B254005AD0F2 /* Copy Pods Resources */ = {
+		0BBED7C24C71727A52085AA1 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,40 +249,70 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5679D57C76A89E89C9FCD288 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A25BD1FE8115E7033756B3B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EE273D4B1C988FAA00823582 /* Sources */ = {
+		EE8A8BDA1C9CCD71006EC15C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7F100B1C98BA7E0054F1C0 /* AccountModel.m in Sources */,
-				EE273D5A1C988FAA00823582 /* ViewController.m in Sources */,
-				EE7F10051C98B6680054F1C0 /* BusinessProductModel.m in Sources */,
-				EE273D571C988FAA00823582 /* AppDelegate.m in Sources */,
-				EE7F0FFC1C98AD540054F1C0 /* ViewControllerViewModel.m in Sources */,
-				EE8A8BD41C9938C5006EC15C /* ProductCell.m in Sources */,
-				EE7F0FFF1C98AD680054F1C0 /* ProductCellViewModel.m in Sources */,
-				EE7F10021C98AFC70054F1C0 /* NetworkManager.m in Sources */,
-				EE273D541C988FAA00823582 /* main.m in Sources */,
+				EE8A8BE91C9CCD71006EC15C /* ProductViewController.m in Sources */,
+				EE5509C91C9CEC85006931DA /* NetworkingManager.m in Sources */,
+				EE8A8BE61C9CCD71006EC15C /* AppDelegate.m in Sources */,
+				EE5509CF1C9D0FD3006931DA /* AccountModel.m in Sources */,
+				EE5509BF1C9CD091006931DA /* ProductViewControllerViewModel.m in Sources */,
+				EE5509C51C9CD722006931DA /* ProductTableCellViewModel.m in Sources */,
+				EE8A8BE31C9CCD71006EC15C /* main.m in Sources */,
+				EE5509C21C9CD6A1006931DA /* ProductTableViewCell.m in Sources */,
+				EE5509CC1C9D0F1F006931DA /* BusinessProductModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE273D5B1C988FAA00823582 /* Main.storyboard */ = {
+		EE8A8BEA1C9CCD71006EC15C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE273D5C1C988FAA00823582 /* Base */,
+				EE8A8BEB1C9CCD71006EC15C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EE273D601C988FAA00823582 /* LaunchScreen.storyboard */ = {
+		EE8A8BEF1C9CCD71006EC15C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE273D611C988FAA00823582 /* Base */,
+				EE8A8BF01C9CCD71006EC15C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -296,7 +320,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EE273D641C988FAA00823582 /* Debug */ = {
+		EE8A8BF31C9CCD71006EC15C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,7 +363,7 @@
 			};
 			name = Debug;
 		};
-		EE273D651C988FAA00823582 /* Release */ = {
+		EE8A8BF41C9CCD71006EC15C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,9 +400,9 @@
 			};
 			name = Release;
 		};
-		EE273D671C988FAA00823582 /* Debug */ = {
+		EE8A8BF61C9CCD71006EC15C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A0B32C109A868155E89DB3 /* Pods-WaveChallenge.debug.xcconfig */;
+			baseConfigurationReference = 7662DB05CE8FBA215D603179 /* Pods-WaveChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaveChallenge/Info.plist;
@@ -388,9 +412,9 @@
 			};
 			name = Debug;
 		};
-		EE273D681C988FAA00823582 /* Release */ = {
+		EE8A8BF71C9CCD71006EC15C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A9C45B13F1F6339E8BF7997 /* Pods-WaveChallenge.release.xcconfig */;
+			baseConfigurationReference = E1FC365A78345026B1A583D8 /* Pods-WaveChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaveChallenge/Info.plist;
@@ -403,25 +427,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE273D4A1C988FAA00823582 /* Build configuration list for PBXProject "WaveChallenge" */ = {
+		EE8A8BD91C9CCD71006EC15C /* Build configuration list for PBXProject "WaveChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE273D641C988FAA00823582 /* Debug */,
-				EE273D651C988FAA00823582 /* Release */,
+				EE8A8BF31C9CCD71006EC15C /* Debug */,
+				EE8A8BF41C9CCD71006EC15C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE273D661C988FAA00823582 /* Build configuration list for PBXNativeTarget "WaveChallenge" */ = {
+		EE8A8BF51C9CCD71006EC15C /* Build configuration list for PBXNativeTarget "WaveChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE273D671C988FAA00823582 /* Debug */,
-				EE273D681C988FAA00823582 /* Release */,
+				EE8A8BF61C9CCD71006EC15C /* Debug */,
+				EE8A8BF71C9CCD71006EC15C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EE273D471C988FAA00823582 /* Project object */;
+	rootObject = EE8A8BD61C9CCD71006EC15C /* Project object */;
 }
