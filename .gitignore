@@ -1,0 +1,22 @@
+# Built app files.
+*.apk
+*.ap_
+
+# Java class files.
+*.class
+
+# Generated files.
+bin/
+gen/
+
+# Android Studio
+.gradle
+/local.properties
+/.idea/workspace.xml
+/build
+build/
+android/.idea/codeStyleSettings.xml
+.idea/
+*.iml
+*.bin
+

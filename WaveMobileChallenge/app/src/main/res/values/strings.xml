@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wave Mobile Challenge</string>
+
+
+    <!-- Main Activity -->
+    <string name="no_data_connection_msg">
+        You have no internet connection.
+    </string>
+    <string name="unauthorized_user_msg">
+        Unvalid access-token.
+    </string>
+    <string name="auth_went_wrong_msg">
+        Something went wrong with auth.
+    </string>
+    <string name="invalid_business_id_msg">
+        Invalid business ID.
+    </string>
+    <string name="product_query_went_wrong_msg">
+        Something went wrong with product query.
+    </string>
+    <string name="retry_text">Retry</string>
+
+</resources>
