@@ -6,23 +6,29 @@ from solution import app
 from solution.product import ObjectProduct
 
 
-
 @app.route('/')
-def hello_world():
-    testing = get_request('user')
-    print(testing)
+def run_app():
+    '''
+    run the flask applicatoin
+    '''
+    # Get access to the API and return USER information as a dictionary
+    get_request('user')
 
+    # Get business product data as a dictionary
     products = get_request('businesses')
-    print(products)
 
+    # Convert each entry into an object
     for i in range(len(products)):
         products[i] = ObjectProduct(**products[i])
 
-    print(products)
     return render_template('index.html', welcome="Hello, Welcome", products=products)
 
 
 def get_request(type):
+    '''
+    :param:: String
+    :return:: Dictionary
+    '''
     url = WaveAppsConfig.URL
     token = WaveAppsConfig.ACCESS_TOKEN
     if type == 'user':
@@ -33,18 +39,3 @@ def get_request(type):
     print("Access Token: ", token)
     return get(url, headers={'Authorization': "Bearer " + token}).json()
 
-
-# def get_access():
-#     url = WaveAppsConfig.URL + 'user/'
-#     token = WaveAppsConfig.ACCESS_TOKEN
-#     print("URL: ", url)
-#     print("Access Token: ", token)
-#     return get(url, headers={'Authorization': "Bearer " + token}).json()
-#
-#
-# def get_product():
-#     url = WaveAppsConfig.URL + 'businesses/' + WaveAppsConfig.BUSINESS_ID + '/products/'
-#     token = WaveAppsConfig.ACCESS_TOKEN
-#     print("URL: ", url)
-#     print("Access Token: ", token)
-#     return get(url, headers={'Authorization': "Bearer " + token}).json()

@@ -1,4 +1,8 @@
 class Config(object):
+    '''
+    Config Environment for the application
+    This will keep some data safe
+    '''
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
