@@ -15,8 +15,6 @@ I'm particularly happy that I used Spring's RestTemplate to implement the REST c
 
 Other than that, I was happily surprised I guessed correctly, on the first try, the url string needed to successfully access the Wave Apps Products endpoint.
 
-Thanks!
-
 ### App preview
 
 ![Screenshot of app](https://github.com/parker-mar/mobile-challenge/blob/master/Wave/Preview.png)
