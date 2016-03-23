@@ -1,12 +1,12 @@
-# H1 Mobile Challenge
+# Mobile Challenge
 
-# H2 How to set up application
+### How to set up application
 
-# H2 How to run application
+### How to run application
 
-# H2 Implementation highlights
+### Implementation highlights
 "Once you're done, please submit a paragraph or two in your README about what you are particularly proud of in your implementation, and why."
 
-# H2 Here is a preview of the app:
+### Here is a preview of the app:
 
 ![Screenshot of app](https://github.com/parker-mar/mobile-challenge/blob/master/Wave/Preview.png)
