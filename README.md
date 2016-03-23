@@ -21,6 +21,8 @@ I am proud of my implementation because:
 - My implemented solution is organized and easy to understand
 - This implementation can be viewed on the laptop or phone
 
+PS: If you want me to do something more than just this, please let me know. 
+
 
 #### Requirements
 - Install Python from: https://www.python.org/downloads/
