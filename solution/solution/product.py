@@ -10,8 +10,7 @@ class Product(object):
     def __init__(self, _id, url, name, price, description, is_sold, is_bought, income_account,
                  expense_account, active, default_sales_taxes, date_created, date_modified):
         '''
-        Product object, was not used for this case
-        But can be used to populate/post
+        Product object, was not used for this case, but can be used to populate/post
         '''
         self.id = _id
         self.url = url

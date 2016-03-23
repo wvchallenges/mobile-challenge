@@ -13,7 +13,7 @@
                 <tr id="row">
                     <th id="count">{{ loop.index }}</th>
                     <td>{{ product.name }}</td>
-                    <td>${{ product.price }}</td>
+                    <td>${{ product.price|int}}</td>
                 </tr>
             {% endfor %}
             </tbody>
