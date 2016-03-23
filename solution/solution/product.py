@@ -1,19 +1,11 @@
+class ObjectProduct(object):
+    def __init__(self, **entries):
+        self.__dict__.update(entries)
+
+
 class Product(object):
-    def __init__(
-            self,
-            _id,
-            url,
-            name,
-            price,
-            description,
-            is_sold,
-            is_bought,
-            income_account,
-            expense_account,
-            active,
-            default_sales_taxes,
-            date_created,
-            date_modified):
+    def __init__(self, _id, url, name, price, description, is_sold, is_bought, income_account,
+                 expense_account, active, default_sales_taxes, date_created, date_modified):
         self.id = _id
         self.url = url
         self.name = name
@@ -27,5 +19,11 @@ class Product(object):
         self.default_sales_tax = default_sales_taxes
         self.date_created = date_created
         self.date_modified = date_modified
+
+
+
+
+
+
 
 
