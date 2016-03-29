@@ -86,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
                         Collections.sort(response, new Comparator<Products>() {
                             @Override
                             public int compare(Products lhs, Products rhs) {
+                                //sort by number low -> high
+                                //return lhs.getPrice().compareTo(rhs.getPrice());
+                                //sort by apha
                                 return lhs.getName().compareTo(rhs.getName());
                             }
                         });
