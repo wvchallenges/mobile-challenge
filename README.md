@@ -34,7 +34,8 @@
 On a previous project I worked on where the original author of the project created all there REST and events by hand proved to be a large challenge for me to complete the project as part of the contract since the original author left the project. It would have been a massive undertaking to restructure a lot of how the app was built to use proven libraries like Retrofit and RxJava.
 
 This was the first time I was able to implement RxJava instead of just reading about it and it's implementations. RxJava helps with async tasks and observable sequences. The alternative is using even busses or create objects not attached to the activity and manage them independently.
-=======
+
+--- 
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview.
 
