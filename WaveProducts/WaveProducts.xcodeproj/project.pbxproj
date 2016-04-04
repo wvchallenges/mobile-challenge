@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8E85841CB20A4400AF6FC7 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E85831CB20A4400AF6FC7 /* Common.m */; };
 		8CA1C7C01CB205880041701D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1C7BF1CB205880041701D /* Product.m */; };
 		8CA1C7C51CB207BA0041701D /* ProductsNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1C7C41CB207BA0041701D /* ProductsNetworkManager.m */; };
 		8CE50CAA1CAE0F0D007C96D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE50CA91CAE0F0D007C96D1 /* main.m */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		0FD0E8C4720EA75C3767E69C /* Pods_WaveProducts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveProducts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8E85821CB20A4400AF6FC7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		8C8E85831CB20A4400AF6FC7 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		8CA1C7BC1CB2043D0041701D /* AnimationLayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLayerDelegate.h; sourceTree = "<group>"; };
 		8CA1C7BE1CB205880041701D /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		8CA1C7BF1CB205880041701D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 			children = (
 				8CE50CAB1CAE0F0D007C96D1 /* AppDelegate.h */,
 				8CE50CAC1CAE0F0D007C96D1 /* AppDelegate.m */,
+				8C8E85821CB20A4400AF6FC7 /* Common.h */,
+				8C8E85831CB20A4400AF6FC7 /* Common.m */,
 				8CE50CE01CAE1A9C007C96D1 /* openAnimation */,
 			);
 			name = appSetup;
@@ -431,6 +436,7 @@
 				8CE50CE71CAE1B43007C96D1 /* RectLayer.m in Sources */,
 				8CE50CDF1CAE17F4007C96D1 /* ProductsViewController.m in Sources */,
 				8CA1C7C01CB205880041701D /* Product.m in Sources */,
+				8C8E85841CB20A4400AF6FC7 /* Common.m in Sources */,
 				8CE50CAA1CAE0F0D007C96D1 /* main.m in Sources */,
 				8CE50CE31CAE1AB6007C96D1 /* OpenAnimationView.m in Sources */,
 				8CA1C7C51CB207BA0041701D /* ProductsNetworkManager.m in Sources */,

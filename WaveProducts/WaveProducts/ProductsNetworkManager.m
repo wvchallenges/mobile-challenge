@@ -7,7 +7,14 @@
 //
 
 #import "ProductsNetworkManager.h"
-#import <AFNetworking/AFURLSessionManager.h>
+#import "Common.h"
+#import <AFNetworking/AFNetworking.h>
+
+@interface ProductsNetworkManager ()
+
+@property (strong, nonatomic) AFHTTPSessionManager* manager;
+
+@end
 
 @implementation ProductsNetworkManager
 
@@ -20,18 +27,28 @@
     return sharedMyManager;
 }
 
+- (instancetype) init {
+    if (self = [super init]) {
+        [self setupRequestBase];
+    }
+    return self;
+}
+
+- (void) setupRequestBase {
+    NSURL *url = [NSURL URLWithString:BASE_URL];
+    self.manager = [[AFHTTPSessionManager manager] initWithBaseURL:url];
+    [[self.manager requestSerializer] setValue:[NSString stringWithFormat:@"Bearer %@", ACCESS_TOKEN] forHTTPHeaderField:@"Authorization"];
+}
+
 - (void) getProductsWithCompletion {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:@"https://example.com" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        // do whatever you'd like here; for example, if you want to convert
-        // it to a string and log it, you might do something like:
-        
-        NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", string);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
+    
+    NSString* url = [NSString stringWithFormat:@"/businesses/%@/products/", BUSINESS_ID];
+    [self.manager GET:url parameters:nil progress:nil
+      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+          NSLog(@"%@", responseObject);
+      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+          NSLog(@"Failure");
+      }];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ProductsViewController.h"
 #import "OpenAnimationView.h"
+#import "ProductsNetworkManager.h"
 
 @interface ProductsViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self runAnimation];
+    [[ProductsNetworkManager sharedManager] getProductsWithCompletion];
 }
 
 - (void)didReceiveMemoryWarning {

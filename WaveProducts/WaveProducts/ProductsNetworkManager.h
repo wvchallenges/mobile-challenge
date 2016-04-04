@@ -12,4 +12,6 @@
 
 + (ProductsNetworkManager *) sharedManager;
 
+- (void) getProductsWithCompletion;
+
 @end
