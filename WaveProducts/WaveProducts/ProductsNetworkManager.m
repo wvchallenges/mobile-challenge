@@ -8,6 +8,9 @@
 
 #import "ProductsNetworkManager.h"
 #import "Common.h"
+
+#import "Product.h"
+
 #import <AFNetworking/AFNetworking.h>
 
 @interface ProductsNetworkManager ()
@@ -40,14 +43,21 @@
     [[self.manager requestSerializer] setValue:[NSString stringWithFormat:@"Bearer %@", ACCESS_TOKEN] forHTTPHeaderField:@"Authorization"];
 }
 
-- (void) getProductsWithCompletion {
-    
+- (void) getProductsWithCompletion:(productsCompletion)completeBlock {
     NSString* url = [NSString stringWithFormat:@"/businesses/%@/products/", BUSINESS_ID];
     [self.manager GET:url parameters:nil progress:nil
       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-          NSLog(@"%@", responseObject);
+          
+          NSError *error = nil;
+          BOOL success = YES;
+          NSArray *data = [Product arrayOfModelsFromDictionaries:responseObject error:&error];
+          if (error != nil) {
+              success = NO;
+          }
+          completeBlock(success, data, error);
+          
       } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-          NSLog(@"Failure");
+          completeBlock(NO, nil, error);
       }];
 }
 

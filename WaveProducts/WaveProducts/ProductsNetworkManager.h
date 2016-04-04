@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^productsCompletion)(BOOL success, NSArray *products, NSError *error);
+
 @interface ProductsNetworkManager : NSObject
 
 + (ProductsNetworkManager *) sharedManager;
 
-- (void) getProductsWithCompletion;
+- (void) getProductsWithCompletion:(productsCompletion)completeBlock;
 
 @end

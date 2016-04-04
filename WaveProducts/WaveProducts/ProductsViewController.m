@@ -9,6 +9,7 @@
 #import "ProductsViewController.h"
 #import "OpenAnimationView.h"
 #import "ProductsNetworkManager.h"
+#import "Product.h"
 
 @interface ProductsViewController ()
 
@@ -20,7 +21,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self runAnimation];
-    [[ProductsNetworkManager sharedManager] getProductsWithCompletion];
+    [[ProductsNetworkManager sharedManager] getProductsWithCompletion:^(BOOL success, NSArray *products, NSError *error) {
+        if (success) {
+            for (Product *product in products) {
+                NSLog(@"%@", product.name);
+            }
+        } else {
+            // @TODO Warn user.
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
