@@ -13,7 +13,7 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        self.fillColor = [UIColor redColor].CGColor;
+        self.fillColor = [[UIColor redColor] CGColor];
         self.path = (__bridge CGPathRef _Nullable)([self rectPathSmall]);
     }
     return self;
@@ -57,8 +57,7 @@
     expandAnimation.removedOnCompletion = NO;
     [self addAnimation:expandAnimation forKey:nil];
     
-    CFTimeInterval animationDelay = 0.5;
-    [NSTimer scheduledTimerWithTimeInterval:(animationDuration+animationDelay) target:self selector:@selector(removeView) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:(animationDuration) target:self selector:@selector(removeView) userInfo:nil repeats:NO];
 }
 
 - (void) removeView {
@@ -131,7 +130,7 @@
     animationGroup.repeatCount = repeatCount;
     [self addAnimation:animationGroup forKey:nil];
     
-    [NSTimer scheduledTimerWithTimeInterval:(wobbleAnimation4.beginTime + wobbleAnimation4.duration)*repeatCount target:self selector:@selector(finalStage) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:(wobbleAnimation4.beginTime + wobbleAnimation4.duration) target:self selector:@selector(finalStage) userInfo:nil repeats:NO];
 }
 
 - (UIBezierPath *) rectPathFinal {

@@ -9,10 +9,14 @@
 #import "OpenAnimationView.h"
 #import "RectLayer.h"
 
+#import <pop/POP.h>
+
 @interface OpenAnimationView () <AnimationLayerDelegate>
 
 @property (strong, nonatomic) RectLayer *circle;
 @property (strong, nonatomic) NSTimer *animationTimer;
+
+@property (strong, nonatomic) UILabel *textLabel;
 
 @end
 
@@ -33,16 +37,29 @@
 }
 
 - (void) addText {
-    UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
-    [label setText:@"W"];
-    [label setTextColor:[UIColor whiteColor]];
-    [label setTextAlignment:NSTextAlignmentCenter];
-    [label setFont:[label.font fontWithSize:36]];
-    [self addSubview:label];
+    self.textLabel = [[UILabel alloc] initWithFrame:self.bounds];
+    [self.textLabel setText:@"W"];
+    [self.textLabel setTextColor:[UIColor whiteColor]];
+    [self.textLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.textLabel setFont:[self.textLabel.font fontWithSize:36]];
+    [self addSubview:self.textLabel];
 }
 
 - (void) animationComplete {
-    [self removeFromSuperview];
+    POPSpringAnimation *sprintAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+    sprintAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(2, 2)];
+    sprintAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(2, 2)];
+    sprintAnimation.springBounciness = 20.f;
+    [self.textLabel pop_addAnimation:sprintAnimation forKey:@"springAnimation"];
+    
+    [UIView animateWithDuration:0.3 delay:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [self removeFromSuperview];
+        }
+    }];
+    
 }
 
 @end
