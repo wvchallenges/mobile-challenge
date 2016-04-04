@@ -1,0 +1,8 @@
+platform :ios, '9.3'
+use_frameworks!
+
+target 'WaveProducts' do
+  pod 'AFNetworking', '~> 3.0'
+  pod 'JSONModel', '~>1.2.0'
+  pod 'pop', '~> 1.0'
+end
