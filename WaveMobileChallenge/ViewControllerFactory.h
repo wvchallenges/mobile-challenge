@@ -12,7 +12,7 @@
 @class MainViewController;
 
 /**
- The View Controller Factory does all these tedious initializing work for each service once and once only in the life-cycle of the app.
+ The View Controller Factory does all these tedious initializing work for each view controller.
  It sets all the instance properties a view controller need during initialization.
  */
 @interface ViewControllerFactory : NSObject

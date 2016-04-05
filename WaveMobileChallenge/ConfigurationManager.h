@@ -23,7 +23,6 @@
  */
 - (NSString *)businessID;
 
-
 /**
  Get access token
  */

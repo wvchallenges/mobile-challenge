@@ -71,14 +71,16 @@
     
     [self.productFetcherService fetchProducts:^(NSArray<Product *> *products) {
         
-        self.loading = NO;
+        weakSelf.loading = NO;
         
         weakSelf.products = products;
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
         
     } failure:^(NSError *error) {
-        self.loading = NO;
+        
+        weakSelf.loading = NO;
         [weakSelf showRetryDialog];
+        
     }];
 }
 
@@ -88,7 +90,6 @@
     
     UIAlertAction *retryAction = [UIAlertAction actionWithTitle:@"Retry" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
     {
-        
         [self loadData];
     }];
     

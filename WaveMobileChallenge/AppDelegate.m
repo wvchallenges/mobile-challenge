@@ -71,7 +71,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //Be sure to run these initialize methods in order of dependencies
+    // Be sure to run these initialize methods in order of dependencies
     [self initializeConfigurationManager];
     [self initializeBuildersFactory];
     [self initializeHttpOperationsFactory];
