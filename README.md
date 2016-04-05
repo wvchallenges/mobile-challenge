@@ -14,11 +14,12 @@ You are not required to add any interactivity to the app -- i.e. you do not need
 
 Your app is allowed to render nothing if there is no internet connection when it loads.
 
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
+## Implementation 
+Solution was implemented using Swift 2.0. I used Alamofire HTTP networking library to pull the data from the Wave API asynchronously in a background thread. Also I used auto layout, so the UI should be compatible with all screen sizes and orientations. 
 
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
+ 
 
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+## Running the application
+1. Do a 'pod install' from command line inside the folder to install the pod dependancies 
+1. Click on WaveDevTest.xcworkspace to open the project using XCode
+1. Compile and run the application using XCode
