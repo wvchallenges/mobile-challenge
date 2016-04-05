@@ -1,0 +1,14 @@
+//
+//  WaveMobileChallenge-Prefix.pch
+//  WaveMobileChallenge
+//
+//  Created by Leon Chen on 2016-03-24.
+//  Copyright © 2016 LeonChen. All rights reserved.
+//
+
+//Special NSLog Macro that only runs in DEBUG mode
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%@: " fmt), NSStringFromClass([self class]), ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif

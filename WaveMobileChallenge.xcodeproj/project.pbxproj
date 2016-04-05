@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85A01FA61CA59AE600BD2CE5 /* HttpOperationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A01FA51CA59AE600BD2CE5 /* HttpOperationsManager.m */; };
+		85F02A371CA4DC3300DFCDAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A361CA4DC3300DFCDAE /* main.m */; };
+		85F02A3A1CA4DC3300DFCDAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A391CA4DC3300DFCDAE /* AppDelegate.m */; };
+		85F02A421CA4DC3300DFCDAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F02A411CA4DC3300DFCDAE /* Assets.xcassets */; };
+		85F02A451CA4DC3300DFCDAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F02A431CA4DC3300DFCDAE /* LaunchScreen.storyboard */; };
+		85F02A511CA4DF6500DFCDAE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A4F1CA4DF6500DFCDAE /* MainViewController.m */; };
+		85F02A521CA4DF6500DFCDAE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F02A501CA4DF6500DFCDAE /* MainViewController.xib */; };
+		85F02A561CA4E15C00DFCDAE /* Environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F02A551CA4E15C00DFCDAE /* Environments.plist */; };
+		85F02A601CA4E46C00DFCDAE /* ConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A5F1CA4E46C00DFCDAE /* ConfigurationManager.m */; };
+		85F02A661CA4E97900DFCDAE /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A651CA4E97900DFCDAE /* Product.m */; };
+		85F02A6A1CA4EBEA00DFCDAE /* ProductBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A691CA4EBEA00DFCDAE /* ProductBuilder.m */; };
+		85F02A6F1CA4EC9300DFCDAE /* BuildersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A6E1CA4EC9300DFCDAE /* BuildersFactory.m */; };
+		85F02A721CA4F3D800DFCDAE /* ProductFetcherServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A711CA4F3D800DFCDAE /* ProductFetcherServiceImpl.m */; };
+		85F02A761CA4FD4800DFCDAE /* ServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A751CA4FD4800DFCDAE /* ServiceFactory.m */; };
+		85F02A7A1CA500CA00DFCDAE /* ViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F02A791CA500CA00DFCDAE /* ViewControllerFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85A01FA41CA59AE600BD2CE5 /* HttpOperationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpOperationsManager.h; sourceTree = "<group>"; };
+		85A01FA51CA59AE600BD2CE5 /* HttpOperationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpOperationsManager.m; sourceTree = "<group>"; };
+		85F02A321CA4DC3300DFCDAE /* WaveMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F02A361CA4DC3300DFCDAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85F02A381CA4DC3300DFCDAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85F02A391CA4DC3300DFCDAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85F02A411CA4DC3300DFCDAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85F02A441CA4DC3300DFCDAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85F02A461CA4DC3300DFCDAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F02A4E1CA4DF6500DFCDAE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		85F02A4F1CA4DF6500DFCDAE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		85F02A501CA4DF6500DFCDAE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		85F02A551CA4E15C00DFCDAE /* Environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
+		85F02A5E1CA4E46C00DFCDAE /* ConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationManager.h; sourceTree = "<group>"; };
+		85F02A5F1CA4E46C00DFCDAE /* ConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationManager.m; sourceTree = "<group>"; };
+		85F02A611CA4E6CA00DFCDAE /* WaveMobileChallenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaveMobileChallenge-Prefix.pch"; sourceTree = "<group>"; };
+		85F02A631CA4E91E00DFCDAE /* ProductFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFetcherService.h; sourceTree = "<group>"; };
+		85F02A641CA4E97900DFCDAE /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		85F02A651CA4E97900DFCDAE /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		85F02A681CA4EBEA00DFCDAE /* ProductBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBuilder.h; sourceTree = "<group>"; };
+		85F02A691CA4EBEA00DFCDAE /* ProductBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBuilder.m; sourceTree = "<group>"; };
+		85F02A6D1CA4EC9300DFCDAE /* BuildersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildersFactory.h; sourceTree = "<group>"; };
+		85F02A6E1CA4EC9300DFCDAE /* BuildersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildersFactory.m; sourceTree = "<group>"; };
+		85F02A701CA4F3D800DFCDAE /* ProductFetcherServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFetcherServiceImpl.h; sourceTree = "<group>"; };
+		85F02A711CA4F3D800DFCDAE /* ProductFetcherServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFetcherServiceImpl.m; sourceTree = "<group>"; };
+		85F02A741CA4FD4800DFCDAE /* ServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFactory.h; sourceTree = "<group>"; };
+		85F02A751CA4FD4800DFCDAE /* ServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFactory.m; sourceTree = "<group>"; };
+		85F02A781CA500CA00DFCDAE /* ViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFactory.h; sourceTree = "<group>"; };
+		85F02A791CA500CA00DFCDAE /* ViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85F02A2F1CA4DC3300DFCDAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A01FA31CA59A3C00BD2CE5 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				85A01FA41CA59AE600BD2CE5 /* HttpOperationsManager.h */,
+				85A01FA51CA59AE600BD2CE5 /* HttpOperationsManager.m */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		85F02A291CA4DC3300DFCDAE = {
+			isa = PBXGroup;
+			children = (
+				85F02A341CA4DC3300DFCDAE /* WaveMobileChallenge */,
+				85F02A331CA4DC3300DFCDAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85F02A331CA4DC3300DFCDAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A321CA4DC3300DFCDAE /* WaveMobileChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85F02A341CA4DC3300DFCDAE /* WaveMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A571CA4E30600DFCDAE /* App */,
+				85F02A5D1CA4E45200DFCDAE /* Configuration */,
+				85F02A5B1CA4E37D00DFCDAE /* Models */,
+				85F02A591CA4E35500DFCDAE /* ViewControllers */,
+				85A01FA31CA59A3C00BD2CE5 /* Http */,
+				85F02A5C1CA4E39700DFCDAE /* Services */,
+				85F02A351CA4DC3300DFCDAE /* Supporting Files */,
+			);
+			path = WaveMobileChallenge;
+			sourceTree = "<group>";
+		};
+		85F02A351CA4DC3300DFCDAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A361CA4DC3300DFCDAE /* main.m */,
+				85F02A551CA4E15C00DFCDAE /* Environments.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85F02A571CA4E30600DFCDAE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A611CA4E6CA00DFCDAE /* WaveMobileChallenge-Prefix.pch */,
+				85F02A381CA4DC3300DFCDAE /* AppDelegate.h */,
+				85F02A391CA4DC3300DFCDAE /* AppDelegate.m */,
+				85F02A411CA4DC3300DFCDAE /* Assets.xcassets */,
+				85F02A431CA4DC3300DFCDAE /* LaunchScreen.storyboard */,
+				85F02A461CA4DC3300DFCDAE /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		85F02A591CA4E35500DFCDAE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A771CA500B300DFCDAE /* Factory */,
+				85F02A5A1CA4E36D00DFCDAE /* Main */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85F02A5A1CA4E36D00DFCDAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A4E1CA4DF6500DFCDAE /* MainViewController.h */,
+				85F02A4F1CA4DF6500DFCDAE /* MainViewController.m */,
+				85F02A501CA4DF6500DFCDAE /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		85F02A5B1CA4E37D00DFCDAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A671CA4EBD900DFCDAE /* Builders */,
+				85F02A641CA4E97900DFCDAE /* Product.h */,
+				85F02A651CA4E97900DFCDAE /* Product.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		85F02A5C1CA4E39700DFCDAE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A731CA4FD2F00DFCDAE /* Builders */,
+				85F02A631CA4E91E00DFCDAE /* ProductFetcherService.h */,
+				85F02A701CA4F3D800DFCDAE /* ProductFetcherServiceImpl.h */,
+				85F02A711CA4F3D800DFCDAE /* ProductFetcherServiceImpl.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		85F02A5D1CA4E45200DFCDAE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A5E1CA4E46C00DFCDAE /* ConfigurationManager.h */,
+				85F02A5F1CA4E46C00DFCDAE /* ConfigurationManager.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		85F02A671CA4EBD900DFCDAE /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A7D1CA50C2700DFCDAE /* Factory */,
+				85F02A681CA4EBEA00DFCDAE /* ProductBuilder.h */,
+				85F02A691CA4EBEA00DFCDAE /* ProductBuilder.m */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
+		85F02A731CA4FD2F00DFCDAE /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A741CA4FD4800DFCDAE /* ServiceFactory.h */,
+				85F02A751CA4FD4800DFCDAE /* ServiceFactory.m */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
+		85F02A771CA500B300DFCDAE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A781CA500CA00DFCDAE /* ViewControllerFactory.h */,
+				85F02A791CA500CA00DFCDAE /* ViewControllerFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		85F02A7D1CA50C2700DFCDAE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				85F02A6D1CA4EC9300DFCDAE /* BuildersFactory.h */,
+				85F02A6E1CA4EC9300DFCDAE /* BuildersFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85F02A311CA4DC3300DFCDAE /* WaveMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85F02A491CA4DC3300DFCDAE /* Build configuration list for PBXNativeTarget "WaveMobileChallenge" */;
+			buildPhases = (
+				85F02A2E1CA4DC3300DFCDAE /* Sources */,
+				85F02A2F1CA4DC3300DFCDAE /* Frameworks */,
+				85F02A301CA4DC3300DFCDAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveMobileChallenge;
+			productName = WaveMobileChallenge;
+			productReference = 85F02A321CA4DC3300DFCDAE /* WaveMobileChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85F02A2A1CA4DC3300DFCDAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LeonChen;
+				TargetAttributes = {
+					85F02A311CA4DC3300DFCDAE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 85F02A2D1CA4DC3300DFCDAE /* Build configuration list for PBXProject "WaveMobileChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85F02A291CA4DC3300DFCDAE;
+			productRefGroup = 85F02A331CA4DC3300DFCDAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85F02A311CA4DC3300DFCDAE /* WaveMobileChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85F02A301CA4DC3300DFCDAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F02A561CA4E15C00DFCDAE /* Environments.plist in Resources */,
+				85F02A451CA4DC3300DFCDAE /* LaunchScreen.storyboard in Resources */,
+				85F02A521CA4DF6500DFCDAE /* MainViewController.xib in Resources */,
+				85F02A421CA4DC3300DFCDAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85F02A2E1CA4DC3300DFCDAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F02A601CA4E46C00DFCDAE /* ConfigurationManager.m in Sources */,
+				85A01FA61CA59AE600BD2CE5 /* HttpOperationsManager.m in Sources */,
+				85F02A661CA4E97900DFCDAE /* Product.m in Sources */,
+				85F02A761CA4FD4800DFCDAE /* ServiceFactory.m in Sources */,
+				85F02A3A1CA4DC3300DFCDAE /* AppDelegate.m in Sources */,
+				85F02A721CA4F3D800DFCDAE /* ProductFetcherServiceImpl.m in Sources */,
+				85F02A7A1CA500CA00DFCDAE /* ViewControllerFactory.m in Sources */,
+				85F02A511CA4DF6500DFCDAE /* MainViewController.m in Sources */,
+				85F02A371CA4DC3300DFCDAE /* main.m in Sources */,
+				85F02A6F1CA4EC9300DFCDAE /* BuildersFactory.m in Sources */,
+				85F02A6A1CA4EBEA00DFCDAE /* ProductBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85F02A431CA4DC3300DFCDAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85F02A441CA4DC3300DFCDAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85F02A471CA4DC3300DFCDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85F02A481CA4DC3300DFCDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85F02A4A1CA4DC3300DFCDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WaveMobileChallenge/WaveMobileChallenge-Prefix.pch";
+				INFOPLIST_FILE = WaveMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leonchen.WaveMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85F02A4B1CA4DC3300DFCDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WaveMobileChallenge/WaveMobileChallenge-Prefix.pch";
+				INFOPLIST_FILE = WaveMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leonchen.WaveMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85F02A2D1CA4DC3300DFCDAE /* Build configuration list for PBXProject "WaveMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F02A471CA4DC3300DFCDAE /* Debug */,
+				85F02A481CA4DC3300DFCDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85F02A491CA4DC3300DFCDAE /* Build configuration list for PBXNativeTarget "WaveMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F02A4A1CA4DC3300DFCDAE /* Debug */,
+				85F02A4B1CA4DC3300DFCDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85F02A2A1CA4DC3300DFCDAE /* Project object */;
+}
