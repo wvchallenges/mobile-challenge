@@ -1,0 +1,17 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F9F9F9;
+}
+
+nav {
+    background-color: white;
+}
+
+nav .navbar-brand {
+    padding: 24px;
+}
+
+.container > h1 {
+	margin-top:40px;
+	margin-bottom:40px;
+}
