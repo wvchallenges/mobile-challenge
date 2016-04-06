@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "ProductViewModelDelegate.h"
 
 @interface ProductViewModel : NSObject
@@ -23,6 +24,7 @@
 @property (assign, readonly) BOOL active;
 @property (strong, readonly) NSDate *dateCreated;
 @property (strong, readonly) NSString *dateModified;
+@property (strong, readonly) UIColor *isBoughtColor;
 
 @property (strong, nonatomic) id <ProductViewModelDelegate> modelViewDelegate;
 

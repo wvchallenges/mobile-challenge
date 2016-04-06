@@ -29,7 +29,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxV-Gn-6TC">
                                                     <rect key="frame" x="0.0" y="0.0" width="70" height="220"/>
-                                                    <color key="backgroundColor" red="0.58823529411764708" green="0.71372549019607845" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.52156862745098043" green="0.65098039215686276" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="zrE-HE-suk"/>
                                                     </constraints>
@@ -100,7 +100,7 @@ Products</string>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="70" id="EvB-Ag-C4r" customClass="ProductTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="productCell" rowHeight="70" id="EvB-Ag-C4r" customClass="ProductTableViewCell">
                                         <rect key="frame" x="0.0" y="248" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EvB-Ag-C4r" id="9pm-GN-MGu">
@@ -129,7 +129,7 @@ Products</string>
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-uj-a9U">
-                                                                    <rect key="frame" x="43" y="8" width="13" height="34"/>
+                                                                    <rect key="frame" x="43" y="8" width="13" height="42"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="8" id="Mlj-5c-XnV"/>
                                                                     </constraints>
@@ -138,11 +138,11 @@ Products</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.34509803919999998" green="0.6588235294" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.63035047054290771" green="0.80960148572921753" blue="0.75757139921188354" alpha="1" colorSpace="deviceRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HjO-uj-a9U" secondAttribute="trailing" constant="8" id="4R4-x7-mhn"/>
                                                                 <constraint firstItem="pLJ-ub-EsM" firstAttribute="leading" secondItem="mdN-0m-o77" secondAttribute="leading" constant="8" id="7QR-xV-iMQ"/>
-                                                                <constraint firstAttribute="bottom" secondItem="HjO-uj-a9U" secondAttribute="bottom" constant="28" id="8IR-mz-dIh"/>
+                                                                <constraint firstAttribute="bottom" secondItem="HjO-uj-a9U" secondAttribute="bottom" constant="20" id="8IR-mz-dIh"/>
                                                                 <constraint firstAttribute="bottom" secondItem="pLJ-ub-EsM" secondAttribute="bottom" constant="8" id="ELS-Bj-3VO"/>
                                                                 <constraint firstItem="HjO-uj-a9U" firstAttribute="leading" secondItem="pLJ-ub-EsM" secondAttribute="trailing" constant="2" id="Voe-aK-4fv"/>
                                                                 <constraint firstItem="HjO-uj-a9U" firstAttribute="top" secondItem="mdN-0m-o77" secondAttribute="top" constant="8" id="aNk-Yf-ydl"/>
@@ -151,17 +151,18 @@ Products</string>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSg-nS-fhp">
-                                                            <rect key="frame" x="85" y="8" width="500" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <rect key="frame" x="85" y="8" width="500" height="29"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                                                             <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description of product." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-VP-VON">
-                                                            <rect key="frame" x="85" y="39" width="500" height="22.5"/>
+                                                            <rect key="frame" x="85" y="44" width="500" height="17.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Ym7-Rj-DBl"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
                                                             <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
@@ -195,8 +196,10 @@ Products</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="centsLabel" destination="HjO-uj-a9U" id="19J-rU-X2B"/>
+                                            <outlet property="containerView" destination="j30-Je-CQN" id="7fB-60-bNk"/>
                                             <outlet property="descriptionLabel" destination="VRb-VP-VON" id="qik-5M-LBn"/>
                                             <outlet property="dollarsLabel" destination="pLJ-ub-EsM" id="Z9T-TZ-t6P"/>
+                                            <outlet property="isSoldView" destination="mdN-0m-o77" id="Yqd-f7-7b4"/>
                                             <outlet property="titleLabel" destination="gSg-nS-fhp" id="7Wn-aC-Z3S"/>
                                         </connections>
                                     </tableViewCell>

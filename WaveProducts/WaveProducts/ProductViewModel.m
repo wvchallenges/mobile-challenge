@@ -7,6 +7,7 @@
 //
 
 #import "ProductViewModel.h"
+#import "UIColor+Products.h"
 
 @implementation ProductViewModel
 
@@ -33,6 +34,12 @@
     _active = product.active;
     _dateCreated = product.dateCreated;
     _dateModified = product.dateModified;
+    
+    if (product.isBought == YES) {
+        _isBoughtColor = [UIColor isBoughtColor];
+    } else {
+        _isBoughtColor = [UIColor isNotBoughtColor];
+    }
     
     // Convience formatting.
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];

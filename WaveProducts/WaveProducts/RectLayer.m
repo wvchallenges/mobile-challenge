@@ -9,11 +9,13 @@
 #import "RectLayer.h"
 #import <UIKit/UIKit.h>
 
+#import "UIColor+Products.h"
+
 @implementation RectLayer
 
 - (instancetype) init {
     if (self = [super init]) {
-        self.fillColor = [[UIColor redColor] CGColor];
+        self.fillColor = [[UIColor primaryColor] CGColor];
         self.path = (__bridge CGPathRef _Nullable)([self rectPathSmall]);
     }
     return self;
