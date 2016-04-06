@@ -12,7 +12,7 @@
 
 // Convience
 - (instancetype) initWithFrame:(CGRect)frame bgColor:(UIColor *)color
-                     andParent:(UIViewController *)controller;
+                     andParent:(UIView *)parent;
 
 
 // Actionable.

@@ -23,10 +23,10 @@
 @implementation OpenAnimationView
 
 - (instancetype) initWithFrame:(CGRect)frame bgColor:(UIColor *)color
-                     andParent:(UIViewController *)controller {
+                     andParent:(UIView *)parent {
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundColor:color];
-        [controller.view addSubview:self];
+        [parent addSubview:self];
     }
     return self;
 }

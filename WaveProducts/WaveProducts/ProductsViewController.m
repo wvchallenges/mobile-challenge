@@ -59,7 +59,7 @@
 }
 
 - (void) runAnimation {
-    OpenAnimationView* openAnimation = [[OpenAnimationView alloc] initWithFrame:self.view.bounds bgColor:[UIColor whiteColor] andParent:self];
+    OpenAnimationView* openAnimation = [[OpenAnimationView alloc] initWithFrame:self.view.bounds bgColor:[UIColor whiteColor] andParent:self.view];
     [openAnimation startAnimation];
 }
 

@@ -32,12 +32,12 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        [self setupRequestBase];
+        [self construct];
     }
     return self;
 }
 
-- (void) setupRequestBase {
+- (void) construct {
     NSURL *url = [NSURL URLWithString:BASE_URL];
     self.manager = [[AFHTTPSessionManager manager] initWithBaseURL:url];
     [[self.manager requestSerializer] setValue:[NSString stringWithFormat:@"Bearer %@", ACCESS_TOKEN] forHTTPHeaderField:@"Authorization"];
