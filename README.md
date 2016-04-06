@@ -1,47 +1,30 @@
-# Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
+# Shawn's Development Challenge
+The following is an amazing readme file outlining some of the interesting and/or exciting implementation details of the challenge as well as some basic instructions on how to get the project running on your machine. Also, it documents all the tests I should have wrote (haha).
 
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
+## Project Setup Instructions
+This project was developed using some external libraries to help keep development time less then an hour or two. In order to make package managment nice and easy, this project uses cocoapods. If you do not have cocoapods installed, you can click [here](https://guides.cocoapods.org/using/getting-started.html) for instructions on how to set it up! 
 
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
+You must run the <strong>WaveProducts.xcworkspace</strong> file.
 
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
+## Project Overview
+This is the section where I outline some cool stuff I did.
 
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
+#### Libraries Used
+If you are overly curious you may have already looked at my Podfile. If not, the following libraries are what you will see in there:
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
+1. <strong>AFNetworking</strong>
+> AFNetworking was used for various reasons. The first is because other then proprietary networking libraries used on the job, I have the most experience with AFNetworking. Secondly, there are plenty of great features it includes out of the box in an easy to use manner. For example, the ability to cancel requests, AFHTTPRequestOperation distinguish between successful and unsuccessful requests based on HTTP status codes, and more.
 
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
+2. <strong>JSONModel</strong>
+> Not only has this library been very popular amoung iOS developers recently, but it also helps do the one thing many developers dislike doing; serializing JSON to be represented by our models. It also works the other way, so if you have lazy web developers who didn't make PATCH methods and only have PUT, you can easily create an object for updating.
 
-## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
+3. <strong>POP</strong>
+> I have a huge respect for what Facebook did with paper. I have used this library very minimally in the past but I love it's ease of use as well as it's beautiful easing curves, so I did what I could to show case it.
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+#### Some Other Notes
+I used <strong>MVVM</strong> architecture. If I had more time I would have also included <strong>ReactiveCocoa</strong> in the mix to perfectly complement the architecture choice. The architecture is used because MVC, in my opinion, does not scale well to larger apps, but other architectures such as VIPER create too much over-head and boiler-plate for my liking. For times sake, I instead created some interfaces in which the views/view controllers would implement if using the view model in order to allow the view model to notify upon updates.
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
+I also created a pretty neat intro animation. I really enjoy creating things that are somewhat visually appealing (though I am no designer) in order to give any apps I create that little bit of an edge on other apps. This specific type of animation also hides loading times so users can have a seamless experience.
 
-### What your application must do:
-
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
-
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
-
-Your app is allowed to render nothing if there is no internet connection when it loads.
-
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
-
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
-
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+<strong>Thanks!</strong>
+> ~ Shawn
