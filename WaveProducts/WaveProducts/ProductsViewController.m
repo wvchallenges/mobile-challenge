@@ -7,53 +7,63 @@
 //
 
 #import "ProductsViewController.h"
+#import "ProductsViewModel.h"
 #import "ProductTableViewCell.h"
 
 #import "OpenAnimationView.h"
-#import "ProductsNetworkManager.h"
-#import "Product.h"
 
-@interface ProductsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ProductsViewController () <ProductsViewModelDelegate, UITableViewDataSource, UITableViewDelegate>
 
+// Storyboard Properties
 @property (strong, nonatomic) IBOutlet UITableView *productsTableView;
+
+// Properties
 @property (strong, nonatomic) NSArray *products;
+@property (strong, nonatomic) ProductsViewModel *viewModel;
 
 @end
 
 @implementation ProductsViewController
 
+#pragma - mark
+#pragma - mark Setup
+
+// Required for storyboards.
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self construct];
+    }
+    return self;
+}
+
+// If not used with storyboards.
+- (instancetype) init {
+    if (self = [super init]) {
+        [self construct];
+    }
+    return self;
+}
+
+- (void) construct {
+    self.viewModel = [[ProductsViewModel alloc] init];
+    self.viewModel.modelViewDelegate = self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self runAnimation];
-    [self getProducts];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void) runAnimation {
-    OpenAnimationView* openAnimation = [[OpenAnimationView alloc] initWithFrame:self.view.bounds];
-    [openAnimation setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:openAnimation];
+    OpenAnimationView* openAnimation = [[OpenAnimationView alloc] initWithFrame:self.view.bounds bgColor:[UIColor whiteColor] andParent:self];
     [openAnimation startAnimation];
 }
 
-- (void) getProducts {
-    __weak ProductsViewController *wself = self;
-    [[ProductsNetworkManager sharedManager] getProductsWithCompletion:^(BOOL success, NSArray *products, NSError *error) {
-        __strong ProductsViewController *sself = wself;
-        if (success) {
-            sself.products = products;
-            [sself.productsTableView reloadData];
-        } else {
-            // @TODO Warn user.
-        }
-    }];
-}
-
+#pragma - mark
 #pragma - mark TableView
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,6 +78,14 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma - mark
+#pragma - mark ModelViewDelegate
+
+- (void) recieveProducts:(NSArray *)products {
+    self.products = products;
+    [self.productsTableView reloadData];
 }
 
 @end

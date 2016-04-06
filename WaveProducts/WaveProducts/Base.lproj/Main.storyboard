@@ -38,7 +38,7 @@
                                                     <rect key="frame" x="85" y="56" width="500" height="82"/>
                                                     <string key="text">Wave 
 Products</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="42"/>
                                                     <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

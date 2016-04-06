@@ -10,6 +10,12 @@
 
 @interface OpenAnimationView : UIView
 
+// Convience
+- (instancetype) initWithFrame:(CGRect)frame bgColor:(UIColor *)color
+                     andParent:(UIViewController *)controller;
+
+
+// Actionable.
 - (void) startAnimation;
 
 @end

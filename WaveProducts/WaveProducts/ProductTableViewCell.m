@@ -7,35 +7,38 @@
 //
 
 #import "ProductTableViewCell.h"
-#import "Product.h"
+#import "ProductViewModel.h"
+#import "ProductViewModelDelegate.h"
 
-@interface ProductTableViewCell ()
+@interface ProductTableViewCell () <ProductViewModelDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dollarsLabel;
 @property (strong, nonatomic) IBOutlet UILabel *centsLabel;
 
+@property (strong, nonatomic) ProductViewModel *viewModel;
 
 @end
 
 @implementation ProductTableViewCell
 
 - (void) setupWithProduct:(Product *)product {
-    self.titleLabel.text = product.name;
-    self.descriptionLabel.text = product.productDescription;
-    
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    [formatter setMaximumFractionDigits:0];
-    [formatter setRoundingMode: NSNumberFormatterRoundUp];
-    self.dollarsLabel.text = [NSString stringWithFormat:@"$%@", [formatter stringFromNumber:product.price]];
-    float cents = (product.price.floatValue - floor(product.price.floatValue))*100;
-    if (cents < 10) {
-        self.centsLabel.text = [NSString stringWithFormat:@"0%.f", cents];
-    } else {
-        self.centsLabel.text = [NSString stringWithFormat:@"%.f", cents];
+    if (self.viewModel == nil) {
+        self.viewModel = [[ProductViewModel alloc] init];
+        self.viewModel.modelViewDelegate = self;
     }
+    [self.viewModel setCurrentProduct:product];
+}
+
+#pragma - mark
+#pragma ViewModelDelegate
+
+- (void) recieveProduct {
+    self.titleLabel.text = self.viewModel.name;
+    self.descriptionLabel.text = self.viewModel.productDescription;
+    self.dollarsLabel.text = self.viewModel.dollarsString;
+    self.centsLabel.text = self.viewModel.centsString;
 }
 
 @end

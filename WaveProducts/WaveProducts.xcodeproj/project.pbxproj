@@ -11,6 +11,8 @@
 		8C8E858A1CB2154C00AF6FC7 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E85891CB2154C00AF6FC7 /* ProductTableViewCell.m */; };
 		8CA1C7C01CB205880041701D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1C7BF1CB205880041701D /* Product.m */; };
 		8CA1C7C51CB207BA0041701D /* ProductsNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1C7C41CB207BA0041701D /* ProductsNetworkManager.m */; };
+		8CD91BE21CB4793D00D178AC /* ProductsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91BE11CB4793D00D178AC /* ProductsViewModel.m */; };
+		8CD91BE71CB4887000D178AC /* ProductViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91BE61CB4887000D178AC /* ProductViewModel.m */; };
 		8CE50CAA1CAE0F0D007C96D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE50CA91CAE0F0D007C96D1 /* main.m */; };
 		8CE50CAD1CAE0F0D007C96D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE50CAC1CAE0F0D007C96D1 /* AppDelegate.m */; };
 		8CE50CB31CAE0F0D007C96D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE50CB11CAE0F0D007C96D1 /* Main.storyboard */; };
@@ -52,6 +54,12 @@
 		8CA1C7BF1CB205880041701D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		8CA1C7C31CB207BA0041701D /* ProductsNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsNetworkManager.h; sourceTree = "<group>"; };
 		8CA1C7C41CB207BA0041701D /* ProductsNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsNetworkManager.m; sourceTree = "<group>"; };
+		8CD91BE01CB4793D00D178AC /* ProductsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewModel.h; sourceTree = "<group>"; };
+		8CD91BE11CB4793D00D178AC /* ProductsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewModel.m; sourceTree = "<group>"; };
+		8CD91BE31CB47C2F00D178AC /* ProductsViewModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewModelDelegate.h; sourceTree = "<group>"; };
+		8CD91BE51CB4887000D178AC /* ProductViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewModel.h; sourceTree = "<group>"; };
+		8CD91BE61CB4887000D178AC /* ProductViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewModel.m; sourceTree = "<group>"; };
+		8CD91BE81CB48B0C00D178AC /* ProductViewModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewModelDelegate.h; sourceTree = "<group>"; };
 		8CE50CA51CAE0F0D007C96D1 /* WaveProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE50CA91CAE0F0D007C96D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CE50CAB1CAE0F0D007C96D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +152,30 @@
 			name = appSetup;
 			sourceTree = "<group>";
 		};
+		8CD91BDF1CB4791D00D178AC /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91BE01CB4793D00D178AC /* ProductsViewModel.h */,
+				8CD91BE11CB4793D00D178AC /* ProductsViewModel.m */,
+				8CD91BE31CB47C2F00D178AC /* ProductsViewModelDelegate.h */,
+				8CD91BE51CB4887000D178AC /* ProductViewModel.h */,
+				8CD91BE61CB4887000D178AC /* ProductViewModel.m */,
+				8CD91BE81CB48B0C00D178AC /* ProductViewModelDelegate.h */,
+			);
+			name = viewModels;
+			sourceTree = "<group>";
+		};
+		8CD91BE41CB487BF00D178AC /* products */ = {
+			isa = PBXGroup;
+			children = (
+				8CE50CDD1CAE17F4007C96D1 /* ProductsViewController.h */,
+				8CE50CDE1CAE17F4007C96D1 /* ProductsViewController.m */,
+				8C8E85881CB2154C00AF6FC7 /* ProductTableViewCell.h */,
+				8C8E85891CB2154C00AF6FC7 /* ProductTableViewCell.m */,
+			);
+			name = products;
+			sourceTree = "<group>";
+		};
 		8CE50C9C1CAE0F0D007C96D1 = {
 			isa = PBXGroup;
 			children = (
@@ -211,20 +243,18 @@
 				8CA1C7C21CB207930041701D /* appSetup */,
 				8CA1C7C11CB2077C0041701D /* network */,
 				8CA1C7BD1CB205730041701D /* models */,
-				8CE50CDC1CAE17D8007C96D1 /* viewControllers */,
+				8CD91BDF1CB4791D00D178AC /* viewModels */,
+				8CE50CDC1CAE17D8007C96D1 /* views */,
 			);
 			name = classes;
 			sourceTree = "<group>";
 		};
-		8CE50CDC1CAE17D8007C96D1 /* viewControllers */ = {
+		8CE50CDC1CAE17D8007C96D1 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				8CE50CDD1CAE17F4007C96D1 /* ProductsViewController.h */,
-				8CE50CDE1CAE17F4007C96D1 /* ProductsViewController.m */,
-				8C8E85881CB2154C00AF6FC7 /* ProductTableViewCell.h */,
-				8C8E85891CB2154C00AF6FC7 /* ProductTableViewCell.m */,
+				8CD91BE41CB487BF00D178AC /* products */,
 			);
-			name = viewControllers;
+			name = views;
 			sourceTree = "<group>";
 		};
 		8CE50CE01CAE1A9C007C96D1 /* openAnimation */ = {
@@ -437,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD91BE21CB4793D00D178AC /* ProductsViewModel.m in Sources */,
 				8CE50CAD1CAE0F0D007C96D1 /* AppDelegate.m in Sources */,
 				8CE50CE71CAE1B43007C96D1 /* RectLayer.m in Sources */,
 				8CE50CDF1CAE17F4007C96D1 /* ProductsViewController.m in Sources */,
@@ -444,6 +475,7 @@
 				8C8E85841CB20A4400AF6FC7 /* Common.m in Sources */,
 				8CE50CAA1CAE0F0D007C96D1 /* main.m in Sources */,
 				8C8E858A1CB2154C00AF6FC7 /* ProductTableViewCell.m in Sources */,
+				8CD91BE71CB4887000D178AC /* ProductViewModel.m in Sources */,
 				8CE50CE31CAE1AB6007C96D1 /* OpenAnimationView.m in Sources */,
 				8CA1C7C51CB207BA0041701D /* ProductsNetworkManager.m in Sources */,
 			);

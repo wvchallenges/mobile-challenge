@@ -22,6 +22,15 @@
 
 @implementation OpenAnimationView
 
+- (instancetype) initWithFrame:(CGRect)frame bgColor:(UIColor *)color
+                     andParent:(UIViewController *)controller {
+    if (self = [super initWithFrame:frame]) {
+        [self setBackgroundColor:color];
+        [controller.view addSubview:self];
+    }
+    return self;
+}
+
 - (void) startAnimation {
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(runAnimation) userInfo:nil repeats:NO];
 }
