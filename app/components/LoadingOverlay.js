@@ -14,11 +14,11 @@ export default class LoadingOverlay extends Component {
   }
 
   componentDidMount() {
-    this._interval = setInterval(function() {
+    this._interval = setInterval(() => {
       var ellipsis = this.state.ellipsis
       ellipsis = ellipsis.length >= 3 ? '.' : ellipsis + '.'
       this.setState({ ellipsis })
-    }.bind(this), 200)
+    }, 200)
   }
 
   componentWillUnmount() {

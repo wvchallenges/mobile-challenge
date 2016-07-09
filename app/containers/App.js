@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import {
   View,
-  Navigator
+  Navigator,
+  StyleSheet,
+  Platform
 } from 'react-native'
 import { connect } from 'react-redux'
 import Products, { NavigationBarRouteMapper } from './Products'
@@ -23,11 +25,18 @@ class App extends Component {
 
   renderScene(route, navigator) {
     return (
-      <View style={{marginTop: 64, flex: 1}}>
+      <View style={styles.container}>
         <Products />
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: (Platform.OS === 'ios') ? 64 : 54,
+    flex: 1
+  }
+})
 
 export default connect()(App)
