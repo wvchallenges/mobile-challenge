@@ -1,4 +1,4 @@
-import { access_token, business_id } from '../../environment.json'
+import { access_token, business_id, products_url } from '../../configuration.json'
 
 export const REQUEST_PRODUCTS = 'REQUEST_PRODUCTS'
 export const RECEIVE_PRODUCTS = 'RECEIVE_PRODUCTS'
@@ -6,6 +6,7 @@ export const CATCH_PRODUCTS_ERROR = 'CATCH_PRODUCTS_ERROR'
 
 const ACCESS_TOKEN = access_token
 const BUSINESS_ID = business_id
+const PRODUCTS_URL = products_url.replace('{BUSINESS_ID}', BUSINESS_ID)
 
 function requestProducts() {
   return {
@@ -32,7 +33,7 @@ export function fetchProducts() {
   return (dispatch, getState) => {
     dispatch(requestProducts())
 
-    fetch(`https://api.waveapps.com/businesses/${BUSINESS_ID}/products/`, {
+    fetch(PRODUCTS_URL, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
