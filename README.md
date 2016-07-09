@@ -3,7 +3,7 @@
 Run `npm install`. 
 
 ##### Step 2
-Install [React Native](https://facebook.github.io/react-native/) and follow the instructions for running a react native app on iOS or Android.
+Install <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> and follow the instructions for running a react native app on iOS or Android.
 
 ### My implementation
 I am particularly proud of the code organization and quality.
