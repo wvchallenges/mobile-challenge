@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6589B9961DDA1441002AA2AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6589B9951DDA1441002AA2AB /* AppDelegate.swift */; };
+		6589B99B1DDA1441002AA2AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6589B9991DDA1441002AA2AB /* Main.storyboard */; };
+		6589B99E1DDA1441002AA2AB /* WaveChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6589B99C1DDA1441002AA2AB /* WaveChallenge.xcdatamodeld */; };
+		6589B9A01DDA1441002AA2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6589B99F1DDA1441002AA2AB /* Assets.xcassets */; };
+		6589B9A31DDA1441002AA2AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6589B9A11DDA1441002AA2AB /* LaunchScreen.storyboard */; };
+		6589B9AE1DDA1441002AA2AB /* WaveChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6589B9AD1DDA1441002AA2AB /* WaveChallengeTests.swift */; };
+		6589B9B91DDA1441002AA2AB /* WaveChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6589B9B81DDA1441002AA2AB /* WaveChallengeUITests.swift */; };
+		6589B9CD1DDA187B002AA2AB /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6589B9CC1DDA187B002AA2AB /* MasterTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6589B9AA1DDA1441002AA2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6589B98A1DDA1440002AA2AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6589B9911DDA1440002AA2AB;
+			remoteInfo = WaveChallenge;
+		};
+		6589B9B51DDA1441002AA2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6589B98A1DDA1440002AA2AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6589B9911DDA1440002AA2AB;
+			remoteInfo = WaveChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6589B9921DDA1441002AA2AB /* WaveChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6589B9951DDA1441002AA2AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6589B99A1DDA1441002AA2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6589B99D1DDA1441002AA2AB /* WaveChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaveChallenge.xcdatamodel; sourceTree = "<group>"; };
+		6589B99F1DDA1441002AA2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6589B9A21DDA1441002AA2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6589B9A41DDA1441002AA2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6589B9A91DDA1441002AA2AB /* WaveChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6589B9AD1DDA1441002AA2AB /* WaveChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallengeTests.swift; sourceTree = "<group>"; };
+		6589B9AF1DDA1441002AA2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6589B9B41DDA1441002AA2AB /* WaveChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6589B9B81DDA1441002AA2AB /* WaveChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallengeUITests.swift; sourceTree = "<group>"; };
+		6589B9BA1DDA1441002AA2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6589B9CC1DDA187B002AA2AB /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6589B98F1DDA1440002AA2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9A61DDA1441002AA2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9B11DDA1441002AA2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6589B9891DDA1440002AA2AB = {
+			isa = PBXGroup;
+			children = (
+				6589B9941DDA1441002AA2AB /* WaveChallenge */,
+				6589B9AC1DDA1441002AA2AB /* WaveChallengeTests */,
+				6589B9B71DDA1441002AA2AB /* WaveChallengeUITests */,
+				6589B9931DDA1441002AA2AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6589B9931DDA1441002AA2AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6589B9921DDA1441002AA2AB /* WaveChallenge.app */,
+				6589B9A91DDA1441002AA2AB /* WaveChallengeTests.xctest */,
+				6589B9B41DDA1441002AA2AB /* WaveChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6589B9941DDA1441002AA2AB /* WaveChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				6589B9951DDA1441002AA2AB /* AppDelegate.swift */,
+				6589B9991DDA1441002AA2AB /* Main.storyboard */,
+				6589B99F1DDA1441002AA2AB /* Assets.xcassets */,
+				6589B9A11DDA1441002AA2AB /* LaunchScreen.storyboard */,
+				6589B9A41DDA1441002AA2AB /* Info.plist */,
+				6589B99C1DDA1441002AA2AB /* WaveChallenge.xcdatamodeld */,
+				6589B9CC1DDA187B002AA2AB /* MasterTableViewController.swift */,
+			);
+			path = WaveChallenge;
+			sourceTree = "<group>";
+		};
+		6589B9AC1DDA1441002AA2AB /* WaveChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6589B9AD1DDA1441002AA2AB /* WaveChallengeTests.swift */,
+				6589B9AF1DDA1441002AA2AB /* Info.plist */,
+			);
+			path = WaveChallengeTests;
+			sourceTree = "<group>";
+		};
+		6589B9B71DDA1441002AA2AB /* WaveChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6589B9B81DDA1441002AA2AB /* WaveChallengeUITests.swift */,
+				6589B9BA1DDA1441002AA2AB /* Info.plist */,
+			);
+			path = WaveChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6589B9911DDA1440002AA2AB /* WaveChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6589B9BD1DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallenge" */;
+			buildPhases = (
+				6589B98E1DDA1440002AA2AB /* Sources */,
+				6589B98F1DDA1440002AA2AB /* Frameworks */,
+				6589B9901DDA1440002AA2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveChallenge;
+			productName = WaveChallenge;
+			productReference = 6589B9921DDA1441002AA2AB /* WaveChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6589B9A81DDA1441002AA2AB /* WaveChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6589B9C01DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallengeTests" */;
+			buildPhases = (
+				6589B9A51DDA1441002AA2AB /* Sources */,
+				6589B9A61DDA1441002AA2AB /* Frameworks */,
+				6589B9A71DDA1441002AA2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6589B9AB1DDA1441002AA2AB /* PBXTargetDependency */,
+			);
+			name = WaveChallengeTests;
+			productName = WaveChallengeTests;
+			productReference = 6589B9A91DDA1441002AA2AB /* WaveChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6589B9B31DDA1441002AA2AB /* WaveChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6589B9C31DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallengeUITests" */;
+			buildPhases = (
+				6589B9B01DDA1441002AA2AB /* Sources */,
+				6589B9B11DDA1441002AA2AB /* Frameworks */,
+				6589B9B21DDA1441002AA2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6589B9B61DDA1441002AA2AB /* PBXTargetDependency */,
+			);
+			name = WaveChallengeUITests;
+			productName = WaveChallengeUITests;
+			productReference = 6589B9B41DDA1441002AA2AB /* WaveChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6589B98A1DDA1440002AA2AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Daniel;
+				TargetAttributes = {
+					6589B9911DDA1440002AA2AB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PWV5Q84T4K;
+					};
+					6589B9A81DDA1441002AA2AB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PWV5Q84T4K;
+						TestTargetID = 6589B9911DDA1440002AA2AB;
+					};
+					6589B9B31DDA1441002AA2AB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PWV5Q84T4K;
+						TestTargetID = 6589B9911DDA1440002AA2AB;
+					};
+				};
+			};
+			buildConfigurationList = 6589B98D1DDA1440002AA2AB /* Build configuration list for PBXProject "WaveChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6589B9891DDA1440002AA2AB;
+			productRefGroup = 6589B9931DDA1441002AA2AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6589B9911DDA1440002AA2AB /* WaveChallenge */,
+				6589B9A81DDA1441002AA2AB /* WaveChallengeTests */,
+				6589B9B31DDA1441002AA2AB /* WaveChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6589B9901DDA1440002AA2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6589B9A31DDA1441002AA2AB /* LaunchScreen.storyboard in Resources */,
+				6589B9A01DDA1441002AA2AB /* Assets.xcassets in Resources */,
+				6589B99B1DDA1441002AA2AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9A71DDA1441002AA2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9B21DDA1441002AA2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6589B98E1DDA1440002AA2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6589B9CD1DDA187B002AA2AB /* MasterTableViewController.swift in Sources */,
+				6589B99E1DDA1441002AA2AB /* WaveChallenge.xcdatamodeld in Sources */,
+				6589B9961DDA1441002AA2AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9A51DDA1441002AA2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6589B9AE1DDA1441002AA2AB /* WaveChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6589B9B01DDA1441002AA2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6589B9B91DDA1441002AA2AB /* WaveChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6589B9AB1DDA1441002AA2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6589B9911DDA1440002AA2AB /* WaveChallenge */;
+			targetProxy = 6589B9AA1DDA1441002AA2AB /* PBXContainerItemProxy */;
+		};
+		6589B9B61DDA1441002AA2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6589B9911DDA1440002AA2AB /* WaveChallenge */;
+			targetProxy = 6589B9B51DDA1441002AA2AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6589B9991DDA1441002AA2AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6589B99A1DDA1441002AA2AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6589B9A11DDA1441002AA2AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6589B9A21DDA1441002AA2AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6589B9BB1DDA1441002AA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6589B9BC1DDA1441002AA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6589B9BE1DDA1441002AA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaveChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6589B9BF1DDA1441002AA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaveChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6589B9C11DDA1441002AA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WaveChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge.app/WaveChallenge";
+			};
+			name = Debug;
+		};
+		6589B9C21DDA1441002AA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WaveChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge.app/WaveChallenge";
+			};
+			name = Release;
+		};
+		6589B9C41DDA1441002AA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WaveChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaveChallenge;
+			};
+			name = Debug;
+		};
+		6589B9C51DDA1441002AA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WaveChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.WaveChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaveChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6589B98D1DDA1440002AA2AB /* Build configuration list for PBXProject "WaveChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6589B9BB1DDA1441002AA2AB /* Debug */,
+				6589B9BC1DDA1441002AA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6589B9BD1DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6589B9BE1DDA1441002AA2AB /* Debug */,
+				6589B9BF1DDA1441002AA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6589B9C01DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6589B9C11DDA1441002AA2AB /* Debug */,
+				6589B9C21DDA1441002AA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6589B9C31DDA1441002AA2AB /* Build configuration list for PBXNativeTarget "WaveChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6589B9C41DDA1441002AA2AB /* Debug */,
+				6589B9C51DDA1441002AA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6589B99C1DDA1441002AA2AB /* WaveChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6589B99D1DDA1441002AA2AB /* WaveChallenge.xcdatamodel */,
+			);
+			currentVersion = 6589B99D1DDA1441002AA2AB /* WaveChallenge.xcdatamodel */;
+			path = WaveChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6589B98A1DDA1440002AA2AB /* Project object */;
+}
