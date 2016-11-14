@@ -45,3 +45,18 @@ Evaluation of your submission will be based on the following criteria.
 1. Did your application fulfill the basic requirements?
 1. Did you document the method for setting up and running your application?
 1. Did you follow the instructions for submission?
+
+
+
+
+
+This app’s requirements are pretty simple. so I was more focus on architecture for expandability. 
+These are the two core functions in this app.
+
+
+Engine.java
+In the current version, Engine class only contains VolleyManager, which is handle all network communications in the app. However, you are able to add additional feature such as SharedPreferenceManager, or DiskCacheManager as Singletone object. Engne object is initialzied at WaveApplication.java which extends Application.java class as Singleton design pattern, so you can access from any Acvities or Fragments. Moreover, you can reduce the memory usage by calling shutdown() before main Activity is closed. 
+
+
+BaseActivity.java 
+BaseActivity contains number of features commonly used in Android applications. Such as showing Snackbar or Toast message, or internet connection check functions. it also update connection status in realtime.  
