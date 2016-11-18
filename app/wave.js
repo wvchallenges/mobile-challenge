@@ -1,5 +1,7 @@
-const BUSINESS_ID = 'id';
-const ACCESS_TOKEN = 'token';
+import api from './api';
+
+const BUSINESS_ID = api.business_id;
+const ACCESS_TOKEN = api.access_token;
 const API_ENDPOINT = `https://api.waveapps.com/businesses/${BUSINESS_ID}/products/`;
 
 const init = {
