@@ -1,5 +1,5 @@
-export const fetchFromWave = () => (
+export const fetchProducts = () => (
   {
-    type: 'FETCH_FROM_WAVE',
+    type: 'FETCH_PRODUCTS',
   }
 );

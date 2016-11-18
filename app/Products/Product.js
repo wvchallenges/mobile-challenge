@@ -3,12 +3,12 @@ import { Text, View } from 'react-native';
 
 const Product = ({ product }) => (
   <View>
-    <Text>{product}</Text>
+    <Text>{product.name}</Text>
   </View>
 );
 
 Product.propTypes = {
-  product: PropTypes.string,
+  product: PropTypes.object,
 };
 
 export default Product;
