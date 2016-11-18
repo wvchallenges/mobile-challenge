@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import wave from './wave';
+import products from './products';
 
 const reducers = combineReducers({
-  wave,
+  products,
 });
 
 export default reducers;

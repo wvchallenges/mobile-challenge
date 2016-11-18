@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { fetchFromWave } from '../actions';
-import ProductsComponent from './index';
+import ProductsComponent from './Products';
 
 const mapStateToProps = state => (
   {
-    product: fetchFromWave(state.products),
+    products: state.products,
   }
 );
 
