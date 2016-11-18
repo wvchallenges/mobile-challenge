@@ -1,4 +1,4 @@
-import api from './api';
+import api from '../settings';
 
 const BUSINESS_ID = api.business_id;
 const ACCESS_TOKEN = api.access_token;
