@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: 10,
+    padding: 0,
     flex: 1,
     flexDirection: 'row',
   },
