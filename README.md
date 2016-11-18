@@ -27,6 +27,14 @@ export default {
 ```
 Fill in the fields with their appropriate values.
 
+# What I'm Proud Of
+
+## Separation of Concerns
+I've broken down the list of products into two distinct pieces: a container to manage the state data, and a component to handle the presentation. The presentational components should be as dumb as possible and should render purely based on their props. This will ensure that the presentational components can be easily extracted out of the app and replaced if needed. I've also strived to use stateless functional components where possible.
+
+## Redux and Redux Sagas
+I used Redux and Redux Sagas to help me manage the fetching from the Wave API. Sagas leverages generators to simplify side effects and async Redux actions.
+
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
