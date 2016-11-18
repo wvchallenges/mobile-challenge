@@ -1,20 +1,14 @@
 import { connect } from 'react-redux';
-import { fetchFromWave } from '../actions';
+import { fetchProducts } from '../actions';
 import ProductsComponent from './Products';
 
-const mapStateToProps = state => (
-  {
-    products: state.products,
-  }
-);
+const mapStateToProps = state => ({
+  products: state.products,
+});
 
-const mapDispatchToProps = dispatch => (
-  {
-    onMount: () => {
-      dispatch(fetchFromWave());
-    },
-  }
-);
+const mapDispatchToProps = dispatch => ({
+  onMount: () => dispatch(fetchProducts()),
+});
 
 const Products = connect(
   mapStateToProps,
