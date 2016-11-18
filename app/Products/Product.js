@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   name: {
-    padding: 0,
+    paddingRight: 10,
   },
   price: {
     padding: 0,
