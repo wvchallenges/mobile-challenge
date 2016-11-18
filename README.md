@@ -1,3 +1,15 @@
+# How to Run
+The `access_token` and `business_id` have not been added to the repository. This is good practice, as checking in API tokens and keys can lead to security breaches.
+
+To run the app, add a file in the root called `settings.js` that contains the following code:
+```
+export default {
+  business_id: 'YOUR_BUSINESS_ID',
+  access_token: 'YOUR_ACCESS_TOKEN',
+};
+```
+Fill in the fields with their appropriate values.
+
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
