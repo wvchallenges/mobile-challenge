@@ -16,7 +16,7 @@ export const getProducts = () => {
   .then(response => {
     return response.json()
     .then(json => {
-      console.log(json);
+      // console.log(json);
       return json;
     });
   });
