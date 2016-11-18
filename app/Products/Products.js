@@ -2,16 +2,27 @@ import React, { Component, PropTypes } from 'react';
 import { ListView } from 'react-native';
 import Product from './Product';
 
+const ds = new ListView.DataSource({
+  rowHasChanged: (r1, r2) => r1 !== r2,
+});
+
 class Products extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
-    const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2,
-    });
     this.state = {
-      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+      dataSource: ds.cloneWithRows(props.products),
     };
+  }
+
+  componentDidMount() {
+    const { onMount } = this.props;
+    onMount();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      dataSource: ds.cloneWithRows(nextProps.products),
+    });
   }
 
   render() {
@@ -26,6 +37,7 @@ class Products extends Component {
 
 Products.propTypes = {
   products: PropTypes.array,
+  onMount: PropTypes.func,
 };
 
 export default Products;
