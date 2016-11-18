@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: 50,
+    padding: 10,
     flex: 1,
     flexDirection: 'row',
   },
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 const Product = ({ product }) => (
   <View style={styles.wrapper}>
     <Text style={styles.name}>{product.name}</Text>
-    <Text style={styles.price}>{product.price}</Text>
+    <Text style={styles.price}>${product.price}</Text>
   </View>
 );
 
