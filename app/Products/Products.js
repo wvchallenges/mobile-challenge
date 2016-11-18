@@ -1,9 +1,16 @@
 import React, { Component, PropTypes } from 'react';
-import { ListView } from 'react-native';
+import { ListView, StyleSheet, View } from 'react-native';
 import Product from './Product';
 
 const ds = new ListView.DataSource({
   rowHasChanged: (r1, r2) => r1 !== r2,
+});
+
+const styles = StyleSheet.create({
+  separator: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: '#8E8E8E',
+  },
 });
 
 class Products extends Component {
@@ -30,6 +37,7 @@ class Products extends Component {
       <ListView
         dataSource={this.state.dataSource}
         renderRow={row => <Product product={row} />}
+        renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
       />
     );
   }

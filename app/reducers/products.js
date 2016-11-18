@@ -1,4 +1,4 @@
-const products = (state = ['product1', 'product2', 'product3'], action) => {
+const products = (state = [], action) => {
   switch (action.type) {
     case 'FETCH_PRODUCTS_SUCCEEDED':
       console.log('FETCH_PRODUCTS_SUCCEEDED');

@@ -5,14 +5,20 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
+import { AppRegistry, View, StyleSheet } from 'react-native';
 import App from './app';
+
+const styles = StyleSheet.create({
+  wrapper: {
+    paddingTop: 20,
+  },
+});
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class waveMobile extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.wrapper}>
         <App />
       </View>
     );
