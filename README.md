@@ -7,16 +7,8 @@ git checkout dev
 npm install
 ```
 
-## Running
-If you don't have React Native installed, follow the [official instructions](https://facebook.github.io/react-native/docs/getting-started.html) for your appropriate platform.
+## Add settings.js
 
-Once you've installed React Native, do the following:
-
-iOS: `react-native run-ios`
-
-Android (start the emulator first): `react-native run-android`
-
-## 
 The `access_token` and `business_id` have not been added to the repository. This is good practice, as checking in API tokens and keys can lead to security breaches.
 
 To run the app, add a file in the root called `settings.js` that contains the following code:
@@ -27,6 +19,15 @@ export default {
 };
 ```
 Fill in the fields with their appropriate values.
+
+## Running
+If you don't have React Native installed, follow the [official instructions](https://facebook.github.io/react-native/docs/getting-started.html) for your appropriate platform.
+
+Once you've installed React Native, do the following:
+
+iOS: `react-native run-ios`
+
+Android (start the emulator first): `react-native run-android`
 
 # What I'm Proud Of
 
