@@ -1,8 +1,9 @@
 # To run project:
-1. clone the repo with git clone --recursive git://github.com/hsavit1/mobile-challenge.git - this is necessary because there is an Alamofire submodule dependency
-2. open the .xcproject file
-3. You need to select a team to run this project on your iphone. Note that you must have a valid Apple Developer's subscription to run the project on your iPhone device, otherwise you will only be able to run the project on the simulator. plug in your iPhone, select a team, make sure there are no build errors, and RUN.
-4. Wait for the data to load
+1. clone the repo with git clone git://github.com/hsavit1/mobile-challenge.git and cd into WaveTakeHome directory
+2. Open Terminal and run `pod install` to install the Alamofire dependency from cocoapods
+3. open the .xcproject file
+4. You need to select a team to run this project on your iphone. Note that you must have a valid Apple Developer's subscription to run the project on your iPhone device, otherwise you will only be able to run the project on the simulator. plug in your iPhone, select a team, make sure there are no build errors, and RUN.
+5. Wait for the data to load
 
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
