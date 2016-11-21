@@ -11,13 +11,6 @@ import Foundation
 import UIKit
 
 class TableViewCell : UITableViewCell {
-    
-    @IBOutlet weak var gravitarImageView: UIImageView!
-    @IBOutlet weak var username: UILabel!
-    
-    @IBOutlet weak var goldMedals: UILabel!
-    @IBOutlet weak var silverMedals: UILabel!
-    @IBOutlet weak var bronzeMedals: UILabel!
-    
-    
+    @IBOutlet weak var prodoctLabel: UILabel?
+    @IBOutlet weak var descriptionLabel: UILabel?
 }

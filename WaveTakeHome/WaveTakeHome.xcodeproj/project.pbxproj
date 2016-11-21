@@ -10,12 +10,12 @@
 		5C810E821DE2033F009110DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E811DE2033F009110DF /* AppDelegate.swift */; };
 		5C810E841DE20340009110DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E831DE20340009110DF /* ViewController.swift */; };
 		5C810E871DE20340009110DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C810E851DE20340009110DF /* Main.storyboard */; };
-		5C810E8A1DE20340009110DF /* WaveTakeHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E881DE20340009110DF /* WaveTakeHome.xcdatamodeld */; };
 		5C810E8C1DE20340009110DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C810E8B1DE20340009110DF /* Assets.xcassets */; };
 		5C810E8F1DE20340009110DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C810E8D1DE20340009110DF /* LaunchScreen.storyboard */; };
 		5C810E981DE20395009110DF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E971DE20395009110DF /* TableViewCell.swift */; };
 		5C810EEB1DE25371009110DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C810EDE1DE2534B009110DF /* Alamofire.framework */; };
 		5C810EEC1DE25371009110DF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C810EDE1DE2534B009110DF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C810EF01DE26C6A009110DF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810EEF1DE26C6A009110DF /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,12 +96,12 @@
 		5C810E811DE2033F009110DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C810E831DE20340009110DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C810E861DE20340009110DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C810E891DE20340009110DF /* WaveTakeHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaveTakeHome.xcdatamodel; sourceTree = "<group>"; };
 		5C810E8B1DE20340009110DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C810E8E1DE20340009110DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C810E901DE20340009110DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C810E971DE20395009110DF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5C810ED21DE2534A009110DF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		5C810EEF1DE26C6A009110DF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 				5C810E8B1DE20340009110DF /* Assets.xcassets */,
 				5C810E8D1DE20340009110DF /* LaunchScreen.storyboard */,
 				5C810E901DE20340009110DF /* Info.plist */,
-				5C810E881DE20340009110DF /* WaveTakeHome.xcdatamodeld */,
+				5C810EEF1DE26C6A009110DF /* SwiftyJSON.swift */,
 			);
 			path = WaveTakeHome;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				5C810E841DE20340009110DF /* ViewController.swift in Sources */,
 				5C810E981DE20395009110DF /* TableViewCell.swift in Sources */,
 				5C810E821DE2033F009110DF /* AppDelegate.swift in Sources */,
-				5C810E8A1DE20340009110DF /* WaveTakeHome.xcdatamodeld in Sources */,
+				5C810EF01DE26C6A009110DF /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,19 +470,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5C810E881DE20340009110DF /* WaveTakeHome.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5C810E891DE20340009110DF /* WaveTakeHome.xcdatamodel */,
-			);
-			currentVersion = 5C810E891DE20340009110DF /* WaveTakeHome.xcdatamodel */;
-			path = WaveTakeHome.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5C810E761DE2033F009110DF /* Project object */;
 }
