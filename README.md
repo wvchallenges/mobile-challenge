@@ -3,6 +3,7 @@
 ## Installation
 ```
 git clone https://github.com/hyperh/mobile-challenge.git
+git checkout dev
 npm install
 ```
 
