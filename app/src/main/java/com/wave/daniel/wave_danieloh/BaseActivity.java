@@ -110,8 +110,8 @@ public class BaseActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onPause() {
+        super.onPause();
 
         //unregister NetworkChangedReceiver
         unregisterReceiver(networkChangedReceiver);
