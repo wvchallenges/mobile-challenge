@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wave</string>
+
+    <string name="network_error_msg">Network is Not Available</string>
+    <string name="network_available_msg">Network Available Do operations</string>
+
+</resources>
