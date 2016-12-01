@@ -14,6 +14,16 @@
 		42A3550D1DEFC44C007D28FD /* WaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3550C1DEFC44C007D28FD /* WaveTests.swift */; };
 		42A355181DEFC44C007D28FD /* WaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355171DEFC44C007D28FD /* WaveUITests.swift */; };
 		42A355311DEFD6CB007D28FD /* WProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355301DEFD6CB007D28FD /* WProductsViewController.swift */; };
+		42A355361DEFD895007D28FD /* WNetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355351DEFD895007D28FD /* WNetworkEngine.swift */; };
+		42A355381DEFD8B0007D28FD /* WAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355371DEFD8B0007D28FD /* WAPIManager.swift */; };
+		42A3553A1DEFD8F6007D28FD /* WProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355391DEFD8F6007D28FD /* WProductModel.swift */; };
+		42A3553B1DEFD8F6007D28FD /* WProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355391DEFD8F6007D28FD /* WProductModel.swift */; };
+		42A3553D1DEFDBEA007D28FD /* WAPIProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3553C1DEFDBEA007D28FD /* WAPIProducts.swift */; };
+		42A3553E1DEFDBEA007D28FD /* WAPIProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3553C1DEFDBEA007D28FD /* WAPIProducts.swift */; };
+		42A355431DEFDD90007D28FD /* WNetworkEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355421DEFDD90007D28FD /* WNetworkEngineSpec.swift */; };
+		42A355451DEFDDAC007D28FD /* WAPIProductsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355441DEFDDAC007D28FD /* WAPIProductsSpec.swift */; };
+		42A355471DEFDDC0007D28FD /* WAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355461DEFDDC0007D28FD /* WAPIManager.swift */; };
+		42A355491DEFDDE8007D28FD /* WProductModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */; };
 		5EF186C3240526FF1C391AD0 /* Pods_WaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495E0D68A9EC57C25AF0599 /* Pods_WaveUITests.framework */; };
 		AFC0F328F8E1B35BEE291462 /* Pods_Wave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E157DF010BE2679EB174734B /* Pods_Wave.framework */; };
 		B3311599CAC1B44EDC1499BB /* Pods_WaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */; };
@@ -57,6 +67,14 @@
 		42A3552B1DEFD3E8007D28FD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
 		42A3552D1DEFD3EF007D28FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		42A355301DEFD6CB007D28FD /* WProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WProductsViewController.swift; sourceTree = "<group>"; };
+		42A355351DEFD895007D28FD /* WNetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNetworkEngine.swift; sourceTree = "<group>"; };
+		42A355371DEFD8B0007D28FD /* WAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIManager.swift; sourceTree = "<group>"; };
+		42A355391DEFD8F6007D28FD /* WProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WProductModel.swift; sourceTree = "<group>"; };
+		42A3553C1DEFDBEA007D28FD /* WAPIProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIProducts.swift; sourceTree = "<group>"; };
+		42A355421DEFDD90007D28FD /* WNetworkEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNetworkEngineSpec.swift; sourceTree = "<group>"; };
+		42A355441DEFDDAC007D28FD /* WAPIProductsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIProductsSpec.swift; sourceTree = "<group>"; };
+		42A355461DEFDDC0007D28FD /* WAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIManager.swift; sourceTree = "<group>"; };
+		42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WProductModelSpec.swift; sourceTree = "<group>"; };
 		4FEC7AD6CA6A036E628928B9 /* Pods-WaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveUITests/Pods-WaveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92662476653EE0E2B0CD45C6 /* Pods-Wave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave/Pods-Wave.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,8 +165,10 @@
 		42A3550B1DEFC44C007D28FD /* WaveTests */ = {
 			isa = PBXGroup;
 			children = (
+				42A3553F1DEFDD33007D28FD /* API */,
 				42A3550C1DEFC44C007D28FD /* WaveTests.swift */,
 				42A3550E1DEFC44C007D28FD /* Info.plist */,
+				42A355401DEFDD5C007D28FD /* Model */,
 			);
 			path = WaveTests;
 			sourceTree = "<group>";
@@ -173,6 +193,7 @@
 		42A355321DEFD6EE007D28FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42A355391DEFD8F6007D28FD /* WProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,8 +201,29 @@
 		42A355341DEFD723007D28FD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				42A355351DEFD895007D28FD /* WNetworkEngine.swift */,
+				42A3553C1DEFDBEA007D28FD /* WAPIProducts.swift */,
+				42A355371DEFD8B0007D28FD /* WAPIManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		42A3553F1DEFDD33007D28FD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				42A355421DEFDD90007D28FD /* WNetworkEngineSpec.swift */,
+				42A355441DEFDDAC007D28FD /* WAPIProductsSpec.swift */,
+				42A355461DEFDDC0007D28FD /* WAPIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		42A355401DEFDD5C007D28FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7F6DA5B78D8E9EFB99B68D91 /* Frameworks */ = {
@@ -480,8 +522,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A355381DEFD8B0007D28FD /* WAPIManager.swift in Sources */,
 				42A354F81DEFC44C007D28FD /* AppDelegate.swift in Sources */,
+				42A3553D1DEFDBEA007D28FD /* WAPIProducts.swift in Sources */,
+				42A355361DEFD895007D28FD /* WNetworkEngine.swift in Sources */,
 				42A355311DEFD6CB007D28FD /* WProductsViewController.swift in Sources */,
+				42A3553A1DEFD8F6007D28FD /* WProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +535,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A355471DEFDDC0007D28FD /* WAPIManager.swift in Sources */,
 				42A3550D1DEFC44C007D28FD /* WaveTests.swift in Sources */,
+				42A355451DEFDDAC007D28FD /* WAPIProductsSpec.swift in Sources */,
+				42A355431DEFDD90007D28FD /* WNetworkEngineSpec.swift in Sources */,
+				42A355491DEFDDE8007D28FD /* WProductModelSpec.swift in Sources */,
+				42A3553B1DEFD8F6007D28FD /* WProductModel.swift in Sources */,
+				42A3553E1DEFDBEA007D28FD /* WAPIProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
