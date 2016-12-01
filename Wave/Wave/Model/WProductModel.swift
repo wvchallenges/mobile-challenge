@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+class WProductModel {
+    var name: String?
+    var price: Double?
+    
+    class func fromJSON(product: JSON) -> WProductModel{
+        let instance = WProductModel()
+        instance.name = product["name"].stringValue
+        instance.price = product["price"].doubleValue
+        return instance
+    }
+}
