@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		42A354F81DEFC44C007D28FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A354F71DEFC44C007D28FD /* AppDelegate.swift */; };
-		42A354FA1DEFC44C007D28FD /* WProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A354F91DEFC44C007D28FD /* WProductsViewController.swift */; };
 		42A354FD1DEFC44C007D28FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A354FB1DEFC44C007D28FD /* Main.storyboard */; };
 		42A354FF1DEFC44C007D28FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A354FE1DEFC44C007D28FD /* Assets.xcassets */; };
 		42A355021DEFC44C007D28FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A355001DEFC44C007D28FD /* LaunchScreen.storyboard */; };
 		42A3550D1DEFC44C007D28FD /* WaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3550C1DEFC44C007D28FD /* WaveTests.swift */; };
 		42A355181DEFC44C007D28FD /* WaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355171DEFC44C007D28FD /* WaveUITests.swift */; };
+		42A355311DEFD6CB007D28FD /* WProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355301DEFD6CB007D28FD /* WProductsViewController.swift */; };
 		5EF186C3240526FF1C391AD0 /* Pods_WaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495E0D68A9EC57C25AF0599 /* Pods_WaveUITests.framework */; };
 		AFC0F328F8E1B35BEE291462 /* Pods_Wave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E157DF010BE2679EB174734B /* Pods_Wave.framework */; };
 		B3311599CAC1B44EDC1499BB /* Pods_WaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */; };
@@ -41,7 +41,6 @@
 		2A757236B0AEB0882C556858 /* Pods-WaveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveUITests/Pods-WaveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42A354F41DEFC44C007D28FD /* Wave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A354F71DEFC44C007D28FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42A354F91DEFC44C007D28FD /* WProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WProductsViewController.swift; sourceTree = "<group>"; };
 		42A354FC1DEFC44C007D28FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42A354FE1DEFC44C007D28FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42A355011DEFC44C007D28FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,12 @@
 		42A355131DEFC44C007D28FD /* WaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A355171DEFC44C007D28FD /* WaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveUITests.swift; sourceTree = "<group>"; };
 		42A355191DEFC44C007D28FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A355251DEFD3D1007D28FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		42A355261DEFD3D1007D28FD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
+		42A355291DEFD3DF007D28FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42A3552B1DEFD3E8007D28FD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
+		42A3552D1DEFD3EF007D28FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Wave-dnkfnecmrtshdcbbuoafdnxmawwa/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		42A355301DEFD6CB007D28FD /* WProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WProductsViewController.swift; sourceTree = "<group>"; };
 		4FEC7AD6CA6A036E628928B9 /* Pods-WaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveUITests/Pods-WaveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92662476653EE0E2B0CD45C6 /* Pods-Wave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave/Pods-Wave.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +132,10 @@
 		42A354F61DEFC44C007D28FD /* Wave */ = {
 			isa = PBXGroup;
 			children = (
+				42A355341DEFD723007D28FD /* API */,
 				42A354F71DEFC44C007D28FD /* AppDelegate.swift */,
-				42A354F91DEFC44C007D28FD /* WProductsViewController.swift */,
+				42A355321DEFD6EE007D28FD /* Model */,
+				42A3552F1DEFD6CB007D28FD /* Products */,
 				42A354FB1DEFC44C007D28FD /* Main.storyboard */,
 				42A354FE1DEFC44C007D28FD /* Assets.xcassets */,
 				42A355001DEFC44C007D28FD /* LaunchScreen.storyboard */,
@@ -155,9 +162,36 @@
 			path = WaveUITests;
 			sourceTree = "<group>";
 		};
+		42A3552F1DEFD6CB007D28FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42A355301DEFD6CB007D28FD /* WProductsViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		42A355321DEFD6EE007D28FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42A355341DEFD723007D28FD /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		7F6DA5B78D8E9EFB99B68D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42A3552D1DEFD3EF007D28FD /* SwiftyJSON.framework */,
+				42A3552B1DEFD3E8007D28FD /* Quick.framework */,
+				42A355291DEFD3DF007D28FD /* XCTest.framework */,
+				42A355251DEFD3D1007D28FD /* Alamofire.framework */,
+				42A355261DEFD3D1007D28FD /* Nimble.framework */,
 				E157DF010BE2679EB174734B /* Pods_Wave.framework */,
 				84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */,
 				0495E0D68A9EC57C25AF0599 /* Pods_WaveUITests.framework */,
@@ -446,8 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A354FA1DEFC44C007D28FD /* WProductsViewController.swift in Sources */,
 				42A354F81DEFC44C007D28FD /* AppDelegate.swift in Sources */,
+				42A355311DEFD6CB007D28FD /* WProductsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
