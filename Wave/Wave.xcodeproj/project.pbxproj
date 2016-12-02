@@ -24,6 +24,8 @@
 		42A355451DEFDDAC007D28FD /* WAPIProductsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355441DEFDDAC007D28FD /* WAPIProductsSpec.swift */; };
 		42A355471DEFDDC0007D28FD /* WAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355461DEFDDC0007D28FD /* WAPIManager.swift */; };
 		42A355491DEFDDE8007D28FD /* WProductModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */; };
+		42A3554E1DF130C8007D28FD /* NSNumber+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3554D1DF130C8007D28FD /* NSNumber+Format.swift */; };
+		42A3554F1DF130C9007D28FD /* NSNumber+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3554D1DF130C8007D28FD /* NSNumber+Format.swift */; };
 		5EF186C3240526FF1C391AD0 /* Pods_WaveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495E0D68A9EC57C25AF0599 /* Pods_WaveUITests.framework */; };
 		AFC0F328F8E1B35BEE291462 /* Pods_Wave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E157DF010BE2679EB174734B /* Pods_Wave.framework */; };
 		B3311599CAC1B44EDC1499BB /* Pods_WaveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */; };
@@ -75,6 +77,7 @@
 		42A355441DEFDDAC007D28FD /* WAPIProductsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIProductsSpec.swift; sourceTree = "<group>"; };
 		42A355461DEFDDC0007D28FD /* WAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAPIManager.swift; sourceTree = "<group>"; };
 		42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WProductModelSpec.swift; sourceTree = "<group>"; };
+		42A3554D1DF130C8007D28FD /* NSNumber+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+Format.swift"; sourceTree = "<group>"; };
 		4FEC7AD6CA6A036E628928B9 /* Pods-WaveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveUITests/Pods-WaveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		84E8DC85BC61B90F0ADEC20F /* Pods_WaveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92662476653EE0E2B0CD45C6 /* Pods-Wave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave/Pods-Wave.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		42A354F61DEFC44C007D28FD /* Wave */ = {
 			isa = PBXGroup;
 			children = (
+				42A3554C1DF13092007D28FD /* Utils */,
 				42A355341DEFD723007D28FD /* API */,
 				42A354F71DEFC44C007D28FD /* AppDelegate.swift */,
 				42A355321DEFD6EE007D28FD /* Model */,
@@ -224,6 +228,14 @@
 				42A355481DEFDDE8007D28FD /* WProductModelSpec.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		42A3554C1DF13092007D28FD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42A3554D1DF130C8007D28FD /* NSNumber+Format.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7F6DA5B78D8E9EFB99B68D91 /* Frameworks */ = {
@@ -522,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A3554E1DF130C8007D28FD /* NSNumber+Format.swift in Sources */,
 				42A355381DEFD8B0007D28FD /* WAPIManager.swift in Sources */,
 				42A354F81DEFC44C007D28FD /* AppDelegate.swift in Sources */,
 				42A3553D1DEFDBEA007D28FD /* WAPIProducts.swift in Sources */,
@@ -536,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A355471DEFDDC0007D28FD /* WAPIManager.swift in Sources */,
+				42A3554F1DF130C9007D28FD /* NSNumber+Format.swift in Sources */,
 				42A3550D1DEFC44C007D28FD /* WaveTests.swift in Sources */,
 				42A355451DEFDDAC007D28FD /* WAPIProductsSpec.swift in Sources */,
 				42A355431DEFDD90007D28FD /* WNetworkEngineSpec.swift in Sources */,
