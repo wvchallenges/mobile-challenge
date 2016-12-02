@@ -10,8 +10,8 @@ import Foundation
 import SwiftyJSON
 
 class WProductModel {
-    var name: String?
-    var price: Double?
+    var name: String!
+    var price: Double!
     
     class func fromJSON(product: JSON) -> WProductModel{
         let instance = WProductModel()
