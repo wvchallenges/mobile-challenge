@@ -41,3 +41,25 @@ class WProductsRequestParams {
         return params.count > 0 ? params : nil
     }
 }
+
+class WAPIProducts {
+    private func getEndPoint(business_id: String) -> String{
+        return "/businesses/\(business_id)/products/"
+    }
+    
+    func getProducts(requestParams: WProductsRequestParams, successHandler: @escaping(_ response: [WProductModel])->Void, failureHandler: @escaping(_ errorMessage: String)->Void) {
+        let endPoint = getEndPoint(business_id: requestParams.business_id)
+        WNetworkEngine.get(endPoint: endPoint, requestParams: requestParams.toDict(), successHandler: {
+            response in
+            var products: [WProductModel] = []
+            for index in 0..<response.count {
+                let product = WProductModel.fromJSON(product: response[index])
+                products.append(product)
+            }
+            successHandler(products)
+        }, failureHandler: {
+            errorMessage in
+            failureHandler(errorMessage)
+        })
+    }
+}
