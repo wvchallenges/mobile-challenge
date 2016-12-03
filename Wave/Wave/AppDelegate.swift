@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        WNetworkEngine.config(baseURL: "https://api.waveapps.com/", accessToken: "6W9hcvwRvyyZgPu9Odq7ko8DSY8Nfm")
+        
         return true
     }
 
