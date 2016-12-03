@@ -12,6 +12,7 @@ extension NSNumber {
     func dollarString() -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
+        formatter.locale = NSLocale(localeIdentifier: "en_CA") as Locale!
         return formatter.string(from: self) ?? "$"
     }
 }
