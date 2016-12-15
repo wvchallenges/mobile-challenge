@@ -18,5 +18,7 @@ class ProjectListActivity : AppCompatActivity(), ProjectListContract.View {
     setContentView(R.layout.act_project_list)
 
     mActionsListener = ProjectListPresenter(this)
+
+    mActionsListener.fetchProductsFromApi()
   }
 }
