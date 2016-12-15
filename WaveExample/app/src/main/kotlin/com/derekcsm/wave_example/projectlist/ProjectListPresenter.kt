@@ -10,4 +10,8 @@ class ProjectListPresenter constructor(mView: ProjectListContract.View) :
     this.mView = mView
   }
 
+  fun fetchProjectsFromAPI() {
+
+  }
+
 }
