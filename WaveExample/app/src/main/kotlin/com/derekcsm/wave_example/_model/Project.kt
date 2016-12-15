@@ -1,4 +1,4 @@
-package com.derekcsm.wave_example.model
+package com.derekcsm.wave_example._model
 
 import com.squareup.moshi.Json
 
