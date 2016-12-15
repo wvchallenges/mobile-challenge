@@ -3,14 +3,14 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '23.0.3'
     defaultConfig {
-        applicationId "com.derekcsm.wave_example"
+        applicationId 'com.derekcsm.wave_example'
         minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionName '1.0'
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -31,6 +31,10 @@ dependencies {
 
     // Kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // RX
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.5'
 
     // Google Android Support
     compile 'com.android.support:appcompat-v7:24.2.1'
