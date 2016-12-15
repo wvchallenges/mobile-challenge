@@ -1,7 +1,5 @@
 package com.derekcsm.wave_example.projectlist
 
-import android.util.Log
-
 class ProjectListPresenter constructor(mView: ProjectListContract.View) :
     ProjectListContract.UserActionsListener {
 
@@ -12,7 +10,4 @@ class ProjectListPresenter constructor(mView: ProjectListContract.View) :
     this.mView = mView
   }
 
-  override fun test() {
-    Log.d(TAG, "test")
-  }
 }

@@ -7,7 +7,7 @@ interface ProjectListContract {
   }
 
   interface UserActionsListener {
-    fun test()
+
   }
 
 }
