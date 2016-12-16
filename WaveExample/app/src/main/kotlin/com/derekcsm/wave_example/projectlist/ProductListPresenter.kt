@@ -1,6 +1,7 @@
 package com.derekcsm.wave_example.projectlist
 
 import android.util.Log
+import android.widget.Toast
 import com.derekcsm.wave_example._api.ApiBuilder
 import com.derekcsm.wave_example._api.WaveApi
 import com.derekcsm.wave_example._base.Constants
@@ -31,14 +32,17 @@ class ProductListPresenter constructor(mView: ProductListContract.View) :
         .subscribe(object : Subscriber<List<Product>>() {
           override fun onCompleted() {
             Log.d(TAG, "onCompleted ")
+            mView.hideLoading()
           }
 
           override fun onError(e: Throwable) {
-            Log.d(TAG, "onError "+ e.message)
+            Log.d(TAG, "onError " + e.message)
+            Toast.makeText(mView.getContext(), "Error loading: " + e.message, Toast.LENGTH_LONG).show()
+            mView.hideLoading()
           }
 
           override fun onNext(products: List<Product>?) {
-            Log.d(TAG, "onNext "+ products)
+            Log.d(TAG, "onNext " + products)
             if (products != null) {
               populateAdapter(products)
             }
