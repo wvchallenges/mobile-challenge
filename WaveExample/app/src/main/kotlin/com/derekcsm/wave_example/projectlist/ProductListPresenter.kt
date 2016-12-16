@@ -5,15 +5,17 @@ import com.derekcsm.wave_example._api.ApiBuilder
 import com.derekcsm.wave_example._api.WaveApi
 import com.derekcsm.wave_example._base.Constants
 import com.derekcsm.wave_example._model.Product
+import com.derekcsm.wave_example.projectlist.adapter.ProductsAdapterItem
 import rx.Subscriber
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
+import java.util.*
 
-class ProjectListPresenter constructor(mView: ProjectListContract.View) :
-    ProjectListContract.UserActionsListener {
+class ProductListPresenter constructor(mView: ProductListContract.View) :
+    ProductListContract.UserActionsListener {
 
-  private val TAG = "ProjectListPresenter"
-  private val mView: ProjectListContract.View
+  private val TAG = "ProductListPresenter"
+  private val mView: ProductListContract.View
 
   private lateinit var waveApi: WaveApi
 
@@ -37,8 +39,27 @@ class ProjectListPresenter constructor(mView: ProjectListContract.View) :
 
           override fun onNext(products: List<Product>?) {
             Log.d(TAG, "onNext "+ products)
+            if (products != null) {
+              populateAdapter(products)
+            }
           }
         })
+  }
+
+  private fun populateAdapter(products: List<Product>) {
+
+    val productsAdapterItems = ArrayList<ProductsAdapterItem<*>>()
+
+    var i = 0
+    while (i < products.size) {
+      val productAdapterItem = ProductsAdapterItem(products.get(i),
+          ProductsAdapterItem.PRODUCT.toInt())
+      productsAdapterItems.add(productAdapterItem)
+      i++
+    }
+
+    mView.getProductsAdapter().addItems(productsAdapterItems)
+    mView.getProductsAdapter().notifyDataSetChanged()
   }
 
 }
