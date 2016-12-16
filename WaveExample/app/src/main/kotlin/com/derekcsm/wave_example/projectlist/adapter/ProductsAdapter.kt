@@ -8,21 +8,25 @@ import java.util.*
 class ProductsAdapter(private val listener: ProductsAdapter.ClickListener) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-  private var ProductsAdapterItems = ArrayList<ProductsAdapterItem<*>>()
+  private var productsAdapterItems = ArrayList<ProductsAdapterItem<*>>()
 
   init {
   }
 
   fun addItems(ProductsAdapterItems: ArrayList<ProductsAdapterItem<*>>) {
-    this.ProductsAdapterItems = ProductsAdapterItems
+    this.productsAdapterItems = ProductsAdapterItems
+  }
+
+  fun getItems(): ArrayList<ProductsAdapterItem<*>> {
+    return productsAdapterItems
   }
 
   override fun getItemCount(): Int {
-    return ProductsAdapterItems.size
+    return productsAdapterItems.size
   }
 
   override fun getItemViewType(position: Int): Int {
-    return ProductsAdapterItems[position].viewType
+    return productsAdapterItems[position].viewType
   }
 
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -34,7 +38,7 @@ class ProductsAdapter(private val listener: ProductsAdapter.ClickListener) :
 
   @Suppress("UNCHECKED_CAST")
   override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-    val currentItem = ProductsAdapterItems[position]
+    val currentItem = productsAdapterItems[position]
 
     when (holder.itemViewType.toLong()) {
       ProductsAdapterItem.PRODUCT -> (holder as ProductViewHolder).onBind(

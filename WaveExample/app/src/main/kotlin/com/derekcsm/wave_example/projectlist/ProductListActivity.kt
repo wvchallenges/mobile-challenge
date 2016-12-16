@@ -1,9 +1,9 @@
 package com.derekcsm.wave_example.projectlist
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.Toast
@@ -12,6 +12,9 @@ import com.derekcsm.wave_example.R
 import com.derekcsm.wave_example._model.Product
 import com.derekcsm.wave_example.projectlist.adapter.ProductsAdapter
 import com.derekcsm.wave_example.projectlist.adapter.ProductsAdapterItem
+import com.squareup.moshi.Moshi
+import java.util.*
+
 
 class ProductListActivity : AppCompatActivity(), ProductListContract.View,
     ProductsAdapter.ClickListener, SwipeRefreshLayout.OnRefreshListener {
@@ -27,8 +30,8 @@ class ProductListActivity : AppCompatActivity(), ProductListContract.View,
     return mProductsAdapter
   }
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+  override fun onCreate(savedState: Bundle?) {
+    super.onCreate(savedState)
     setContentView(R.layout.act_project_list)
 
     mActionsListener = ProductListPresenter(this)
@@ -37,10 +40,33 @@ class ProductListActivity : AppCompatActivity(), ProductListContract.View,
     swipeRefreshLayout.setOnRefreshListener(this)
     swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorPrimary)
 
-    if(savedInstanceState == null) {
+    if (savedState == null) {
+      showLoading()
+      mActionsListener.fetchProductsFromApi()
+    } else if (savedState.containsKey(mActionsListener.KEY_SAVED_PRODUCTS())) {
+      // restore state
+      mActionsListener.restoreInstanceState(savedState)
+
+    } else {
       showLoading()
       mActionsListener.fetchProductsFromApi()
     }
+  }
+
+  override fun onSaveInstanceState(outState: Bundle?) {
+    val stringProducts = ArrayList<String>()
+
+    val moshi: Moshi = Moshi.Builder().build()
+    val jsonAdapter = moshi.adapter(Product::class.java)
+
+    var i = 0
+    while (i < mProductsAdapter.getItems().size) {
+      stringProducts.add(jsonAdapter.toJson(mProductsAdapter.getItems().get(i).`object` as Product))
+      i++
+    }
+
+    outState!!.putStringArrayList(mActionsListener.KEY_SAVED_PRODUCTS(), stringProducts)
+    super.onSaveInstanceState(outState)
   }
 
   private fun setupProductAdapter() {
