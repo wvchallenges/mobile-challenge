@@ -9,10 +9,12 @@ import android.widget.TextView
 import butterknife.bindView
 import com.derekcsm.wave_example.R
 import com.derekcsm.wave_example._model.Product
+import java.text.NumberFormat
 
 class ProductViewHolder private constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-  val tvTitle: TextView by bindView(R.id.tv_title)
+  val tvTitle: TextView by bindView(R.id.tv_product_title)
+  val tvPrice: TextView by bindView(R.id.tv_price)
 
   init {
   }
@@ -21,6 +23,13 @@ class ProductViewHolder private constructor(itemView: View) : RecyclerView.ViewH
     val product = item.`object` as Product
 
     tvTitle.text = product.name
+
+    val formatter = NumberFormat.getNumberInstance()
+    formatter.minimumFractionDigits = 2
+    formatter.maximumFractionDigits = 2
+    val formattedPrice = formatter.format(product.price)
+    tvPrice.text = itemView.context.getString(R.string.price, formattedPrice)
+
     itemView.setOnClickListener { listener.onProductClicked(item) }
   }
 

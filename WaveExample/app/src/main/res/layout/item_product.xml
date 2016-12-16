@@ -8,9 +8,17 @@
   android:padding="@dimen/activity_horizontal_margin">
 
   <TextView
-    android:id="@+id/tv_title"
+    android:id="@+id/tv_product_title"
+    style="@style/Title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:text="Title of product"/>
+
+  <TextView
+    android:id="@+id/tv_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Body"
+    tools:text="$12.20"/>
 
 </LinearLayout>
