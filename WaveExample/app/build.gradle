@@ -3,14 +3,14 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '23.0.3'
     defaultConfig {
-        applicationId "com.derekcsm.wave_example"
+        applicationId 'com.derekcsm.wave_example'
         minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionName '1.0'
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -32,12 +32,21 @@ dependencies {
     // Kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    // Google Android Support
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    // RX
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.5'
 
-    // Retrofit
+    // Google Android / Support / Niceties
+    compile "com.android.support:appcompat-v7:$androidSupportVersion"
+    compile "com.android.support:recyclerview-v7:$androidSupportVersion"
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
+
+    // Networking
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-moshi:2.1.0'
+    compile "com.squareup.retrofit2:adapter-rxjava:2.1.0"
 
     // JSON
     compile 'com.squareup.moshi:moshi:1.2.0'
