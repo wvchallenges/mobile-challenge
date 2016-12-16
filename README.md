@@ -1,3 +1,12 @@
+Built by @derekcsm
+
+Might have got a bit carried away, but hey - this was actually pretty fun and it took around 4ish hours in total.
+
+The idea here was to build out a really clean app that lives within Android gracefully and feels polished to a decent degree. I built the app using Kotlin with a bunch of nice helper libraries like RXJava to keep things clear and composable. The network request is made through an extensible retrofite API interface that uses and OkHttp Interceptor to add auth headers to all requests. The Activity uses an MVP pattern, and saves instance state using Moshi Json serializations through a String ArrayList stored in the outState bundle. Errors will display as toast messages, and you can even pull to referesh!
+
+> Should be noted that proper Oauth2 would implement token refreshing, I've added some notes to the OkHttpHeadersInterceptor class
+
+---
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
