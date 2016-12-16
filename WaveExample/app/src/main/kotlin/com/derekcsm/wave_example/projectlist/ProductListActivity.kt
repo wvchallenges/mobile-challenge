@@ -6,18 +6,18 @@ import android.support.v7.widget.RecyclerView
 import butterknife.bindView
 import com.derekcsm.wave_example.R
 
-class ProjectListActivity : AppCompatActivity(), ProjectListContract.View {
+class ProductListActivity : AppCompatActivity(), ProductListContract.View {
 
-  private val TAG = "ProjectListActivity"
-  private lateinit var mActionsListener: ProjectListContract.UserActionsListener
+  private val TAG = "ProductListActivity"
+  private lateinit var mActionsListener: ProductListContract.UserActionsListener
 
-  val rvProjectList: RecyclerView by bindView(R.id.rv_project_list)
+  val rvProductList: RecyclerView by bindView(R.id.rv_product_list)
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.act_project_list)
 
-    mActionsListener = ProjectListPresenter(this)
+    mActionsListener = ProductListPresenter(this)
 
     mActionsListener.fetchProductsFromApi()
   }

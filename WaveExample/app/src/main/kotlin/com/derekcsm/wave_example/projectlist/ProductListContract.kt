@@ -1,6 +1,6 @@
 package com.derekcsm.wave_example.projectlist
 
-interface ProjectListContract {
+interface ProductListContract {
 
   interface View {
 

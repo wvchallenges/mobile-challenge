@@ -9,11 +9,11 @@ import rx.Subscriber
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
-class ProjectListPresenter constructor(mView: ProjectListContract.View) :
-    ProjectListContract.UserActionsListener {
+class ProductListPresenter constructor(mView: ProductListContract.View) :
+    ProductListContract.UserActionsListener {
 
-  private val TAG = "ProjectListPresenter"
-  private val mView: ProjectListContract.View
+  private val TAG = "ProductListPresenter"
+  private val mView: ProductListContract.View
 
   private lateinit var waveApi: WaveApi
 
