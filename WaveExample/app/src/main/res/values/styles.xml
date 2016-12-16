@@ -1,0 +1,19 @@
+<resources>
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="Title" parent="TextAppearance.AppCompat.Title">
+    <item name="android:textSize">@dimen/title</item>
+    <item name="android:textColor">@color/title</item>
+  </style>
+
+  <style name="Body" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textSize">@dimen/body</item>
+    <item name="android:textColor">@color/body</item>
+  </style>
+
+</resources>
