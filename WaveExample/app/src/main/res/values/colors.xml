@@ -4,6 +4,8 @@
   <color name="colorPrimaryDark">#008a94</color>
   <color name="colorAccent">#eb9e34</color>
 
+  <color name="accent_selected">#56eb9e34</color>
+
   <color name="title">#de000000</color>
   <color name="body">#de000000</color>
 </resources>

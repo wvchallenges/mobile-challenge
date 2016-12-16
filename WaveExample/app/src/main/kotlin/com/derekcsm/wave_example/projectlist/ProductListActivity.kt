@@ -35,6 +35,7 @@ class ProductListActivity : AppCompatActivity(), ProductListContract.View,
 
     setupProductAdapter()
     swipeRefreshLayout.setOnRefreshListener(this)
+    swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorPrimary)
 
     if(savedInstanceState == null) {
       showLoading()
