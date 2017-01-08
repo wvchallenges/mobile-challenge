@@ -9,6 +9,7 @@ public class WaveChallengeApplication extends Application {
     public ApplicationComponent getApplicationComponent() {
         if (applicationComponent == null) {
             applicationComponent = DaggerApplicationComponent.builder()
+                    .applicationModule(new ApplicationModule(this))
                     .build();
         }
         return applicationComponent;
