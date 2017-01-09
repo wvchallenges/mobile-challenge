@@ -15,8 +15,11 @@ import ai.victorl.wavechallengeapp.services.wave.BusinessProduct;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * RecyclerView Adapter that displays a list of BusinessProducts where each product is displayed by
+ * the layout specified in R.layout.item_product.
+ */
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewHolder> {
-
     private final List<BusinessProduct> products = new ArrayList<>();
 
     public void setProducts(List<BusinessProduct> newProducts) {

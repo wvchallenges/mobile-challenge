@@ -1,5 +1,9 @@
 package ai.victorl.wavechallengeapp.services.wave;
 
+/**
+ * Wave Business Products model as referenced by
+ * <a href="http://docs.waveapps.io/endpoints/products.html#attributes">Attributes</a>
+ */
 public class BusinessProduct {
     public Integer id;
     public String url;

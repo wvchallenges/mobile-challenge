@@ -6,6 +6,9 @@ import ai.victorl.wavechallengeapp.WaveChallengeApplication;
 import ai.victorl.wavechallengeapp.ui.ProductsActivity;
 import dagger.Component;
 
+/**
+ * Dagger Component to specify injectable targets.
+ */
 @Singleton
 @Component(
         modules = ApplicationModule.class

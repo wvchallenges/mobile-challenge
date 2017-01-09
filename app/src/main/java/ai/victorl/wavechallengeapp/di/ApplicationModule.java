@@ -16,9 +16,13 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * Dagger Module to declare Application dependencies.
+ */
 @Module
 class ApplicationModule {
     private static final int DISK_CACHE_SIZE = 52428800; // 50MB
+
     protected final Application application;
 
     ApplicationModule(Application application) {
@@ -28,7 +32,6 @@ class ApplicationModule {
     @Provides
     @Singleton
     OkHttpClient provideOkHttpClient() {
-        // Install an HTTP cache in the application cache directory.
         File cacheDir = new File(application.getCacheDir(), "http");
         Cache cache = new Cache(cacheDir, DISK_CACHE_SIZE);
         return new OkHttpClient.Builder().cache(cache).build();
@@ -54,7 +57,9 @@ class ApplicationModule {
         return new ProductsAdapter();
     }
 
-    // to be inherited by the owning component
+    /**
+     * Module Provides graph to be inherited by the owning Component.
+     */
     public interface Graph {
         OkHttpClient okHttpClient();
         Retrofit retrofit();
