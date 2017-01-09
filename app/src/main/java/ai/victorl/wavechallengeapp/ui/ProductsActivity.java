@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.List;
-import java.util.Locale;
 
 import javax.inject.Inject;
 
@@ -101,7 +100,7 @@ public class ProductsActivity extends AppCompatActivity {
     private void showBusinessId() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.dialog_businessid_title)
-                .setMessage(String.format(Locale.getDefault(), "%s", WaveApi.DEMO_BUSINESS_ID))
+                .setMessage(WaveApi.DEMO_BUSINESS_ID)
                 .show();
     }
 }
