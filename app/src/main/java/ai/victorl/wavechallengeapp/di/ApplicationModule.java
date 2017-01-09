@@ -7,6 +7,7 @@ import java.io.File;
 import javax.inject.Singleton;
 
 import ai.victorl.wavechallengeapp.services.wave.ProductsService;
+import ai.victorl.wavechallengeapp.services.wave.WaveApi;
 import ai.victorl.wavechallengeapp.ui.ProductsAdapter;
 import dagger.Module;
 import dagger.Provides;
@@ -37,7 +38,7 @@ class ApplicationModule {
     @Singleton
     Retrofit provideWaveRetrofit(OkHttpClient okHttpClient) {
         return new Retrofit.Builder()
-                .baseUrl("https://api.waveapps.com/")
+                .baseUrl(WaveApi.WAVE_API_BASE_URL)
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

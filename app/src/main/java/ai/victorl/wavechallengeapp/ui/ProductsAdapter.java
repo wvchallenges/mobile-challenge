@@ -19,9 +19,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     private final List<BusinessProduct> products = new ArrayList<>();
 
-    public void setProducts(List<BusinessProduct> products) {
-        this.products.clear();
-        this.products.addAll(products);
+    public void setProducts(List<BusinessProduct> newProducts) {
+        products.clear();
+        products.addAll(newProducts);
         notifyDataSetChanged();
     }
 
@@ -39,7 +39,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     public void onBindViewHolder(ProductViewHolder holder, int position) {
         final BusinessProduct product = products.get(position);
         holder.nameTextView.setText(product.name);
-        holder.priceTextView.setText(String.format(Locale.getDefault(), "%.2f", product.price));
+        holder.priceTextView.setText(String.format(Locale.getDefault(), "$%.2f", product.price));
     }
 
     @Override
@@ -51,7 +51,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         @BindView(R.id.product_name) TextView nameTextView;
         @BindView(R.id.product_price) TextView priceTextView;
 
-        public ProductViewHolder(View itemView) {
+        ProductViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }

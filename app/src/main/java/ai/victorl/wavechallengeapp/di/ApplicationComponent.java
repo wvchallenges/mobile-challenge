@@ -2,6 +2,7 @@ package ai.victorl.wavechallengeapp.di;
 
 import javax.inject.Singleton;
 
+import ai.victorl.wavechallengeapp.WaveChallengeApplication;
 import ai.victorl.wavechallengeapp.ui.ProductsActivity;
 import dagger.Component;
 

@@ -16,23 +16,21 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways"/>
+            android:layout_height="?attr/actionBarSize"/>
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/products_recyclerview"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/products_swipefreshlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        android:layout_margin="@dimen/activity_content_margin">
 
-    <android.support.v4.widget.ContentLoadingProgressBar
-        android:id="@+id/products_progressbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:indeterminate="true"
-        android:indeterminateBehavior="cycle"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/products_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </android.support.design.widget.CoordinatorLayout>
