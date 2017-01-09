@@ -1,47 +1,26 @@
 # Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
+## Setup
 
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
+1. Fork or clone the repository at https://github.com/Blisse/mobile-challenge/
+2. Open the project in Android Studio (2.0+)
+3. Build and run the application from Android Studio
 
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
+The app's minimum supported version is KitKat (19). 
+The app is compiled for Nougat 7.1 (25). 
+The app has primarily been tested on Marshmallow (23).
 
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
+## Implementation
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
+### External Libraries
 
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
+* [Dagger 2](https://google.github.io/dagger/) for dependency injection
+* [Retrofit](https://square.github.io/retrofit/) for simplifying APIs
+* [Butter Knife](http://jakewharton.github.io/butterknife/) for view binding
+* [OkHttp](http://square.github.io/okhttp/) for handling HTTP requests
 
-## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
+### Comments
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+I really like the separation of concerns I can achieve with Dagger. In the `ApplicationModule` class, I specified the dependency tree necessary to instantiate the services I will use. In more complex applications, I can create multiple modules for more specific functionality (networking, APIs, custom components). In this way with Dagger, only exposing the interfaces used by the class allows the user to skip all of the implementation details. 
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
-
-### What your application must do:
-
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
-
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
-
-Your app is allowed to render nothing if there is no internet connection when it loads.
-
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
-
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
-
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+For example, the `ProductsActivity` has the `@Inject ProductsService productsService` member, which is injected when `WaveChallengeApplication.from(this).getApplicationComponent().inject(this);` is called. By using dependency injection, the `ProductsActivity` (or any other user) doesn't need to bother with knowing how `Retrofit` is instantiated.
