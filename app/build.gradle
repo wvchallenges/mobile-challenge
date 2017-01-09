@@ -45,7 +45,4 @@ dependencies {
     // butterknife
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-
-    // okhttp
-    compile 'com.squareup.okhttp3:okhttp:3.5.0'
 }
