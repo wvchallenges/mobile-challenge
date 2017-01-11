@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wave App</string>
+    <string name="list_view_heading">List of Products</string>
+    <string name="list_view_total">Total:</string>
+</resources>
