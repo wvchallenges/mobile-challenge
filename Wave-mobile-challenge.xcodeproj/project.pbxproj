@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4505CAAE1E9C1C0E00CD2A8E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505CAAD1E9C1C0E00CD2A8E /* Formatters.swift */; };
+		4505CAB01E9C29BF00CD2A8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505CAAF1E9C29BF00CD2A8E /* Constants.swift */; };
+		4505CAB21E9C2A2B00CD2A8E /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505CAB11E9C2A2B00CD2A8E /* ServerError.swift */; };
+		4564F3831501E9741865D2EE /* Pods_Wave_mobile_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF11D54EFD236B774E5F1A6 /* Pods_Wave_mobile_challenge.framework */; };
+		45F488B51E99670A00BEA841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488B41E99670A00BEA841 /* AppDelegate.swift */; };
+		45F488BC1E99670A00BEA841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F488BB1E99670A00BEA841 /* Assets.xcassets */; };
+		45F488CA1E99670A00BEA841 /* Wave_mobile_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488C91E99670A00BEA841 /* Wave_mobile_challengeTests.swift */; };
+		45F488D51E99670B00BEA841 /* Wave_mobile_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488D41E99670B00BEA841 /* Wave_mobile_challengeUITests.swift */; };
+		45F488EC1E996B1F00BEA841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F488EE1E996B1F00BEA841 /* LaunchScreen.storyboard */; };
+		45F488EF1E996B2600BEA841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F488F11E996B2600BEA841 /* Main.storyboard */; };
+		45F488F31E996D2C00BEA841 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488F21E996D2C00BEA841 /* ProductListViewController.swift */; };
+		45F488F61E997E9300BEA841 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488F51E997E9300BEA841 /* Product.swift */; };
+		45F488F81E9A9C9A00BEA841 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488F71E9A9C9A00BEA841 /* ProductService.swift */; };
+		45F488FD1E9AA1F400BEA841 /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488FC1E9AA1F400BEA841 /* ProductRouter.swift */; };
+		45F488FF1E9AA54400BEA841 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F488FE1E9AA54400BEA841 /* Config.swift */; };
+		45F489021E9B3CC100BEA841 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 45F489011E9B3CC100BEA841 /* config.json */; };
+		45F489041E9B3E1100BEA841 /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F489031E9B3E1100BEA841 /* BaseNetworkService.swift */; };
+		45F489061E9B3F6200BEA841 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F489051E9B3F6200BEA841 /* NetworkManager.swift */; };
+		45F489081E9B41D300BEA841 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F489071E9B41D300BEA841 /* AccessTokenAdapter.swift */; };
+		C2407300C77994B1050B4D8C /* Pods_Wave_mobile_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FDF7E232F7A6C6E4E9B837 /* Pods_Wave_mobile_challengeUITests.framework */; };
+		E9C4655F2F5E068C405E1612 /* Pods_Wave_mobile_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE157A0909FDF821C4AA77BE /* Pods_Wave_mobile_challengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45F488C61E99670A00BEA841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45F488A91E99670A00BEA841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F488B01E99670A00BEA841;
+			remoteInfo = "Wave-mobile-challenge";
+		};
+		45F488D11E99670A00BEA841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45F488A91E99670A00BEA841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F488B01E99670A00BEA841;
+			remoteInfo = "Wave-mobile-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1777001D9BD59ABC4C4C802A /* Pods-Wave-mobile-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challenge/Pods-Wave-mobile-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		317D1B634379C0AD85FF4FC9 /* Pods-Wave-mobile-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challengeTests/Pods-Wave-mobile-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4505CAAD1E9C1C0E00CD2A8E /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		4505CAAF1E9C29BF00CD2A8E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4505CAB11E9C2A2B00CD2A8E /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		45F488B11E99670A00BEA841 /* Wave-mobile-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave-mobile-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F488B41E99670A00BEA841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45F488BB1E99670A00BEA841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45F488C01E99670A00BEA841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F488C51E99670A00BEA841 /* Wave-mobile-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave-mobile-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F488C91E99670A00BEA841 /* Wave_mobile_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave_mobile_challengeTests.swift; sourceTree = "<group>"; };
+		45F488CB1E99670A00BEA841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F488D01E99670A00BEA841 /* Wave-mobile-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave-mobile-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F488D41E99670B00BEA841 /* Wave_mobile_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave_mobile_challengeUITests.swift; sourceTree = "<group>"; };
+		45F488D61E99670B00BEA841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F488ED1E996B1F00BEA841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45F488F01E996B2600BEA841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45F488F21E996D2C00BEA841 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		45F488F51E997E9300BEA841 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		45F488F71E9A9C9A00BEA841 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		45F488FC1E9AA1F400BEA841 /* ProductRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
+		45F488FE1E9AA54400BEA841 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		45F489011E9B3CC100BEA841 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		45F489031E9B3E1100BEA841 /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		45F489051E9B3F6200BEA841 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		45F489071E9B41D300BEA841 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
+		4BBB10BCB632197C6FB420FF /* Pods-Wave-mobile-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challengeUITests/Pods-Wave-mobile-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF11D54EFD236B774E5F1A6 /* Pods_Wave_mobile_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_mobile_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8804B47FFD75834D3A6A39 /* Pods-Wave-mobile-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challenge/Pods-Wave-mobile-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD183A8AC2D716B734FB3D3 /* Pods-Wave-mobile-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challengeTests/Pods-Wave-mobile-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE157A0909FDF821C4AA77BE /* Pods_Wave_mobile_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_mobile_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84DD5D4E295051C82D11113 /* Pods-Wave-mobile-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-mobile-challengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-mobile-challengeUITests/Pods-Wave-mobile-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5FDF7E232F7A6C6E4E9B837 /* Pods_Wave_mobile_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_mobile_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45F488AE1E99670A00BEA841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4564F3831501E9741865D2EE /* Pods_Wave_mobile_challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488C21E99670A00BEA841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C4655F2F5E068C405E1612 /* Pods_Wave_mobile_challengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488CD1E99670A00BEA841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2407300C77994B1050B4D8C /* Pods_Wave_mobile_challengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F7BAB57523003667492AC30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA8804B47FFD75834D3A6A39 /* Pods-Wave-mobile-challenge.debug.xcconfig */,
+				1777001D9BD59ABC4C4C802A /* Pods-Wave-mobile-challenge.release.xcconfig */,
+				317D1B634379C0AD85FF4FC9 /* Pods-Wave-mobile-challengeTests.debug.xcconfig */,
+				DCD183A8AC2D716B734FB3D3 /* Pods-Wave-mobile-challengeTests.release.xcconfig */,
+				4BBB10BCB632197C6FB420FF /* Pods-Wave-mobile-challengeUITests.debug.xcconfig */,
+				E84DD5D4E295051C82D11113 /* Pods-Wave-mobile-challengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4505CAAC1E9C1BED00CD2A8E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4505CAAD1E9C1C0E00CD2A8E /* Formatters.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		45F488A81E99670A00BEA841 = {
+			isa = PBXGroup;
+			children = (
+				45F488B31E99670A00BEA841 /* Wave-mobile-challenge */,
+				45F488C81E99670A00BEA841 /* Wave-mobile-challengeTests */,
+				45F488D31E99670B00BEA841 /* Wave-mobile-challengeUITests */,
+				45F488B21E99670A00BEA841 /* Products */,
+				3F7BAB57523003667492AC30 /* Pods */,
+				C7B1FC7AF2612B516F5438AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45F488B21E99670A00BEA841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45F488B11E99670A00BEA841 /* Wave-mobile-challenge.app */,
+				45F488C51E99670A00BEA841 /* Wave-mobile-challengeTests.xctest */,
+				45F488D01E99670A00BEA841 /* Wave-mobile-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45F488B31E99670A00BEA841 /* Wave-mobile-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				45F488E21E9967B400BEA841 /* Application */,
+				45F488E31E9967C800BEA841 /* Model */,
+				45F488E41E9967CF00BEA841 /* View */,
+				45F488E51E9967D900BEA841 /* Controller */,
+				45F488E61E99681B00BEA841 /* Utils */,
+				45F488E71E996A1D00BEA841 /* Resources */,
+				45F488C01E99670A00BEA841 /* Info.plist */,
+			);
+			path = "Wave-mobile-challenge";
+			sourceTree = "<group>";
+		};
+		45F488C81E99670A00BEA841 /* Wave-mobile-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				45F488C91E99670A00BEA841 /* Wave_mobile_challengeTests.swift */,
+				45F488CB1E99670A00BEA841 /* Info.plist */,
+			);
+			path = "Wave-mobile-challengeTests";
+			sourceTree = "<group>";
+		};
+		45F488D31E99670B00BEA841 /* Wave-mobile-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45F488D41E99670B00BEA841 /* Wave_mobile_challengeUITests.swift */,
+				45F488D61E99670B00BEA841 /* Info.plist */,
+			);
+			path = "Wave-mobile-challengeUITests";
+			sourceTree = "<group>";
+		};
+		45F488E21E9967B400BEA841 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				45F488B41E99670A00BEA841 /* AppDelegate.swift */,
+				45F488FE1E9AA54400BEA841 /* Config.swift */,
+				4505CAAF1E9C29BF00CD2A8E /* Constants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		45F488E31E9967C800BEA841 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45F488F51E997E9300BEA841 /* Product.swift */,
+				4505CAB11E9C2A2B00CD2A8E /* ServerError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45F488E41E9967CF00BEA841 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45F488E51E9967D900BEA841 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45F488F21E996D2C00BEA841 /* ProductListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45F488E61E99681B00BEA841 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4505CAAC1E9C1BED00CD2A8E /* Common */,
+				45F488F41E997A1000BEA841 /* Networking */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		45F488E71E996A1D00BEA841 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45F489001E9B3CA200BEA841 /* Config */,
+				45F488EE1E996B1F00BEA841 /* LaunchScreen.storyboard */,
+				45F488F11E996B2600BEA841 /* Main.storyboard */,
+				45F488BB1E99670A00BEA841 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45F488F41E997A1000BEA841 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45F488FA1E9A9CBE00BEA841 /* Adapters */,
+				45F488FB1E9AA1BC00BEA841 /* Routers */,
+				45F488F91E9A9CB700BEA841 /* Services */,
+				45F489051E9B3F6200BEA841 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		45F488F91E9A9CB700BEA841 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45F488F71E9A9C9A00BEA841 /* ProductService.swift */,
+				45F489031E9B3E1100BEA841 /* BaseNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45F488FA1E9A9CBE00BEA841 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				45F489071E9B41D300BEA841 /* AccessTokenAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		45F488FB1E9AA1BC00BEA841 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				45F488FC1E9AA1F400BEA841 /* ProductRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		45F489001E9B3CA200BEA841 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				45F489011E9B3CC100BEA841 /* config.json */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C7B1FC7AF2612B516F5438AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF11D54EFD236B774E5F1A6 /* Pods_Wave_mobile_challenge.framework */,
+				DE157A0909FDF821C4AA77BE /* Pods_Wave_mobile_challengeTests.framework */,
+				F5FDF7E232F7A6C6E4E9B837 /* Pods_Wave_mobile_challengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45F488B01E99670A00BEA841 /* Wave-mobile-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F488D91E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challenge" */;
+			buildPhases = (
+				BF4F8DEA7EAEBD7F34F570D3 /* [CP] Check Pods Manifest.lock */,
+				45F488AD1E99670A00BEA841 /* Sources */,
+				45F488AE1E99670A00BEA841 /* Frameworks */,
+				45F488AF1E99670A00BEA841 /* Resources */,
+				B29A9129D19A8F98F8836B8E /* [CP] Embed Pods Frameworks */,
+				F2797BFA536274A9C30E0D4E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wave-mobile-challenge";
+			productName = "Wave-mobile-challenge";
+			productReference = 45F488B11E99670A00BEA841 /* Wave-mobile-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45F488C41E99670A00BEA841 /* Wave-mobile-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F488DC1E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challengeTests" */;
+			buildPhases = (
+				6A9A25CE0A8C84162807C02F /* [CP] Check Pods Manifest.lock */,
+				45F488C11E99670A00BEA841 /* Sources */,
+				45F488C21E99670A00BEA841 /* Frameworks */,
+				45F488C31E99670A00BEA841 /* Resources */,
+				E9AD36BEB1D01B541C6B905F /* [CP] Embed Pods Frameworks */,
+				99A29794C83703F13E703B95 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45F488C71E99670A00BEA841 /* PBXTargetDependency */,
+			);
+			name = "Wave-mobile-challengeTests";
+			productName = "Wave-mobile-challengeTests";
+			productReference = 45F488C51E99670A00BEA841 /* Wave-mobile-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45F488CF1E99670A00BEA841 /* Wave-mobile-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F488DF1E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challengeUITests" */;
+			buildPhases = (
+				C01AB812F686EFCB5BD67A54 /* [CP] Check Pods Manifest.lock */,
+				45F488CC1E99670A00BEA841 /* Sources */,
+				45F488CD1E99670A00BEA841 /* Frameworks */,
+				45F488CE1E99670A00BEA841 /* Resources */,
+				0EB36708EA8DE55DE55255C5 /* [CP] Embed Pods Frameworks */,
+				AC36C5DF50B1A097A46877F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45F488D21E99670A00BEA841 /* PBXTargetDependency */,
+			);
+			name = "Wave-mobile-challengeUITests";
+			productName = "Wave-mobile-challengeUITests";
+			productReference = 45F488D01E99670A00BEA841 /* Wave-mobile-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45F488A91E99670A00BEA841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LocalizeWiz;
+				TargetAttributes = {
+					45F488B01E99670A00BEA841 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					45F488C41E99670A00BEA841 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45F488B01E99670A00BEA841;
+					};
+					45F488CF1E99670A00BEA841 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45F488B01E99670A00BEA841;
+					};
+				};
+			};
+			buildConfigurationList = 45F488AC1E99670A00BEA841 /* Build configuration list for PBXProject "Wave-mobile-challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45F488A81E99670A00BEA841;
+			productRefGroup = 45F488B21E99670A00BEA841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45F488B01E99670A00BEA841 /* Wave-mobile-challenge */,
+				45F488C41E99670A00BEA841 /* Wave-mobile-challengeTests */,
+				45F488CF1E99670A00BEA841 /* Wave-mobile-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45F488AF1E99670A00BEA841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F488EF1E996B2600BEA841 /* Main.storyboard in Resources */,
+				45F489021E9B3CC100BEA841 /* config.json in Resources */,
+				45F488BC1E99670A00BEA841 /* Assets.xcassets in Resources */,
+				45F488EC1E996B1F00BEA841 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488C31E99670A00BEA841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488CE1E99670A00BEA841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB36708EA8DE55DE55255C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challengeUITests/Pods-Wave-mobile-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A9A25CE0A8C84162807C02F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99A29794C83703F13E703B95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challengeTests/Pods-Wave-mobile-challengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC36C5DF50B1A097A46877F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challengeUITests/Pods-Wave-mobile-challengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29A9129D19A8F98F8836B8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challenge/Pods-Wave-mobile-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF4F8DEA7EAEBD7F34F570D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C01AB812F686EFCB5BD67A54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AD36BEB1D01B541C6B905F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challengeTests/Pods-Wave-mobile-challengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2797BFA536274A9C30E0D4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wave-mobile-challenge/Pods-Wave-mobile-challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45F488AD1E99670A00BEA841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4505CAB21E9C2A2B00CD2A8E /* ServerError.swift in Sources */,
+				45F489061E9B3F6200BEA841 /* NetworkManager.swift in Sources */,
+				4505CAB01E9C29BF00CD2A8E /* Constants.swift in Sources */,
+				4505CAAE1E9C1C0E00CD2A8E /* Formatters.swift in Sources */,
+				45F489041E9B3E1100BEA841 /* BaseNetworkService.swift in Sources */,
+				45F488F61E997E9300BEA841 /* Product.swift in Sources */,
+				45F488F31E996D2C00BEA841 /* ProductListViewController.swift in Sources */,
+				45F488FF1E9AA54400BEA841 /* Config.swift in Sources */,
+				45F488B51E99670A00BEA841 /* AppDelegate.swift in Sources */,
+				45F488FD1E9AA1F400BEA841 /* ProductRouter.swift in Sources */,
+				45F488F81E9A9C9A00BEA841 /* ProductService.swift in Sources */,
+				45F489081E9B41D300BEA841 /* AccessTokenAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488C11E99670A00BEA841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F488CA1E99670A00BEA841 /* Wave_mobile_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F488CC1E99670A00BEA841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F488D51E99670B00BEA841 /* Wave_mobile_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45F488C71E99670A00BEA841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45F488B01E99670A00BEA841 /* Wave-mobile-challenge */;
+			targetProxy = 45F488C61E99670A00BEA841 /* PBXContainerItemProxy */;
+		};
+		45F488D21E99670A00BEA841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45F488B01E99670A00BEA841 /* Wave-mobile-challenge */;
+			targetProxy = 45F488D11E99670A00BEA841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45F488EE1E996B1F00BEA841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45F488ED1E996B1F00BEA841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		45F488F11E996B2600BEA841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45F488F01E996B2600BEA841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45F488D71E99670B00BEA841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45F488D81E99670B00BEA841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45F488DA1E99670B00BEA841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8804B47FFD75834D3A6A39 /* Pods-Wave-mobile-challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wave-mobile-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		45F488DB1E99670B00BEA841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1777001D9BD59ABC4C4C802A /* Pods-Wave-mobile-challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wave-mobile-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		45F488DD1E99670B00BEA841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317D1B634379C0AD85FF4FC9 /* Pods-Wave-mobile-challengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wave-mobile-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wave-mobile-challenge.app/Wave-mobile-challenge";
+			};
+			name = Debug;
+		};
+		45F488DE1E99670B00BEA841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD183A8AC2D716B734FB3D3 /* Pods-Wave-mobile-challengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wave-mobile-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wave-mobile-challenge.app/Wave-mobile-challenge";
+			};
+			name = Release;
+		};
+		45F488E01E99670B00BEA841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBB10BCB632197C6FB420FF /* Pods-Wave-mobile-challengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Wave-mobile-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Wave-mobile-challenge";
+			};
+			name = Debug;
+		};
+		45F488E11E99670B00BEA841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84DD5D4E295051C82D11113 /* Pods-Wave-mobile-challengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Wave-mobile-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localizewiz.Wave-mobile-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Wave-mobile-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45F488AC1E99670A00BEA841 /* Build configuration list for PBXProject "Wave-mobile-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F488D71E99670B00BEA841 /* Debug */,
+				45F488D81E99670B00BEA841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F488D91E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F488DA1E99670B00BEA841 /* Debug */,
+				45F488DB1E99670B00BEA841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F488DC1E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F488DD1E99670B00BEA841 /* Debug */,
+				45F488DE1E99670B00BEA841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F488DF1E99670B00BEA841 /* Build configuration list for PBXNativeTarget "Wave-mobile-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F488E01E99670B00BEA841 /* Debug */,
+				45F488E11E99670B00BEA841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45F488A91E99670A00BEA841 /* Project object */;
+}

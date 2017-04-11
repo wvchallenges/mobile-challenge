@@ -1,0 +1,17 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Mantle (~> 2.1)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+
+PODFILE CHECKSUM: f0ac533b4de953b540be0230d1d4ba43fcda1b1e
+
+COCOAPODS: 1.2.0
