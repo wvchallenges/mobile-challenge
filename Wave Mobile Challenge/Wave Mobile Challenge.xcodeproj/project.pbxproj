@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9C9F47561EA9565800BF889D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47551EA9565800BF889D /* AppDelegate.swift */; };
-		9C9F47581EA9565800BF889D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47571EA9565800BF889D /* ViewController.swift */; };
 		9C9F475B1EA9565800BF889D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F47591EA9565800BF889D /* Main.storyboard */; };
 		9C9F475D1EA9565800BF889D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F475C1EA9565800BF889D /* Assets.xcassets */; };
 		9C9F47601EA9565800BF889D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F475E1EA9565800BF889D /* LaunchScreen.storyboard */; };
+		9C9F47701EA9577F00BF889D /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F476F1EA9577F00BF889D /* AppController.swift */; };
+		9C9F47721EA957C300BF889D /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47711EA957C300BF889D /* ProductsController.swift */; };
+		9C9F47741EA9595A00BF889D /* ProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47731EA9595A00BF889D /* ProductTableCell.swift */; };
+		9C9F47761EA9596400BF889D /* ProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F47751EA9596400BF889D /* ProductTableCell.xib */; };
+		9C9F47791EA9598E00BF889D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47781EA9598E00BF889D /* Product.swift */; };
+		9C9F477B1EA959B400BF889D /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F477A1EA959B400BF889D /* ProductsViewModel.swift */; };
+		9C9F477D1EA95A1500BF889D /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F477C1EA95A1500BF889D /* DispatchQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C9F47521EA9565800BF889D /* Wave Mobile Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Mobile Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9F47551EA9565800BF889D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C9F47571EA9565800BF889D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C9F475A1EA9565800BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C9F475C1EA9565800BF889D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9F475F1EA9565800BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9F47611EA9565800BF889D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9F476F1EA9577F00BF889D /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		9C9F47711EA957C300BF889D /* ProductsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
+		9C9F47731EA9595A00BF889D /* ProductTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableCell.swift; sourceTree = "<group>"; };
+		9C9F47751EA9596400BF889D /* ProductTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableCell.xib; sourceTree = "<group>"; };
+		9C9F47781EA9598E00BF889D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9C9F477A1EA959B400BF889D /* ProductsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		9C9F477C1EA95A1500BF889D /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,84 @@
 		9C9F47541EA9565800BF889D /* Wave Mobile Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				9C9F47671EA956F500BF889D /* Assets */,
+				9C9F47681EA956F500BF889D /* Source */,
 				9C9F47551EA9565800BF889D /* AppDelegate.swift */,
-				9C9F47571EA9565800BF889D /* ViewController.swift */,
 				9C9F47591EA9565800BF889D /* Main.storyboard */,
 				9C9F475C1EA9565800BF889D /* Assets.xcassets */,
 				9C9F475E1EA9565800BF889D /* LaunchScreen.storyboard */,
 				9C9F47611EA9565800BF889D /* Info.plist */,
 			);
 			path = "Wave Mobile Challenge";
+			sourceTree = "<group>";
+		};
+		9C9F47671EA956F500BF889D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9C9F47681EA956F500BF889D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F476E1EA9570E00BF889D /* View Models */,
+				9C9F47691EA956F500BF889D /* Controllers */,
+				9C9F476A1EA956F500BF889D /* Models */,
+				9C9F476B1EA956F500BF889D /* Utilites */,
+				9C9F476D1EA956F500BF889D /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9C9F47691EA956F500BF889D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F476F1EA9577F00BF889D /* AppController.swift */,
+				9C9F47711EA957C300BF889D /* ProductsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9C9F476A1EA956F500BF889D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F47781EA9598E00BF889D /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C9F476B1EA956F500BF889D /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F477C1EA95A1500BF889D /* DispatchQueue.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		9C9F476D1EA956F500BF889D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F47771EA9596900BF889D /* Product Table Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C9F476E1EA9570E00BF889D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F477A1EA959B400BF889D /* ProductsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		9C9F47771EA9596900BF889D /* Product Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F47731EA9595A00BF889D /* ProductTableCell.swift */,
+				9C9F47751EA9596400BF889D /* ProductTableCell.xib */,
+			);
+			name = "Product Table Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +208,7 @@
 			files = (
 				9C9F47601EA9565800BF889D /* LaunchScreen.storyboard in Resources */,
 				9C9F475D1EA9565800BF889D /* Assets.xcassets in Resources */,
+				9C9F47761EA9596400BF889D /* ProductTableCell.xib in Resources */,
 				9C9F475B1EA9565800BF889D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C9F47581EA9565800BF889D /* ViewController.swift in Sources */,
+				9C9F477B1EA959B400BF889D /* ProductsViewModel.swift in Sources */,
 				9C9F47561EA9565800BF889D /* AppDelegate.swift in Sources */,
+				9C9F47701EA9577F00BF889D /* AppController.swift in Sources */,
+				9C9F47791EA9598E00BF889D /* Product.swift in Sources */,
+				9C9F47741EA9595A00BF889D /* ProductTableCell.swift in Sources */,
+				9C9F477D1EA95A1500BF889D /* DispatchQueue.swift in Sources */,
+				9C9F47721EA957C300BF889D /* ProductsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
