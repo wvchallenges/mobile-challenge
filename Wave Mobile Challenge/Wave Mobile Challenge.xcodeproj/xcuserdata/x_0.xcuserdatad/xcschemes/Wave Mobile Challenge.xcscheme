@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C9F47331EA954C700BF889D"
+               BlueprintIdentifier = "9C9F47511EA9565800BF889D"
                BuildableName = "Wave Mobile Challenge.app"
                BlueprintName = "Wave Mobile Challenge"
                ReferencedContainer = "container:Wave Mobile Challenge.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C9F47331EA954C700BF889D"
+            BlueprintIdentifier = "9C9F47511EA9565800BF889D"
             BuildableName = "Wave Mobile Challenge.app"
             BlueprintName = "Wave Mobile Challenge"
             ReferencedContainer = "container:Wave Mobile Challenge.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C9F47331EA954C700BF889D"
+            BlueprintIdentifier = "9C9F47511EA9565800BF889D"
             BuildableName = "Wave Mobile Challenge.app"
             BlueprintName = "Wave Mobile Challenge"
             ReferencedContainer = "container:Wave Mobile Challenge.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C9F47331EA954C700BF889D"
+            BlueprintIdentifier = "9C9F47511EA9565800BF889D"
             BuildableName = "Wave Mobile Challenge.app"
             BlueprintName = "Wave Mobile Challenge"
             ReferencedContainer = "container:Wave Mobile Challenge.xcodeproj">

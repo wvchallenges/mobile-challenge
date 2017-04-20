@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C9F47381EA954C700BF889D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47371EA954C700BF889D /* AppDelegate.swift */; };
-		9C9F473A1EA954C700BF889D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47391EA954C700BF889D /* ViewController.swift */; };
-		9C9F473D1EA954C700BF889D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F473B1EA954C700BF889D /* Main.storyboard */; };
-		9C9F473F1EA954C700BF889D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F473E1EA954C700BF889D /* Assets.xcassets */; };
-		9C9F47421EA954C700BF889D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F47401EA954C700BF889D /* LaunchScreen.storyboard */; };
+		9C9F47561EA9565800BF889D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47551EA9565800BF889D /* AppDelegate.swift */; };
+		9C9F47581EA9565800BF889D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47571EA9565800BF889D /* ViewController.swift */; };
+		9C9F475B1EA9565800BF889D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F47591EA9565800BF889D /* Main.storyboard */; };
+		9C9F475D1EA9565800BF889D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F475C1EA9565800BF889D /* Assets.xcassets */; };
+		9C9F47601EA9565800BF889D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F475E1EA9565800BF889D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C9F47341EA954C700BF889D /* Wave Mobile Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Mobile Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C9F47371EA954C700BF889D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C9F47391EA954C700BF889D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C9F473C1EA954C700BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9C9F473E1EA954C700BF889D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9C9F47411EA954C700BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9C9F47431EA954C700BF889D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9F47521EA9565800BF889D /* Wave Mobile Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Mobile Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9F47551EA9565800BF889D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C9F47571EA9565800BF889D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C9F475A1EA9565800BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C9F475C1EA9565800BF889D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C9F475F1EA9565800BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C9F47611EA9565800BF889D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C9F47311EA954C700BF889D /* Frameworks */ = {
+		9C9F474F1EA9565800BF889D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C9F472B1EA954C700BF889D = {
+		9C9F47491EA9565800BF889D = {
 			isa = PBXGroup;
 			children = (
-				9C9F47361EA954C700BF889D /* Wave Mobile Challenge */,
-				9C9F47351EA954C700BF889D /* Products */,
+				9C9F47541EA9565800BF889D /* Wave Mobile Challenge */,
+				9C9F47531EA9565800BF889D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9C9F47351EA954C700BF889D /* Products */ = {
+		9C9F47531EA9565800BF889D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C9F47341EA954C700BF889D /* Wave Mobile Challenge.app */,
+				9C9F47521EA9565800BF889D /* Wave Mobile Challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C9F47361EA954C700BF889D /* Wave Mobile Challenge */ = {
+		9C9F47541EA9565800BF889D /* Wave Mobile Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9C9F47371EA954C700BF889D /* AppDelegate.swift */,
-				9C9F47391EA954C700BF889D /* ViewController.swift */,
-				9C9F473B1EA954C700BF889D /* Main.storyboard */,
-				9C9F473E1EA954C700BF889D /* Assets.xcassets */,
-				9C9F47401EA954C700BF889D /* LaunchScreen.storyboard */,
-				9C9F47431EA954C700BF889D /* Info.plist */,
+				9C9F47551EA9565800BF889D /* AppDelegate.swift */,
+				9C9F47571EA9565800BF889D /* ViewController.swift */,
+				9C9F47591EA9565800BF889D /* Main.storyboard */,
+				9C9F475C1EA9565800BF889D /* Assets.xcassets */,
+				9C9F475E1EA9565800BF889D /* LaunchScreen.storyboard */,
+				9C9F47611EA9565800BF889D /* Info.plist */,
 			);
 			path = "Wave Mobile Challenge";
 			sourceTree = "<group>";
@@ -67,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C9F47331EA954C700BF889D /* Wave Mobile Challenge */ = {
+		9C9F47511EA9565800BF889D /* Wave Mobile Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C9F47461EA954C700BF889D /* Build configuration list for PBXNativeTarget "Wave Mobile Challenge" */;
+			buildConfigurationList = 9C9F47641EA9565800BF889D /* Build configuration list for PBXNativeTarget "Wave Mobile Challenge" */;
 			buildPhases = (
-				9C9F47301EA954C700BF889D /* Sources */,
-				9C9F47311EA954C700BF889D /* Frameworks */,
-				9C9F47321EA954C700BF889D /* Resources */,
+				9C9F474E1EA9565800BF889D /* Sources */,
+				9C9F474F1EA9565800BF889D /* Frameworks */,
+				9C9F47501EA9565800BF889D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,27 +81,27 @@
 			);
 			name = "Wave Mobile Challenge";
 			productName = "Wave Mobile Challenge";
-			productReference = 9C9F47341EA954C700BF889D /* Wave Mobile Challenge.app */;
+			productReference = 9C9F47521EA9565800BF889D /* Wave Mobile Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C9F472C1EA954C700BF889D /* Project object */ = {
+		9C9F474A1EA9565800BF889D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ashinkevich;
 				TargetAttributes = {
-					9C9F47331EA954C700BF889D = {
+					9C9F47511EA9565800BF889D = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = SC5KNP7Z9L;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 9C9F472F1EA954C700BF889D /* Build configuration list for PBXProject "Wave Mobile Challenge" */;
+			buildConfigurationList = 9C9F474D1EA9565800BF889D /* Build configuration list for PBXProject "Wave Mobile Challenge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,54 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 9C9F472B1EA954C700BF889D;
-			productRefGroup = 9C9F47351EA954C700BF889D /* Products */;
+			mainGroup = 9C9F47491EA9565800BF889D;
+			productRefGroup = 9C9F47531EA9565800BF889D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C9F47331EA954C700BF889D /* Wave Mobile Challenge */,
+				9C9F47511EA9565800BF889D /* Wave Mobile Challenge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9C9F47321EA954C700BF889D /* Resources */ = {
+		9C9F47501EA9565800BF889D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C9F47421EA954C700BF889D /* LaunchScreen.storyboard in Resources */,
-				9C9F473F1EA954C700BF889D /* Assets.xcassets in Resources */,
-				9C9F473D1EA954C700BF889D /* Main.storyboard in Resources */,
+				9C9F47601EA9565800BF889D /* LaunchScreen.storyboard in Resources */,
+				9C9F475D1EA9565800BF889D /* Assets.xcassets in Resources */,
+				9C9F475B1EA9565800BF889D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C9F47301EA954C700BF889D /* Sources */ = {
+		9C9F474E1EA9565800BF889D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C9F473A1EA954C700BF889D /* ViewController.swift in Sources */,
-				9C9F47381EA954C700BF889D /* AppDelegate.swift in Sources */,
+				9C9F47581EA9565800BF889D /* ViewController.swift in Sources */,
+				9C9F47561EA9565800BF889D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C9F473B1EA954C700BF889D /* Main.storyboard */ = {
+		9C9F47591EA9565800BF889D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9C9F473C1EA954C700BF889D /* Base */,
+				9C9F475A1EA9565800BF889D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9C9F47401EA954C700BF889D /* LaunchScreen.storyboard */ = {
+		9C9F475E1EA9565800BF889D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9C9F47411EA954C700BF889D /* Base */,
+				9C9F475F1EA9565800BF889D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9C9F47441EA954C700BF889D /* Debug */ = {
+		9C9F47621EA9565800BF889D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +215,7 @@
 			};
 			name = Debug;
 		};
-		9C9F47451EA954C700BF889D /* Release */ = {
+		9C9F47631EA9565800BF889D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +259,7 @@
 			};
 			name = Release;
 		};
-		9C9F47471EA954C700BF889D /* Debug */ = {
+		9C9F47651EA9565800BF889D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -272,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		9C9F47481EA954C700BF889D /* Release */ = {
+		9C9F47661EA9565800BF889D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,24 +288,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C9F472F1EA954C700BF889D /* Build configuration list for PBXProject "Wave Mobile Challenge" */ = {
+		9C9F474D1EA9565800BF889D /* Build configuration list for PBXProject "Wave Mobile Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C9F47441EA954C700BF889D /* Debug */,
-				9C9F47451EA954C700BF889D /* Release */,
+				9C9F47621EA9565800BF889D /* Debug */,
+				9C9F47631EA9565800BF889D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C9F47461EA954C700BF889D /* Build configuration list for PBXNativeTarget "Wave Mobile Challenge" */ = {
+		9C9F47641EA9565800BF889D /* Build configuration list for PBXNativeTarget "Wave Mobile Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C9F47471EA954C700BF889D /* Debug */,
-				9C9F47481EA954C700BF889D /* Release */,
+				9C9F47651EA9565800BF889D /* Debug */,
+				9C9F47661EA9565800BF889D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C9F472C1EA954C700BF889D /* Project object */;
+	rootObject = 9C9F474A1EA9565800BF889D /* Project object */;
 }
