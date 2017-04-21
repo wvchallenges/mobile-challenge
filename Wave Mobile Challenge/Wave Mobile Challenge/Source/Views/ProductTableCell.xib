@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="8ws-1d-Wgm" customClass="ProductTableCell" customModule="Wave_Mobile_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ws-1d-Wgm" id="Sb2-bM-LN2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GP-T0-Du5">
+                        <rect key="frame" x="10" y="5" width="355" height="114.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Hortons Steeped Tea Double Double" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-Cd-pOs">
+                                <rect key="frame" x="10" y="0.0" width="218.5" height="114.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Wd-BT2">
+                                <rect key="frame" x="229" y="0.0" width="9.5" height="114.5"/>
+                                <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$24.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OFe-It-yIo">
+                                <rect key="frame" x="238.5" y="0.0" width="106.5" height="114.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OFe-It-yIo" secondAttribute="bottom" id="1uc-9P-M1N"/>
+                            <constraint firstItem="OFe-It-yIo" firstAttribute="top" secondItem="2GP-T0-Du5" secondAttribute="top" id="7q2-Sv-D2Y"/>
+                            <constraint firstAttribute="bottom" secondItem="mHF-Cd-pOs" secondAttribute="bottom" id="9R1-2N-KzN"/>
+                            <constraint firstItem="mHF-Cd-pOs" firstAttribute="top" secondItem="2GP-T0-Du5" secondAttribute="top" id="Bef-Y5-dNa"/>
+                            <constraint firstItem="OFe-It-yIo" firstAttribute="leading" secondItem="mHF-Cd-pOs" secondAttribute="trailing" constant="10" id="Mix-5q-APA"/>
+                            <constraint firstItem="s5n-Wd-BT2" firstAttribute="top" secondItem="2GP-T0-Du5" secondAttribute="top" id="Sc9-1i-HBw"/>
+                            <constraint firstItem="OFe-It-yIo" firstAttribute="leading" secondItem="s5n-Wd-BT2" secondAttribute="trailing" id="Y5u-Xx-bxD"/>
+                            <constraint firstAttribute="trailing" secondItem="OFe-It-yIo" secondAttribute="trailing" constant="10" id="eg5-6H-RV3"/>
+                            <constraint firstItem="s5n-Wd-BT2" firstAttribute="leading" secondItem="mHF-Cd-pOs" secondAttribute="trailing" id="enf-5e-Vvn"/>
+                            <constraint firstItem="OFe-It-yIo" firstAttribute="width" secondItem="2GP-T0-Du5" secondAttribute="width" multiplier="0.3" id="olc-KS-lJr"/>
+                            <constraint firstItem="mHF-Cd-pOs" firstAttribute="leading" secondItem="2GP-T0-Du5" secondAttribute="leading" constant="10" id="sTO-z2-qG5"/>
+                            <constraint firstAttribute="bottom" secondItem="s5n-Wd-BT2" secondAttribute="bottom" id="tnu-GV-Gu9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="2GP-T0-Du5" firstAttribute="top" secondItem="Sb2-bM-LN2" secondAttribute="top" constant="5" id="UxI-Yg-H1c"/>
+                    <constraint firstAttribute="trailing" secondItem="2GP-T0-Du5" secondAttribute="trailing" constant="10" id="gMV-ne-iN0"/>
+                    <constraint firstItem="2GP-T0-Du5" firstAttribute="leading" secondItem="Sb2-bM-LN2" secondAttribute="leading" constant="10" id="m4j-77-8g1"/>
+                    <constraint firstAttribute="bottom" secondItem="2GP-T0-Du5" secondAttribute="bottom" constant="5" id="piG-oM-EF6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelProductName" destination="mHF-Cd-pOs" id="H5Z-Qu-BZp"/>
+                <outlet property="labelProductPrice" destination="OFe-It-yIo" id="OhQ-q2-2vv"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="94.5"/>
+        </tableViewCell>
+    </objects>
+</document>
