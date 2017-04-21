@@ -33,8 +33,8 @@ class APIClient {
 	/**
 		Perform an API request and converts its response to provided Data Container type
 		or generates error in case request fails.
-		- params:
-			- apiResource An instance of URLRequestConvertibleWithResponse
+		- parameters:
+			- apiResource: An instance of URLRequestConvertibleWithResponse
 		- returns: Task object with an APIResponse object or error
 	*/
 	func request(apiResource: URLRequestConvertibleWithResponse) -> Task<APIResponse> {

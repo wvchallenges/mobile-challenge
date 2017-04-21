@@ -27,6 +27,8 @@ class ProductsViewModel {
 	/// List of products comes for this hardcoded Business object
 	var business: Business = Business(withBusinessId: Config.WaveBusinessId)
 
+	var products: [Product]? = nil
+
 	/// Usually only a corresponding view controller 
 	/// is a delegate for this view model
 	weak var delegate: ProductsViewModelDelegate?
@@ -46,6 +48,7 @@ class ProductsViewModel {
 		return business.requestProducts().continueOnSuccessWith {
 			[weak self] requestedProducts in
 
+			self?.products = requestedProducts
 			self?.delegate?.viewModelLoaded(newData: requestedProducts)
 			return nil
 		}

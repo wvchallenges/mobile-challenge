@@ -27,7 +27,7 @@ class Business: WaveObject {
 
 	/**
 		Performs an API request for business products (page 0).
-		- returns: Task object that will hold an array of Products on success, error on failure
+		- returns: Task with array of business products on success, error on failure
 	*/
 	func requestProducts() -> Task<[Product]> {
 

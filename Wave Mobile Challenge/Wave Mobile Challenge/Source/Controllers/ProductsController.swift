@@ -16,14 +16,17 @@ import UIKit
 class ProductsController: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var labelBackgroundMessage: UILabel!
 
 	let viewModel = ProductsViewModel()
 
-	private var refreshControl: UIRefreshControl = UIRefreshControl()
-	private var cellIdentifier: String = String(describing: ProductTableCell.self)
+	fileprivate var refreshControl: UIRefreshControl = UIRefreshControl()
+	fileprivate var cellIdentifier: String = String(describing: ProductTableCell.self)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		viewModel.delegate = self
 
 		configureTableView()
 		refreshViewModelData()
@@ -50,6 +53,7 @@ class ProductsController: UIViewController {
 			self?.refreshControl.endRefreshing()
 			if let error = task.error {
 				self?.present(error: error)
+				self?.labelBackgroundMessage.text = "Error loading products."
 				return
 			}
 		}
@@ -61,11 +65,30 @@ class ProductsController: UIViewController {
 extension ProductsController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+		if let products = viewModel.products {
+
+			labelBackgroundMessage.text = products.count == 0 ? "No products." : ""
+			return products.count
+		}
+
+		labelBackgroundMessage.text = "Loading products..."
+
 		return 0
 	}
 
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return ProductTableCell.Height
+	}
+
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		return UITableViewCell()
+
+		let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ProductTableCell
+
+		let product = viewModel.products?[indexPath.row]
+		cell.update(withProduct: product)
+
+		return cell
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -78,5 +101,6 @@ extension ProductsController: ProductsViewModelDelegate {
 
 	func viewModelLoaded(newData: [Product]) {
 
+		tableView.reloadData()
 	}
 }

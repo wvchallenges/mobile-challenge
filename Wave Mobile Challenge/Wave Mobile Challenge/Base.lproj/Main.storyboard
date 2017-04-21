@@ -81,7 +81,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-kO-J7w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading products..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwb-yc-xay">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-kO-J7w">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -94,11 +100,16 @@
                         <constraints>
                             <constraint firstItem="8YL-kO-J7w" firstAttribute="leading" secondItem="cj8-TI-xrd" secondAttribute="leading" id="4Di-4Y-Bi5"/>
                             <constraint firstAttribute="trailing" secondItem="8YL-kO-J7w" secondAttribute="trailing" id="AdG-Vb-eIv"/>
+                            <constraint firstItem="mwb-yc-xay" firstAttribute="leading" secondItem="cj8-TI-xrd" secondAttribute="leading" constant="20" id="IK4-Ac-bDF"/>
+                            <constraint firstItem="mwb-yc-xay" firstAttribute="top" secondItem="qNf-dA-21Q" secondAttribute="bottom" constant="20" id="TNh-z2-GO8"/>
                             <constraint firstItem="FA9-0x-cFb" firstAttribute="top" secondItem="8YL-kO-J7w" secondAttribute="bottom" id="dyP-di-dRG"/>
+                            <constraint firstItem="FA9-0x-cFb" firstAttribute="top" secondItem="mwb-yc-xay" secondAttribute="bottom" constant="20" id="i2G-O7-9Xo"/>
+                            <constraint firstAttribute="trailing" secondItem="mwb-yc-xay" secondAttribute="trailing" constant="20" id="r4C-gI-nuc"/>
                             <constraint firstItem="8YL-kO-J7w" firstAttribute="top" secondItem="qNf-dA-21Q" secondAttribute="bottom" id="vJU-Os-8Yw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelBackgroundMessage" destination="mwb-yc-xay" id="LeL-Og-x8V"/>
                         <outlet property="tableView" destination="8YL-kO-J7w" id="pUZ-mz-JKN"/>
                     </connections>
                 </viewController>
@@ -109,7 +120,6 @@
         <!--Navigation Controller-->
         <scene sceneID="hHI-9E-6XK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2rW-qQ-pUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="tuK-9b-lF5" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aaY-Uq-I3d">
@@ -120,6 +130,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LtJ-z5-qNf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rW-qQ-pUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-847" y="10"/>
         </scene>

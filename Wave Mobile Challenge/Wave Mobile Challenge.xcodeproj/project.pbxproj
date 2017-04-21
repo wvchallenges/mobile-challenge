@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C1A32371EA99B92002EC8BD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A32361EA99B92002EC8BD /* UIViewController.swift */; };
 		9C1A32381EA9AC51002EC8BD /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9F47891EA9621B00BF889D /* ObjectMapper.framework */; };
+		9C1A323A1EA9B014002EC8BD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A32391EA9B014002EC8BD /* UIView.swift */; };
 		9C9F47561EA9565800BF889D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F47551EA9565800BF889D /* AppDelegate.swift */; };
 		9C9F475B1EA9565800BF889D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F47591EA9565800BF889D /* Main.storyboard */; };
 		9C9F475D1EA9565800BF889D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F475C1EA9565800BF889D /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		9C1A32361EA99B92002EC8BD /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9C1A32391EA9B014002EC8BD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9C9F47521EA9565800BF889D /* Wave Mobile Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Mobile Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9F47551EA9565800BF889D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C9F475A1EA9565800BF889D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				9C1A32361EA99B92002EC8BD /* UIViewController.swift */,
 				9C9F477C1EA95A1500BF889D /* DispatchQueue.swift */,
+				9C1A32391EA9B014002EC8BD /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1A323A1EA9B014002EC8BD /* UIView.swift in Sources */,
 				9C9F479D1EA9721100BF889D /* Business.swift in Sources */,
 				9C9F47871EA9611100BF889D /* Router.swift in Sources */,
 				9C9F477B1EA959B400BF889D /* ProductsViewModel.swift in Sources */,
