@@ -19,7 +19,7 @@ $ brew install carthage
 Go to the directory with Cartfile and run
 
 ```
-$ carthage update
+$ carthage update --platform iOS
 ```
 
 ## Requirements
