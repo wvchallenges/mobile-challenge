@@ -49,7 +49,6 @@ class ProductsController: UIViewController {
 		refreshControl.beginRefreshing()
 
 		viewModel.reloadData().continueWith { [weak self] task in
-
 			self?.refreshControl.endRefreshing()
 			if let error = task.error {
 				self?.present(error: error)
