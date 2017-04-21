@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 /**
-* AppController is an initial view controller loaded by the app.
-* It displays screen with project name and waits 2 seconds before
-* loading ProductsController
+	AppController is an initial view controller loaded by the app.
+	It displays screen with project name and waits 2 seconds before
+	loading ProductsController
 */
 class AppController: UIViewController {
 
@@ -33,6 +33,10 @@ class AppController: UIViewController {
 		})
 	}
 
+	/*
+		Initializes an instance of ProductsController from storyboard
+		and pushes it on the navigation controller stack.
+	*/
 	private func openProductsController() {
 
 		activityIndicator.stopAnimating()

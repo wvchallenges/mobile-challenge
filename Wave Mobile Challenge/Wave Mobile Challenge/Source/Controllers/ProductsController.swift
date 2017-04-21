@@ -19,12 +19,14 @@ class ProductsController: UIViewController {
 
 	let viewModel = ProductsViewModel()
 
+	private var refreshControl: UIRefreshControl = UIRefreshControl()
 	private var cellIdentifier: String = String(describing: ProductTableCell.self)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		configureTableView()
+		refreshViewModelData()
 	}
 
 	/// Configures table view with custom cell and other parameters
@@ -32,7 +34,25 @@ class ProductsController: UIViewController {
 
 		let cellNib = UINib(nibName: cellIdentifier, bundle: nil)
 
+		refreshControl.addTarget(self, action: #selector(refreshViewModelData), for: .valueChanged)
+		refreshControl.tintColor = .white
+
 		tableView.register(cellNib, forCellReuseIdentifier: cellIdentifier)
+		tableView.refreshControl = refreshControl
+	}
+
+	func refreshViewModelData() {
+
+		refreshControl.beginRefreshing()
+
+		viewModel.reloadData().continueWith { [weak self] task in
+
+			self?.refreshControl.endRefreshing()
+			if let error = task.error {
+				self?.present(error: error)
+				return
+			}
+		}
 	}
 }
 
@@ -50,5 +70,13 @@ extension ProductsController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
+	}
+}
+
+// MARK: ProductsViewModelDelegate
+extension ProductsController: ProductsViewModelDelegate {
+
+	func viewModelLoaded(newData: [Product]) {
+
 	}
 }

@@ -8,8 +8,12 @@
 
 import Foundation
 
+
 extension DispatchQueue {
 
+	/**
+		A convenience function to perform a delayed action
+	*/
 	func delay(_ timeInterval: TimeInterval, execute work: @escaping () -> Void) {
 
 		asyncAfter(deadline: .now() + timeInterval, execute: work)
