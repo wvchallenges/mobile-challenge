@@ -45,3 +45,11 @@ Evaluation of your submission will be based on the following criteria.
 1. Did your application fulfill the basic requirements?
 1. Did you document the method for setting up and running your application?
 1. Did you follow the instructions for submission?
+
+
+###  MY COMMENTS ON THE PROJECT
+Here are my thoughts:
+
+I think this project was a fair assignment for the role in question.  What I'm proud of in my implementation is how I set up my networking code, which I place inside my class, "APIClient".  The code isolates all of the networking layer in this area, so that none exist inside the ViewController.  The APIClient is responsible for fetching all the required data from the network, parsing the JSON data that is received, converted into the appropriate model objects, and then sent to the ViewController as an array where it can then be utilized inside the UITableView.  I wish to point out that despite the fact that large amounts of data were not being pulled from the network, I did use GCD to make appropriate changes to the UI as good practice.  I tried to utilize Swift's features like closures, and enums to create a nice, and clean implementation.  I also am proud of the fact that with respect to the UITableView, I used the default implementation of the given prototype cell to populate the required data, and thus minimizing code.  I look forward to discussing this project with you in the future.
+
+Fayyaz
