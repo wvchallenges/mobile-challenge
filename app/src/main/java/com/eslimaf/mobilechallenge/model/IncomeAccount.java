@@ -6,8 +6,7 @@ import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class IncomeAccount implements Parcelable
-{
+public class IncomeAccount implements Parcelable {
 
     @SerializedName("id")
     @Expose
@@ -32,8 +31,7 @@ public class IncomeAccount implements Parcelable
             return (new IncomeAccount[size]);
         }
 
-    }
-            ;
+    };
 
     public Integer getId() {
         return id;

@@ -6,10 +6,11 @@ import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
-public class Product implements Parcelable
-{
+public class Product implements Parcelable {
 
     @SerializedName("id")
     @Expose
@@ -22,7 +23,7 @@ public class Product implements Parcelable
     private String name;
     @SerializedName("price")
     @Expose
-    private Integer price;
+    private Float price;
     @SerializedName("description")
     @Expose
     private String description;
@@ -61,7 +62,7 @@ public class Product implements Parcelable
             instance.id = ((Integer) in.readValue((Integer.class.getClassLoader())));
             instance.url = ((String) in.readValue((String.class.getClassLoader())));
             instance.name = ((String) in.readValue((String.class.getClassLoader())));
-            instance.price = ((Integer) in.readValue((Integer.class.getClassLoader())));
+            instance.price = ((Float) in.readValue((Integer.class.getClassLoader())));
             instance.description = ((String) in.readValue((String.class.getClassLoader())));
             instance.isSold = ((Boolean) in.readValue((Boolean.class.getClassLoader())));
             instance.isBought = ((Boolean) in.readValue((Boolean.class.getClassLoader())));
@@ -78,8 +79,7 @@ public class Product implements Parcelable
             return (new Product[size]);
         }
 
-    }
-            ;
+    };
 
     public Integer getId() {
         return id;
@@ -105,11 +105,11 @@ public class Product implements Parcelable
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 
@@ -183,6 +183,11 @@ public class Product implements Parcelable
 
     public void setDefaultSalesTaxes(List<Object> defaultSalesTaxes) {
         this.defaultSalesTaxes = defaultSalesTaxes;
+    }
+
+    public String getPriceInDollarFormat() {
+        NumberFormat dollarFormat = NumberFormat.getCurrencyInstance(Locale.CANADA);
+        return dollarFormat.format(getPrice());
     }
 
     public void writeToParcel(Parcel dest, int flags) {

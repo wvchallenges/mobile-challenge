@@ -1,7 +1,8 @@
 package com.eslimaf.mobilechallenge;
 
-import android.util.Log;
+import android.support.annotation.Nullable;
 
+import com.eslimaf.mobilechallenge.infrastructure.Credentials;
 import com.eslimaf.mobilechallenge.infrastructure.waveapi.WaveApiService;
 import com.eslimaf.mobilechallenge.model.Product;
 
@@ -11,19 +12,49 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ProductsPresenter implements ProductsContract.Presenter{
+public class ProductsPresenter implements ProductsContract.Presenter {
+
+    @Nullable
+    private ProductsContract.View mView;
+    private WaveApiService mWaveApiService;
+
+    public ProductsPresenter(WaveApiService waveApiService) {
+        mWaveApiService = waveApiService;
+    }
+
+    @Override
+    public void attachView(ProductsContract.View view) {
+        mView = view;
+    }
+
+    @Override
+    public void detachView() {
+        if (null != mView) {
+            mView = null;
+        }
+    }
+
     @Override
     public void getProducts() {
-        WaveApiService.getInstance().getProductsByBusinessId("89746d57-c25f-4cec-9c63-34d7780b044b")
+        if (null != mView) {
+            mView.showProgress();
+        }
+        mWaveApiService.getProductsByBusinessId(Credentials.BUSINESS_ID)
                 .enqueue(new Callback<List<Product>>() {
                     @Override
                     public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {
-                        Log.d("DEBUG", response.message());
+                        if (null != mView) {
+                            mView.showProducts(response.body());
+                            mView.hideProgress();
+                        }
                     }
 
                     @Override
                     public void onFailure(Call<List<Product>> call, Throwable t) {
-
+                        if (null != mView) {
+                            mView.hideProgress();
+                            mView.showErrorDialog();
+                        }
                     }
                 });
     }
