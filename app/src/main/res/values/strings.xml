@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobileChallenge</string>
+    <string name="please_wait">Please wait</string>
+    <string name="retrieving_products">Retrieving your products</string>
+    <string name="check_connection">Something went wrong, please check your internet connection</string>
+    <string name="ops">Ops...</string>
+</resources>
