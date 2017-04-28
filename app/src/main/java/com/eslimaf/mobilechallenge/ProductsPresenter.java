@@ -3,7 +3,7 @@ package com.eslimaf.mobilechallenge;
 import android.support.annotation.Nullable;
 
 import com.eslimaf.mobilechallenge.infrastructure.Credentials;
-import com.eslimaf.mobilechallenge.infrastructure.waveapi.WaveApiService;
+import com.eslimaf.mobilechallenge.infrastructure.waveapi.WaveApi;
 import com.eslimaf.mobilechallenge.model.Product;
 
 import java.util.List;
@@ -16,10 +16,10 @@ public class ProductsPresenter implements ProductsContract.Presenter {
 
     @Nullable
     private ProductsContract.View mView;
-    private WaveApiService mWaveApiService;
+    private WaveApi mWaveApi;
 
-    public ProductsPresenter(WaveApiService waveApiService) {
-        mWaveApiService = waveApiService;
+    public ProductsPresenter(WaveApi waveApi) {
+        mWaveApi = waveApi;
     }
 
     @Override
@@ -39,7 +39,8 @@ public class ProductsPresenter implements ProductsContract.Presenter {
         if (null != mView) {
             mView.showProgress();
         }
-        mWaveApiService.getProductsByBusinessId(Credentials.BUSINESS_ID)
+
+        mWaveApi.getProductsByBusinessId(Credentials.BUSINESS_ID)
                 .enqueue(new Callback<List<Product>>() {
                     @Override
                     public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {

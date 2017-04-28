@@ -19,6 +19,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
     private ProductsListAdapter mProductsListAdapter;
     private ArrayList<Product> mProductArrayList = new ArrayList<>();
     private ProgressDialog mProgressDialog;
+    private boolean isLoading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
         super.onResume();
         mPresenter.attachView(this);
         if (mProductArrayList.isEmpty()) {
+            isLoading = true;
             mPresenter.getProducts();
         }
     }
@@ -57,6 +59,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
         if (null != products) {
             mProductArrayList.addAll(products);
             mProductsListAdapter.notifyDataSetChanged();
+            isLoading = false;
         }
     }
 
@@ -97,5 +100,9 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
             }
         });
         alertDialog.show();
+    }
+
+    public boolean isLoading() {
+        return isLoading;
     }
 }
