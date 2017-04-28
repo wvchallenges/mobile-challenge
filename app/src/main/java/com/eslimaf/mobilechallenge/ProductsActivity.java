@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductsActivity extends AppCompatActivity implements ProductsContract.View {
-
+    private static final String BUNDLE_PRODUCTS_KEY = "retrieved_products";
     private ProductsContract.Presenter mPresenter;
     private ProductsListAdapter mProductsListAdapter;
     private ArrayList<Product> mProductArrayList = new ArrayList<>();
@@ -26,12 +26,22 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
 
-        //TODO: Remove this call and inject
+        if (savedInstanceState != null && savedInstanceState.containsKey(BUNDLE_PRODUCTS_KEY)) {
+            mProductArrayList = savedInstanceState.getParcelableArrayList(BUNDLE_PRODUCTS_KEY);
+        }
+
+        //This presenter could be injected using Dagger2
         mPresenter = new ProductsPresenter(WaveApiService.getInstance());
 
         mProductsListAdapter = new ProductsListAdapter(this, mProductArrayList);
         ListView productListView = (ListView) findViewById(R.id.products_list);
         productListView.setAdapter(mProductsListAdapter);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putParcelableArrayList(BUNDLE_PRODUCTS_KEY, mProductArrayList);
+        super.onSaveInstanceState(outState);
     }
 
     @Override
@@ -48,10 +58,6 @@ public class ProductsActivity extends AppCompatActivity implements ProductsContr
     protected void onPause() {
         mPresenter.detachView();
         super.onPause();
-    }
-
-    public void setPresenter(ProductsContract.Presenter presenter) {
-        mPresenter = presenter;
     }
 
     @Override

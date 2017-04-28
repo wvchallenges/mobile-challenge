@@ -39,7 +39,7 @@ public class ProductsActivityTest {
     }
 
     @After
-    public void unregisterIdlingResource(){
+    public void unregisterIdlingResource() {
         Espresso.unregisterIdlingResources(mIdlingResource);
     }
 

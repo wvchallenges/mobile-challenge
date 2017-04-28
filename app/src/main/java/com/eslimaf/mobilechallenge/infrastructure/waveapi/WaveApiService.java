@@ -1,6 +1,7 @@
 package com.eslimaf.mobilechallenge.infrastructure.waveapi;
 
 
+import com.eslimaf.mobilechallenge.infrastructure.Credentials;
 import com.eslimaf.mobilechallenge.model.Product;
 
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class WaveApiService implements WaveApi {
                     public Response intercept(Chain chain) throws IOException {
                         Request request = chain.request();
                         request = request.newBuilder()
-                                .addHeader("Authorization","Bearer 6W9hcvwRvyyZgPu9Odq7ko8DSY8Nfm")
+                                .addHeader("Authorization","Bearer " + Credentials.ACCESS_TOKEN)
                                 .build();
                         return chain.proceed(request);
                     }

@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.eslimaf.mobilechallenge.model.Product;
@@ -31,12 +32,15 @@ class ProductsListAdapter extends ArrayAdapter<Product> {
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_product, parent, false);
+            viewHolder.productImage = (ImageView) convertView.findViewById(R.id.product_item_image);
             viewHolder.productName = (TextView) convertView.findViewById(R.id.product_item_name);
             viewHolder.productPrice = (TextView) convertView.findViewById(R.id.product_item_price);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
+        assert product != null;
+
         viewHolder.productName.setText(product.getName());
         viewHolder.productPrice.setText(product.getPriceInDollarFormat());
 
@@ -45,6 +49,7 @@ class ProductsListAdapter extends ArrayAdapter<Product> {
 
 
     private static class ViewHolder {
+        ImageView productImage;
         TextView productName;
         TextView productPrice;
     }
