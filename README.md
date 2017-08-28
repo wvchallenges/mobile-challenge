@@ -1,3 +1,42 @@
+# How to Run
+
+## Installation
+```
+git clone https://github.com/hyperh/mobile-challenge.git
+git checkout dev
+npm install
+```
+
+## Add settings.js
+
+The `access_token` and `business_id` have not been added to the repository. This is good practice, as checking in API tokens and keys can lead to security breaches.
+
+To run the app, add a file in the root called `settings.js` that contains the following code:
+```
+export default {
+  business_id: 'YOUR_BUSINESS_ID',
+  access_token: 'YOUR_ACCESS_TOKEN',
+};
+```
+Fill in the fields with their appropriate values.
+
+## Running
+If you don't have React Native installed, follow the [official instructions](https://facebook.github.io/react-native/docs/getting-started.html) for your appropriate platform.
+
+Once you've installed React Native, do the following:
+
+iOS: `react-native run-ios`
+
+Android (start the emulator first): `react-native run-android`
+
+# What I'm Proud Of
+
+## Separation of Concerns
+I've broken down the list of products into two distinct pieces: a container to manage the state data, and a component to handle the presentation. The presentational components should be as dumb as possible and should render purely based on their props. This will ensure that the presentational components can be easily extracted out of the app and replaced if needed. I've also strived to use stateless functional components where possible.
+
+## Redux and Redux Sagas
+I used Redux and Redux Sagas to help me manage the fetching from the Wave API. Sagas leverages generators to simplify side effects and async Redux actions. While it does add more boilerplate, Redux and Sagas, increases the extensibility of the code base by a huge factor. Adding new states to be mananged in the future will be simplified due to the infrastructure that has been laid.
+
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
