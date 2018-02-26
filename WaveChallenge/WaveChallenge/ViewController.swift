@@ -9,9 +9,6 @@
 import UIKit
 import Alamofire
 
-private let business_id = "89746d57-c25f-4cec-9c63-34d7780b044b"
-private let access_token = "6W9hcvwRvyyZgPu9Odq7ko8DSY8Nfm"
-private let productAPIUrl = "https://api.waveapps.com/businesses/"
 
 class ViewController: UIViewController {
 
@@ -22,6 +19,7 @@ class ViewController: UIViewController {
     }()
     
     var products = [[String: Any]]()
+    var productService: ProductService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,24 +29,17 @@ class ViewController: UIViewController {
         self.view.addSubview(productListView)
         setupProductListView()
         
-        fetchProducts()
+        productService = ProductService()
+        productService?.fetchAllProducts(completion: { (response) in
+            if let json = response.result.value {
+                self.products = json as! [[String:Any]]
+                self.productListView.reloadData()
+            }
+        })
     }
     
-    //fet
-    func fetchProducts() {
-        let url: URL = URL(string: productAPIUrl + business_id + "/products/")!
-        let headers: HTTPHeaders = ["Authorization": "Bearer " + access_token]
-        Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.queryString, headers: headers)
-            .validate()
-            .responseJSON { (response) in
-                if let json = response.result.value {
-                    self.products = json as! [[String:Any]]
-                    self.productListView.reloadData()
-                }
-                
-        }
-    }
     
+    // layout the table view
     func setupProductListView() {
         productListView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         productListView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true

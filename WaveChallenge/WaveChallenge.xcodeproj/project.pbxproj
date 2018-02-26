@@ -12,6 +12,7 @@
 		790E3CC2204364DF0051D791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790E3CC0204364DF0051D791 /* Main.storyboard */; };
 		790E3CC4204364DF0051D791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790E3CC3204364DF0051D791 /* Assets.xcassets */; };
 		790E3CC7204364DF0051D791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790E3CC5204364DF0051D791 /* LaunchScreen.storyboard */; };
+		79E6E2A92043D10F00A81234 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6E2A82043D10F00A81234 /* ProductService.swift */; };
 		E7CE4E0F487D58261413CB78 /* Pods_WaveChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D28ED94DC29D75A0FB7CA70 /* Pods_WaveChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		790E3CC3204364DF0051D791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790E3CC6204364DF0051D791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790E3CC8204364DF0051D791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E6E2A82043D10F00A81234 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		7D28ED94DC29D75A0FB7CA70 /* Pods_WaveChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD184E6FC46D514B21CA8CF9 /* Pods-WaveChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		FA9B3A5D6B45BA41691F34C8 /* Pods-WaveChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		790E3CBB204364DF0051D791 /* WaveChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				79E6E2A72043D0F800A81234 /* Services */,
 				790E3CBC204364DF0051D791 /* AppDelegate.swift */,
 				790E3CBE204364DF0051D791 /* ViewController.swift */,
 				790E3CC0204364DF0051D791 /* Main.storyboard */,
@@ -69,6 +72,14 @@
 				790E3CC8204364DF0051D791 /* Info.plist */,
 			);
 			path = WaveChallenge;
+			sourceTree = "<group>";
+		};
+		79E6E2A72043D0F800A81234 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79E6E2A82043D10F00A81234 /* ProductService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C95407B0A2C2D74BC2865BDF /* Frameworks */ = {
@@ -219,6 +230,7 @@
 			files = (
 				790E3CBF204364DF0051D791 /* ViewController.swift in Sources */,
 				790E3CBD204364DF0051D791 /* AppDelegate.swift in Sources */,
+				79E6E2A92043D10F00A81234 /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
