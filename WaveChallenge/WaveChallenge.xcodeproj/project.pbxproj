@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D1BBBA8E46F497DE9B36A59 /* Pods_WaveChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA47FB2581AE1E148CB2CD78 /* Pods_WaveChallenge.framework */; };
+		38FBB5C92045266A004892A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FBB5C82045266A004892A4 /* AppDelegate.swift */; };
+		38FBB5CB2045266A004892A4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FBB5CA2045266A004892A4 /* ProductViewController.swift */; };
+		38FBB5CE2045266A004892A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FBB5CC2045266A004892A4 /* Main.storyboard */; };
+		38FBB5D02045266A004892A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FBB5CF2045266A004892A4 /* Assets.xcassets */; };
+		38FBB5D32045266A004892A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FBB5D12045266A004892A4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D7E900A6CADBF58F37E95F0 /* Pods-WaveChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		38FBB5C52045266A004892A4 /* WaveChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FBB5C82045266A004892A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38FBB5CA2045266A004892A4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		38FBB5CD2045266A004892A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38FBB5CF2045266A004892A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38FBB5D22045266A004892A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38FBB5D42045266A004892A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E99E036640D46609954C5CD /* Pods-WaveChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		FA47FB2581AE1E148CB2CD78 /* Pods_WaveChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38FBB5C22045266A004892A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D1BBBA8E46F497DE9B36A59 /* Pods_WaveChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38FBB5BC2045266A004892A4 = {
+			isa = PBXGroup;
+			children = (
+				38FBB5C72045266A004892A4 /* WaveChallenge */,
+				38FBB5C62045266A004892A4 /* Products */,
+				D92D40D603AEA041EF3D1229 /* Pods */,
+				FB0331AE2AFF4859BCCDF0B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38FBB5C62045266A004892A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38FBB5C52045266A004892A4 /* WaveChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38FBB5C72045266A004892A4 /* WaveChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				38FBB5C82045266A004892A4 /* AppDelegate.swift */,
+				38FBB5CA2045266A004892A4 /* ProductViewController.swift */,
+				38FBB5CC2045266A004892A4 /* Main.storyboard */,
+				38FBB5CF2045266A004892A4 /* Assets.xcassets */,
+				38FBB5D12045266A004892A4 /* LaunchScreen.storyboard */,
+				38FBB5D42045266A004892A4 /* Info.plist */,
+			);
+			path = WaveChallenge;
+			sourceTree = "<group>";
+		};
+		D92D40D603AEA041EF3D1229 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E99E036640D46609954C5CD /* Pods-WaveChallenge.debug.xcconfig */,
+				2D7E900A6CADBF58F37E95F0 /* Pods-WaveChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB0331AE2AFF4859BCCDF0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA47FB2581AE1E148CB2CD78 /* Pods_WaveChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38FBB5C42045266A004892A4 /* WaveChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FBB5D72045266A004892A4 /* Build configuration list for PBXNativeTarget "WaveChallenge" */;
+			buildPhases = (
+				D1207C6B2582A3AAE538DAE4 /* [CP] Check Pods Manifest.lock */,
+				38FBB5C12045266A004892A4 /* Sources */,
+				38FBB5C22045266A004892A4 /* Frameworks */,
+				38FBB5C32045266A004892A4 /* Resources */,
+				93CEC460E8B31BCFC2660C5E /* [CP] Embed Pods Frameworks */,
+				DA5C3D543446C6E708A66B5C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveChallenge;
+			productName = WaveChallenge;
+			productReference = 38FBB5C52045266A004892A4 /* WaveChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38FBB5BD2045266A004892A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Akash Patel";
+				TargetAttributes = {
+					38FBB5C42045266A004892A4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 38FBB5C02045266A004892A4 /* Build configuration list for PBXProject "WaveChallenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38FBB5BC2045266A004892A4;
+			productRefGroup = 38FBB5C62045266A004892A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38FBB5C42045266A004892A4 /* WaveChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38FBB5C32045266A004892A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FBB5D32045266A004892A4 /* LaunchScreen.storyboard in Resources */,
+				38FBB5D02045266A004892A4 /* Assets.xcassets in Resources */,
+				38FBB5CE2045266A004892A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93CEC460E8B31BCFC2660C5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1207C6B2582A3AAE538DAE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5C3D543446C6E708A66B5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveChallenge/Pods-WaveChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38FBB5C12045266A004892A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FBB5CB2045266A004892A4 /* ProductViewController.swift in Sources */,
+				38FBB5C92045266A004892A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38FBB5CC2045266A004892A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FBB5CD2045266A004892A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38FBB5D12045266A004892A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FBB5D22045266A004892A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38FBB5D52045266A004892A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38FBB5D62045266A004892A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38FBB5D82045266A004892A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E99E036640D46609954C5CD /* Pods-WaveChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WaveChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AKPC.WaveChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38FBB5D92045266A004892A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7E900A6CADBF58F37E95F0 /* Pods-WaveChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WaveChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AKPC.WaveChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38FBB5C02045266A004892A4 /* Build configuration list for PBXProject "WaveChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FBB5D52045266A004892A4 /* Debug */,
+				38FBB5D62045266A004892A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38FBB5D72045266A004892A4 /* Build configuration list for PBXNativeTarget "WaveChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FBB5D82045266A004892A4 /* Debug */,
+				38FBB5D92045266A004892A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38FBB5BD2045266A004892A4 /* Project object */;
+}
