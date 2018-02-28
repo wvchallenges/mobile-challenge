@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -41,7 +42,17 @@ public class ProductListActivity extends AppCompatActivity
 
 		//attach viewmodel to recyclerview
 		productListViewModel = ViewModelProviders.of(this).get(ProductListViewModel.class);
-		productListViewModel.loadProducts(BUSINESS_ID)
-				.observe(this, products -> productAdapter.setItems(products.getProducts()));
+		productListViewModel.loadProducts(BUSINESS_ID).observe(this, products ->
+		{
+			if(products.getError() != null)
+			{
+				Toast.makeText(getApplicationContext(), R.string.product_list_error, Toast.LENGTH_LONG)
+						.show();
+			}
+			else
+			{
+				productAdapter.setItems(products.getProducts());
+			}
+		});
 	}
 }
