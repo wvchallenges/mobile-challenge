@@ -8,6 +8,7 @@
 
 import Foundation
 // This structure stores the details fo the product
+
 struct ProductDetails : Decodable {
     let name : String
     let price : Double
