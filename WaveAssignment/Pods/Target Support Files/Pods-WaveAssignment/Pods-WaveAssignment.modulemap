@@ -1,0 +1,6 @@
+framework module Pods_WaveAssignment {
+  umbrella header "Pods-WaveAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
