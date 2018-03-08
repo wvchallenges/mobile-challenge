@@ -45,3 +45,26 @@ Evaluation of your submission will be based on the following criteria.
 1. Did your application fulfill the basic requirements?
 1. Did you document the method for setting up and running your application?
 1. Did you follow the instructions for submission?
+
+###  MY COMMENTS ON THE PROJECT
+Here are my thoughts:
+
+I think this project was a fair assignment for the role in question.  Here is what I'm proud of:
+
+1. I like how I set up my networking layer, which I place inside my struct, "APIClient".  The code isolates all of the networking code in this area, so that none exist inside the ViewController.  The APIClient is responsible for fetching all the required data from the network, parsing the JSON data that is received, converted into the appropriate model objects, and then sent to the ViewController as an array where it can then be utilized inside the UITableView.
+
+2. I used a struct instead of a class for my networking layer, "APIClient", with static variables and a static method so that I didn't have to instantiate an object in my ViewController class.  This reduces memory consumption.
+
+3. I used Swift 4's Decodable protocol to parse the JSON data into model objects to minimize code.   
+
+4. I wish to point out that despite the fact that large amounts of data were not being pulled from the network, I did use GCD to make appropriate changes to the UI as good practice.  I tried to utilize Swift's features like closures, and enums to create a nice, and clean implementation.  I also am proud of the fact that with respect to the UITableView, I used the default implementation of the given prototype cell to populate the required data, and thus minimizing code.  I look forward to discussing this project with you in the future.
+
+5. I made sure all optionals were unwrapped before using them.
+
+6. I made sure there were no warnings in my project.
+
+7. I treated the token given for the networking call, equivalent to a password.  Thus, for security reasons, I used a third-party library called, "SwiftKeychainWrapper" via Cocoapods in my project to store the token.  Under normal circumstances, the token would be parsed in the server response when the user logs in, and thus, the value of the token would be stored in the keychain to avoid exposure.  However, for the purposes of this project, the token is provided to us, and so this could not be avoided.  
+
+The url for this library may be found here: https://github.com/jrendel/SwiftKeychainWrapper
+
+Fayyaz
