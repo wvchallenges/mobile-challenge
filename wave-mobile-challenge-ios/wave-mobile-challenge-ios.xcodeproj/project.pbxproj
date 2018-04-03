@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		49BD1B6E20734FC600D22DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD1B6D20734FC600D22DAE /* AppDelegate.swift */; };
-		49BD1B7020734FC700D22DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD1B6F20734FC700D22DAE /* ViewController.swift */; };
 		49BD1B7320734FC700D22DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BD1B7120734FC700D22DAE /* Main.storyboard */; };
 		49BD1B7520734FC700D22DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BD1B7420734FC700D22DAE /* Assets.xcassets */; };
 		49BD1B7820734FC700D22DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BD1B7620734FC700D22DAE /* LaunchScreen.storyboard */; };
+		49BD1B802073504400D22DAE /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD1B7F2073504400D22DAE /* ProductsTableViewController.swift */; };
+		49BD1B83207359A400D22DAE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD1B82207359A400D22DAE /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49BD1B6A20734FC600D22DAE /* wave-mobile-challenge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wave-mobile-challenge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BD1B6D20734FC600D22DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49BD1B6F20734FC700D22DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49BD1B7220734FC700D22DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49BD1B7420734FC700D22DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BD1B7720734FC700D22DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BD1B7920734FC700D22DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BD1B7F2073504400D22DAE /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		49BD1B82207359A400D22DAE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		49BD1B6C20734FC600D22DAE /* wave-mobile-challenge-ios */ = {
 			isa = PBXGroup;
 			children = (
-				49BD1B6D20734FC600D22DAE /* AppDelegate.swift */,
-				49BD1B6F20734FC700D22DAE /* ViewController.swift */,
 				49BD1B7120734FC700D22DAE /* Main.storyboard */,
-				49BD1B7420734FC700D22DAE /* Assets.xcassets */,
-				49BD1B7620734FC700D22DAE /* LaunchScreen.storyboard */,
+				49BD1B7F2073504400D22DAE /* ProductsTableViewController.swift */,
+				49BD1B82207359A400D22DAE /* Product.swift */,
 				49BD1B7920734FC700D22DAE /* Info.plist */,
+				49BD1B812073506E00D22DAE /* Supporting Files */,
 			);
 			path = "wave-mobile-challenge-ios";
+			sourceTree = "<group>";
+		};
+		49BD1B812073506E00D22DAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49BD1B6D20734FC600D22DAE /* AppDelegate.swift */,
+				49BD1B7420734FC700D22DAE /* Assets.xcassets */,
+				49BD1B7620734FC700D22DAE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BD1B7020734FC700D22DAE /* ViewController.swift in Sources */,
+				49BD1B802073504400D22DAE /* ProductsTableViewController.swift in Sources */,
 				49BD1B6E20734FC600D22DAE /* AppDelegate.swift in Sources */,
+				49BD1B83207359A400D22DAE /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
