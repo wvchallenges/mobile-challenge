@@ -13,6 +13,10 @@
 		5A7A6F0420AC8F670043547B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A6F0320AC8F670043547B /* Assets.xcassets */; };
 		5A7A6F0720AC8F670043547B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A6F0520AC8F670043547B /* LaunchScreen.storyboard */; };
 		5A7A6F1220AC8F670043547B /* Wave_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A6F1120AC8F670043547B /* Wave_challengeTests.swift */; };
+		5A7A6F2220AC97A00043547B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A6F2120AC97A00043547B /* ProductTableViewCell.swift */; };
+		5A7A6F2420AC99DA0043547B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A6F2320AC99DA0043547B /* Product.swift */; };
+		5A7A6F2720AC9A200043547B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A6F2620AC9A200043547B /* ApiManager.swift */; };
+		5A7A6F2920ACB28A0043547B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A6F2820ACB28A0043547B /* Utilities.swift */; };
 		6F292F73E78F7136C2A0FD3C /* Pods_Wave_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97207975771C4CE845A61B2 /* Pods_Wave_challengeTests.framework */; };
 		9034ED3D31242CA2578FC54A /* Pods_Wave_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D25A9D9CADF651570684EF8 /* Pods_Wave_challenge.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,10 @@
 		5A7A6F0D20AC8F670043547B /* Wave-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7A6F1120AC8F670043547B /* Wave_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave_challengeTests.swift; sourceTree = "<group>"; };
 		5A7A6F1320AC8F670043547B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7A6F2120AC97A00043547B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		5A7A6F2320AC99DA0043547B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5A7A6F2620AC9A200043547B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		5A7A6F2820ACB28A0043547B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7D25A9D9CADF651570684EF8 /* Pods_Wave_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8690E04A9ACAE09DE660BA4 /* Pods-Wave-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-challenge/Pods-Wave-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		B9513F3A6994230D05123519 /* Pods-Wave-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wave-challenge/Pods-Wave-challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 				5A7A6F1E20AC90A10043547B /* Controller */,
 				5A7A6F1D20AC90990043547B /* Model */,
 				5A7A6F1C20AC90920043547B /* View */,
+				5A7A6F2520AC99FD0043547B /* Helper */,
 				5A7A6EFC20AC8F640043547B /* AppDelegate.swift */,
 				5A7A6F0320AC8F670043547B /* Assets.xcassets */,
 				5A7A6F0820AC8F670043547B /* Info.plist */,
@@ -112,6 +121,7 @@
 		5A7A6F1C20AC90920043547B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A7A6F2120AC97A00043547B /* ProductTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +129,7 @@
 		5A7A6F1D20AC90990043547B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5A7A6F2320AC99DA0043547B /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +149,15 @@
 				5A7A6F0520AC8F670043547B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5A7A6F2520AC99FD0043547B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5A7A6F2620AC9A200043547B /* ApiManager.swift */,
+				5A7A6F2820ACB28A0043547B /* Utilities.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		B41D7B51AFABCC86D0A1F3F7 /* Frameworks */ = {
@@ -286,10 +306,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wave-challenge/Pods-Wave-challenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -321,8 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7A6F2920ACB28A0043547B /* Utilities.swift in Sources */,
 				5A7A6EFF20AC8F640043547B /* ViewController.swift in Sources */,
+				5A7A6F2420AC99DA0043547B /* Product.swift in Sources */,
+				5A7A6F2720AC9A200043547B /* ApiManager.swift in Sources */,
 				5A7A6EFD20AC8F640043547B /* AppDelegate.swift in Sources */,
+				5A7A6F2220AC97A00043547B /* ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
