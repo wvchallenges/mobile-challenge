@@ -1,3 +1,30 @@
+# MobileChallenge
+
+## Features
+
+- [x] Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact.
+- [x] The list of products should be fetched and shown to the user in a list view when the app is launched.
+- [x] Each item in the list view should show the product name and price (formatted as a dollar amount.)
+- [x] Swift Generics, higher order functions, extensions, scheme setup.
+
+## Requirements
+
+- Xcode 9.3
+
+## Installation
+
+#### CocoaPods
+You need to install cocoaPod inorder to add alamofire and SwiftyJSON:
+
+```ruby
+pod init
+pod install
+```
+
+## Meta
+
+Siddhesh Mahadeshwar  – siddheshm1212@gmail.com
+
 # Wave Software Development Challenge
 Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
