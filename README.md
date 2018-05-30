@@ -41,4 +41,4 @@ Also it includes Application folder with Configuration and AppDelegate and Core 
 
 ## Class Diagram
 
-![Preview](https://raw.githubusercontent.com/armenm/mobile-challenge/Images/Wave iOS Project Design Drawing.png)
+![Preview](https://github.com/Armenm/mobile-challenge/raw/master/images/Wave%20iOS%20Project%20Design%20Drawing.png)
