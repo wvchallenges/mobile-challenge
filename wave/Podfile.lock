@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - JSONModel (1.7.0)
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - Reachability (3.2)
+  - Realm (3.6.0):
+    - Realm/Headers (= 3.6.0)
+  - Realm/Headers (3.6.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.2.5)
+  - TBAlertController (3.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - DZNEmptyDataSet
+  - JSONModel
+  - libextobjc/EXTScope
+  - Reachability
+  - Realm
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD
+  - TBAlertController
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Realm: 08b464b462d4f31bbd4ba5f5a1c8722ef0a700b7
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TBAlertController: cadaec5909aa7af37f4a345fb260ce9b3b0ad0c6
+
+PODFILE CHECKSUM: 65b69bcd7f177817a98004e24dadba4008da41d1
+
+COCOAPODS: 1.4.0

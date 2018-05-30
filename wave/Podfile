@@ -1,0 +1,40 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+project 'wave.xcodeproj/'
+
+# Uncomment this line to define a global platform for your project
+platform :ios, "9.0"
+
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'wave'
+
+def shared_pods
+
+    # view
+    pod 'TBAlertController'
+    pod 'SVProgressHUD'
+    
+    # https://github.com/dzenbot/DZNEmptyDataSet
+    pod 'DZNEmptyDataSet'
+
+    # SDWebImage
+    pod 'SDWebImage', '~>3.8'
+
+    # network
+    pod 'AFNetworking', '~> 2.6.3'
+    
+    # data
+    pod 'JSONModel'
+    pod 'Realm'
+    
+    # utils
+    pod 'libextobjc/EXTScope'
+    pod 'Reachability'
+
+end
+
+target 'wave' do
+    shared_pods
+end
