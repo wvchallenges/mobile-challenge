@@ -10,7 +10,7 @@
 [4. Class Diagram](#diagram)
 
 ## System Overview
-Wave is a great app.
+Wave is a great app. I tried to construct the structure of the application in a way, that's is easy to add new functionality. The code is seperated in  3 layers.
 
 ## Configuration
 1. Clone (Download) source code
