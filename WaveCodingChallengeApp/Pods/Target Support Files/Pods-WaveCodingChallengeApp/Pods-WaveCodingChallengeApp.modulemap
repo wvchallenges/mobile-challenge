@@ -1,0 +1,6 @@
+framework module Pods_WaveCodingChallengeApp {
+  umbrella header "Pods-WaveCodingChallengeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
