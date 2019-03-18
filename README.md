@@ -1,47 +1,48 @@
-# Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
-
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
-
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
-
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
-
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
-
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
-
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
-
 ## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+In this project, we're creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
+The app uses the REST version of public Wave API. It appears to have been replaced with a GraphQL API, and the documentation for REST API is nowhere to be found.
 
-### What your application must do:
+The app has the business ID `89746d57-c25f-4cec-9c63-34d7780b044b` and a corresponding Wave API token `6W9hcvwRvyyZgPu9Odq7ko8DSY8Nfm` hard-coded into its implementation.
 
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
+## Running the application
 
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
+Open WaveProducts.xcodeproj with Xcode 10.1 (other versions might work as well).
 
-Your app is allowed to render nothing if there is no internet connection when it loads.
+Build WaveProduct scheme and run on any device or simulator with iOS 11 or newer.
 
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
+## What the application does
 
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
+1. The app retrieves the list of products for the specific business ID.
+1. The list of products is fetched and shown to the user in a table view when the app is launched.
+1. Each row in the table view shows the product name and price (formatted as a US dollar amount.)
+1. The user can refresh the list with a button in top right corner.
 
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+If the list of products fails to load (e.g. there is no Internet connection) the app displays error message in place of the list and prompts the user to retry.
+
+Apart from that the app does not implement any other interactivity.
+
+## Notable features
+
+1. The app is built with Swift 4.2 and storyboards.
+1. No third-party libraries are used.
+1. The app can be run on both iPhone and iPad and supports all device orientatons.
+1. The app uses AutoLayout with automatic cell height.
+1. Long product names can span across multiple lines.
+1. Font size reflects DynamicType preference and is updated at run-time.
+1. All UI elements can be accessed with VoiceOver.
+1. In case Wave API returns and error response the UI displays the message from the response.
+1. Price is stored and parsed as Decimal (rather than Double) to avoid rounding errors.
+1. While the list of products is being loaded the app displays placeholder UI.
+1. The placeholder UI also reflects current DynamicType preference.
+
+## Author
+
+Vadim Yelagin
+
+vadim.yelagin@gmail.com
+
+https://www.linkedin.com/in/yelagin/
+
+https://github.com/Vadim-Yelagin
