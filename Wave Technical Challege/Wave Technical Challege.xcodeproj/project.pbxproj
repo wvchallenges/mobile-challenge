@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9355FE8E2240364C00CEC45E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355FE8D2240364C00CEC45E /* AppDelegate.m */; };
+		9355FE912240364C00CEC45E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355FE902240364C00CEC45E /* ViewController.m */; };
+		9355FE942240364C00CEC45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9355FE922240364C00CEC45E /* Main.storyboard */; };
+		9355FE962240364D00CEC45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9355FE952240364D00CEC45E /* Assets.xcassets */; };
+		9355FE992240364D00CEC45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9355FE972240364D00CEC45E /* LaunchScreen.storyboard */; };
+		9355FE9C2240364D00CEC45E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355FE9B2240364D00CEC45E /* main.m */; };
+		9355FEA62240364D00CEC45E /* Wave_Technical_ChallegeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355FEA52240364D00CEC45E /* Wave_Technical_ChallegeTests.m */; };
+		9355FEB12240364E00CEC45E /* Wave_Technical_ChallegeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355FEB02240364E00CEC45E /* Wave_Technical_ChallegeUITests.m */; };
+		93E9D96D2242ADE40090CE8F /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E9D96C2242ADE40090CE8F /* ProductCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9355FEA22240364D00CEC45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9355FE812240364C00CEC45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9355FE882240364C00CEC45E;
+			remoteInfo = "Wave Technical Challege";
+		};
+		9355FEAD2240364D00CEC45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9355FE812240364C00CEC45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9355FE882240364C00CEC45E;
+			remoteInfo = "Wave Technical Challege";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9355FE892240364C00CEC45E /* Wave Technical Challege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Technical Challege.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9355FE8C2240364C00CEC45E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9355FE8D2240364C00CEC45E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9355FE8F2240364C00CEC45E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9355FE902240364C00CEC45E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9355FE932240364C00CEC45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9355FE952240364D00CEC45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9355FE982240364D00CEC45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9355FE9A2240364D00CEC45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9355FE9B2240364D00CEC45E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9355FEA12240364D00CEC45E /* Wave Technical ChallegeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave Technical ChallegeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9355FEA52240364D00CEC45E /* Wave_Technical_ChallegeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wave_Technical_ChallegeTests.m; sourceTree = "<group>"; };
+		9355FEA72240364D00CEC45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9355FEAC2240364D00CEC45E /* Wave Technical ChallegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave Technical ChallegeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9355FEB02240364E00CEC45E /* Wave_Technical_ChallegeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wave_Technical_ChallegeUITests.m; sourceTree = "<group>"; };
+		9355FEB22240364E00CEC45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E9D96B2242ADE40090CE8F /* ProductCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		93E9D96C2242ADE40090CE8F /* ProductCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9355FE862240364C00CEC45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FE9E2240364D00CEC45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FEA92240364D00CEC45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9355FE802240364B00CEC45E = {
+			isa = PBXGroup;
+			children = (
+				9355FE8B2240364C00CEC45E /* Wave Technical Challege */,
+				9355FEA42240364D00CEC45E /* Wave Technical ChallegeTests */,
+				9355FEAF2240364D00CEC45E /* Wave Technical ChallegeUITests */,
+				9355FE8A2240364C00CEC45E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9355FE8A2240364C00CEC45E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9355FE892240364C00CEC45E /* Wave Technical Challege.app */,
+				9355FEA12240364D00CEC45E /* Wave Technical ChallegeTests.xctest */,
+				9355FEAC2240364D00CEC45E /* Wave Technical ChallegeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9355FE8B2240364C00CEC45E /* Wave Technical Challege */ = {
+			isa = PBXGroup;
+			children = (
+				9355FE8C2240364C00CEC45E /* AppDelegate.h */,
+				9355FE8D2240364C00CEC45E /* AppDelegate.m */,
+				9355FE8F2240364C00CEC45E /* ViewController.h */,
+				9355FE902240364C00CEC45E /* ViewController.m */,
+				93E9D96B2242ADE40090CE8F /* ProductCell.h */,
+				93E9D96C2242ADE40090CE8F /* ProductCell.m */,
+				9355FE922240364C00CEC45E /* Main.storyboard */,
+				9355FE952240364D00CEC45E /* Assets.xcassets */,
+				9355FE972240364D00CEC45E /* LaunchScreen.storyboard */,
+				9355FE9A2240364D00CEC45E /* Info.plist */,
+				9355FE9B2240364D00CEC45E /* main.m */,
+			);
+			path = "Wave Technical Challege";
+			sourceTree = "<group>";
+		};
+		9355FEA42240364D00CEC45E /* Wave Technical ChallegeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9355FEA52240364D00CEC45E /* Wave_Technical_ChallegeTests.m */,
+				9355FEA72240364D00CEC45E /* Info.plist */,
+			);
+			path = "Wave Technical ChallegeTests";
+			sourceTree = "<group>";
+		};
+		9355FEAF2240364D00CEC45E /* Wave Technical ChallegeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9355FEB02240364E00CEC45E /* Wave_Technical_ChallegeUITests.m */,
+				9355FEB22240364E00CEC45E /* Info.plist */,
+			);
+			path = "Wave Technical ChallegeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9355FE882240364C00CEC45E /* Wave Technical Challege */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9355FEB52240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical Challege" */;
+			buildPhases = (
+				9355FE852240364C00CEC45E /* Sources */,
+				9355FE862240364C00CEC45E /* Frameworks */,
+				9355FE872240364C00CEC45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wave Technical Challege";
+			productName = "Wave Technical Challege";
+			productReference = 9355FE892240364C00CEC45E /* Wave Technical Challege.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9355FEA02240364D00CEC45E /* Wave Technical ChallegeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9355FEB82240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical ChallegeTests" */;
+			buildPhases = (
+				9355FE9D2240364D00CEC45E /* Sources */,
+				9355FE9E2240364D00CEC45E /* Frameworks */,
+				9355FE9F2240364D00CEC45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9355FEA32240364D00CEC45E /* PBXTargetDependency */,
+			);
+			name = "Wave Technical ChallegeTests";
+			productName = "Wave Technical ChallegeTests";
+			productReference = 9355FEA12240364D00CEC45E /* Wave Technical ChallegeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9355FEAB2240364D00CEC45E /* Wave Technical ChallegeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9355FEBB2240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical ChallegeUITests" */;
+			buildPhases = (
+				9355FEA82240364D00CEC45E /* Sources */,
+				9355FEA92240364D00CEC45E /* Frameworks */,
+				9355FEAA2240364D00CEC45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9355FEAE2240364D00CEC45E /* PBXTargetDependency */,
+			);
+			name = "Wave Technical ChallegeUITests";
+			productName = "Wave Technical ChallegeUITests";
+			productReference = 9355FEAC2240364D00CEC45E /* Wave Technical ChallegeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9355FE812240364C00CEC45E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Binoli Mhatre";
+				TargetAttributes = {
+					9355FE882240364C00CEC45E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					9355FEA02240364D00CEC45E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9355FE882240364C00CEC45E;
+					};
+					9355FEAB2240364D00CEC45E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9355FE882240364C00CEC45E;
+					};
+				};
+			};
+			buildConfigurationList = 9355FE842240364C00CEC45E /* Build configuration list for PBXProject "Wave Technical Challege" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9355FE802240364B00CEC45E;
+			productRefGroup = 9355FE8A2240364C00CEC45E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9355FE882240364C00CEC45E /* Wave Technical Challege */,
+				9355FEA02240364D00CEC45E /* Wave Technical ChallegeTests */,
+				9355FEAB2240364D00CEC45E /* Wave Technical ChallegeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9355FE872240364C00CEC45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9355FE992240364D00CEC45E /* LaunchScreen.storyboard in Resources */,
+				9355FE962240364D00CEC45E /* Assets.xcassets in Resources */,
+				9355FE942240364C00CEC45E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FE9F2240364D00CEC45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FEAA2240364D00CEC45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9355FE852240364C00CEC45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9355FE912240364C00CEC45E /* ViewController.m in Sources */,
+				93E9D96D2242ADE40090CE8F /* ProductCell.m in Sources */,
+				9355FE9C2240364D00CEC45E /* main.m in Sources */,
+				9355FE8E2240364C00CEC45E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FE9D2240364D00CEC45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9355FEA62240364D00CEC45E /* Wave_Technical_ChallegeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9355FEA82240364D00CEC45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9355FEB12240364E00CEC45E /* Wave_Technical_ChallegeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9355FEA32240364D00CEC45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9355FE882240364C00CEC45E /* Wave Technical Challege */;
+			targetProxy = 9355FEA22240364D00CEC45E /* PBXContainerItemProxy */;
+		};
+		9355FEAE2240364D00CEC45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9355FE882240364C00CEC45E /* Wave Technical Challege */;
+			targetProxy = 9355FEAD2240364D00CEC45E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9355FE922240364C00CEC45E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9355FE932240364C00CEC45E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9355FE972240364D00CEC45E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9355FE982240364D00CEC45E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9355FEB32240364E00CEC45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9355FEB42240364E00CEC45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9355FEB62240364E00CEC45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical Challege/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-Challege";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9355FEB72240364E00CEC45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical Challege/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-Challege";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9355FEB92240364E00CEC45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical ChallegeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-ChallegeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wave Technical Challege.app/Wave Technical Challege";
+			};
+			name = Debug;
+		};
+		9355FEBA2240364E00CEC45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical ChallegeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-ChallegeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wave Technical Challege.app/Wave Technical Challege";
+			};
+			name = Release;
+		};
+		9355FEBC2240364E00CEC45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical ChallegeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-ChallegeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wave Technical Challege";
+			};
+			name = Debug;
+		};
+		9355FEBD2240364E00CEC45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Technical ChallegeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "binoli.Wave-Technical-ChallegeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wave Technical Challege";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9355FE842240364C00CEC45E /* Build configuration list for PBXProject "Wave Technical Challege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9355FEB32240364E00CEC45E /* Debug */,
+				9355FEB42240364E00CEC45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9355FEB52240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical Challege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9355FEB62240364E00CEC45E /* Debug */,
+				9355FEB72240364E00CEC45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9355FEB82240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical ChallegeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9355FEB92240364E00CEC45E /* Debug */,
+				9355FEBA2240364E00CEC45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9355FEBB2240364E00CEC45E /* Build configuration list for PBXNativeTarget "Wave Technical ChallegeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9355FEBC2240364E00CEC45E /* Debug */,
+				9355FEBD2240364E00CEC45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9355FE812240364C00CEC45E /* Project object */;
+}
