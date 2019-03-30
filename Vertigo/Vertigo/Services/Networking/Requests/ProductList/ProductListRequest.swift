@@ -9,7 +9,7 @@
 import Foundation
 
 struct ProductListRequest: NetworkRequest {
-    typealias ResponseType = Product
+    typealias ResponseType = [Product]
     
     let businessId: String
     

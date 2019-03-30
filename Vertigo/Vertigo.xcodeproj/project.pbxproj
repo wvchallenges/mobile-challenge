@@ -17,9 +17,10 @@
 		A46D136D224FD7250001751B /* ProductListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D136C224FD7250001751B /* ProductListRequest.swift */; };
 		A46D136F224FD76D0001751B /* VertigoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D136E224FD76D0001751B /* VertigoNetworking.swift */; };
 		A46D1371224FD98A0001751B /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1370224FD98A0001751B /* AppContainer.swift */; };
+		A46D1385224FDFD40001751B /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1384224FDFD40001751B /* ProductListViewModel.swift */; };
 		A47BD6A9224FAA9800D4AA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6A8224FAA9800D4AA4B /* AppDelegate.swift */; };
-		A47BD6AB224FAA9800D4AA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6AA224FAA9800D4AA4B /* ViewController.swift */; };
-		A47BD6AE224FAA9800D4AA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AC224FAA9800D4AA4B /* Main.storyboard */; };
+		A47BD6AB224FAA9800D4AA4B /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6AA224FAA9800D4AA4B /* ProductListViewController.swift */; };
+		A47BD6AE224FAA9800D4AA4B /* ProductListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AC224FAA9800D4AA4B /* ProductListViewController.storyboard */; };
 		A47BD6B0224FAAA800D4AA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AF224FAAA800D4AA4B /* Assets.xcassets */; };
 		A47BD6B3224FAAA800D4AA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6B1224FAAA800D4AA4B /* LaunchScreen.storyboard */; };
 		A47BD6BE224FAAA800D4AA4B /* VertigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6BD224FAAA800D4AA4B /* VertigoTests.swift */; };
@@ -56,10 +57,11 @@
 		A46D136C224FD7250001751B /* ProductListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRequest.swift; sourceTree = "<group>"; };
 		A46D136E224FD76D0001751B /* VertigoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoNetworking.swift; sourceTree = "<group>"; };
 		A46D1370224FD98A0001751B /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A46D1384224FDFD40001751B /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		A47BD6A5224FAA9800D4AA4B /* Vertigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vertigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47BD6A8224FAA9800D4AA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A47BD6AA224FAA9800D4AA4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A47BD6AD224FAA9800D4AA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47BD6AA224FAA9800D4AA4B /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		A47BD6AD224FAA9800D4AA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductListViewController.storyboard; sourceTree = "<group>"; };
 		A47BD6AF224FAAA800D4AA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47BD6B2224FAAA800D4AA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47BD6B4224FAAA800D4AA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,8 +200,9 @@
 		A47BD6D6224FAAE300D4AA4B /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
-				A47BD6AA224FAA9800D4AA4B /* ViewController.swift */,
-				A47BD6AC224FAA9800D4AA4B /* Main.storyboard */,
+				A46D1384224FDFD40001751B /* ProductListViewModel.swift */,
+				A47BD6AA224FAA9800D4AA4B /* ProductListViewController.swift */,
+				A47BD6AC224FAA9800D4AA4B /* ProductListViewController.storyboard */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -355,7 +358,7 @@
 			files = (
 				A47BD6B3224FAAA800D4AA4B /* LaunchScreen.storyboard in Resources */,
 				A47BD6B0224FAAA800D4AA4B /* Assets.xcassets in Resources */,
-				A47BD6AE224FAA9800D4AA4B /* Main.storyboard in Resources */,
+				A47BD6AE224FAA9800D4AA4B /* ProductListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47BD6AB224FAA9800D4AA4B /* ViewController.swift in Sources */,
 				A46D1360224FD4960001751B /* NetworkRequest.swift in Sources */,
 				A46D1362224FD4C60001751B /* NetworkError.swift in Sources */,
 				A46D1366224FD50F0001751B /* Product.swift in Sources */,
@@ -388,9 +390,11 @@
 				A46D1368224FD52C0001751B /* API.swift in Sources */,
 				A46D136D224FD7250001751B /* ProductListRequest.swift in Sources */,
 				A47BD6DF224FAD8900D4AA4B /* ProductListService.swift in Sources */,
+				A47BD6AB224FAA9800D4AA4B /* ProductListViewController.swift in Sources */,
 				A46D135E224FD45F0001751B /* NetworkResponse.swift in Sources */,
 				A47BD6A9224FAA9800D4AA4B /* AppDelegate.swift in Sources */,
 				A46D136B224FD5850001751B /* AccessTokenService.swift in Sources */,
+				A46D1385224FDFD40001751B /* ProductListViewModel.swift in Sources */,
 				A46D135C224FD43C0001751B /* Endpoint.swift in Sources */,
 				A46D136F224FD76D0001751B /* VertigoNetworking.swift in Sources */,
 				A46D1371224FD98A0001751B /* AppContainer.swift in Sources */,
@@ -429,12 +433,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A47BD6AC224FAA9800D4AA4B /* Main.storyboard */ = {
+		A47BD6AC224FAA9800D4AA4B /* ProductListViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A47BD6AD224FAA9800D4AA4B /* Base */,
 			);
-			name = Main.storyboard;
+			name = ProductListViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		A47BD6B1224FAAA800D4AA4B /* LaunchScreen.storyboard */ = {

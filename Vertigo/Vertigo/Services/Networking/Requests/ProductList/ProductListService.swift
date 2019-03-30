@@ -16,14 +16,17 @@ class ProductListService {
         self.networking = networking
     }
     
-    func fetchProducts() {
+    typealias RequestCompletion = ([Product]) -> Void
+    
+    func fetchProducts(completion: @escaping RequestCompletion) {
         let request = ProductListRequest(businessId: "dd921fea-bef8-4281-a400-abefe265b601")
         networking.request(request) { (response) in
             switch response {
-            case .success:
-                print("success")
+            case let .success(products):
+                completion(products)
             case .failure:
-                print("failure")
+                // This can be improved to communicate the error
+                completion([])
             }
         }
     }
