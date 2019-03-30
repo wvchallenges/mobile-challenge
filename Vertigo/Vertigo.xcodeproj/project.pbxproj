@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A46D135C224FD43C0001751B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D135B224FD43C0001751B /* Endpoint.swift */; };
+		A46D135E224FD45F0001751B /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D135D224FD45F0001751B /* NetworkResponse.swift */; };
+		A46D1360224FD4960001751B /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D135F224FD4960001751B /* NetworkRequest.swift */; };
+		A46D1362224FD4C60001751B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1361224FD4C60001751B /* NetworkError.swift */; };
+		A46D1368224FD52C0001751B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D1367224FD52C0001751B /* API.swift */; };
+		A46D136B224FD5850001751B /* AccessTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D136A224FD5850001751B /* AccessTokenService.swift */; };
+		A46D136F224FD76D0001751B /* VertigoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D136E224FD76D0001751B /* VertigoNetworking.swift */; };
 		A47BD6A9224FAA9800D4AA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6A8224FAA9800D4AA4B /* AppDelegate.swift */; };
 		A47BD6AB224FAA9800D4AA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6AA224FAA9800D4AA4B /* ViewController.swift */; };
 		A47BD6AE224FAA9800D4AA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AC224FAA9800D4AA4B /* Main.storyboard */; };
@@ -14,6 +21,7 @@
 		A47BD6B3224FAAA800D4AA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6B1224FAAA800D4AA4B /* LaunchScreen.storyboard */; };
 		A47BD6BE224FAAA800D4AA4B /* VertigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6BD224FAAA800D4AA4B /* VertigoTests.swift */; };
 		A47BD6C9224FAAA800D4AA4B /* VertigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6C8224FAAA800D4AA4B /* VertigoUITests.swift */; };
+		A47BD6DD224FAD3600D4AA4B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6DC224FAD3600D4AA4B /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A46D135B224FD43C0001751B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A46D135D224FD45F0001751B /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		A46D135F224FD4960001751B /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		A46D1361224FD4C60001751B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A46D1367224FD52C0001751B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A46D136A224FD5850001751B /* AccessTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenService.swift; sourceTree = "<group>"; };
+		A46D136E224FD76D0001751B /* VertigoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoNetworking.swift; sourceTree = "<group>"; };
 		A47BD6A5224FAA9800D4AA4B /* Vertigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vertigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47BD6A8224FAA9800D4AA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47BD6AA224FAA9800D4AA4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		A47BD6C4224FAAA800D4AA4B /* VertigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47BD6C8224FAAA800D4AA4B /* VertigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoUITests.swift; sourceTree = "<group>"; };
 		A47BD6CA224FAAA800D4AA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47BD6DC224FAD3600D4AA4B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A46D1369224FD5390001751B /* Vertigo */ = {
+			isa = PBXGroup;
+			children = (
+				A46D1367224FD52C0001751B /* API.swift */,
+				A46D136E224FD76D0001751B /* VertigoNetworking.swift */,
+				A46D136A224FD5850001751B /* AccessTokenService.swift */,
+			);
+			path = Vertigo;
+			sourceTree = "<group>";
+		};
+		A46D1373224FDC1C0001751B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A46D135B224FD43C0001751B /* Endpoint.swift */,
+				A47BD6DC224FAD3600D4AA4B /* Networking.swift */,
+				A46D135F224FD4960001751B /* NetworkRequest.swift */,
+				A46D135D224FD45F0001751B /* NetworkResponse.swift */,
+				A46D1361224FD4C60001751B /* NetworkError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A47BD69C224FAA9800D4AA4B = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +174,8 @@
 		A47BD6D7224FAAEE00D4AA4B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A46D1373224FDC1C0001751B /* Base */,
+				A46D1369224FD5390001751B /* Vertigo */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -305,7 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A47BD6AB224FAA9800D4AA4B /* ViewController.swift in Sources */,
+				A46D1360224FD4960001751B /* NetworkRequest.swift in Sources */,
+				A46D1362224FD4C60001751B /* NetworkError.swift in Sources */,
+				A47BD6DD224FAD3600D4AA4B /* Networking.swift in Sources */,
+				A46D1368224FD52C0001751B /* API.swift in Sources */,
+				A46D135E224FD45F0001751B /* NetworkResponse.swift in Sources */,
 				A47BD6A9224FAA9800D4AA4B /* AppDelegate.swift in Sources */,
+				A46D136B224FD5850001751B /* AccessTokenService.swift in Sources */,
+				A46D135C224FD43C0001751B /* Endpoint.swift in Sources */,
+				A46D136F224FD76D0001751B /* VertigoNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vertigoapp.Vertigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -504,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Vertigo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vertigoapp.Vertigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -523,6 +572,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VertigoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +593,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VertigoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +613,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VertigoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +633,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VertigoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
