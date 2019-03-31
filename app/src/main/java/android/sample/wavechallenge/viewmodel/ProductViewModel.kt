@@ -50,7 +50,7 @@ open class ProductViewModel(
     /**
      * Refresh the products, showing a loading spinner while it refreshes and errors via snackbar
      */
-    fun refreshProducts(businessId: String) {
+    private fun refreshProducts(businessId: String) {
         launchDataLoad {
             productRepository.refreshProducts(businessId)
         }
