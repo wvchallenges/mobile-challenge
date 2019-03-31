@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.2'
@@ -15,11 +15,21 @@ buildscript {
     }
 }
 
+ext {
+    retrofitVersion = "2.3.0"
+    retrofit2_version = "2.5.0"
+    nav_version = "2.1.0-alpha01"
+    kotlinCoroutineVersion = "1.0.1"
+    okhttpLoggingInterceptorVersion = "3.9.0"
+    moshiVersion = "1.8.0"
+    lifecycleVersion = "1.1.1"
+}
+
 allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 
