@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Wave Challenge</string>
+
+    <string name="formatted_price">$%1$s</string>
+    <string name="products_list">Products List</string>
+</resources>
