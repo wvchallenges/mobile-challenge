@@ -6,10 +6,7 @@
 
 **Step 2:** cd to the cloned repo:
 
-**Step 3:** add local .env file with following variables
-API_URL
-BUSINESS_ID
-ACCESS_TOKEN
+**Step 3:** add local .env file with following variables `API_URL` `BUSINESS_ID` `ACCESS_TOKEN`
 
 **Step 4:** Install the Application with `yarn` or `npm i`
 
