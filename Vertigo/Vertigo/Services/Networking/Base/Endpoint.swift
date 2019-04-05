@@ -20,14 +20,12 @@ class Endpoint {
     
     let baseURL: String
     let method: HTTPMethod
-    var headers: [String : String]
     let path: [String]
     let query: [String : String]
     
-    init(baseURL: String, method: HTTPMethod, headers: [String : String] = [:], path: [String], query: [String : String] = [:]) {
+    init(baseURL: String, method: HTTPMethod, path: [String], query: [String : String] = [:]) {
         self.baseURL = baseURL
         self.method = method
-        self.headers = headers
         self.path = path
         self.query = query
     }

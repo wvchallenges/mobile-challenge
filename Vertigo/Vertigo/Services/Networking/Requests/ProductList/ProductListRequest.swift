@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct ProductListRequest: NetworkRequest {
+class ProductListRequest: NetworkRequest {
+    
     typealias ResponseType = [Product]
     
     let businessId: String
@@ -16,8 +17,10 @@ struct ProductListRequest: NetworkRequest {
     var endpoint: Endpoint {
         return Endpoint(baseURL: VertigoAPI.baseURL,
                         method: .get,
-                        path: ["businesses", businessId])
+                        path: ["businesses", businessId, "products", ""])
     }
+    
+    var headers: [String : String] = [:]
     
     init(businessId: String) {
         self.businessId = businessId

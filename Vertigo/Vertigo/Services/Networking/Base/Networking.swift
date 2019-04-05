@@ -24,7 +24,7 @@ class Networking {
         
         var urlRequest = URLRequest(url: baseURL)
         urlRequest.httpMethod = request.endpoint.method.rawValue
-        request.endpoint.headers.forEach { urlRequest.addValue($1, forHTTPHeaderField: $0) }
+        request.headers.forEach { urlRequest.addValue($1, forHTTPHeaderField: $0) }
         request.endpoint.path.forEach { urlRequest.url?.appendPathComponent($0) }
         
         task(urlRequest, completion: completion).resume()

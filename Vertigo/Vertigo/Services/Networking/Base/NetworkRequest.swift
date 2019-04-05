@@ -11,4 +11,5 @@ import Foundation
 protocol NetworkRequest {
     associatedtype ResponseType: Decodable
     var endpoint: Endpoint { get }
+    var headers: [String : String] { get set }
 }

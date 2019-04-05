@@ -19,7 +19,8 @@ class VertigoNetworking {
     }
     
     func request<T: NetworkRequest>(_ request: T, completion: @escaping (NetworkResponse<T.ResponseType>) -> Void) {
-        request.endpoint.headers["Authorization"] = "Bearer \(accessTokenService.accessToken)"
-        networking.request(request, completion: completion)
+        var modifiedRequest = request
+        modifiedRequest.headers["Authorization"] = "Bearer \(accessTokenService.accessToken)"
+        networking.request(modifiedRequest, completion: completion)
     }
 }
