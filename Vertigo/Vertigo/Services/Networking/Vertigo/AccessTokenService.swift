@@ -12,6 +12,6 @@ import Foundation
 struct AccessTokenService {
     
     var accessToken: String {
-        return "yD0zmQFQRwRIc3gf6y88xUx1g04M4e"
+        return "<#StringLiteral#>"
     }
 }

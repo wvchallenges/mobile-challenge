@@ -19,7 +19,7 @@ class ProductListService {
     typealias RequestCompletion = ([Product]) -> Void
     
     func fetchProducts(completion: @escaping RequestCompletion) {
-        let request = ProductListRequest(businessId: "dd921fea-bef8-4281-a400-abefe265b601")
+        let request = ProductListRequest(businessId: "<#StringLiteral#>")
         networking.request(request) { (response) in
             switch response {
             case let .success(products):
