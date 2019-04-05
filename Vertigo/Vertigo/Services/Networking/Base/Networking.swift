@@ -32,16 +32,18 @@ class Networking {
     
     private func task<T: Decodable>(_ request: URLRequest, completion: @escaping (NetworkResponse<T>) -> Void) -> URLSessionDataTask {
         return session.dataTask(with: request) { (data, response, error) in
-            if let data = data {
-                do {
-                    completion(.success(try JSONDecoder().decode(T.self, from: data)))
-                } catch {
+            DispatchQueue.main.async {
+                if let data = data {
+                    do {
+                        completion(.success(try JSONDecoder().decode(T.self, from: data)))
+                    } catch {
+                        completion(.failure(error))
+                    }
+                } else if let error = error {
                     completion(.failure(error))
+                } else {
+                    completion(.failure(NetworkError.unknown))
                 }
-            } else if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.failure(NetworkError.unknown))
             }
         }
     }
