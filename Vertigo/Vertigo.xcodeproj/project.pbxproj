@@ -23,8 +23,6 @@
 		A47BD6AE224FAA9800D4AA4B /* ProductListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AC224FAA9800D4AA4B /* ProductListViewController.storyboard */; };
 		A47BD6B0224FAAA800D4AA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6AF224FAAA800D4AA4B /* Assets.xcassets */; };
 		A47BD6B3224FAAA800D4AA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47BD6B1224FAAA800D4AA4B /* LaunchScreen.storyboard */; };
-		A47BD6BE224FAAA800D4AA4B /* VertigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6BD224FAAA800D4AA4B /* VertigoTests.swift */; };
-		A47BD6C9224FAAA800D4AA4B /* VertigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6C8224FAAA800D4AA4B /* VertigoUITests.swift */; };
 		A47BD6DD224FAD3600D4AA4B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6DC224FAD3600D4AA4B /* Networking.swift */; };
 		A47BD6DF224FAD8900D4AA4B /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BD6DE224FAD8900D4AA4B /* ProductListService.swift */; };
 		A4F8FD612257BB320004AD31 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F8FD602257BB320004AD31 /* ProductCell.swift */; };
@@ -68,10 +66,8 @@
 		A47BD6B2224FAAA800D4AA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47BD6B4224FAAA800D4AA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47BD6B9224FAAA800D4AA4B /* VertigoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertigoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A47BD6BD224FAAA800D4AA4B /* VertigoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoTests.swift; sourceTree = "<group>"; };
 		A47BD6BF224FAAA800D4AA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47BD6C4224FAAA800D4AA4B /* VertigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A47BD6C8224FAAA800D4AA4B /* VertigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoUITests.swift; sourceTree = "<group>"; };
 		A47BD6CA224FAAA800D4AA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47BD6DC224FAD3600D4AA4B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		A47BD6DE224FAD8900D4AA4B /* ProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
@@ -186,7 +182,6 @@
 		A47BD6BC224FAAA800D4AA4B /* VertigoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A47BD6BD224FAAA800D4AA4B /* VertigoTests.swift */,
 				A47BD6BF224FAAA800D4AA4B /* Info.plist */,
 			);
 			path = VertigoTests;
@@ -195,7 +190,6 @@
 		A47BD6C7224FAAA800D4AA4B /* VertigoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A47BD6C8224FAAA800D4AA4B /* VertigoUITests.swift */,
 				A47BD6CA224FAAA800D4AA4B /* Info.plist */,
 			);
 			path = VertigoUITests;
@@ -421,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47BD6BE224FAAA800D4AA4B /* VertigoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47BD6C9224FAAA800D4AA4B /* VertigoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
