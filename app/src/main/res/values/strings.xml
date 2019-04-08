@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WaveApp</string>
+    <string name="action_filter">Filter</string>
+    <string name="waveapp_product">WaveApp Product</string>
+</resources>
