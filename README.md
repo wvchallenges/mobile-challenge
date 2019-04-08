@@ -21,7 +21,7 @@ The app leverages on some of the modern Android Architecture components as follo
 
 ## How to setup
 1. Clone or download this repository.
-2. Replace the Wave API Key and Business ID with your own by updating your machine gradle.properties (/Users/username/.gradle). If the file doesn't exist, create one.
+2. Replace the Wave API Key and Business ID with your own by updating your machine level gradle.properties (/Users/username/.gradle/gradle.properties). If the file doesn't exist, create one.
 3. Build and Run!
 
 ## Testing
