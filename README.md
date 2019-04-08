@@ -6,7 +6,7 @@ With this approach, it provides the best user experience as the cached content i
 
 ## Data Flow
 ![Screenshot](https://github.com/karlptrck/mobile-challenge/blob/master/data_flow_diagram.png)
-[Source](https://developer.android.com/topic/libraries/architecture/paging)
+[Screenshot Source](https://www.youtube.com/watch?v=QVMqCRs0BNA)
 
 ## Libraries Used
 
