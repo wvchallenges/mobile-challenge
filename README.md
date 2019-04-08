@@ -1,6 +1,6 @@
 ## Project Description
 
-This project contains a single screen that displays a list of items that are gradually loaded in chunks from the local database and triggers a network call when the user reaches the end of the available data in the database.
+This project contains a single screen that displays a list of items that are gradually loaded in chunks from the local database and triggers a network call when the user scrolls and reaches the end of the available data in the database.
 
 With this approach, it provides the best user experience as the cached content is always available on the device even without internet connection.
 
