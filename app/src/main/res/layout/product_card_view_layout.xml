@@ -4,6 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="java.lang.String" />
+        <import type="android.view.View" />
         <variable
                 name="viewModel"
                 type="challenge.waveproductlist.product.viewModels.ProductViewModel" />
@@ -68,6 +69,28 @@
                     android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:background="@drawable/ic_monetization_on_black_24dp"
+                    android:visibility="@{viewModel.isSold() ? View.VISIBLE : View.GONE}"
+                    android:backgroundTint="@color/money_icon_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/card_view_product_id"
+                    android:layout_width="@dimen/icon_sold_size"
+                    android:layout_height="@dimen/icon_sold_size" />
+
+            <ImageView
+                    android:background="@drawable/ic_money_off_black_24dp"
+                    android:visibility="@{viewModel.isSold() ? View.GONE : View.VISIBLE}"
+                    android:backgroundTint="@color/money_icon_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/card_view_product_id"
+                    android:layout_width="@dimen/icon_sold_size"
+                    android:layout_height="@dimen/icon_sold_size" />
 
         </RelativeLayout>
 

@@ -64,6 +64,4 @@ class ProductViewModel : BaseObservable {
             return viewModels
         }
     }
-
-    data class ColorScheme(var rowColor: Int, var rowColorAlt: Int)
 }

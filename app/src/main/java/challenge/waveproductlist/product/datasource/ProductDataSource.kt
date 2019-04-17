@@ -15,14 +15,14 @@ class ProductDataSource(private val productDataManager: ProductDataManager,
     override fun loadInitial(params: LoadInitialParams<Long>, callback: LoadInitialCallback<ProductViewModel>) {
         // get the initial set of products from the api
         compositeDisposable.add(productDataManager.getProducts(page++)
-            .map { transformTo(it) }
+            .map { transformToViewModel(it) }
             .subscribe({ response -> callback.onResult(response) }, { t -> logError(t) }))
     }
 
     override fun loadAfter(params: LoadParams<Long>, callback: LoadCallback<ProductViewModel>) {
         // get all subsequent sets of product pages
         compositeDisposable.add(productDataManager.getProducts(page++)
-            .map { transformTo(it) }
+            .map { transformToViewModel(it) }
             .subscribe({ response -> callback.onResult(response) }, { t -> logError(t) }))
     }
 
@@ -32,8 +32,8 @@ class ProductDataSource(private val productDataManager: ProductDataManager,
         return item.id.get().toLong()
     }
 
-    // transform the product model to viewModel
-    private fun transformTo(products: List<Product>): List<ProductViewModel> {
+    // transform the product models to viewModels
+    private fun transformToViewModel(products: List<Product>): List<ProductViewModel> {
         return ProductViewModel.import(products)
     }
 

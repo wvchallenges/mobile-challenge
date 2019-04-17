@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
-            // show the products list fragment
+            // show the product list fragment
             supportFragmentManager
                 .beginTransaction()
                 .add(R.id.root_frame_layout, ProductListFragment.newInstance(), "productListFragment")
