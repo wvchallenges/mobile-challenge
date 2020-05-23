@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Home from './src/routes/Home';
+import Navigator from './src/navigation';
 
-const App = (): JSX.Element => <Home />;
+const App = (): JSX.Element => <Navigator />;
 
 export default App;
