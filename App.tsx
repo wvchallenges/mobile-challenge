@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Home from 'routes/Home';
+import Home from './src/routes/Home';
 
 const App = (): JSX.Element => <Home />;
 

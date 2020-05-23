@@ -1,0 +1,4 @@
+# Ignore Android, iOS build related files and e2e automated tests
+ios/
+android/
+.eslintrc.js
