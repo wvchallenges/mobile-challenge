@@ -1,3 +1,23 @@
-module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+module.exports = (api) => {
+  api.cache(true);
+  return {
+    plugins: [
+      [
+        'module-resolver',
+        {
+          alias: {
+            assets: './src/assets',
+            components: './src/components',
+            locales: './src/locales',
+            navigation: './src/navigation',
+            routes: './src/routes',
+            state: './src/state',
+            styles: './src/styles',
+          },
+          root: './src',
+        },
+      ],
+    ],
+    presets: ['module:metro-react-native-babel-preset'],
+  };
 };
