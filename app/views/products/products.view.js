@@ -3,7 +3,7 @@ import {View, StyleSheet, FlatList, SafeAreaView, TouchableOpacity, ScrollView, 
 import NetInfo from "@react-native-community/netinfo";
 
 import OfflineBanner from '../../components/core/offline'
-import { axiosInstance as api} from '../../api'
+import { axiosInstance as api} from '../../api';
 import { UserContext } from '../../../App'
 import { BUSINESS_ID } from '../../constants'
 import COLORS from '../../styles/colors'
