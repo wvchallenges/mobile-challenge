@@ -3,23 +3,20 @@ import { Text, View, StyleSheet, FlatList, Platform, ActivityIndicator } from 'r
 import { ActionCreators } from '../actions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import NetInfo from "@react-native-community/netinfo";
-import Toast from 'react-native-simple-toast';
+import NetInfo from "@react-native-community/netinfo"; // NetInfo library is used for determining network connection
+import Toast from 'react-native-simple-toast'; // Toast library for showing appropriate toast when 
 import { BUSINESS_ID, NO_INTERNET } from '../config/constants';
 import Product from '../models/product';
 import ProductItem from '../components/ProductItem';
 import HomeState from '../store/state';
-
+import styles from './HomeScreen.style';
 
 interface HomeProps {
   navigation: any,
   isLoading: boolean,
-  isConnected: boolean,
   products: Product[],
   fetchProducts: any,
   setError: any,
-  subscription: any,
-  networkConnection: boolean,
   error: any
 };
 
@@ -31,7 +28,6 @@ class HomeScreen extends Component<HomeProps, HomeState> {
   }
 
   componentDidMount() {
-    //Check if internet is present
     this.fetchData();
   }
 
@@ -39,6 +35,7 @@ class HomeScreen extends Component<HomeProps, HomeState> {
     let { fetchProducts, setError } = this.props;
     // Network info to check whether device is online or offline
     NetInfo.fetch().then( networkState => {
+      console.log('Network state is ',networkState.isConnected);
       if(networkState.isConnected) {
         fetchProducts(BUSINESS_ID);
       }else {
@@ -53,7 +50,7 @@ class HomeScreen extends Component<HomeProps, HomeState> {
     let { products, isLoading, error } = this.props;
     return (
       <View style={styles.container}>
-        {error ? <Text>{error}</Text>: null }
+        {error ? <Text style={styles.error}>{error}</Text>: null }
         <FlatList  data={products} keyExtractor={item => item["id"].toString()} renderItem={({ item }) =>
           <ProductItem product={item} />} />
         { isLoading ? <ActivityIndicator
@@ -65,28 +62,6 @@ class HomeScreen extends Component<HomeProps, HomeState> {
   }
 
 }
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-  activityIndicator: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    color: '#bc2b78',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  error: {
-    color: 'red',
-    fontSize: 16
-  }
-});
-
 
 function mapStateToProps(state: any) {
   const { isLoading, error , products} = state.fetchProducts;
