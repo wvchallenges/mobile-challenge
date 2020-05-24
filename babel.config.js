@@ -6,6 +6,7 @@ module.exports = (api) => {
         'module-resolver',
         {
           alias: {
+            api: './src/api',
             assets: './src/assets',
             components: './src/components',
             locales: './src/locales',

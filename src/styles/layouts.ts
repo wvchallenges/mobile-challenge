@@ -16,7 +16,7 @@ const Layouts = StyleSheet.create({
     paddingTop: Constants.globalTopMargin,
   },
   screenHeader: {
-    ...TypeScale.font.regular22,
+    ...TypeScale.font.regular28,
     color: Colors.Text.black13,
     paddingHorizontal: Constants.globalHMargin,
     paddingTop: Constants.globalTopMargin,
