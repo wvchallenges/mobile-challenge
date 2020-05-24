@@ -1,8 +1,8 @@
 import React, { createContext, useState  } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Icon } from 'native-base';
 import SplashScreen from 'react-native-splash-screen';
+import { Icon } from 'native-base';
 
 import ProductsComponent from './app/views/products';
 import globalStyles from './app/styles'

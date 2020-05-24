@@ -7,7 +7,7 @@ import { axiosInstance as api} from '../../api'
 import { UserContext } from '../../../App'
 import { BUSINESS_ID } from '../../constants'
 import COLORS from '../../styles/colors'
-import { formatCurrency } from '../../utils/helpers'
+import { formatCurrency } from '../../utils/helpers';
 
 function Item({ id, title, price }) {
   return (

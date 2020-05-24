@@ -1,2 +1,2 @@
 import Products from './products.view';
-export default Products
+export default Products;
