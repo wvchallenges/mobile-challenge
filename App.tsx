@@ -14,10 +14,12 @@ import {
 } from 'react-native';
 
 import { Provider, connect } from 'react-redux';
+// React navigation for navigation and for the ability to add multiple screens
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer, createSwitchNavigator} from 'react-navigation';
 import HomeScreen from './screens/HomeScreen';
 import configureStore from './store';
+//This library is used  for dollar formatting 
 import 'intl';
 import 'intl/locale-data/jsonp/en';
 
