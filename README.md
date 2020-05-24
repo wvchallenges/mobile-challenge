@@ -1,47 +1,66 @@
-# Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
+# Carlos Conejo's Wave Software Development Challenge
 
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
+## Development Environment
 
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
+### Requirements
 
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
+1. [Xcode 11.5](https://developer.apple.com/xcode/resources/)
+2. [NVM](https://github.com/creationix/nvm)
+   - After installing NVM, install version 12.16.3 of node - `nvm install 12.16.3`
+   - You can either set that version to your NVM's default alias - `nvm alias default 12.16.3` **OR** you can run `nvm use` each time you are going to work on the project to ensure you are on correct version of node.
+3. [React Native](https://facebook.github.io/react-native/docs/getting-started) -> React Native CLI QuickStart
 
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
+   - Follow instructions for both **iOS** and **Android** OS Targets - **NOTE:** I use **NVM** for managing **node** and **npm** versions. Skip the `brew install node` step in the docs and be sure you've followed the NVM installation instructions from the step above.
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
+4. [Yarn](https://yarnpkg.com/en/docs/install)
+5. [Bundler](https://bundler.io/) - `gem install bundler`
+6. [Cocoapods](https://cocoapods.org/) - `gem install cocoapods -v 1.5.3`
 
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
+## Setup
 
-## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
+- Clone the repo
+- Use/Install Node:
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+  `$ nvm use`
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
+- Install dependencies:
 
-### What your application must do:
+  `$ yarn`
 
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
+- Install iOS dependencies:
 
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
+  `$ cd ios/ && pod install && cd..`
 
-Your app is allowed to render nothing if there is no internet connection when it loads.
+## Running the App
 
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
+- Run on iOS simulator
+  `$ yarn ios`
 
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
+## Notes
 
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+- While there shouldn't be any reason this wouldn't run on Android, I did not run it on Android nor put together instructions to save some time
+
+## Major third-party tools
+
+1. [typescript](https://www.typescriptlang.org/)
+2. [react-navigation](https://reactnavigation.org/)
+3. [redux](https://github.com/reduxjs/redux)
+4. [redux-saga](https://github.com/redux-saga/redux-saga)
+
+## Things I would do given more time
+
+- Have pagination on the products
+- Have more information in the Home page, business info, for example. That way I could have illustrated how to solve the problem of having two sources of data in the same page when one of them is paginated
+- Have a system in place to `type` the incoming data from the API request
+- Have a detail page
+- Add more tabs
+- Make it look pretty
+
+## Things I'm most proud of
+
+- The architecture in general, the separation of concerns as well as having utilities for common problems that help avoid code duplication like the `create-worker` function
+
+## Final Notes
+
+- I noticed that you have a GraphQL schema, the requirements said to use the REST version, but if allowed, I would have used Apollo Client to both manage the state and interact with your GraphQL interface. That would have also brought the benefit of auto-generating the typescript types off the remote GraphQL interface and allowing for an end to end typed data flow
+- There are a lot of overkills in the way I set up the project, like Typescript, eslint, Redux/Saga, Workers, etc. But the idea was to treat it as if this was going to end up being a product we would be developing for months as part of a team
