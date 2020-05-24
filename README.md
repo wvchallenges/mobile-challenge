@@ -16,7 +16,7 @@
 5. [Bundler](https://bundler.io/) - `gem install bundler`
 6. [Cocoapods](https://cocoapods.org/) - `gem install cocoapods -v 1.5.3`
 
-## Setup
+### Setup
 
 - Clone the repo
 - Use/Install Node:
@@ -31,12 +31,12 @@
 
   `$ cd ios/ && pod install && cd..`
 
-## Running the App
+### Running the App
 
 - Run on iOS simulator
   `$ yarn ios`
 
-## Notes
+### Notes
 
 - While there shouldn't be any reason this wouldn't run on Android, I did not run it on Android nor put together instructions to save some time
 
