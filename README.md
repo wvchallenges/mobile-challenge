@@ -34,11 +34,13 @@
 ### Running the App
 
 - Run on iOS simulator
+
   `$ yarn ios`
 
 ### Notes
 
 - While there shouldn't be any reason this wouldn't run on Android, I did not run it on Android nor put together instructions to save some time
+- I added react navigation and set up a small navigation system (tabs at the bottom) even though there is only one screen. It's a little weird but the idea is to treat this project as the basis for more work to be added on top of it, in this case, tabs/stacks/modals
 
 ## Major third-party tools
 
@@ -50,11 +52,11 @@
 ## Things I would do given more time
 
 - Have pagination on the products
-- Have more information in the Home page, business info, for example. That way I could have illustrated how to solve the problem of having two sources of data in the same page when one of them is paginated
-- Have a system in place to `type` the incoming data from the API request
-- Have a detail page
-- Add more tabs
-- Make it look pretty
+- Have more information in the Home page, for example, business information. That way I could have illustrated how to solve the problem of having two sources of data in the same page when one of them is paginated
+- Have a system in place to `type` the incoming data from the API
+- Set up environments along with other API constants instead of hardcoding the urls
+- Not hardcoding the auth token but instead getting one on run-time
+- Make it look prettier
 
 ## Things I'm most proud of
 
@@ -62,5 +64,5 @@
 
 ## Final Notes
 
-- I noticed that you have a GraphQL schema, the requirements said to use the REST version, but if allowed, I would have used Apollo Client to both manage the state and interact with your GraphQL interface. That would have also brought the benefit of auto-generating the typescript types off the remote GraphQL interface and allowing for an end to end typed data flow
-- There are a lot of overkills in the way I set up the project, like Typescript, eslint, Redux/Saga, Workers, etc. But the idea was to treat it as if this was going to end up being a product we would be developing for months as part of a team
+- I noticed that you have a GraphQL schema, the requirements said to use the REST version, but if allowed, I would have used Apollo Client to both manage the state and interact with your GraphQL interface. That would have also brought the benefit of auto-generating the typescript types off the remote GraphQL schema and allowing for an end to end typed data flow
+- There are a lot of overkills in the way I set up the project, like Typescript, eslint, Redux/Saga, Workers, and react-navigation. But the idea was to treat it as if this was going to end up being a product we would be developing for months as part of a team
