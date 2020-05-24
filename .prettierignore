@@ -1,0 +1,9 @@
+# Ignore Folders for formatting
+
+node_modules/
+
+# Ignore Files for formatting
+
+package.json
+package-lock.json
+*.java
