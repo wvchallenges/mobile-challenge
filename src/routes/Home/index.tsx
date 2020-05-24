@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { FlatList, SafeAreaView, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Actions from 'state/products/actions';
+import Actions from 'state/ui/home/actions';
 import Selectors, { HomeProduct } from 'state/ui/home/selectors';
 
 import ProductListItem from 'components/ProductListItem';
@@ -25,7 +25,7 @@ const Home = (): JSX.Element => {
   const hasData = products.length > 0;
 
   useEffect((): void => {
-    dispatch(Actions.request({}));
+    dispatch(Actions.getProducts());
   }, [dispatch]);
 
   return (

@@ -113,7 +113,7 @@ const createWorker = <T, P>(
   };
 
   const saga = function* saga(): SagaIterator<void> {
-    yield takeLatest<string>(Types.REQUEST, requestSaga);
+    yield takeLatest(Types.REQUEST, requestSaga);
   };
 
   return {
