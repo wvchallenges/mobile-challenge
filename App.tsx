@@ -9,10 +9,6 @@
  */
 
 import React from 'react';
-import {
-  StyleSheet,
-} from 'react-native';
-
 import { Provider, connect } from 'react-redux';
 // React navigation for navigation and for the ability to add multiple screens
 import { createStackNavigator } from 'react-navigation-stack';
@@ -45,8 +41,5 @@ const  App = ()=> {
   );
 
 }
-const styles = StyleSheet.create({
-  
-});
 
 export default App;

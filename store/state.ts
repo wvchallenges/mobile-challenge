@@ -4,7 +4,3 @@ export default interface HomeState {
   products: Product[],
   error: string
 };
-
-export interface NetworkState {
-  isConnected: boolean;
-}
