@@ -14,6 +14,4 @@ Following are the instructions for running the application on Android and IOS.
 
 
 
-The reason I am particularly proud of this solution is it structuring using React Redux for state management owing to which things can be handled efficiently based on state changes. Also have used typescript to ensure type checking of elements. Have
-additionally added libraries like react-navigation owing to which additional screens particularly like a Detail page can be
-added easily. 
+The reason I am particularly proud of this solution is it structuring using React Redux for state management owing to which things can be handled efficiently based on state changes. Also have used typescript based flavour to ensure proper type checking. Have additionally added libraries like react-navigation owing to which additional screens particularly like a Detail page can be added easily.
