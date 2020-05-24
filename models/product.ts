@@ -10,5 +10,6 @@ export default interface Product {
   active: boolean;
   date_created: string;
   date_modified: string;
+  description: string;
   default_sales_taxes: number[];
 };
