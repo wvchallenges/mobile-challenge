@@ -1,0 +1,4 @@
+#Fri May 22 03:02:06 EDT 2020
+base.0=/Users/rahul.mendonca/development/mob-challenge/mobile-challenge/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
