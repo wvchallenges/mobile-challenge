@@ -19,7 +19,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target :'Listings' do
     pod 'Swinject'
     pod 'RxSwift'
-    pod 'Apollo'
+    pod 'Moya/RxSwift'
 
     target :'ListingsTests' do
         inherit! :search_paths
