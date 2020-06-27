@@ -1,18 +1,5 @@
 {
     "id": 1,
-    "url": "https://api.waveapps.com/businesses/89746d57-c25f-4cec-9c63-34d7780b044b/products/6102823/",
     "name": "Bananas",
-    "price": 1.5,
-    "description": "A delicious fruit",
-    "is_sold": true,
-    "is_bought": false,
-    "income_account": {
-        "id": 152400226,
-        "url": "https://api.waveapps.com/businesses/89746d57-c25f-4cec-9c63-34d7780b044b/accounts/152400226/"
-    },
-    "expense_account": null,
-    "active": true,
-    "date_created": "2016-03-02T16:12:19+00:00",
-    "date_modified": "2016-03-02T16:12:19+00:00",
-    "default_sales_taxes": []
+    "price": 1.5
 }

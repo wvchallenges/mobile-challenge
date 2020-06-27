@@ -14,6 +14,7 @@
 		B0C1941124A6C85A008FF917 /* ProductList.json in Resources */ = {isa = PBXBuildFile; fileRef = B0C1940F24A6C85A008FF917 /* ProductList.json */; };
 		B0C1941224A6C85A008FF917 /* Product.json in Resources */ = {isa = PBXBuildFile; fileRef = B0C1941024A6C85A008FF917 /* Product.json */; };
 		B0C1941424A6CC3E008FF917 /* ProductList+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1941324A6CC3E008FF917 /* ProductList+Parsing.swift */; };
+		B0C1941624A6CDE1008FF917 /* ProductsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1941524A6CDE1008FF917 /* ProductsAPI.swift */; };
 		B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795624A6B7CD00673396 /* AppDelegate.swift */; };
 		B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795824A6B7CD00673396 /* SceneDelegate.swift */; };
 		B0E4795B24A6B7CD00673396 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795A24A6B7CD00673396 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		B0C1940F24A6C85A008FF917 /* ProductList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductList.json; sourceTree = "<group>"; };
 		B0C1941024A6C85A008FF917 /* Product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Product.json; sourceTree = "<group>"; };
 		B0C1941324A6CC3E008FF917 /* ProductList+Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductList+Parsing.swift"; sourceTree = "<group>"; };
+		B0C1941524A6CDE1008FF917 /* ProductsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAPI.swift; sourceTree = "<group>"; };
 		B0E4795324A6B7CD00673396 /* Listings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E4795624A6B7CD00673396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E4795824A6B7CD00673396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				B0E4796124A6B7D000673396 /* LaunchScreen.storyboard */,
 				B0E4796424A6B7D000673396 /* Info.plist */,
 				B0C1940924A6C221008FF917 /* Product.swift */,
+				B0C1941524A6CDE1008FF917 /* ProductsAPI.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				B0E4795024A6B7CD00673396 /* Frameworks */,
 				B0E4795124A6B7CD00673396 /* Resources */,
 				F740FBE98AEC987FE0BDD69C /* [CP] Embed Pods Frameworks */,
+				B0C1941724A6D720008FF917 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -206,6 +210,7 @@
 				B0E4796624A6B7D000673396 /* Frameworks */,
 				B0E4796724A6B7D000673396 /* Resources */,
 				A33ABEC2B6B56870AD0D5CB3 /* [CP] Embed Pods Frameworks */,
+				B0C1941824A6D745008FF917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -370,6 +375,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListingsTests/Pods-ListingsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0C1941724A6D720008FF917 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B0C1941824A6D745008FF917 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		F740FBE98AEC987FE0BDD69C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +436,7 @@
 			files = (
 				B0E4795B24A6B7CD00673396 /* ViewController.swift in Sources */,
 				B0C1940A24A6C221008FF917 /* Product.swift in Sources */,
+				B0C1941624A6CDE1008FF917 /* ProductsAPI.swift in Sources */,
 				B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */,
 				B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */,
 			);

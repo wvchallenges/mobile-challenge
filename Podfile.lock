@@ -8,6 +8,7 @@ PODS:
   - Nimble (8.1.1)
   - Quick (3.0.0)
   - RxSwift (5.1.1)
+  - SwiftyBeaver (1.9.1)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Nimble
   - Quick
   - RxSwift
+  - SwiftyBeaver
   - Swinject
 
 SPEC REPOS:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - Nimble
     - Quick
     - RxSwift
+    - SwiftyBeaver
     - Swinject
 
 SPEC CHECKSUMS:
@@ -32,8 +35,9 @@ SPEC CHECKSUMS:
   Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
   Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 3e19cc2d3d9c5864ba69cf9d5cd8b1b0221da802
+PODFILE CHECKSUM: 8d991eb08b7b431533fe4017092520c1b10aedab
 
 COCOAPODS: 1.9.3

@@ -26,11 +26,10 @@ public final class BundleFileLoader {
         }
         return data
     }
-    
+
     static func loadJsonFixture<F: RawRepresentable, T: Decodable>(_ fixture: F, andParseTo type: T.Type) throws -> T where F.RawValue == String {
         let data = load(fixture, "json")
         return try JSONDecoder().decode(type, from: data)
     }
-    
-}
 
+}

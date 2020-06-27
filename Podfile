@@ -20,6 +20,7 @@ target :'Listings' do
     pod 'Swinject'
     pod 'RxSwift'
     pod 'Moya/RxSwift'
+    pod 'SwiftyBeaver'
 
     target :'ListingsTests' do
         inherit! :search_paths
