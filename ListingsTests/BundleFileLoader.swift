@@ -13,7 +13,7 @@ enum ProductFixtures: String {
     case productList = "ProductList"
 }
 
-final class BundleFileLoader {
+class BundleFileLoader {
 
     static func load<T: RawRepresentable>(_ fileName: T, _ ext: String) -> Data where T.RawValue == String {
         guard let fileUrl = Bundle(for: self)

@@ -29,6 +29,10 @@
 		B0C1944124A83D29008FF917 /* ObservableType+Subscribing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944024A83D29008FF917 /* ObservableType+Subscribing.swift */; };
 		B0C1944324A84098008FF917 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944224A84098008FF917 /* ProductListViewModel.swift */; };
 		B0C1944524A848E4008FF917 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944424A848E4008FF917 /* APIKeys.swift */; };
+		B0C1944724A84EEB008FF917 /* ProductsDataServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944624A84EEB008FF917 /* ProductsDataServicing.swift */; };
+		B0C1944924A84FD1008FF917 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944824A84FD1008FF917 /* DataService.swift */; };
+		B0C1944B24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944A24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift */; };
+		B0C1944D24A85C52008FF917 /* ProductsAPI+Mocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944C24A85C52008FF917 /* ProductsAPI+Mocking.swift */; };
 		B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795624A6B7CD00673396 /* AppDelegate.swift */; };
 		B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795824A6B7CD00673396 /* SceneDelegate.swift */; };
 		B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795A24A6B7CD00673396 /* AppViewController.swift */; };
@@ -80,6 +84,10 @@
 		B0C1944024A83D29008FF917 /* ObservableType+Subscribing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Subscribing.swift"; sourceTree = "<group>"; };
 		B0C1944224A84098008FF917 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		B0C1944424A848E4008FF917 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		B0C1944624A84EEB008FF917 /* ProductsDataServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataServicing.swift; sourceTree = "<group>"; };
+		B0C1944824A84FD1008FF917 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B0C1944A24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataService+ProductsDataServicingSpec.swift"; sourceTree = "<group>"; };
+		B0C1944C24A85C52008FF917 /* ProductsAPI+Mocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsAPI+Mocking.swift"; sourceTree = "<group>"; };
 		B0E4795324A6B7CD00673396 /* Listings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E4795624A6B7CD00673396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E4795824A6B7CD00673396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 				B0C1943B24A82C9A008FF917 /* Products.storyboard */,
 				B0C1941A24A7A506008FF917 /* ProductsAPI.swift */,
 				B0C1943924A82C7E008FF917 /* ProductsCoordinator.swift */,
+				B0C1944624A84EEB008FF917 /* ProductsDataServicing.swift */,
 				B0C1943724A82C5E008FF917 /* ProductsUIFactory.swift */,
 			);
 			path = Products;
@@ -158,6 +167,7 @@
 				B0C1942124A7A513008FF917 /* Product+ParsingSpec.swift */,
 				B0C1941F24A7A513008FF917 /* ProductList.json */,
 				B0C1942024A7A513008FF917 /* ProductList+Parsing.swift */,
+				B0C1944C24A85C52008FF917 /* ProductsAPI+Mocking.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -204,11 +214,13 @@
 		B0E4795524A6B7CD00673396 /* Listings */ = {
 			isa = PBXGroup;
 			children = (
+				B0C1944424A848E4008FF917 /* APIKeys.swift */,
 				B0C1942D24A7AB25008FF917 /* AppCoordinator.swift */,
 				B0E4795624A6B7CD00673396 /* AppDelegate.swift */,
 				B0C1943124A8209D008FF917 /* AppUIFactory.swift */,
 				B0E4795A24A6B7CD00673396 /* AppViewController.swift */,
 				B0E4795F24A6B7D000673396 /* Assets.xcassets */,
+				B0C1944824A84FD1008FF917 /* DataService.swift */,
 				B0C1942724A7A6C9008FF917 /* DependencyRegistrar.swift */,
 				B0E4796424A6B7D000673396 /* Info.plist */,
 				B0E4796124A6B7D000673396 /* LaunchScreen.storyboard */,
@@ -218,7 +230,6 @@
 				B0E4795824A6B7CD00673396 /* SceneDelegate.swift */,
 				B0C1943524A82811008FF917 /* SwiftyBeaver+Configuring.swift */,
 				B0C1942A24A7A8D4008FF917 /* UIUilities */,
-				B0C1944424A848E4008FF917 /* APIKeys.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 			children = (
 				B0C1943D24A83A73008FF917 /* AppCoordinatorSpec.swift */,
 				B0C1940D24A6C462008FF917 /* BundleFileLoader.swift */,
+				B0C1944A24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift */,
 				B0E4796F24A6B7D000673396 /* Info.plist */,
 				B0C1941E24A7A513008FF917 /* Products */,
 			);
@@ -284,7 +296,6 @@
 				B0E4796624A6B7D000673396 /* Frameworks */,
 				B0E4796724A6B7D000673396 /* Resources */,
 				A33ABEC2B6B56870AD0D5CB3 /* [CP] Embed Pods Frameworks */,
-				B0C1941824A6D745008FF917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -468,23 +479,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		B0C1941824A6D745008FF917 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		F740FBE98AEC987FE0BDD69C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,12 +509,14 @@
 				B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */,
 				B0C1943424A82123008FF917 /* UIViewController+Inflating.swift in Sources */,
 				B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */,
+				B0C1944924A84FD1008FF917 /* DataService.swift in Sources */,
 				B0C1944124A83D29008FF917 /* ObservableType+Subscribing.swift in Sources */,
 				B0C1944524A848E4008FF917 /* APIKeys.swift in Sources */,
 				B0C1942824A7A6C9008FF917 /* DependencyRegistrar.swift in Sources */,
 				B0C1942E24A7AB25008FF917 /* AppCoordinator.swift in Sources */,
 				B0C1943A24A82C7E008FF917 /* ProductsCoordinator.swift in Sources */,
 				B0C1941D24A7A506008FF917 /* Product.swift in Sources */,
+				B0C1944724A84EEB008FF917 /* ProductsDataServicing.swift in Sources */,
 				B0C1941C24A7A506008FF917 /* ProductsAPI.swift in Sources */,
 				B0C1943224A8209D008FF917 /* AppUIFactory.swift in Sources */,
 				B0C1943624A82811008FF917 /* SwiftyBeaver+Configuring.swift in Sources */,
@@ -534,7 +530,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C1942424A7A513008FF917 /* ProductList+Parsing.swift in Sources */,
+				B0C1944D24A85C52008FF917 /* ProductsAPI+Mocking.swift in Sources */,
 				B0C1942524A7A513008FF917 /* Product+ParsingSpec.swift in Sources */,
+				B0C1944B24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift in Sources */,
 				B0C1940E24A6C462008FF917 /* BundleFileLoader.swift in Sources */,
 				B0C1943E24A83A73008FF917 /* AppCoordinatorSpec.swift in Sources */,
 			);

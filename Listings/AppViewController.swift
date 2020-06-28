@@ -11,10 +11,10 @@ import RxSwift
 
 final class AppViewController: UIViewController {
 
-    // MARK: - private fields
+    // MARK: - fields
 
-    let bag = DisposeBag()
-    var currentFlow: UIViewController?
+    private let bag = DisposeBag()
+    private var currentFlow: UIViewController?
 
     // MARK: - dependencies
 

@@ -11,9 +11,9 @@ import RxSwift
 
 final class ProductListViewController: UIViewController {
 
-    // MARK: - private fields
+    // MARK: - fields
 
-    let bag = DisposeBag()
+    private let bag = DisposeBag()
 
     // MARK: - dependencies
 

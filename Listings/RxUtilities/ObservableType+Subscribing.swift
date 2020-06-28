@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 
+// TODO: SW – missing unit tests
 extension ObservableType {
 
     var subscribeOnceNowValue: Element? {

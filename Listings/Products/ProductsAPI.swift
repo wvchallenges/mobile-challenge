@@ -10,7 +10,24 @@ import Foundation
 import Moya
 
 enum ProductsAPI {
-    case products(businessId: String)
+    /// `bid` stands for business-id
+    case products(bid: String)
+}
+
+extension ProductsAPI {
+    static func provide(with authToken: String) -> MoyaProvider<ProductsAPI> {
+        return MoyaProvider(endpointClosure: { target in
+            let headers = (target.headers ?? [:])
+                .merging(["Authorization": "Bearer \(authToken)"]) { $1 }
+            return Endpoint(
+                url: target.baseURL.absoluteString,
+                sampleResponseClosure: { .networkResponse(200, target.sampleData) },
+                method: target.method,
+                task: target.task,
+                httpHeaderFields: headers
+            )
+        })
+    }
 }
 
 extension ProductsAPI: TargetType {
@@ -36,13 +53,13 @@ extension ProductsAPI: TargetType {
         #if DEBUG
         var stringSample: String!
         switch self {
-        case .products:
+        case .products(let bid): // TODO: SW – improve testing data, pasing the `bid` along here is a bit too contextually far from the unit tests
             stringSample =
             """
             [
             {
             "id": 11,
-            "name": "Volumetric pipet #2",
+            "name": "\(bid)",
             "price": 1.1
             },
             {
