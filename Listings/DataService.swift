@@ -46,9 +46,13 @@ extension DataService: ProductsDataServicing {
             .filterSuccessfulStatusCodes()
             .map([Product].self)
 
-        request
-            .subscribe(onSuccess: { [unowned self] products in
+        log.info("fetching products")
+        request.subscribe(
+            onSuccess: { [unowned self] products in
                 self._products.on(.next(products))
+                log.info("succesfully fetched \(products.count) products")
+            }, onError: { error in
+                log.error("failed fetching product on \(error)")
             })
             .disposed(by: bag)
         return request

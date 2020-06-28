@@ -22,7 +22,7 @@ class BundleFileLoader {
                  withExtension: ext
             ),
             let data = try? Data(contentsOf: fileUrl) else {
-                fatalError("Failed to load data from '\(fileName.rawValue).\(ext)', do you have an incorrect file name or extension?")
+                fatalError("Failed to load data from `\(fileName.rawValue).\(ext)`, do you have an incorrect file name or extension?")
         }
         return data
     }

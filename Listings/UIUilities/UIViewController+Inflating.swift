@@ -24,7 +24,7 @@ extension UIViewController {
         let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: bundle)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: nameIdentifier) as? Self else {
             // swiftlint:disable:next line_length
-            fatalError("Failed to inflate `\(String(describing: self))` from '\(storyboardName.rawValue)' storyboard using identifier `\(nameIdentifier)` – do you have the correct names & storyboard + wiring & type?")
+            fatalError("Failed to inflate `\(String(describing: self))` from `\(storyboardName.rawValue)` storyboard using identifier `\(nameIdentifier)` – do you have the correct names & storyboard + wiring & type?")
         }
         return viewController
     }

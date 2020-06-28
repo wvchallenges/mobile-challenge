@@ -20,6 +20,7 @@ extension SceneDelegate: UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         SwiftyBeaver.setupLogging()
+        log.info("app launch")
         intantiateAppFlow(for: scene)
     }
 

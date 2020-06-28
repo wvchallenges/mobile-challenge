@@ -42,6 +42,7 @@ final class AppViewController: UIViewController {
     }
 
     func steerToMainFlow() {
+        log.info("steering app to product-list flow")
         let flow = productsUIFactory.makeProductsFlow()
         embed(flow, in: view, andRemove: currentFlow)
         currentFlow = flow

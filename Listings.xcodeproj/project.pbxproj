@@ -37,6 +37,8 @@
 		B0C1945124A86EBF008FF917 /* ProductListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945024A86EBF008FF917 /* ProductListViewModelSpec.swift */; };
 		B0C1945324A86F2C008FF917 /* MockProductDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945224A86F2C008FF917 /* MockProductDataService.swift */; };
 		B0C1945524A871FA008FF917 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945424A871FA008FF917 /* MockConstants.swift */; };
+		B0C1945724A8792A008FF917 /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945624A8792A008FF917 /* ProductItemCell.swift */; };
+		B0C1945924A87B43008FF917 /* UITableView+Inflating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945824A87B43008FF917 /* UITableView+Inflating.swift */; };
 		B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795624A6B7CD00673396 /* AppDelegate.swift */; };
 		B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795824A6B7CD00673396 /* SceneDelegate.swift */; };
 		B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795A24A6B7CD00673396 /* AppViewController.swift */; };
@@ -96,6 +98,8 @@
 		B0C1945024A86EBF008FF917 /* ProductListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelSpec.swift; sourceTree = "<group>"; };
 		B0C1945224A86F2C008FF917 /* MockProductDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductDataService.swift; sourceTree = "<group>"; };
 		B0C1945424A871FA008FF917 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
+		B0C1945624A8792A008FF917 /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
+		B0C1945824A87B43008FF917 /* UITableView+Inflating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Inflating.swift"; sourceTree = "<group>"; };
 		B0E4795324A6B7CD00673396 /* Listings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E4795624A6B7CD00673396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E4795824A6B7CD00673396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C1941B24A7A506008FF917 /* Product.swift */,
+				B0C1945624A8792A008FF917 /* ProductItemCell.swift */,
 				B0C1942F24A81E22008FF917 /* ProductListViewController.swift */,
 				B0C1944224A84098008FF917 /* ProductListViewModel.swift */,
 				B0C1943B24A82C9A008FF917 /* Products.storyboard */,
@@ -186,8 +191,9 @@
 		B0C1942A24A7A8D4008FF917 /* UIUilities */ = {
 			isa = PBXGroup;
 			children = (
-				B0C1942B24A7A8F3008FF917 /* UIViewController+Transitioning.swift */,
+				B0C1945824A87B43008FF917 /* UITableView+Inflating.swift */,
 				B0C1943324A82123008FF917 /* UIViewController+Inflating.swift */,
+				B0C1942B24A7A8F3008FF917 /* UIViewController+Transitioning.swift */,
 			);
 			path = UIUilities;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				B0C1943024A81E22008FF917 /* ProductListViewController.swift in Sources */,
 				B0C1943824A82C5E008FF917 /* ProductsUIFactory.swift in Sources */,
 				B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */,
+				B0C1945924A87B43008FF917 /* UITableView+Inflating.swift in Sources */,
 				B0C1943424A82123008FF917 /* UIViewController+Inflating.swift in Sources */,
 				B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */,
 				B0C1944924A84FD1008FF917 /* DataService.swift in Sources */,
@@ -531,6 +538,7 @@
 				B0C1944724A84EEB008FF917 /* ProductsDataServicing.swift in Sources */,
 				B0C1941C24A7A506008FF917 /* ProductsAPI.swift in Sources */,
 				B0C1943224A8209D008FF917 /* AppUIFactory.swift in Sources */,
+				B0C1945724A8792A008FF917 /* ProductItemCell.swift in Sources */,
 				B0C1943624A82811008FF917 /* SwiftyBeaver+Configuring.swift in Sources */,
 				B0C1944324A84098008FF917 /* ProductListViewModel.swift in Sources */,
 				B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */,
