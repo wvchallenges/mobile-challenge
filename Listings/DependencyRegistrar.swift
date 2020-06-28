@@ -12,7 +12,7 @@ import Swinject
 import Moya
 
 extension DependencyRegistrar {
-    internal var resolver: Resolver {
+    var resolver: Resolver {
         return container
     }
 }
@@ -24,6 +24,7 @@ final class DependencyRegistrar {
         registerDependencies()
     }
 
+    // swiftlint:disable force_unwrapping
     func registerDependencies() {
         // MARK: app level
         container.register(AppUIFactory.self) { AppUIFactory(with: $0) }
@@ -31,7 +32,14 @@ final class DependencyRegistrar {
 
         // MARK: products flow
         container.register(ProductsUIFactory.self) { ProductsUIFactory(with: $0) }
-        container.register(ProductListViewModel.self) { _ in ProductListViewModel() }
+        container.register(ProductsDataServicing.self) { resolver in
+            resolver.resolve(DataService.self)!
+        }
+        container.register(ProductListViewModel.self) { resolver in
+            ProductListViewModel(
+                with: resolver.resolve(ProductsDataServicing.self)!
+            )
+        }
         container.register(MoyaProvider<ProductsAPI>.self) { _ in
             ProductsAPI.provide(with: APIKeys.productsAuthToken)
         }
@@ -40,9 +48,9 @@ final class DependencyRegistrar {
         container.register(DataService.self) { resolver in
             DataService(
                 businessId: "89746d57-c25f-4cec-9c63-34d7780b044b",
-                // swiftlint:disable:next force_unwrapping
                 productsAPI: resolver.resolve(MoyaProvider<ProductsAPI>.self)!
             )
         }
     }
+    // swiftlint:enable force_unwrapping
 }
