@@ -5,7 +5,18 @@ excluded:
 disabled_rules:
   - trailing_newline
 
+opt_in_rules:
+  - force_unwrapping
+
 line_length: 150
 identifier_name:
   excluded:
     - id
+
+custom_rules:
+  restricted_access_to_injector:
+    name: "Injector Access Violation"
+    included: ".*.swift"
+    regex: "(import Swinject)"
+    message: "Are you sure you need direct access to injection?  This is usually needed at the app-delegate level and in factories or providers for property injection."
+    severity: error

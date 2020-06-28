@@ -15,6 +15,7 @@ enum ProductsAPI {
 
 extension ProductsAPI: TargetType {
     var baseURL: URL {
+        // swiftlint:disable:next force_unwrapping
         return URL(string: "https://api.waveapps.com")!
     }
 

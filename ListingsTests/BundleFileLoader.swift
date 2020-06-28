@@ -1,5 +1,5 @@
 //
-//  FixtureLoader.swift
+//  BundleFileLoader.swift
 //  ListingsTests
 //
 //  Created by Steven Wu on 2020-06-26.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-public enum ProductFixtures: String {
+enum ProductFixtures: String {
     case product = "Product"
     case productList = "ProductList"
 }
 
-public final class BundleFileLoader {
+final class BundleFileLoader {
 
     static func load<T: RawRepresentable>(_ fileName: T, _ ext: String) -> Data where T.RawValue == String {
         guard let fileUrl = Bundle(for: self)

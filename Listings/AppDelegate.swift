@@ -8,14 +8,14 @@
 
 import UIKit
 import SwiftyBeaver
-let log = SwiftyBeaver.self
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder { }
+
+extension AppDelegate: UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setupLogging()
         log.info("finished app launch setup")
         return true
     }
@@ -38,14 +38,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
-fileprivate extension AppDelegate {
-    func setupLogging() {
-        let console = ConsoleDestination()
-        console.format = "$Dyyyy-MM-dd HH:mm:ss.SSS$d $T [$L] $T $N.$F:$l $T $M $X"
-
-        log.addDestination(console)
-        log.addDestination(FileDestination())
-    }
-}
-

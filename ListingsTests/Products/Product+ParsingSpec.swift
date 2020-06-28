@@ -1,5 +1,5 @@
 //
-//  ProductSpec.swift
+//  Product+ParsingSpec.swift
 //  ListingsTests
 //
 //  Created by Steven Wu on 2020-06-26.

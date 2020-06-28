@@ -7,21 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--App View Controller-->
-        <scene sceneID="y9F-FV-N9G">
+        <!--Product List View Controller-->
+        <scene sceneID="Xst-0A-7g2">
             <objects>
-                <viewController storyboardIdentifier="AppViewController" id="Sta-zi-WHt" customClass="AppViewController" customModule="Listings" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HKb-MO-RGD">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiV-TB-x62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ProductListViewController" id="mr1-1z-6kL" customClass="ProductListViewController" customModule="Listings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fhg-Hg-FkN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="vf5-Za-0Jv"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OiS-nw-CJP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="u9P-yK-3fn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5g-36-9BV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="13"/>
+            <point key="canvasLocation" x="112" y="46"/>
         </scene>
     </scenes>
 </document>
