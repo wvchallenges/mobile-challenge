@@ -25,7 +25,10 @@ class ProductListViewModelSpec: QuickSpec {
             beforeEach {
                 testBag = DisposeBag()
                 mockProductDataService = MockProductDataService()
-                subject = ProductListViewModel(with: mockProductDataService)
+                subject = ProductListViewModel(
+                    with: mockProductDataService,
+                    localeProvider: Provider<Locale> { Locale.current }
+                )
 
                 subject.items
                     .subscribe(

@@ -37,7 +37,8 @@ final class DependencyRegistrar {
         }
         container.register(ProductListViewModel.self) { resolver in
             ProductListViewModel(
-                with: resolver.resolve(ProductsDataServicing.self)!
+                with: resolver.resolve(ProductsDataServicing.self)!,
+                localeProvider: resolver.resolve(Provider<Locale>.self)!
             )
         }
         container.register(MoyaProvider<ProductsAPI>.self) { _ in
@@ -50,6 +51,11 @@ final class DependencyRegistrar {
                 businessId: "89746d57-c25f-4cec-9c63-34d7780b044b",
                 productsAPI: resolver.resolve(MoyaProvider<ProductsAPI>.self)!
             )
+        }
+
+        // MARK: common
+        container.register(Provider<Locale>.self) { _ in
+            Provider<Locale> { Locale.current }
         }
     }
     // swiftlint:enable force_unwrapping

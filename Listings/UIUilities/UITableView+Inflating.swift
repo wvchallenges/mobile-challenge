@@ -20,6 +20,7 @@ extension UITableView {
                                      for indexPath: IndexPath) -> T {
         let cell = dequeueReusableCell(withIdentifier: ProductItemCell.nameIdentifier, for: indexPath)
         guard let typedCell = cell as? T else {
+            // swiftlint:disable:next line_length
             fatalError("failed to cast dequeued cell `\(cell)` to a `\(T.nameIdentifier)` – have you registered the cell? are you using the correct identifier?")
         }
         return typedCell

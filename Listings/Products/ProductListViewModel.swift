@@ -33,9 +33,12 @@ final class ProductListViewModel {
     // MARK: - dependencies
 
     private let productDataService: ProductsDataServicing
+    private let localeProvider: Provider<Locale>
 
-    init(with productDataService: ProductsDataServicing) {
+    init(with productDataService: ProductsDataServicing,
+         localeProvider: Provider<Locale>) {
         self.productDataService = productDataService
+        self.localeProvider = localeProvider
     }
 
     // MARK: - actions
@@ -43,7 +46,12 @@ final class ProductListViewModel {
     func refresh() -> Single<Void> {
         let task = productDataService.fetchProducts()
         task.subscribe(onSuccess: { [unowned self] products in
-                let items = products.map { ProductListItem(from: $0) }
+                let items = products.map { product in
+                    ProductListItem(
+                        from: product,
+                        in: self.localeProvider.provide()
+                    )
+                }
                 self.items.onNext(items)
             })
             .disposed(by: bag)
