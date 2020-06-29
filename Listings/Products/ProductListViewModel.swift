@@ -18,8 +18,8 @@ struct ProductListItem {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
         numberFormatter.locale = locale
-        // TODO: SW – localization for 'unknown'
-        price = numberFormatter.string(from: NSNumber(value: product.price)) ?? "unknown"
+        price = numberFormatter.string(from: NSNumber(value: product.price))
+            ?? Localized.string(ProductsCopy.productItemUnknownPrice)
     }
 }
 

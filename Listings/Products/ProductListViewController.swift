@@ -27,8 +27,7 @@ final class ProductListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: SW – localization
-        title = "Products"
+        title = Localized.string(ProductsCopy.productsListTitle)
         setupTableView()
         refreshControl.beginRefreshing()
         refreshList()
