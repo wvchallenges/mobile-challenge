@@ -1,0 +1,28 @@
+excluded:
+  - ListingsUITests
+  - Pods
+
+disabled_rules:
+  - trailing_newline
+
+opt_in_rules:
+  - force_unwrapping
+
+line_length: 150
+identifier_name:
+  excluded:
+    - id
+
+custom_rules:
+  injector_import:
+    name: "Injector Access Violation"
+    included: ".*.swift"
+    regex: "(import Swinject)"
+    message: "Are you sure you need direct access to injection?  This is usually needed at the app-delegate level and in factories or providers for property injection."
+    severity: error
+  viewmodel_uikit_import:
+    name: "ViewModel UIKit Access Violation"
+    included: ".*ViewModel.swift"
+    regex: "(import UIKit)"
+    message: "Are you adding styling or decorative logic that may better live in the view & view-controller?  ViewModel's are generally UIKit agnostic."
+    severity: error
