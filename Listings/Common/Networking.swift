@@ -15,6 +15,7 @@ final class NetworkerFactory {
         return MoyaProvider(
             endpointClosure: { target in
                 let standardHeaders = [
+                    // TODO: SW – global state access, think about if it would be better to pull this out via DI
                     HTTPHeader.authorization(bearerToken: bearerToken()),
                     HTTPHeader.defaultAcceptEncoding,
                     HTTPHeader.defaultAcceptLanguage,
