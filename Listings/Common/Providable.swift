@@ -1,5 +1,5 @@
 //
-//  Provider.swift
+//  Providable.swift
 //  Listings
 //
 //  Created by Steven Wu on 2020-06-29.
@@ -8,7 +8,12 @@
 
 import Foundation
 
-class Provider<T> {
+protocol Providable {
+    associatedtype T
+    func provide() -> T
+}
+
+class Provider<T>: Providable {
     private let instructions: () -> T
 
     init(instructions: @escaping () -> T) {

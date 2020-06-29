@@ -42,7 +42,7 @@ final class DependencyRegistrar {
             )
         }
         container.register(MoyaProvider<ProductsAPI>.self) { _ in
-            ProductsAPI.provide(with: APIKeys.productsAuthToken)
+            NetworkerFactory.make(for: ProductsAPI.self, with: APIKeys.productsAuthToken)
         }
 
         // MARK: data

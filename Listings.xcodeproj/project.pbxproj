@@ -39,7 +39,8 @@
 		B0C1945524A871FA008FF917 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945424A871FA008FF917 /* MockConstants.swift */; };
 		B0C1945724A8792A008FF917 /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945624A8792A008FF917 /* ProductItemCell.swift */; };
 		B0C1945924A87B43008FF917 /* UITableView+Inflating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945824A87B43008FF917 /* UITableView+Inflating.swift */; };
-		B0C1945E24AA4847008FF917 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945D24AA4847008FF917 /* Provider.swift */; };
+		B0C1945E24AA4847008FF917 /* Providable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945D24AA4847008FF917 /* Providable.swift */; };
+		B0C1946024AA5070008FF917 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1945F24AA5070008FF917 /* Networking.swift */; };
 		B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795624A6B7CD00673396 /* AppDelegate.swift */; };
 		B0E4795924A6B7CD00673396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795824A6B7CD00673396 /* SceneDelegate.swift */; };
 		B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4795A24A6B7CD00673396 /* AppViewController.swift */; };
@@ -101,7 +102,8 @@
 		B0C1945424A871FA008FF917 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
 		B0C1945624A8792A008FF917 /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
 		B0C1945824A87B43008FF917 /* UITableView+Inflating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Inflating.swift"; sourceTree = "<group>"; };
-		B0C1945D24AA4847008FF917 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		B0C1945D24AA4847008FF917 /* Providable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providable.swift; sourceTree = "<group>"; };
+		B0C1945F24AA5070008FF917 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B0E4795324A6B7CD00673396 /* Listings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E4795624A6B7CD00673396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E4795824A6B7CD00673396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,7 +213,8 @@
 		B0C1945A24AA47B6008FF917 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B0C1945D24AA4847008FF917 /* Provider.swift */,
+				B0C1945D24AA4847008FF917 /* Providable.swift */,
+				B0C1945F24AA5070008FF917 /* Networking.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -532,12 +535,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C1946024AA5070008FF917 /* Networking.swift in Sources */,
 				B0C1942C24A7A8F3008FF917 /* UIViewController+Transitioning.swift in Sources */,
 				B0C1943024A81E22008FF917 /* ProductListViewController.swift in Sources */,
 				B0C1943824A82C5E008FF917 /* ProductsUIFactory.swift in Sources */,
 				B0E4795B24A6B7CD00673396 /* AppViewController.swift in Sources */,
 				B0C1945924A87B43008FF917 /* UITableView+Inflating.swift in Sources */,
-				B0C1945E24AA4847008FF917 /* Provider.swift in Sources */,
+				B0C1945E24AA4847008FF917 /* Providable.swift in Sources */,
 				B0C1943424A82123008FF917 /* UIViewController+Inflating.swift in Sources */,
 				B0E4795724A6B7CD00673396 /* AppDelegate.swift in Sources */,
 				B0C1944924A84FD1008FF917 /* DataService.swift in Sources */,

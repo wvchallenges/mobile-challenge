@@ -14,24 +14,6 @@ enum ProductsAPI {
     case products(bid: String)
 }
 
-extension ProductsAPI {
-    static func provide(with authToken: String) -> MoyaProvider<ProductsAPI> {
-        return MoyaProvider(
-            endpointClosure: { target in
-                let headers = (target.headers ?? [:])
-                    .merging(["Authorization": "Bearer \(authToken)"]) { $1 }
-                return Endpoint(
-                    url: target.baseURL.absoluteString + target.path,
-                    sampleResponseClosure: { .networkResponse(200, target.sampleData) },
-                    method: target.method,
-                    task: target.task,
-                    httpHeaderFields: headers
-                )
-            }
-        )
-    }
-}
-
 extension ProductsAPI: TargetType {
     var baseURL: URL {
         // swiftlint:disable:next force_unwrapping
