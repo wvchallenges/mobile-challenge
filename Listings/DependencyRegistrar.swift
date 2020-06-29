@@ -7,7 +7,7 @@
 //
 
 import Foundation
-// swiftlint:disable:next restricted_access_to_injector
+// swiftlint:disable:next injector_import
 import Swinject
 import Moya
 
@@ -42,16 +42,17 @@ final class DependencyRegistrar {
             )
         }
         container.register(MoyaProvider<ProductsAPI>.self) { _ in
-            NetworkerFactory.make(for: ProductsAPI.self, with: APIKeys.productsAuthToken)
+            NetworkerFactory.make(for: ProductsAPI.self, with: AppSecrets.bearerToken)
         }
 
         // MARK: data
         container.register(DataService.self) { resolver in
             DataService(
-                businessId: "89746d57-c25f-4cec-9c63-34d7780b044b",
+                businessId: AppSecrets.businessId,
                 productsAPI: resolver.resolve(MoyaProvider<ProductsAPI>.self)!
             )
         }
+        .inObjectScope(.container)
 
         // MARK: common
         container.register(Provider<Locale>.self) { _ in

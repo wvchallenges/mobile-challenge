@@ -77,7 +77,6 @@ class DataServiceProductsDataServicingSpec: QuickSpec {
                     expect(outcome?.count).to(beNil())
                 }
                 it("should not error") {
-                    // TODO: SW – should probably be more precise with this test
                     expect(error).notTo(beNil())
                 }
             }
@@ -97,7 +96,6 @@ class DataServiceProductsDataServicingSpec: QuickSpec {
                     expect(outcome?.count).to(beNil())
                 }
                 it("should not error") {
-                    // TODO: SW – should probably be more precise with this test
                     expect(error).notTo(beNil())
                 }
             }

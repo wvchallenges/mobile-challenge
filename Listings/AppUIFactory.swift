@@ -7,7 +7,7 @@
 //
 
 import UIKit
-// swiftlint:disable:next restricted_access_to_injector
+// swiftlint:disable:next injector_import
 import Swinject
 
 enum AppStoryboards: String {

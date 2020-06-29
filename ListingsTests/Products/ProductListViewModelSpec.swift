@@ -93,7 +93,6 @@ class ProductListViewModelSpec: QuickSpec {
                         expect(success).to(beNil())
                     }
                     it("should notify subscriber of error") {
-                        // TODO: SW – more precising matching & timing
                         expect(refreshError).notTo(beNil())
                     }
                     it("should not update the items list") {
@@ -105,7 +104,7 @@ class ProductListViewModelSpec: QuickSpec {
                 }
             }
 
-            // TODO: SW – could add disposal tests here
+            // TODO: SW – add disposal & stream tear-down tests here
         }
     }
 }

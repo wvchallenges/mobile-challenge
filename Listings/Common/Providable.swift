@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Providable {
+    // swiftlint:disable:next type_name
     associatedtype T
     func provide() -> T
 }

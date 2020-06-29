@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol ProductsDataServicing {
-    // TODO: SW – replace with structure that offers better access control
+    // TODO: SW – replace with type that offers better access control
     var products: BehaviorSubject<[Product]> { get }
 
     func fetchProducts() -> Single<[Product]>

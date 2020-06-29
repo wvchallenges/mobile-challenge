@@ -28,7 +28,7 @@
 		B0C1943E24A83A73008FF917 /* AppCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1943D24A83A73008FF917 /* AppCoordinatorSpec.swift */; };
 		B0C1944124A83D29008FF917 /* ObservableType+Subscribing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944024A83D29008FF917 /* ObservableType+Subscribing.swift */; };
 		B0C1944324A84098008FF917 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944224A84098008FF917 /* ProductListViewModel.swift */; };
-		B0C1944524A848E4008FF917 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944424A848E4008FF917 /* APIKeys.swift */; };
+		B0C1944524A848E4008FF917 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944424A848E4008FF917 /* AppSecrets.swift */; };
 		B0C1944724A84EEB008FF917 /* ProductsDataServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944624A84EEB008FF917 /* ProductsDataServicing.swift */; };
 		B0C1944924A84FD1008FF917 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944824A84FD1008FF917 /* DataService.swift */; };
 		B0C1944B24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1944A24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift */; };
@@ -94,7 +94,7 @@
 		B0C1943D24A83A73008FF917 /* AppCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorSpec.swift; sourceTree = "<group>"; };
 		B0C1944024A83D29008FF917 /* ObservableType+Subscribing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Subscribing.swift"; sourceTree = "<group>"; };
 		B0C1944224A84098008FF917 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
-		B0C1944424A848E4008FF917 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		B0C1944424A848E4008FF917 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		B0C1944624A84EEB008FF917 /* ProductsDataServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataServicing.swift; sourceTree = "<group>"; };
 		B0C1944824A84FD1008FF917 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B0C1944A24A85262008FF917 /* DataService+ProductsDataServicingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataService+ProductsDataServicingSpec.swift"; sourceTree = "<group>"; };
@@ -225,6 +225,7 @@
 				B0C1946E24AA5BD0008FF917 /* Localized.swift */,
 				B0C1945F24AA5070008FF917 /* Networking.swift */,
 				B0C1945D24AA4847008FF917 /* Providable.swift */,
+				B0C1943524A82811008FF917 /* SwiftyBeaver+Configuring.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -254,7 +255,7 @@
 		B0E4795524A6B7CD00673396 /* Listings */ = {
 			isa = PBXGroup;
 			children = (
-				B0C1944424A848E4008FF917 /* APIKeys.swift */,
+				B0C1944424A848E4008FF917 /* AppSecrets.swift */,
 				B0C1942D24A7AB25008FF917 /* AppCoordinator.swift */,
 				B0E4795624A6B7CD00673396 /* AppDelegate.swift */,
 				B0C1943124A8209D008FF917 /* AppUIFactory.swift */,
@@ -269,7 +270,6 @@
 				B0C1941924A7A506008FF917 /* Products */,
 				B0C1943F24A83CE1008FF917 /* RxUtilities */,
 				B0E4795824A6B7CD00673396 /* SceneDelegate.swift */,
-				B0C1943524A82811008FF917 /* SwiftyBeaver+Configuring.swift */,
 				B0C1942A24A7A8D4008FF917 /* UIUilities */,
 			);
 			path = Listings;
@@ -560,7 +560,7 @@
 				B0C1947124AA5E23008FF917 /* ProductsCopy.swift in Sources */,
 				B0C1944924A84FD1008FF917 /* DataService.swift in Sources */,
 				B0C1944124A83D29008FF917 /* ObservableType+Subscribing.swift in Sources */,
-				B0C1944524A848E4008FF917 /* APIKeys.swift in Sources */,
+				B0C1944524A848E4008FF917 /* AppSecrets.swift in Sources */,
 				B0C1942824A7A6C9008FF917 /* DependencyRegistrar.swift in Sources */,
 				B0C1942E24A7AB25008FF917 /* AppCoordinator.swift in Sources */,
 				B0C1943A24A82C7E008FF917 /* ProductsCoordinator.swift in Sources */,

@@ -37,7 +37,8 @@ extension ProductsAPI: TargetType {
         #if DEBUG
         var stringSample: String!
         switch self {
-        case .products(let bid): // TODO: SW – improve testing data, pasing the `bid` along here is a bit too contextually far from the unit tests
+        // TODO: SW – improve testing data, pasing the `bid` along here is a bit too contextually far from the unit tests
+        case .products(let bid):
             stringSample =
             """
             [
