@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1198F6E323C6B5F9606919D8 /* Pods_WaveChallenge_ListViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05774627BFE0F1F64044B4B /* Pods_WaveChallenge_ListViewTests.framework */; };
+		5542DF3824AB891B004EAC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF3724AB891B004EAC51 /* AppDelegate.swift */; };
+		5542DF3A24AB891B004EAC51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF3924AB891B004EAC51 /* SceneDelegate.swift */; };
+		5542DF3C24AB891B004EAC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF3B24AB891B004EAC51 /* ViewController.swift */; };
+		5542DF3F24AB891B004EAC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5542DF3D24AB891B004EAC51 /* Main.storyboard */; };
+		5542DF4124AB891D004EAC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5542DF4024AB891D004EAC51 /* Assets.xcassets */; };
+		5542DF4424AB891D004EAC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5542DF4224AB891D004EAC51 /* LaunchScreen.storyboard */; };
+		5542DF4F24AB891D004EAC51 /* WaveChallenge_ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF4E24AB891D004EAC51 /* WaveChallenge_ListViewTests.swift */; };
+		5542DF5A24AB891D004EAC51 /* WaveChallenge_ListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF5924AB891D004EAC51 /* WaveChallenge_ListViewUITests.swift */; };
+		5542DF7424AB898F004EAC51 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF6824AB898F004EAC51 /* String+Extensions.swift */; };
+		5542DF7524AB898F004EAC51 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF6924AB898F004EAC51 /* Double+Extensions.swift */; };
+		5542DF7624AB898F004EAC51 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF6B24AB898F004EAC51 /* ProductService.swift */; };
+		5542DF7724AB898F004EAC51 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF6C24AB898F004EAC51 /* NetworkingConstants.swift */; };
+		5542DF7B24AB898F004EAC51 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF7124AB898F004EAC51 /* Product.swift */; };
+		C07F722B6DB3FA0CC7B8673F /* Pods_WaveChallenge_ListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D4EE719C268F959B06995C /* Pods_WaveChallenge_ListView.framework */; };
+		EABD98BB961DDE3C9A070DDE /* Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B8BA654F047CE608718F4D /* Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5542DF4B24AB891D004EAC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5542DF2C24AB891B004EAC51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5542DF3324AB891B004EAC51;
+			remoteInfo = "WaveChallenge-ListView";
+		};
+		5542DF5624AB891D004EAC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5542DF2C24AB891B004EAC51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5542DF3324AB891B004EAC51;
+			remoteInfo = "WaveChallenge-ListView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D4EE719C268F959B06995C /* Pods_WaveChallenge_ListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_ListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4946EC4F6BEEEFC8BA9E3A /* Pods-WaveChallenge-ListViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListViewTests.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListViewTests/Pods-WaveChallenge-ListViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		5542DF3424AB891B004EAC51 /* WaveChallenge-ListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaveChallenge-ListView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5542DF3724AB891B004EAC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5542DF3924AB891B004EAC51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5542DF3B24AB891B004EAC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5542DF3E24AB891B004EAC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5542DF4024AB891D004EAC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5542DF4324AB891D004EAC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5542DF4524AB891D004EAC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5542DF4A24AB891D004EAC51 /* WaveChallenge-ListViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaveChallenge-ListViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5542DF4E24AB891D004EAC51 /* WaveChallenge_ListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallenge_ListViewTests.swift; sourceTree = "<group>"; };
+		5542DF5024AB891D004EAC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5542DF5524AB891D004EAC51 /* WaveChallenge-ListViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaveChallenge-ListViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5542DF5924AB891D004EAC51 /* WaveChallenge_ListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallenge_ListViewUITests.swift; sourceTree = "<group>"; };
+		5542DF5B24AB891D004EAC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5542DF6824AB898F004EAC51 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		5542DF6924AB898F004EAC51 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		5542DF6B24AB898F004EAC51 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		5542DF6C24AB898F004EAC51 /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		5542DF7124AB898F004EAC51 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		68B8BA654F047CE608718F4D /* Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA017DD9100A8B9821B08BE /* Pods-WaveChallenge-ListViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListViewTests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListViewTests/Pods-WaveChallenge-ListViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1CD8CB1ADF3EB3A83DE0BAE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4F5F9148C2AF102613517A3 /* Pods-WaveChallenge-ListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListView.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListView/Pods-WaveChallenge-ListView.debug.xcconfig"; sourceTree = "<group>"; };
+		E1A1BDF90B9BE9E6EDF8C7DE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F05774627BFE0F1F64044B4B /* Pods_WaveChallenge_ListViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_ListViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F85571CEACCF218F98D1DE /* Pods-WaveChallenge-ListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-ListView.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-ListView/Pods-WaveChallenge-ListView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5542DF3124AB891B004EAC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07F722B6DB3FA0CC7B8673F /* Pods_WaveChallenge_ListView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF4724AB891D004EAC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1198F6E323C6B5F9606919D8 /* Pods_WaveChallenge_ListViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF5224AB891D004EAC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD98BB961DDE3C9A070DDE /* Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D010BC51FF3E444FB10A36B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5F9148C2AF102613517A3 /* Pods-WaveChallenge-ListView.debug.xcconfig */,
+				F1F85571CEACCF218F98D1DE /* Pods-WaveChallenge-ListView.release.xcconfig */,
+				E1A1BDF90B9BE9E6EDF8C7DE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.debug.xcconfig */,
+				B1CD8CB1ADF3EB3A83DE0BAE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.release.xcconfig */,
+				6FA017DD9100A8B9821B08BE /* Pods-WaveChallenge-ListViewTests.debug.xcconfig */,
+				1D4946EC4F6BEEEFC8BA9E3A /* Pods-WaveChallenge-ListViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4224685262A68F003CCE449C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D4EE719C268F959B06995C /* Pods_WaveChallenge_ListView.framework */,
+				68B8BA654F047CE608718F4D /* Pods_WaveChallenge_ListView_WaveChallenge_ListViewUITests.framework */,
+				F05774627BFE0F1F64044B4B /* Pods_WaveChallenge_ListViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5542DF2B24AB891B004EAC51 = {
+			isa = PBXGroup;
+			children = (
+				5542DF3624AB891B004EAC51 /* WaveChallenge-ListView */,
+				5542DF4D24AB891D004EAC51 /* WaveChallenge-ListViewTests */,
+				5542DF5824AB891D004EAC51 /* WaveChallenge-ListViewUITests */,
+				5542DF3524AB891B004EAC51 /* Products */,
+				2D010BC51FF3E444FB10A36B /* Pods */,
+				4224685262A68F003CCE449C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5542DF3524AB891B004EAC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF3424AB891B004EAC51 /* WaveChallenge-ListView.app */,
+				5542DF4A24AB891D004EAC51 /* WaveChallenge-ListViewTests.xctest */,
+				5542DF5524AB891D004EAC51 /* WaveChallenge-ListViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5542DF3624AB891B004EAC51 /* WaveChallenge-ListView */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF3724AB891B004EAC51 /* AppDelegate.swift */,
+				5542DF3924AB891B004EAC51 /* SceneDelegate.swift */,
+				5542DF3B24AB891B004EAC51 /* ViewController.swift */,
+				5542DF7024AB898F004EAC51 /* Model */,
+				5542DF6A24AB898F004EAC51 /* Service */,
+				5542DF6724AB898F004EAC51 /* Utils */,
+				5542DF3D24AB891B004EAC51 /* Main.storyboard */,
+				5542DF4024AB891D004EAC51 /* Assets.xcassets */,
+				5542DF4224AB891D004EAC51 /* LaunchScreen.storyboard */,
+				5542DF4524AB891D004EAC51 /* Info.plist */,
+			);
+			path = "WaveChallenge-ListView";
+			sourceTree = "<group>";
+		};
+		5542DF4D24AB891D004EAC51 /* WaveChallenge-ListViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF4E24AB891D004EAC51 /* WaveChallenge_ListViewTests.swift */,
+				5542DF5024AB891D004EAC51 /* Info.plist */,
+			);
+			path = "WaveChallenge-ListViewTests";
+			sourceTree = "<group>";
+		};
+		5542DF5824AB891D004EAC51 /* WaveChallenge-ListViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF5924AB891D004EAC51 /* WaveChallenge_ListViewUITests.swift */,
+				5542DF5B24AB891D004EAC51 /* Info.plist */,
+			);
+			path = "WaveChallenge-ListViewUITests";
+			sourceTree = "<group>";
+		};
+		5542DF6724AB898F004EAC51 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF6824AB898F004EAC51 /* String+Extensions.swift */,
+				5542DF6924AB898F004EAC51 /* Double+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5542DF6A24AB898F004EAC51 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF6B24AB898F004EAC51 /* ProductService.swift */,
+				5542DF6C24AB898F004EAC51 /* NetworkingConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5542DF7024AB898F004EAC51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5542DF7124AB898F004EAC51 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5542DF3324AB891B004EAC51 /* WaveChallenge-ListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5542DF5E24AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListView" */;
+			buildPhases = (
+				57BCD761014F3F668CEE91C7 /* [CP] Check Pods Manifest.lock */,
+				5542DF3024AB891B004EAC51 /* Sources */,
+				5542DF3124AB891B004EAC51 /* Frameworks */,
+				5542DF3224AB891B004EAC51 /* Resources */,
+				07197E86FB1C6530CA6D19EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaveChallenge-ListView";
+			productName = "WaveChallenge-ListView";
+			productReference = 5542DF3424AB891B004EAC51 /* WaveChallenge-ListView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5542DF4924AB891D004EAC51 /* WaveChallenge-ListViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5542DF6124AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListViewTests" */;
+			buildPhases = (
+				E0B780EB4E400D7D67994A66 /* [CP] Check Pods Manifest.lock */,
+				5542DF4624AB891D004EAC51 /* Sources */,
+				5542DF4724AB891D004EAC51 /* Frameworks */,
+				5542DF4824AB891D004EAC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5542DF4C24AB891D004EAC51 /* PBXTargetDependency */,
+			);
+			name = "WaveChallenge-ListViewTests";
+			productName = "WaveChallenge-ListViewTests";
+			productReference = 5542DF4A24AB891D004EAC51 /* WaveChallenge-ListViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5542DF5424AB891D004EAC51 /* WaveChallenge-ListViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5542DF6424AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListViewUITests" */;
+			buildPhases = (
+				73819ABCB96DF525F8BE8412 /* [CP] Check Pods Manifest.lock */,
+				5542DF5124AB891D004EAC51 /* Sources */,
+				5542DF5224AB891D004EAC51 /* Frameworks */,
+				5542DF5324AB891D004EAC51 /* Resources */,
+				D0ED9ECAC06D5B1B0D69C1F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5542DF5724AB891D004EAC51 /* PBXTargetDependency */,
+			);
+			name = "WaveChallenge-ListViewUITests";
+			productName = "WaveChallenge-ListViewUITests";
+			productReference = 5542DF5524AB891D004EAC51 /* WaveChallenge-ListViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5542DF2C24AB891B004EAC51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					5542DF3324AB891B004EAC51 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5542DF4924AB891D004EAC51 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5542DF3324AB891B004EAC51;
+					};
+					5542DF5424AB891D004EAC51 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5542DF3324AB891B004EAC51;
+					};
+				};
+			};
+			buildConfigurationList = 5542DF2F24AB891B004EAC51 /* Build configuration list for PBXProject "WaveChallenge-ListView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5542DF2B24AB891B004EAC51;
+			productRefGroup = 5542DF3524AB891B004EAC51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5542DF3324AB891B004EAC51 /* WaveChallenge-ListView */,
+				5542DF4924AB891D004EAC51 /* WaveChallenge-ListViewTests */,
+				5542DF5424AB891D004EAC51 /* WaveChallenge-ListViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5542DF3224AB891B004EAC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5542DF4424AB891D004EAC51 /* LaunchScreen.storyboard in Resources */,
+				5542DF4124AB891D004EAC51 /* Assets.xcassets in Resources */,
+				5542DF3F24AB891B004EAC51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF4824AB891D004EAC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF5324AB891D004EAC51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07197E86FB1C6530CA6D19EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView/Pods-WaveChallenge-ListView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView/Pods-WaveChallenge-ListView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView/Pods-WaveChallenge-ListView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57BCD761014F3F668CEE91C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-ListView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73819ABCB96DF525F8BE8412 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0ED9ECAC06D5B1B0D69C1F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests/Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B780EB4E400D7D67994A66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-ListViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5542DF3024AB891B004EAC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5542DF7424AB898F004EAC51 /* String+Extensions.swift in Sources */,
+				5542DF3C24AB891B004EAC51 /* ViewController.swift in Sources */,
+				5542DF3824AB891B004EAC51 /* AppDelegate.swift in Sources */,
+				5542DF7724AB898F004EAC51 /* NetworkingConstants.swift in Sources */,
+				5542DF7B24AB898F004EAC51 /* Product.swift in Sources */,
+				5542DF3A24AB891B004EAC51 /* SceneDelegate.swift in Sources */,
+				5542DF7524AB898F004EAC51 /* Double+Extensions.swift in Sources */,
+				5542DF7624AB898F004EAC51 /* ProductService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF4624AB891D004EAC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5542DF4F24AB891D004EAC51 /* WaveChallenge_ListViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5542DF5124AB891D004EAC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5542DF5A24AB891D004EAC51 /* WaveChallenge_ListViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5542DF4C24AB891D004EAC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5542DF3324AB891B004EAC51 /* WaveChallenge-ListView */;
+			targetProxy = 5542DF4B24AB891D004EAC51 /* PBXContainerItemProxy */;
+		};
+		5542DF5724AB891D004EAC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5542DF3324AB891B004EAC51 /* WaveChallenge-ListView */;
+			targetProxy = 5542DF5624AB891D004EAC51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5542DF3D24AB891B004EAC51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5542DF3E24AB891B004EAC51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5542DF4224AB891D004EAC51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5542DF4324AB891D004EAC51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5542DF5C24AB891D004EAC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5542DF5D24AB891D004EAC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5542DF5F24AB891D004EAC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F5F9148C2AF102613517A3 /* Pods-WaveChallenge-ListView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5542DF6024AB891D004EAC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F85571CEACCF218F98D1DE /* Pods-WaveChallenge-ListView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5542DF6224AB891D004EAC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA017DD9100A8B9821B08BE /* Pods-WaveChallenge-ListViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge-ListView.app/WaveChallenge-ListView";
+			};
+			name = Debug;
+		};
+		5542DF6324AB891D004EAC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4946EC4F6BEEEFC8BA9E3A /* Pods-WaveChallenge-ListViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge-ListView.app/WaveChallenge-ListView";
+			};
+			name = Release;
+		};
+		5542DF6524AB891D004EAC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A1BDF90B9BE9E6EDF8C7DE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WaveChallenge-ListView";
+			};
+			name = Debug;
+		};
+		5542DF6624AB891D004EAC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CD8CB1ADF3EB3A83DE0BAE /* Pods-WaveChallenge-ListView-WaveChallenge-ListViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-ListViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-ListViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WaveChallenge-ListView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5542DF2F24AB891B004EAC51 /* Build configuration list for PBXProject "WaveChallenge-ListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5542DF5C24AB891D004EAC51 /* Debug */,
+				5542DF5D24AB891D004EAC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5542DF5E24AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5542DF5F24AB891D004EAC51 /* Debug */,
+				5542DF6024AB891D004EAC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5542DF6124AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5542DF6224AB891D004EAC51 /* Debug */,
+				5542DF6324AB891D004EAC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5542DF6424AB891D004EAC51 /* Build configuration list for PBXNativeTarget "WaveChallenge-ListViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5542DF6524AB891D004EAC51 /* Debug */,
+				5542DF6624AB891D004EAC51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5542DF2C24AB891B004EAC51 /* Project object */;
+}
