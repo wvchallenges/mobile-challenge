@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ListCell: View {
-    private var title: String
-    private var subtitle: String
+    var title: String
+    var subtitle: String
     
     var body: some View {
         VStack(alignment: .leading){

@@ -19,6 +19,9 @@
 		5542DF2224AA5E6A004EAC51 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF2124AA5E6A004EAC51 /* NetworkingConstants.swift */; };
 		5542DF2424AA7142004EAC51 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF2324AA7142004EAC51 /* String+Extensions.swift */; };
 		5542DF2624AA82B6004EAC51 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542DF2524AA82B6004EAC51 /* Double+Extensions.swift */; };
+		5576588424B4E6990060D0BE /* testProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576588324B4E6990060D0BE /* testProduct.swift */; };
+		5576588624B4E7660060D0BE /* testStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576588524B4E7660060D0BE /* testStringExtension.swift */; };
+		5576588824B4E81B0060D0BE /* testDoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576588724B4E81B0060D0BE /* testDoubleExtensions.swift */; };
 		6AC6999F2FECF7BFA2059A4C /* Pods_WaveChallenge_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA270B1F9D9996FD3313C5B /* Pods_WaveChallenge_SwiftUITests.framework */; };
 		AD7365DEE45E1ADD3A1C4446 /* Pods_WaveChallenge_SwiftUI_WaveChallenge_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FC26E1F4A4F2F0A66D33B5 /* Pods_WaveChallenge_SwiftUI_WaveChallenge_SwiftUIUITests.framework */; };
 		C80428D0B9E49C638A15A34E /* Pods_WaveChallenge_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019071433C8D68F52AB89D77 /* Pods_WaveChallenge_SwiftUI.framework */; };
@@ -64,6 +67,9 @@
 		5542DF2124AA5E6A004EAC51 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		5542DF2324AA7142004EAC51 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		5542DF2524AA82B6004EAC51 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		5576588324B4E6990060D0BE /* testProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProduct.swift; sourceTree = "<group>"; };
+		5576588524B4E7660060D0BE /* testStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testStringExtension.swift; sourceTree = "<group>"; };
+		5576588724B4E81B0060D0BE /* testDoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDoubleExtensions.swift; sourceTree = "<group>"; };
 		6B0A689E9E86D05B9629B94A /* Pods-WaveChallenge-SwiftUI-WaveChallenge-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-SwiftUI-WaveChallenge-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-SwiftUI-WaveChallenge-SwiftUIUITests/Pods-WaveChallenge-SwiftUI-WaveChallenge-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		964CC12AD3F06BC9F07BB505 /* Pods-WaveChallenge-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-SwiftUI/Pods-WaveChallenge-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		A816A9163D507CF78869E853 /* Pods-WaveChallenge-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-SwiftUITests/Pods-WaveChallenge-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				5542DF0224AA4CE5004EAC51 /* WaveChallenge_SwiftUITests.swift */,
+				5576588324B4E6990060D0BE /* testProduct.swift */,
+				5576588524B4E7660060D0BE /* testStringExtension.swift */,
+				5576588724B4E81B0060D0BE /* testDoubleExtensions.swift */,
 				5542DF0424AA4CE5004EAC51 /* Info.plist */,
 			);
 			path = "WaveChallenge-SwiftUITests";
@@ -472,7 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5576588824B4E81B0060D0BE /* testDoubleExtensions.swift in Sources */,
+				5576588624B4E7660060D0BE /* testStringExtension.swift in Sources */,
 				5542DF0324AA4CE5004EAC51 /* WaveChallenge_SwiftUITests.swift in Sources */,
+				5576588424B4E6990060D0BE /* testProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
