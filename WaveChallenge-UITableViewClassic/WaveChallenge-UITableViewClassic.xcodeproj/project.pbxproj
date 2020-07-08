@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55988AF424B605CE00569BBA /* ProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55988AF324B605CE00569BBA /* ProductTest.swift */; };
+		55988AF624B606B800569BBA /* StringExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55988AF524B606B800569BBA /* StringExtensionsTest.swift */; };
+		55988AF824B606E200569BBA /* DoubleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55988AF724B606E200569BBA /* DoubleExtensionTest.swift */; };
+		559B783C24ABA13C00D935B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B783B24ABA13C00D935B4 /* AppDelegate.swift */; };
+		559B783E24ABA13C00D935B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B783D24ABA13C00D935B4 /* SceneDelegate.swift */; };
+		559B784024ABA13C00D935B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B783F24ABA13C00D935B4 /* ViewController.swift */; };
+		559B784324ABA13C00D935B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559B784124ABA13C00D935B4 /* Main.storyboard */; };
+		559B784524ABA13E00D935B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559B784424ABA13E00D935B4 /* Assets.xcassets */; };
+		559B784824ABA13E00D935B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559B784624ABA13E00D935B4 /* LaunchScreen.storyboard */; };
+		559B785324ABA13E00D935B4 /* WaveChallenge_UITableViewClassicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B785224ABA13E00D935B4 /* WaveChallenge_UITableViewClassicTests.swift */; };
+		559B785E24ABA13E00D935B4 /* WaveChallenge_UITableViewClassicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B785D24ABA13E00D935B4 /* WaveChallenge_UITableViewClassicUITests.swift */; };
+		559B787924ABA47200D935B4 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B786C24ABA47100D935B4 /* ProductService.swift */; };
+		559B787A24ABA47200D935B4 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B786D24ABA47100D935B4 /* NetworkingConstants.swift */; };
+		559B787C24ABA47200D935B4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B787024ABA47200D935B4 /* Product.swift */; };
+		559B787E24ABA47200D935B4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B787324ABA47200D935B4 /* String+Extensions.swift */; };
+		559B787F24ABA47200D935B4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B787424ABA47200D935B4 /* Double+Extensions.swift */; };
+		55E5922524ABA663003FECAD /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5922424ABA663003FECAD /* TitleSubtitleCell.swift */; };
+		6A630F0C60EAF58D3D91401E /* Pods_WaveChallenge_UITableViewClassic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320FAF3507DA915E22DA39B /* Pods_WaveChallenge_UITableViewClassic.framework */; };
+		72FC464BA5D3E5B81EC0C7E8 /* Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA085B2B509450F054023C5 /* Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework */; };
+		94FA320A4796C42BC47678D4 /* Pods_WaveChallenge_UITableViewClassicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6C62011CC1DD025570CA91 /* Pods_WaveChallenge_UITableViewClassicTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		559B784F24ABA13E00D935B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559B783024ABA13C00D935B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559B783724ABA13C00D935B4;
+			remoteInfo = "WaveChallenge-UITableViewClassic";
+		};
+		559B785A24ABA13E00D935B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559B783024ABA13C00D935B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559B783724ABA13C00D935B4;
+			remoteInfo = "WaveChallenge-UITableViewClassic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D08E6C4CE0F586F0851205 /* Pods-WaveChallenge-UITableViewClassicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassicTests.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassicTests/Pods-WaveChallenge-UITableViewClassicTests.release.xcconfig"; sourceTree = "<group>"; };
+		1320FAF3507DA915E22DA39B /* Pods_WaveChallenge_UITableViewClassic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_UITableViewClassic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF2830DE763D5C1DB5A8E5D /* Pods-WaveChallenge-UITableViewClassic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassic.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassic/Pods-WaveChallenge-UITableViewClassic.debug.xcconfig"; sourceTree = "<group>"; };
+		45925AEA84527CA744CE9B67 /* Pods-WaveChallenge-UITableViewClassic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassic.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassic/Pods-WaveChallenge-UITableViewClassic.release.xcconfig"; sourceTree = "<group>"; };
+		4AFE81E193427E7FCB46DA35 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.release.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55988AF324B605CE00569BBA /* ProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTest.swift; sourceTree = "<group>"; };
+		55988AF524B606B800569BBA /* StringExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTest.swift; sourceTree = "<group>"; };
+		55988AF724B606E200569BBA /* DoubleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionTest.swift; sourceTree = "<group>"; };
+		559B783824ABA13C00D935B4 /* WaveChallenge-UITableViewClassic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaveChallenge-UITableViewClassic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B783B24ABA13C00D935B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		559B783D24ABA13C00D935B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		559B783F24ABA13C00D935B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		559B784224ABA13C00D935B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559B784424ABA13E00D935B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559B784724ABA13E00D935B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559B784924ABA13E00D935B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559B784E24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaveChallenge-UITableViewClassicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B785224ABA13E00D935B4 /* WaveChallenge_UITableViewClassicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallenge_UITableViewClassicTests.swift; sourceTree = "<group>"; };
+		559B785424ABA13E00D935B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559B785924ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaveChallenge-UITableViewClassicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B785D24ABA13E00D935B4 /* WaveChallenge_UITableViewClassicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChallenge_UITableViewClassicUITests.swift; sourceTree = "<group>"; };
+		559B785F24ABA13E00D935B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559B786C24ABA47100D935B4 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		559B786D24ABA47100D935B4 /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		559B787024ABA47200D935B4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		559B787324ABA47200D935B4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		559B787424ABA47200D935B4 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		55E5922424ABA663003FECAD /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		8EA085B2B509450F054023C5 /* Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6C62011CC1DD025570CA91 /* Pods_WaveChallenge_UITableViewClassicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveChallenge_UITableViewClassicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF29DEA753FB9E860115DAD3 /* Pods-WaveChallenge-UITableViewClassicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassicTests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassicTests/Pods-WaveChallenge-UITableViewClassicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7DD9618BD13F9965731536 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.debug.xcconfig"; path = "Target Support Files/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559B783524ABA13C00D935B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A630F0C60EAF58D3D91401E /* Pods_WaveChallenge_UITableViewClassic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B784B24ABA13E00D935B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA320A4796C42BC47678D4 /* Pods_WaveChallenge_UITableViewClassicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B785624ABA13E00D935B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FC464BA5D3E5B81EC0C7E8 /* Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559B782F24ABA13C00D935B4 = {
+			isa = PBXGroup;
+			children = (
+				559B783A24ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */,
+				559B785124ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests */,
+				559B785C24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests */,
+				559B783924ABA13C00D935B4 /* Products */,
+				83834BCC44AC66F6A3F909FF /* Pods */,
+				B1BC7772A2DD539A24F31824 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		559B783924ABA13C00D935B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559B783824ABA13C00D935B4 /* WaveChallenge-UITableViewClassic.app */,
+				559B784E24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests.xctest */,
+				559B785924ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559B783A24ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */ = {
+			isa = PBXGroup;
+			children = (
+				559B783B24ABA13C00D935B4 /* AppDelegate.swift */,
+				559B783D24ABA13C00D935B4 /* SceneDelegate.swift */,
+				559B783F24ABA13C00D935B4 /* ViewController.swift */,
+				55E5922424ABA663003FECAD /* TitleSubtitleCell.swift */,
+				559B784124ABA13C00D935B4 /* Main.storyboard */,
+				559B784424ABA13E00D935B4 /* Assets.xcassets */,
+				559B786E24ABA47200D935B4 /* Model */,
+				559B786B24ABA47100D935B4 /* Service */,
+				559B787224ABA47200D935B4 /* Utils */,
+				559B784624ABA13E00D935B4 /* LaunchScreen.storyboard */,
+				559B784924ABA13E00D935B4 /* Info.plist */,
+			);
+			path = "WaveChallenge-UITableViewClassic";
+			sourceTree = "<group>";
+		};
+		559B785124ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests */ = {
+			isa = PBXGroup;
+			children = (
+				559B785224ABA13E00D935B4 /* WaveChallenge_UITableViewClassicTests.swift */,
+				55988AF324B605CE00569BBA /* ProductTest.swift */,
+				55988AF524B606B800569BBA /* StringExtensionsTest.swift */,
+				55988AF724B606E200569BBA /* DoubleExtensionTest.swift */,
+				559B785424ABA13E00D935B4 /* Info.plist */,
+			);
+			path = "WaveChallenge-UITableViewClassicTests";
+			sourceTree = "<group>";
+		};
+		559B785C24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				559B785D24ABA13E00D935B4 /* WaveChallenge_UITableViewClassicUITests.swift */,
+				559B785F24ABA13E00D935B4 /* Info.plist */,
+			);
+			path = "WaveChallenge-UITableViewClassicUITests";
+			sourceTree = "<group>";
+		};
+		559B786B24ABA47100D935B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				559B786C24ABA47100D935B4 /* ProductService.swift */,
+				559B786D24ABA47100D935B4 /* NetworkingConstants.swift */,
+			);
+			name = Service;
+			path = "../../WaveChallenge-ListView/WaveChallenge-ListView/Service";
+			sourceTree = "<group>";
+		};
+		559B786E24ABA47200D935B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				559B787024ABA47200D935B4 /* Product.swift */,
+			);
+			name = Model;
+			path = "../../WaveChallenge-ListView/WaveChallenge-ListView/Model";
+			sourceTree = "<group>";
+		};
+		559B787224ABA47200D935B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				559B787324ABA47200D935B4 /* String+Extensions.swift */,
+				559B787424ABA47200D935B4 /* Double+Extensions.swift */,
+			);
+			name = Utils;
+			path = "../../WaveChallenge-ListView/WaveChallenge-ListView/Utils";
+			sourceTree = "<group>";
+		};
+		83834BCC44AC66F6A3F909FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF2830DE763D5C1DB5A8E5D /* Pods-WaveChallenge-UITableViewClassic.debug.xcconfig */,
+				45925AEA84527CA744CE9B67 /* Pods-WaveChallenge-UITableViewClassic.release.xcconfig */,
+				ED7DD9618BD13F9965731536 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.debug.xcconfig */,
+				4AFE81E193427E7FCB46DA35 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.release.xcconfig */,
+				AF29DEA753FB9E860115DAD3 /* Pods-WaveChallenge-UITableViewClassicTests.debug.xcconfig */,
+				03D08E6C4CE0F586F0851205 /* Pods-WaveChallenge-UITableViewClassicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1BC7772A2DD539A24F31824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1320FAF3507DA915E22DA39B /* Pods_WaveChallenge_UITableViewClassic.framework */,
+				8EA085B2B509450F054023C5 /* Pods_WaveChallenge_UITableViewClassic_WaveChallenge_UITableViewClassicUITests.framework */,
+				9B6C62011CC1DD025570CA91 /* Pods_WaveChallenge_UITableViewClassicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559B783724ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B786224ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassic" */;
+			buildPhases = (
+				29C398A1C8714D42B24C767E /* [CP] Check Pods Manifest.lock */,
+				559B783424ABA13C00D935B4 /* Sources */,
+				559B783524ABA13C00D935B4 /* Frameworks */,
+				559B783624ABA13C00D935B4 /* Resources */,
+				145C06B0814635A1A5D1F6BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaveChallenge-UITableViewClassic";
+			productName = "WaveChallenge-UITableViewClassic";
+			productReference = 559B783824ABA13C00D935B4 /* WaveChallenge-UITableViewClassic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559B784D24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B786524ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassicTests" */;
+			buildPhases = (
+				684F5AF7AA2306100FCBD1BC /* [CP] Check Pods Manifest.lock */,
+				559B784A24ABA13E00D935B4 /* Sources */,
+				559B784B24ABA13E00D935B4 /* Frameworks */,
+				559B784C24ABA13E00D935B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559B785024ABA13E00D935B4 /* PBXTargetDependency */,
+			);
+			name = "WaveChallenge-UITableViewClassicTests";
+			productName = "WaveChallenge-UITableViewClassicTests";
+			productReference = 559B784E24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		559B785824ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B786824ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassicUITests" */;
+			buildPhases = (
+				17EDD7090626FD17A82EA552 /* [CP] Check Pods Manifest.lock */,
+				559B785524ABA13E00D935B4 /* Sources */,
+				559B785624ABA13E00D935B4 /* Frameworks */,
+				559B785724ABA13E00D935B4 /* Resources */,
+				E6043954E79B9E2B7B9B5943 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559B785B24ABA13E00D935B4 /* PBXTargetDependency */,
+			);
+			name = "WaveChallenge-UITableViewClassicUITests";
+			productName = "WaveChallenge-UITableViewClassicUITests";
+			productReference = 559B785924ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559B783024ABA13C00D935B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "John De Guzman";
+				TargetAttributes = {
+					559B783724ABA13C00D935B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					559B784D24ABA13E00D935B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 559B783724ABA13C00D935B4;
+					};
+					559B785824ABA13E00D935B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 559B783724ABA13C00D935B4;
+					};
+				};
+			};
+			buildConfigurationList = 559B783324ABA13C00D935B4 /* Build configuration list for PBXProject "WaveChallenge-UITableViewClassic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559B782F24ABA13C00D935B4;
+			productRefGroup = 559B783924ABA13C00D935B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				559B783724ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */,
+				559B784D24ABA13E00D935B4 /* WaveChallenge-UITableViewClassicTests */,
+				559B785824ABA13E00D935B4 /* WaveChallenge-UITableViewClassicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559B783624ABA13C00D935B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B784824ABA13E00D935B4 /* LaunchScreen.storyboard in Resources */,
+				559B784524ABA13E00D935B4 /* Assets.xcassets in Resources */,
+				559B784324ABA13C00D935B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B784C24ABA13E00D935B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B785724ABA13E00D935B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		145C06B0814635A1A5D1F6BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic/Pods-WaveChallenge-UITableViewClassic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic/Pods-WaveChallenge-UITableViewClassic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic/Pods-WaveChallenge-UITableViewClassic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17EDD7090626FD17A82EA552 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29C398A1C8714D42B24C767E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-UITableViewClassic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		684F5AF7AA2306100FCBD1BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveChallenge-UITableViewClassicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6043954E79B9E2B7B9B5943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests/Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559B783424ABA13C00D935B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5922524ABA663003FECAD /* TitleSubtitleCell.swift in Sources */,
+				559B784024ABA13C00D935B4 /* ViewController.swift in Sources */,
+				559B787A24ABA47200D935B4 /* NetworkingConstants.swift in Sources */,
+				559B787924ABA47200D935B4 /* ProductService.swift in Sources */,
+				559B787F24ABA47200D935B4 /* Double+Extensions.swift in Sources */,
+				559B787E24ABA47200D935B4 /* String+Extensions.swift in Sources */,
+				559B783C24ABA13C00D935B4 /* AppDelegate.swift in Sources */,
+				559B783E24ABA13C00D935B4 /* SceneDelegate.swift in Sources */,
+				559B787C24ABA47200D935B4 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B784A24ABA13E00D935B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55988AF824B606E200569BBA /* DoubleExtensionTest.swift in Sources */,
+				55988AF624B606B800569BBA /* StringExtensionsTest.swift in Sources */,
+				559B785324ABA13E00D935B4 /* WaveChallenge_UITableViewClassicTests.swift in Sources */,
+				55988AF424B605CE00569BBA /* ProductTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B785524ABA13E00D935B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B785E24ABA13E00D935B4 /* WaveChallenge_UITableViewClassicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559B785024ABA13E00D935B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559B783724ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */;
+			targetProxy = 559B784F24ABA13E00D935B4 /* PBXContainerItemProxy */;
+		};
+		559B785B24ABA13E00D935B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559B783724ABA13C00D935B4 /* WaveChallenge-UITableViewClassic */;
+			targetProxy = 559B785A24ABA13E00D935B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		559B784124ABA13C00D935B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559B784224ABA13C00D935B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		559B784624ABA13E00D935B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559B784724ABA13E00D935B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		559B786024ABA13E00D935B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		559B786124ABA13E00D935B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559B786324ABA13E00D935B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF2830DE763D5C1DB5A8E5D /* Pods-WaveChallenge-UITableViewClassic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		559B786424ABA13E00D935B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45925AEA84527CA744CE9B67 /* Pods-WaveChallenge-UITableViewClassic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		559B786624ABA13E00D935B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF29DEA753FB9E860115DAD3 /* Pods-WaveChallenge-UITableViewClassicTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge-UITableViewClassic.app/WaveChallenge-UITableViewClassic";
+			};
+			name = Debug;
+		};
+		559B786724ABA13E00D935B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D08E6C4CE0F586F0851205 /* Pods-WaveChallenge-UITableViewClassicTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaveChallenge-UITableViewClassic.app/WaveChallenge-UITableViewClassic";
+			};
+			name = Release;
+		};
+		559B786924ABA13E00D935B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7DD9618BD13F9965731536 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WaveChallenge-UITableViewClassic";
+			};
+			name = Debug;
+		};
+		559B786A24ABA13E00D935B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFE81E193427E7FCB46DA35 /* Pods-WaveChallenge-UITableViewClassic-WaveChallenge-UITableViewClassicUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WaveChallenge-UITableViewClassicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kazoku.WaveChallenge-UITableViewClassicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WaveChallenge-UITableViewClassic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559B783324ABA13C00D935B4 /* Build configuration list for PBXProject "WaveChallenge-UITableViewClassic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B786024ABA13E00D935B4 /* Debug */,
+				559B786124ABA13E00D935B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B786224ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B786324ABA13E00D935B4 /* Debug */,
+				559B786424ABA13E00D935B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B786524ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B786624ABA13E00D935B4 /* Debug */,
+				559B786724ABA13E00D935B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B786824ABA13E00D935B4 /* Build configuration list for PBXNativeTarget "WaveChallenge-UITableViewClassicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B786924ABA13E00D935B4 /* Debug */,
+				559B786A24ABA13E00D935B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 559B783024ABA13C00D935B4 /* Project object */;
+}
