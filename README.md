@@ -1,5 +1,5 @@
 ## Setup
-Download the apk from the root folder and install in your android device, by running the following command <code>adb install "app-debug.apk"</code>
+Download the apk from the root folder and install in your android device, by running the following command <code>adb install "waveapp-debug.apk"</code>
 Alternatively, The apk can be built from source using Android Studio (Requires Java 8, gradle)
 
 ## Highlights
