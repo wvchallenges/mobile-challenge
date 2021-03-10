@@ -1,16 +1,12 @@
-/**
- * @format
- */
-
 import 'react-native';
 import React from 'react';
-import App from '../src/App';
+import ProductsList from './productsList';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
-describe('<App />', () => {
+describe('<ProductsList />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<App />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const tree = renderer.create(<ProductsList />).toJSON();
+    expect(tree.children.length).toBe(1);
   });
 });

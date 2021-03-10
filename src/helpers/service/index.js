@@ -33,13 +33,11 @@ async function api(method, path, data, options) {
           data,
         }),
   };
-  console.log({ axiosConfig });
   return await isNetworkConnected().then((status) => {
-    console.log('isNetworkConnected', status);
     if (status) {
       return Axios(axiosConfig);
     } else {
-      console.log('Network in not connected');
+      console.log('Network is not conneted');
     }
   });
 }
