@@ -114,7 +114,6 @@
 				B7234B8940C5AC924FF53F41 /* Pods-wavechallenge-wavechallengeTests.debug.xcconfig */,
 				8BBB83E5799A77F60184F2EC /* Pods-wavechallenge-wavechallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,7 +159,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				20B6146C85198BBE9CD372E6 /* [CP] Embed Pods Frameworks */,
 				B538E9C09BB67A176C55B3B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -183,7 +181,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				378D7EEB2C1FCD7C8373219A /* [CP] Embed Pods Frameworks */,
 				26831C725429779419930CC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -265,23 +262,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		20B6146C85198BBE9CD372E6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wavechallenge-wavechallengeTests/Pods-wavechallenge-wavechallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wavechallenge-wavechallengeTests/Pods-wavechallenge-wavechallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wavechallenge-wavechallengeTests/Pods-wavechallenge-wavechallengeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		26831C725429779419930CC9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,23 +277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wavechallenge/Pods-wavechallenge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		378D7EEB2C1FCD7C8373219A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wavechallenge/Pods-wavechallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wavechallenge/Pods-wavechallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wavechallenge/Pods-wavechallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AA5525A19D048D7CA77DCDA /* [CP] Check Pods Manifest.lock */ = {
@@ -485,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34K6M9K3T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = wavechallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M34K6M9K3T;
 				INFOPLIST_FILE = wavechallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
