@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WaveApp</string>
+    <string name="no_connection">No Network connection available. Please try again, once network connection is established.</string>
+    <string name="api_failure">Products API failed to fetch Data. Please try again.</string>
+</resources>
