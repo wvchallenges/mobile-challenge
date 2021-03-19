@@ -17,7 +17,10 @@ export default function Products({route, navigation}) {
     <View style={styles.container}>
       <FlatList
         data={products}
-        renderItem={({item}) => <ListItems data={item} />}
+        testID={'productContainer'}
+        renderItem={({item, index}) => (
+          <ListItems data={item} testID={`item${index}`} />
+        )}
         ItemSeparatorComponent={() => <View style={styles.seperator} />}
         keyExtractor={(_, index) => index.toString()}
       />
