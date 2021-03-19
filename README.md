@@ -1,47 +1,44 @@
 # Wave Software Development Challenge
-Applicants for the [Mobile engineer](https://wave.bamboohr.co.uk/jobs/view.php?id=6) role at Wave must complete the following challenge, and submit a solution prior to the onsite interview. 
 
-The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to collaborate with Wavers during the interview in a situation where you know something better than us (it's your code, after all!) 
+# 1. Happy path
+Below gif displays how the data is loaded from the api, I have added a activity indicator to show the spinner and once the data is loaded, data is rendered in a flatlist in a component called ItemList
+# 2. No internet scenario
+Below gif also displays how the screen looks like when there is no internet, and how the screen looks like the when the internet is turned on
 
-There isn't a hard deadline for this exercise; take as long as you need to complete it. However, in terms of total time spent actively working on the challenge, we ask that you not spend more than a few hours, as we value your time and are happy to leave things open to discussion in the onsite interview.
+![Wave-success](wave-success.gif)
 
-You can write your app using your favorite language, tools, platform, etc. Whether that means something native or something hybrid is completely up to you. 
+# 2. Negative path
+Below gif displays how the toast appears with a predefined error message if the api doesnt return the expected data or something goes wrong in the backend
 
-Send your submission to [dev.careers@waveapps.com](dev.careers@waveapps.com). Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you have any questions.
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one.
-1. Complete the project as described below within your fork.
-1. Push all of your changes to your fork on github and submit a pull request. 
-1. You should also email [dev.careers@waveapps.com](dev.careers@waveapps.com) and your recruiter to let them know you have submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests.)
+![Wave-error](wave-error.gif)
 
-## Alternate Submission Instructions (if you don't want to publicize completing the challenge)
-1. Clone the repository.
-1. Complete your project as described below within your local repository.
-1. Email a patch file to [dev.careers@waveapps.com](dev.careers@waveapps.com).
+# 3. Detox testing
+![detox-test](detox-test.png)
 
-## Project Description
-In this project, we're going to be creating a simple app that shows a Wave user the products that they can charge for on their invoices. 
+# React Native Documentation for Wave challenge:
 
-You'll be using the public Wave API in this challenge. You can find the documentation [here](http://docs.waveapps.io/). You will specifically be interested in [the products endpoint](http://docs.waveapps.io/endpoints/products.html#get--businesses-business_id-products-), and [using an access token with the API](http://docs.waveapps.io/oauth/index.html#use-the-access-token-to-access-the-api). 
+## What is the global state management used?
+Redux and redux thunk along with @reduxjs/toolkit to avoid a lot of boiler plate code for creating actions, types and reducer
 
-Your Wave contact will supply you with a business ID and a Wave API token before you begin.
+## How does the reducer architecture look like in this app?
+rootReducer.js under store/reducers bundles three reducers majorly, products for storing the products in the store and the next two are utility reducers namely loader for showing spinner and toaster for showing toast messages
 
-### What your application must do:
+## How is api called from front-end?
+I have created a custom middleware called api under the store/middleware folder which lets me couple three actions together when i call an api from HttpService.js under network folder(under the hood uses axios.js library), first it dispatches an action to indicate that the loader has started and next after response returns, another action is dispatched for onSuccess action which is passed as argument to the middleware, if there is an error, another action is dispatched to show a toast message indicating an error occurred and finally the another action dispatched to hide the loader
 
-1. Your app must retrieve the list of products for the specific business ID sent to you by your Wave contact
-1. The list of products should be fetched and shown to the user in a list view when the app is launched.
-1. Each item in the list view should show the product name and price (formatted as a dollar amount.)
+# What am I proud about this challenge?
+The way i was able to couple utility reducers like toast and loader using redux and making it seamless and easier while coding and when the app scales up, this becomes a lot easier to maintain
 
-You are not required to add any interactivity to the app -- i.e. you do not need to send the user to a detail view when they touch one of the list items. 
+## Challenge while building this app?
+the only challenge i faced throught the app while building was the url for the api, where it doesnt work or wouldnt give an expected response if no backlash is appended at the end and instead throws {"error":{"message":"Authentication credentials were not provided."}} although token is provided in the header and verified through axios's interceptor to check what request is passed to the backend
 
-Your app is allowed to render nothing if there is no internet connection when it loads.
+Works --> https://api.waveapps.com/businesses/89746d57-c25f-4cec-9c63-34d7780b044b/products/
 
-Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
+Doesnt work --> https://api.waveapps.com/businesses/89746d57-c25f-4cec-9c63-34d7780b044b/products
 
-## Evaluation
-Evaluation of your submission will be based on the following criteria. 
+This happens only while calling from axios, while it works when using CURL / calling it from postman, but I consider this as a good learning and a challenge
 
-1. Did your application fulfill the basic requirements?
-1. Did you document the method for setting up and running your application?
-1. Did you follow the instructions for submission?
+# Configuration for detox e2e testing
+1. Change the binary path for both android/iOS under .detoxrc.json depending on the platform which you run
+2. Change the test:e2e and test:e2e:build script in package.json under scripts object, currently set only for iOS
