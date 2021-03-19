@@ -1,0 +1,40 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "apps": {
+    "ios.debug": {
+      "type": "ios.app",
+      "binaryPath": "/Users/vibinjoby/Library/Developer/Xcode/DerivedData/wavechallenge-elujrpwjwvqbyugnlpvhtbipinbv/Build/Products/Debug-iphonesimulator/wavechallenge.app",
+      "build": "react-native run-ios"
+    },
+    "android": {
+      "type": "android.apk",
+      "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY",
+      "build": "react-native run-android"
+    }
+  },
+  "devices": {
+    "simulator": {
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 11 Pro"
+      }
+    },
+    "emulator": {
+      "type": "android.emulator",
+      "device": {
+        "avdName": "Pixel_3a_API_30_x86"
+      }
+    }
+  },
+  "configurations": {
+    "ios.sim.debug": {
+      "device": "simulator",
+      "app": "ios.debug"
+    },
+    "android": {
+      "device": "emulator",
+      "app": "android"
+    }
+  }
+}
