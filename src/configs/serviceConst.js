@@ -1,4 +1,4 @@
 export default {
   BASE_URL: 'https://api.waveapps.com/businesses',
-  FETCH_PRODUCTS: '/products',
+  FETCH_PRODUCTS: '/products/',
 };

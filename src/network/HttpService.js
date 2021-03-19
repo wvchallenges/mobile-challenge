@@ -12,7 +12,6 @@ axios.interceptors.response.use(null, error => {
 
 axios.interceptors.request.use(
   config => {
-    console.log(config);
     return config;
   },
   error => {
@@ -21,7 +20,7 @@ axios.interceptors.request.use(
 );
 
 const setHeader = token => {
-  axios.defaults.headers.common['Authorization'] = token;
+  axios.defaults.headers.common['authorization'] = token;
 };
 
 export default {
