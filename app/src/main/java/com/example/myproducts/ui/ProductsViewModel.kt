@@ -11,31 +11,30 @@ import kotlinx.coroutines.launch
 
 private const val TAG = "ProductsViewModel"
 
-class ProductsViewModel(val repository: Repository) : ViewModel() {
-
-   // private var repository = Repository()
+class ProductsViewModel(private val repository: Repository) : ViewModel() {
 
     private val _products = MutableLiveData<List<Product>>()
 
     val products: LiveData<List<Product>> = _products
 
-    private val spinner = MutableLiveData<Boolean>()
+    private val _spinner = MutableLiveData<Boolean>()
+    val spinner : LiveData<Boolean> =_spinner
 
-    private val errorEvent = LiveEvent<String>()
+    val errorEvent = LiveEvent<String>()
 
     private val connectivityEvent = LiveEvent<Boolean>()
 
     fun getProducts() {
         viewModelScope.launch {
             try {
-                spinner.value = true
+                _spinner.value = true
                 //products.value = listOf<Product>()
                 _products.value = repository.getProduct()
             } catch (e: Exception) {
                 Log.e(TAG, "searchBooks: $e}")
                 errorEvent.post(e.toString())
             } finally {
-                spinner.value = false
+                _spinner.value = false
             }
 
         }
