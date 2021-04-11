@@ -6,18 +6,21 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface WaveApi {
-    @GET("89746d57-c25f-4cec-9c63-34d7780b044b/products")
-    suspend fun getProducts(): List<Product>
+
+    @GET("businesses/{businessId}/products")
+    suspend fun getProducts(@Path("businessId") businessId: String ="89746d57-c25f-4cec-9c63-34d7780b044b"): List<Product>
 
     companion object {
 
-        private const val BASE_URL = "https://api.waveapps.com/businesses/"
-
+        private const val BASE_URL = "https://api.waveapps.com/"
+        //Logs requests to Logcat
         private val logger = HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         }
+        //Injects the Auth Header
         private val authInterceptor = AuthInterceptor()
 
         private val client = OkHttpClient.Builder()

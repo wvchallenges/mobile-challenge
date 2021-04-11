@@ -12,15 +12,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.myproducts.MyProductsApp
 import com.example.myproducts.R
 import com.example.myproducts.network.Repository
 import com.google.android.material.snackbar.Snackbar
 
-
 private const val TAG = "ListFragment"
 
-class ProductFragment : Fragment(), ProductAdapter.OnMovieClickListener {
+class ProductFragment : Fragment(), ProductAdapter.OnProductClickListener {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,7 +31,7 @@ class ProductFragment : Fragment(), ProductAdapter.OnMovieClickListener {
         val productAdapter = ProductAdapter(this)
         val view = inflater.inflate(R.layout.product_list, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.rvProducts)
-        val loader =view.findViewById<LinearLayout>(R.id.loader)
+        val swipeLayout = view.findViewById<SwipeRefreshLayout>(R.id.swipeLayout)
 
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -49,27 +49,26 @@ class ProductFragment : Fragment(), ProductAdapter.OnMovieClickListener {
         }
 
         viewModel.spinner.observe(viewLifecycleOwner) {
-            Log.d(TAG, "spinner:: $it ")
-            loader.visibility = if (it) View.VISIBLE else View.GONE
+            swipeLayout.isRefreshing = it
         }
 
         viewModel.errorEvent.observe(viewLifecycleOwner, onEvent = {
-            //Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
-
-
-            Snackbar.make(recyclerView, "There was a connection error.", Snackbar.LENGTH_LONG)
+            Snackbar.make(recyclerView, getString(R.string.connection_error), Snackbar.LENGTH_LONG)
                 .setBackgroundTint(resources.getColor(R.color.backgroundTint))
                 .setActionTextColor(resources.getColor(R.color.actionTextColor))
                 .show()
         })
-
-
+        
+        swipeLayout.setOnRefreshListener {
+            viewModel.getProducts()
+        }
 
         viewModel.getProducts()
         return view
     }
 
-    override fun onMovieClick(position: Int) {
-        Log.d(TAG, "onMovieClick: $position")
+    override fun onProductClick(position: Int) {
+        Log.d(TAG, "onProductClick: $position")
+
     }
 }

@@ -1,5 +1,6 @@
 package com.example.myproducts.ui
 
+import android.icu.text.NumberFormat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,11 +10,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myproducts.R
 import com.example.myproducts.models.Product
+import java.util.*
 
-class ProductAdapter(private val fragClickListener: OnMovieClickListener) :
+class ProductAdapter(private val fragClickListener: OnProductClickListener) :
     ListAdapter<Product, ProductAdapter.ProductViewHolder>(DiffUtilCallBack) {
 
-    class ProductViewHolder(view: View, onMovieClickListener: OnMovieClickListener) :
+    private val nf: NumberFormat = NumberFormat.getCurrencyInstance(Locale.CANADA)
+    
+    class ProductViewHolder(view: View, onMovieClickListener: OnProductClickListener) :
         RecyclerView.ViewHolder(view), View.OnClickListener {
 
         private val onClickListener = onMovieClickListener
@@ -26,7 +30,7 @@ class ProductAdapter(private val fragClickListener: OnMovieClickListener) :
         val price: TextView = view.findViewById<TextView>(R.id.tvPrice)
 
         override fun onClick(v: View?) {
-            onClickListener.onMovieClick(adapterPosition)
+            onClickListener.onProductClick(adapterPosition)
         }
     }
 
@@ -34,16 +38,15 @@ class ProductAdapter(private val fragClickListener: OnMovieClickListener) :
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.list_product_item, parent, false)
         return ProductViewHolder(view, fragClickListener)
-
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        holder.name.text = currentList.get(position).name
-        holder.price.text = currentList.get(position).price.toString()
+        holder.name.text = currentList[position].name
+        holder.price.text = nf.format(currentList[position].price)
     }
 
-    interface OnMovieClickListener {
-        fun onMovieClick(position: Int)
+    interface OnProductClickListener {
+        fun onProductClick(position: Int)
     }
 }
 
