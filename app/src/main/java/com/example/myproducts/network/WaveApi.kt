@@ -8,7 +8,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface WaveApi {
-
     @GET("89746d57-c25f-4cec-9c63-34d7780b044b/products")
     suspend fun getProducts(): List<Product>
 
@@ -17,7 +16,7 @@ interface WaveApi {
         private const val BASE_URL = "https://api.waveapps.com/businesses/"
 
         private val logger = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.HEADERS
+            level = HttpLoggingInterceptor.Level.BODY
         }
         private val authInterceptor = AuthInterceptor()
 
@@ -34,7 +33,6 @@ interface WaveApi {
                 .build()
                 .create(WaveApi::class.java)
         }
-
     }
 
 }
