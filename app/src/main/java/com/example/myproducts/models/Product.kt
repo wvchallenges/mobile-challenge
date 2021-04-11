@@ -4,30 +4,30 @@ import com.google.gson.annotations.SerializedName
 import java.math.BigDecimal
 
 data class Product(
-    val id:Int,
-    val url:String,
-    val name:String,
+    val id: Int,
+    val url: String,
+    val name: String,
     val price: BigDecimal,
-    val description:String,
+    val description: String,
     @SerializedName("is_sold")
-    val isSold:Boolean,
+    val isSold: Boolean,
     @SerializedName("is_bought")
-    val isBought:Boolean,
-    val incomeAccount:IncomeAccount,
-    val expenseAccount:ExpenseAccount,
-    val active:Boolean,
+    val isBought: Boolean,
+    val incomeAccount: IncomeAccount,
+    val expenseAccount: ExpenseAccount,
+    val active: Boolean,
     @SerializedName("date_created")
-    val dateCreated:String,  //TODO: Use date?
+    val dateCreated: String,  //TODO: Use date?
     @SerializedName("data_modified")
-    val dateModified:String,
-    )
+    val dateModified: String,
+)
 
-data class ExpenseAccount (
-    val id:Int,
-    val url:String
-    )
+data class ExpenseAccount(
+    val id: Int,
+    val url: String
+)
 
 data class IncomeAccount(
-    val id:Int,
-    val url:String
+    val id: Int,
+    val url: String
 )
