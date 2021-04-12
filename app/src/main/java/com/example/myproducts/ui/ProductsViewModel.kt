@@ -14,20 +14,20 @@ class ProductsViewModel(private val repository: Repository) : ViewModel() {
     private val _products = MutableLiveData<List<Product>>()
     val products: LiveData<List<Product>> = _products
 
-    private val _spinner = MutableLiveData<Boolean>()
-    val spinner : LiveData<Boolean> =_spinner
+    private val _loading = MutableLiveData<Boolean>()
+    val loading: LiveData<Boolean> = _loading
 
     val errorEvent = LiveEvent<String>()
 
     fun getProducts() {
         viewModelScope.launch {
             try {
-                _spinner.value = true
-                _products.value = repository.getProduct()
+                _loading.value = true
+                _products.value = repository.getProducts()
             } catch (e: Exception) {
                 errorEvent.post(e.toString())
             } finally {
-                _spinner.value = false
+                _loading.value = false
             }
         }
     }
@@ -35,9 +35,9 @@ class ProductsViewModel(private val repository: Repository) : ViewModel() {
 
 
 @Suppress("UNCHECKED_CAST")
-class ProductsViewModelFactory(private val repo: Repository): ViewModelProvider.Factory{
+class ProductsViewModelFactory(private val repo: Repository) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        if(modelClass.isAssignableFrom(ProductsViewModel::class.java)){
+        if (modelClass.isAssignableFrom(ProductsViewModel::class.java)) {
             return ProductsViewModel(repo) as T
         }
         throw IllegalArgumentException("Unknown View Model Class")

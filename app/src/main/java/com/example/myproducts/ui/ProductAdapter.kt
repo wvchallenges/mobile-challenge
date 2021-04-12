@@ -16,7 +16,7 @@ class ProductAdapter(private val fragClickListener: OnProductClickListener) :
     ListAdapter<Product, ProductAdapter.ProductViewHolder>(DiffUtilCallBack) {
 
     private val nf: NumberFormat = NumberFormat.getCurrencyInstance(Locale.CANADA)
-    
+
     class ProductViewHolder(view: View, onMovieClickListener: OnProductClickListener) :
         RecyclerView.ViewHolder(view), View.OnClickListener {
 

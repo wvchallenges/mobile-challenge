@@ -5,17 +5,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.myproducts.MyProductsApp
 import com.example.myproducts.R
-import com.example.myproducts.network.Repository
 import com.google.android.material.snackbar.Snackbar
 
 private const val TAG = "ListFragment"
@@ -41,14 +37,17 @@ class ProductFragment : Fragment(), ProductAdapter.OnProductClickListener {
 
         val app = requireActivity().application as MyProductsApp
         val repo = app.repository
-        val viewModelProvider = ViewModelProvider(this,ProductsViewModelFactory(repo))
+        val viewModelProvider = ViewModelProvider(this, ProductsViewModelFactory(repo))
         val viewModel = viewModelProvider.get(ProductsViewModel::class.java)
+
+        //Initial Load
+        viewModel.getProducts()
 
         viewModel.products.observe(viewLifecycleOwner) {
             productAdapter.submitList(it)
         }
 
-        viewModel.spinner.observe(viewLifecycleOwner) {
+        viewModel.loading.observe(viewLifecycleOwner) {
             swipeLayout.isRefreshing = it
         }
 
@@ -58,12 +57,11 @@ class ProductFragment : Fragment(), ProductAdapter.OnProductClickListener {
                 .setActionTextColor(resources.getColor(R.color.actionTextColor))
                 .show()
         })
-        
+
         swipeLayout.setOnRefreshListener {
             viewModel.getProducts()
         }
 
-        viewModel.getProducts()
         return view
     }
 
