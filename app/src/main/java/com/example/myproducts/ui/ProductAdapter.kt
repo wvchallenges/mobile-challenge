@@ -11,43 +11,37 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myproducts.R
 import com.example.myproducts.models.Product
 import java.util.*
+import java.util.concurrent.Executors
 
-class ProductAdapter(private val fragClickListener: OnProductClickListener) :
-    ListAdapter<Product, ProductAdapter.ProductViewHolder>(DiffUtilCallBack) {
+class ProductAdapter(private val listener: (Product)->Unit) :
+    ListAdapter<Product, ProductViewHolder>(DiffUtilCallBack) {
 
+    //Format the price as CAD currency
     private val nf: NumberFormat = NumberFormat.getCurrencyInstance(Locale.CANADA)
-
-    class ProductViewHolder(view: View, onMovieClickListener: OnProductClickListener) :
-        RecyclerView.ViewHolder(view), View.OnClickListener {
-
-        private val onClickListener = onMovieClickListener
-
-        init {
-            view.setOnClickListener(this)
-        }
-
-        val name: TextView = view.findViewById<TextView>(R.id.tvName)
-        val price: TextView = view.findViewById<TextView>(R.id.tvPrice)
-
-        override fun onClick(v: View?) {
-            onClickListener.onProductClick(adapterPosition)
-        }
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.list_product_item, parent, false)
-        return ProductViewHolder(view, fragClickListener)
+        return ProductViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        holder.name.text = currentList[position].name
-        holder.price.text = nf.format(currentList[position].price)
+        val item = currentList[position]
+
+        holder.apply {
+            name.text = item.name
+            price.text = nf.format(currentList[position].price)
+            itemView.setOnClickListener { listener(item) }
+        }
     }
 
-    interface OnProductClickListener {
-        fun onProductClick(position: Int)
-    }
+}
+
+class ProductViewHolder(view: View) :
+    RecyclerView.ViewHolder(view){
+    val name: TextView = view.findViewById<TextView>(R.id.tvName)
+    val price: TextView = view.findViewById<TextView>(R.id.tvPrice)
+
 }
 
 object DiffUtilCallBack : DiffUtil.ItemCallback<Product>() {
