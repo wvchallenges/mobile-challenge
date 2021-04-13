@@ -17,7 +17,7 @@ import com.google.android.material.snackbar.Snackbar
 
 private const val TAG = "ListFragment"
 
-class ProductFragment : Fragment() {
+class ProductsListFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

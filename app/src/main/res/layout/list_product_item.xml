@@ -26,9 +26,9 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Name"
+            tools:text="Oranges"
             android:padding="8dp"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:fontFamily="@font/allerta"
             />
 
@@ -38,8 +38,8 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Price"
-            android:textSize="24sp"
+            tools:text="$20.15"
+            android:textSize="20sp"
             android:padding="8dp"
             android:fontFamily="@font/allerta"
             />
