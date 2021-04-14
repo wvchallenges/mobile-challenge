@@ -1,7 +1,7 @@
 # Wave Software Development Challenge by Roman Mbwasi
 
 
-![Workflow result](https://github.com/matale/mobile-challenge/workflows/Check/badge.svg)
+![Workflow result](https://github.com/matale/mobile-challenge/workflows/SimpleCheck/badge.svg)
 
 
 Native Android Application written in Kotlin for the Wave Mobile challenge. 
