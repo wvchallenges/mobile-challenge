@@ -7,7 +7,7 @@ This App will fetch data from the Wave API and display it in a list/RecyclerView
 
 ## :wrench: Setup instructions
 1. Launch Android Studio
-1. File ->New -> Project from version Control
+1. File ->New ->Project from version Control
 1. Enter the repo address https://github.com/matale/mobile-challenge.git
 1. Hit clone.
 1. Run the project on emulator or device >= Android SDK 24
