@@ -11,10 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myproducts.R
 import com.example.myproducts.models.Product
 import java.util.*
-import java.util.concurrent.Executors
 
-class ProductAdapter(private val listener: (Product)->Unit) :
-    ListAdapter<Product, ProductViewHolder>(DiffUtilCallBack) {
+class ProductAdapter() : ListAdapter<Product, ProductViewHolder>(DiffUtilCallBack) {
 
     //Format the price as CAD currency
     private val nf: NumberFormat = NumberFormat.getCurrencyInstance(Locale.CANADA)
@@ -31,14 +29,13 @@ class ProductAdapter(private val listener: (Product)->Unit) :
         holder.apply {
             name.text = item.name
             price.text = nf.format(currentList[position].price)
-            itemView.setOnClickListener { listener(item) }
         }
     }
 
 }
 
 class ProductViewHolder(view: View) :
-    RecyclerView.ViewHolder(view){
+    RecyclerView.ViewHolder(view) {
     val name: TextView = view.findViewById<TextView>(R.id.tvName)
     val price: TextView = view.findViewById<TextView>(R.id.tvPrice)
 

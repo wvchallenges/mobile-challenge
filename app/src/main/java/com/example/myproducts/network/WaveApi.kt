@@ -11,7 +11,7 @@ import retrofit2.http.Path
 interface WaveApi {
 
     @GET("businesses/{businessId}/products")
-    suspend fun getProducts(@Path("businessId") businessId: String = "89746d57-c25f-4cec-9c63-34d7780b044b"): List<Product>
+    suspend fun getProducts(@Path("businessId") businessId: String): List<Product>
 
     companion object {
 

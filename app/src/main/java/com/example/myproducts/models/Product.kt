@@ -17,7 +17,7 @@ data class Product(
     val expenseAccount: ExpenseAccount,
     val active: Boolean,
     @SerializedName("date_created")
-    val dateCreated: String,  //TODO: Use date?
+    val dateCreated: String,
     @SerializedName("data_modified")
     val dateModified: String,
 )

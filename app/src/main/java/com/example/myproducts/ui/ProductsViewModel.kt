@@ -6,7 +6,6 @@ import com.example.myproducts.network.Repository
 import de.ueen.liveevent.LiveEvent
 import kotlinx.coroutines.launch
 
-
 private const val TAG = "ProductsViewModel"
 
 class ProductsViewModel(private val repository: Repository) : ViewModel() {
@@ -23,7 +22,7 @@ class ProductsViewModel(private val repository: Repository) : ViewModel() {
         viewModelScope.launch {
             try {
                 _loading.value = true
-                _products.value = repository.getProducts()
+                _products.value = repository.getProducts("89746d57-c25f-4cec-9c63-34d7780b044b")
             } catch (e: Exception) {
                 errorEvent.post(e.toString())
             } finally {
