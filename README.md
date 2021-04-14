@@ -2,6 +2,8 @@
 
 
 ![Workflow result](https://github.com/matale/mobile-challenge/workflows/Check/badge.svg)
+
+
 Native Android Application for the Wave Mobile challenge. 
 This App will fetch data from the Wave API and display it in a list/RecyclerView.
 
