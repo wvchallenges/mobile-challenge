@@ -4,8 +4,8 @@
 ![Workflow result](https://github.com/matale/mobile-challenge/workflows/Check/badge.svg)
 
 
-Native Android Application for the Wave Mobile challenge. 
-This App will fetch data from the Wave API and display it in a list/RecyclerView.
+Native Android Application writen in Kotlin for the Wave Mobile challenge. 
+This App will fetch products data from the Wave API and display it in a list/RecyclerView.
 
 ## :wrench: Setup instructions
 1. Launch Android Studio
