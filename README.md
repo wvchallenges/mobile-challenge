@@ -4,7 +4,7 @@
 ![Workflow result](https://github.com/matale/mobile-challenge/workflows/Check/badge.svg)
 
 
-Native Android Application writen in Kotlin for the Wave Mobile challenge. 
+Native Android Application written in Kotlin for the Wave Mobile challenge. 
 This App will fetch products data from the Wave API and display it in a list/RecyclerView.
 
 ## :wrench: Setup instructions
@@ -15,7 +15,7 @@ This App will fetch products data from the Wave API and display it in a list/Rec
 1. Run the project on emulator or device >= Android SDK 24
 
 ## :scroll: Details
-App follows the [Android architecture guide](https://developer.android.com/jetpack/guide) which is simmilar to MVVM design pattern.
+App follows the [Android architecture guide](https://developer.android.com/jetpack/guide) which is similar to the MVVM design pattern.
 I have made use of the architecture components and Jetpack libraries whenever possible. 
 Some of the components and libraries include Fragments, Navigation, ViewModel, LiveData, Retrofit and Kotlin Coroutines.
 
