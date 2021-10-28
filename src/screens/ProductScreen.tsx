@@ -2,20 +2,27 @@ import React from 'react';
 import {
   ActivityIndicator,
   FlatList,
+  RefreshControl,
   SafeAreaView,
   StatusBar,
   Text,
   View,
 } from 'react-native';
-import useSWR from 'swr';
+import useSWR, { useSWRConfig } from 'swr';
 import {productFetcher} from '../api/api';
 import {Product} from '../api/models/Product';
 
 const ProductScreen = () => {
-  const {data, error} = useSWR(
-    ['/products/', '89746d57-c25f-4cec-9c63-34d7780b044b'],
+  const {data, error, isValidating} = useSWR(
+    '/products/',
     productFetcher,
   );
+
+  const { mutate } = useSWRConfig()
+
+  const onRefresh = React.useCallback(() => {
+    mutate('/products/')
+  }, []);
 
   const renderItem = ({item}: {item: Product}) => (
     <View
@@ -66,13 +73,19 @@ const ProductScreen = () => {
         flexDirection: 'column',
       }}>
       <StatusBar />
-      {!data && !error ? <ActivityIndicator size="large" /> : null}
+      {!data && isValidating ? <ActivityIndicator size="large" /> : null}
       <FlatList
         style={{
           paddingHorizontal: 8,
         }}
         data={data ?? []}
         renderItem={renderItem}
+        refreshControl={
+            <RefreshControl
+              refreshing={isValidating}
+              onRefresh={onRefresh}
+            />
+          }
       />
     </SafeAreaView>
   );

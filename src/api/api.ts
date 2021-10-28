@@ -2,6 +2,7 @@ import {Fetcher} from 'swr';
 import {Product} from './models/Product';
 
 const token = '6W9hcvwRvyyZgPu9Odq7ko8DSY8Nfm';
+const businessId = '89746d57-c25f-4cec-9c63-34d7780b044b';
 
 export const waveApiFetcher: Fetcher<any> = (url: string) =>
   fetch(`https://api.waveapps.com/businesses/${url}`, {
@@ -14,5 +15,4 @@ export const waveApiFetcher: Fetcher<any> = (url: string) =>
 
 export const productFetcher: Fetcher<Product[]> = (
   url: string,
-  businessId: string,
 ) => waveApiFetcher(`${businessId}${url}`);
