@@ -29,7 +29,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import useSWR from 'swr';
-import { waveApiFetcher } from './src/api/api';
 import ProductScreen from './src/screens/ProductScreen';
 
 const Stack = createNativeStackNavigator();
@@ -101,7 +100,6 @@ const SampleHome = () => {
 };
 
 const App = () => {
-  const { data } = useSWR(['/products/', '89746d57-c25f-4cec-9c63-34d7780b044b'], waveApiFetcher)
   return (
     <NavigationContainer>
       <Stack.Navigator>
