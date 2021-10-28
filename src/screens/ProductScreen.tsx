@@ -55,7 +55,7 @@ const ProductScreen = () => {
             style={{
               fontSize: 20,
             }}>
-            {`$${item.price}`}
+            {`$${item.price.toFixed(2)}`}
           </Text>
         </View>
       </View>
