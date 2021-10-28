@@ -28,6 +28,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import useSWR from 'swr';
+import { waveApiFetcher } from './src/api/api';
 
 const Stack = createNativeStackNavigator();
 
@@ -98,11 +100,14 @@ const SampleHome = () => {
 };
 
 const App = () => {
-  return <NavigationContainer>
-  <Stack.Navigator>
-    <Stack.Screen name="Home" component={SampleHome} />
-  </Stack.Navigator>
-</NavigationContainer>;
+  const { data } = useSWR(['/products/', '89746d57-c25f-4cec-9c63-34d7780b044b'], waveApiFetcher)
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={SampleHome} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 const styles = StyleSheet.create({
