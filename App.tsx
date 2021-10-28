@@ -30,6 +30,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import useSWR from 'swr';
 import { waveApiFetcher } from './src/api/api';
+import ProductScreen from './src/screens/ProductScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -104,7 +105,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={SampleHome} />
+        <Stack.Screen name="Product" component={ProductScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
