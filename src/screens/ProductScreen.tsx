@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   StatusBar,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import useSWR, { useSWRConfig } from 'swr';
@@ -25,13 +26,15 @@ const ProductScreen = () => {
   }, []);
 
   const renderItem = ({item}: {item: Product}) => (
-    <View
+    <TouchableOpacity
       style={{
         flexDirection: 'column',
         backgroundColor: 'cornflowerblue',
         borderRadius: 8,
         marginTop: 8,
         padding: 16,
+      }} onPress={() => {
+          console.log(`Clicked product : ${item.name} ${item.id}`)
       }}>
       <View
         style={{
@@ -64,7 +67,7 @@ const ProductScreen = () => {
         }}>
         {item.description}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 
   return (
