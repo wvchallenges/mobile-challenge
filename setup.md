@@ -1,5 +1,9 @@
 # Setup
 
+## Basic Info
+- programming language: TypeScript
+- mobile framework: React Native
+
 ## Project init
 ```
 // install package
