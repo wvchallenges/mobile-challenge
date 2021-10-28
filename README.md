@@ -45,3 +45,9 @@ Evaluation of your submission will be based on the following criteria.
 1. Did your application fulfill the basic requirements?
 1. Did you document the method for setting up and running your application?
 1. Did you follow the instructions for submission?
+
+## Achievement in testing
+- Applied react native project with typescript. It provides more code hints and improve dev experience with error checking.
+- First time used SWR network framework instead of react query or any basic fetch. Intersting framework and SWR have its own advantage.
+- Added debugging tools Reactotron for response API respnose. Reactotron become better when working with react redux. More simple debugging tools than Flipper in my point of view.
+
