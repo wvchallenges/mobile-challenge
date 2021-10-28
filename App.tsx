@@ -8,6 +8,8 @@
  * @format
  */
 
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {
   SafeAreaView,
@@ -26,6 +28,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+const Stack = createNativeStackNavigator();
 
 const Section: React.FC<{
   title: string;
@@ -55,7 +59,7 @@ const Section: React.FC<{
   );
 };
 
-const App = () => {
+const SampleHome = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -91,6 +95,14 @@ const App = () => {
       </ScrollView>
     </SafeAreaView>
   );
+};
+
+const App = () => {
+  return <NavigationContainer>
+  <Stack.Navigator>
+    <Stack.Screen name="Home" component={SampleHome} />
+  </Stack.Navigator>
+</NavigationContainer>;
 };
 
 const styles = StyleSheet.create({
