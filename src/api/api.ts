@@ -13,6 +13,5 @@ export const waveApiFetcher: Fetcher<any> = (url: string) =>
     },
   }).then(res => res.json());
 
-export const productFetcher: Fetcher<Product[]> = (
-  url: string,
-) => waveApiFetcher(`${businessId}${url}`);
+export const productFetcher: Fetcher<Product[]> = (url: string) =>
+  waveApiFetcher(`${businessId}${url}`);

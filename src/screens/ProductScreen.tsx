@@ -9,20 +9,17 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import useSWR, { useSWRConfig } from 'swr';
+import useSWR, {useSWRConfig} from 'swr';
 import {productFetcher} from '../api/api';
 import {Product} from '../api/models/Product';
 
 const ProductScreen = () => {
-  const {data, error, isValidating} = useSWR(
-    '/products/',
-    productFetcher,
-  );
+  const {data, error, isValidating} = useSWR('/products/', productFetcher);
 
-  const { mutate } = useSWRConfig()
+  const {mutate} = useSWRConfig();
 
   const onRefresh = React.useCallback(() => {
-    mutate('/products/')
+    mutate('/products/');
   }, []);
 
   const renderItem = ({item}: {item: Product}) => (
@@ -33,8 +30,9 @@ const ProductScreen = () => {
         borderRadius: 8,
         marginTop: 8,
         padding: 16,
-      }} onPress={() => {
-          console.log(`Clicked product : ${item.name} ${item.id}`)
+      }}
+      onPress={() => {
+        console.log(`Clicked product : ${item.name} ${item.id}`);
       }}>
       <View
         style={{
@@ -77,10 +75,15 @@ const ProductScreen = () => {
       }}>
       <StatusBar />
       {!data && isValidating ? <ActivityIndicator size="large" /> : null}
-      {error ? <Text style={{
-          fontSize: 24,
-          color: 'red',
-      }}>{"API error"}</Text> : null}
+      {error ? (
+        <Text
+          style={{
+            fontSize: 24,
+            color: 'red',
+          }}>
+          {'API error'}
+        </Text>
+      ) : null}
       <FlatList
         style={{
           paddingHorizontal: 8,
@@ -88,11 +91,8 @@ const ProductScreen = () => {
         data={data ?? []}
         renderItem={renderItem}
         refreshControl={
-            <RefreshControl
-              refreshing={isValidating}
-              onRefresh={onRefresh}
-            />
-          }
+          <RefreshControl refreshing={isValidating} onRefresh={onRefresh} />
+        }
       />
     </SafeAreaView>
   );
