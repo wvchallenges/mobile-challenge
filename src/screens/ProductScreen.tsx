@@ -74,6 +74,10 @@ const ProductScreen = () => {
       }}>
       <StatusBar />
       {!data && isValidating ? <ActivityIndicator size="large" /> : null}
+      {error ? <Text style={{
+          fontSize: 24,
+          color: 'red',
+      }}>{"API error"}</Text> : null}
       <FlatList
         style={{
           paddingHorizontal: 8,
