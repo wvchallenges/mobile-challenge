@@ -1,8 +1,7 @@
-import axios from 'axios';
 import {Fetcher} from 'swr';
 
 export const waveApiFetcher: Fetcher<any> = (url: string, businessId: string) =>
-  axios(
+  fetch(
     `https://api.waveapps.com/businesses/${businessId}${url}`,
     {
         method: 'GET',
@@ -11,4 +10,4 @@ export const waveApiFetcher: Fetcher<any> = (url: string, businessId: string) =>
             'Content-Type': 'application/json'
         }
     }
-  ).then(res => res.data);
+  ).then(res => res.json());
