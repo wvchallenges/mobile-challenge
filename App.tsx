@@ -103,7 +103,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Product" component={ProductScreen} />
+        <Stack.Screen name="Product List" component={ProductScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
