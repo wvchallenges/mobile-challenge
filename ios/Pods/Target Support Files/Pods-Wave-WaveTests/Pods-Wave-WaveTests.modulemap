@@ -1,0 +1,6 @@
+module Pods_Wave_WaveTests {
+  umbrella header "Pods-Wave-WaveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
