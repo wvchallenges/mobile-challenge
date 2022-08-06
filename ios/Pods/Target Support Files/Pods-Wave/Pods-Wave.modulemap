@@ -1,6 +1,0 @@
-module Pods_Wave {
-  umbrella header "Pods-Wave-umbrella.h"
-
-  export *
-  module * { export * }
-}
