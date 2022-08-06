@@ -11,7 +11,6 @@ export const currencyDisplay = (format, price) => {
   switch (format) {
     case 'en-CA':
       result = currencyFormatter('en-CA', 'CAD', price);
-      console.log({result});
       break;
     case 'en-US':
       result = currencyFormatter('en-US', 'USD', price);

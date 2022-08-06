@@ -1,8 +1,9 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Text, View, SafeAreaView, FlatList} from 'react-native';
 import {renderLoader} from '../../components/loader';
 import axios from 'axios';
 import styles from './styles';
+import {currencyDisplay} from '../../utils/helper';
 
 export default function ProductList({navigation}) {
   const [isLoading, setLoading] = useState(false);
@@ -34,9 +35,11 @@ export default function ProductList({navigation}) {
 
   const ItemRender = ({item}) => (
     <View style={styles.listView}>
+      <View style = {{flex:1, justifyContent:'center'}}>
       <Text> {item.name} </Text>
-      <View>
-        <Text> {item.price} </Text>
+      </View>
+      <View style = {{flex:0.5, justifyContent:'center'}}>
+        <Text style={{textAlign:'right'}}>{currencyDisplay('en-CA', item.price)}</Text>
       </View>
     </View>
   );
