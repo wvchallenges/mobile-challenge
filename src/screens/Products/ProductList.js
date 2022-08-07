@@ -9,7 +9,6 @@ import {ListView, NoConnection} from '../../components';
 
 export default function ProductList({navigation}) {
   const [isLoading, setLoading] = useState(false);
-
   const [productList, setProductList] = useState([]);
   const [refreshing, setRefreshing] = useState(false);
   const [connection, setConnection] = useState(true);
