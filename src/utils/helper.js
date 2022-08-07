@@ -1,3 +1,6 @@
+import NetInfo from '@react-native-community/netinfo';
+
+
 const currencyFormatter = (locale, currency, price) => {
   const formatter = new Intl.NumberFormat(locale, {
     style: 'currency',
@@ -19,4 +22,20 @@ export const currencyDisplay = (format, price) => {
   }
 
   return result;
+};
+
+export const checkInternetConnection = () => {
+  return new Promise(resolve => {
+    NetInfo.fetch()
+      .then(state => {
+        resolve(
+          state.isConnected &&
+            (Platform.OS === 'android' ? state.isInternetReachable : true),
+        );
+      })
+      .catch(e => {
+        console.log(e);
+        resolve(false);
+      });
+  });
 };
