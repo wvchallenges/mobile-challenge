@@ -1,5 +1,5 @@
 import NetInfo from '@react-native-community/netinfo';
-
+import {Platform} from 'react-native';
 
 const currencyFormatter = (locale, currency, price) => {
   const formatter = new Intl.NumberFormat(locale, {
@@ -15,8 +15,6 @@ export const currencyDisplay = (format, price) => {
     case 'en-CA':
       result = currencyFormatter('en-CA', 'CAD', price);
       break;
-    case 'en-US':
-      result = currencyFormatter('en-US', 'USD', price);
     default:
       break;
   }

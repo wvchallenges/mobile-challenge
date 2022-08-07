@@ -1,20 +1,11 @@
 import React, {useState, useEffect, useCallback} from 'react';
-import {
-  Text,
-  View,
-  SafeAreaView,
-  FlatList,
-  RefreshControl,
-  Image,
-  Platform,
-} from 'react-native';
+import {SafeAreaView, FlatList, RefreshControl} from 'react-native';
 import {renderLoader} from '../../components/loader';
-import axios from 'axios';
 import styles from './styles';
-import {checkInternetConnection, currencyDisplay} from '../../utils/helper';
-// import NetInfo from '@react-native-community/netinfo';
+import {checkInternetConnection} from '../../utils/helper';
 import Toast from 'react-native-simple-toast';
 import {getAPI} from '../../services/api/apis';
+import {ListView, NoConnection} from '../../components';
 
 export default function ProductList({navigation}) {
   const [isLoading, setLoading] = useState(false);
@@ -30,7 +21,7 @@ export default function ProductList({navigation}) {
   const loadDataCallback = useCallback(async () => {
     setLoading(true);
 
-    //check if there is internet connection
+    //check for internet connection
     const isConnected = await checkInternetConnection();
 
     if (!isConnected) {
@@ -45,27 +36,12 @@ export default function ProductList({navigation}) {
         const results = await getAPI(endpoint);
         setProductList(results);
         setLoading(false);
+        setRefreshing(false);
       } catch (error) {
         console.error(error);
       }
     }
   }, []);
-
-  // const checkInternetConnection = () => {
-  //   return new Promise(resolve => {
-  //     NetInfo.fetch()
-  //       .then(state => {
-  //         resolve(
-  //           state.isConnected &&
-  //             (Platform.OS === 'android' ? state.isInternetReachable : true),
-  //         );
-  //       })
-  //       .catch(e => {
-  //         console.log(e);
-  //         resolve(false);
-  //       });
-  //   });
-  // };
 
   //Pull to refresh functionality
   const onRefresh = useCallback(async () => {
@@ -73,41 +49,14 @@ export default function ProductList({navigation}) {
     loadDataCallback();
   }, [refreshing]);
 
-  const ItemRender = ({item}) => (
-    <View style={styles.listView}>
-      <View style={{flex: 1, justifyContent: 'center'}}>
-        <Text> {item.name} </Text>
-      </View>
-      <View style={{flex: 0.5, justifyContent: 'center'}}>
-        <Text style={{textAlign: 'right'}}>
-          {currencyDisplay('en-CA', item.price)}
-        </Text>
-      </View>
-    </View>
-  );
-
   return (
     <SafeAreaView style={styles.container}>
       {isLoading && renderLoader()}
-      {!connection && (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-          <Image
-            source={require('../../assets/images/noInternet.png')}
-            style={{width: 250, height: 250}}
-            resizeMode="center"
-          />
-          <Text style={[styles.header, {paddingTop: 80}]}>
-            Looks like you're offline!
-          </Text>
-          <Text style={[styles.header, {paddingTop: 10}]}>
-            Check your connection.
-          </Text>
-        </View>
-      )}
+      {!connection && <NoConnection />}
       {connection && (
         <FlatList
           data={productList}
-          renderItem={({item}) => <ItemRender item={item} />}
+          renderItem={({item}) => <ListView item={item} />}
           keyExtractor={item => item.id}
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
