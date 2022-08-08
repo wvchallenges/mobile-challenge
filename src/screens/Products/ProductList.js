@@ -27,6 +27,7 @@ export default function ProductList({navigation}) {
     if (!isConnected) {
       //Alert for the user to know they are in offline mode
       Toast.show("You're offline. Check your connection.", Toast.LONG);
+
       setConnection(false);
       setLoading(false);
       setRefreshing(false);
