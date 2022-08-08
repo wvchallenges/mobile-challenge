@@ -4,6 +4,7 @@ I have used React Native framework in JavaScript for this challenge.
 
 ## Project Description
 - When the API call is successful with no errors, I am showing the Products page
+![ScreenShot](1.jpg)
 - In case of an error, I have created an error page.
 - Incase of no internet connection, I am displaying a toast as well as a No internet connection page. 
 
