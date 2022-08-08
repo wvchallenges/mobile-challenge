@@ -5,13 +5,14 @@ import styles from './styles';
 import {checkInternetConnection} from '../../utils/helper';
 import Toast from 'react-native-simple-toast';
 import {getAPI} from '../../services/api/apis';
-import {ListView, NoConnection} from '../../components';
+import {ListView, NoConnection, ErrorPage} from '../../components';
 
 export default function ProductList({navigation}) {
   const [isLoading, setLoading] = useState(false);
   const [productList, setProductList] = useState([]);
   const [refreshing, setRefreshing] = useState(false);
   const [connection, setConnection] = useState(true);
+  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     loadDataCallback();
@@ -33,7 +34,13 @@ export default function ProductList({navigation}) {
       const endpoint = 'products/';
       try {
         const results = await getAPI(endpoint);
-        setProductList(results);
+        if (results.status) {
+          setProductList(results.data);
+          setErrorMessage();
+        } else {
+          setErrorMessage(results.data.error.message);
+          setProductList([]);
+        }
         setLoading(false);
         setRefreshing(false);
       } catch (error) {
@@ -52,7 +59,8 @@ export default function ProductList({navigation}) {
     <SafeAreaView style={styles.container}>
       {isLoading && renderLoader()}
       {!connection && <NoConnection />}
-      {connection && (
+      {connection && errorMessage && <ErrorPage message={errorMessage} />}
+      {connection && productList.length > 0 && (
         <FlatList
           data={productList}
           renderItem={({item}) => <ListView item={item} />}

@@ -1,10 +1,11 @@
 import React from 'react';
 import {ActivityIndicator, View, StyleSheet} from 'react-native';
+import {COLORS} from './colors';
 
 const renderLoader = () => {
   return (
     <View style={styles.background}>
-      <ActivityIndicator animating={true} size="small" color={'#fff'} />
+      <ActivityIndicator animating={true} size="small" color={COLORS.blue} />
     </View>
   );
 };

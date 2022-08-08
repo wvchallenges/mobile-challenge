@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    justifyContent:'center'
   },
   header: {
     fontSize: 14,
@@ -30,7 +31,6 @@ const styles = StyleSheet.create({
   netView: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });
 
