@@ -4,9 +4,18 @@ I have used React Native framework in JavaScript for this challenge.
 
 ## Project Description
 - When the API call is successful with no errors, I am showing the Products page
-![ScreenShot](1.png)
+  
+  <img src="https://raw.githubusercontent.com/fadiaIW/wave-mobile-challenge/master/src/assets/images/1.png" alt="Success" width="200"/>
+
 - In case of an error, I have created an error page.
+  
+  <img src="https://raw.githubusercontent.com/fadiaIW/wave-mobile-challenge/master/src/assets/images/2.png" alt="Success" width="200"/>
+
 - Incase of no internet connection, I am displaying a toast as well as a No internet connection page. 
+
+
+  <img src="https://raw.githubusercontent.com/fadiaIW/wave-mobile-challenge/master/src/assets/images/3.png" alt="Success" width="200"/>
+
 
 
 ## Installation
